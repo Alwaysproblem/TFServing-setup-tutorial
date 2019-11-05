@@ -258,6 +258,12 @@ model_config_list: {
   }
 }
 ```
+- refer to https://www.tensorflow.org/tfx/serving/serving_config
+
+    Please **note that** labels can only be assigned to model versions that are loaded and available for serving. Once a model version is available, one may reload the model config on the fly, to assign a label to it (can be achieved using HandleReloadConfigRequest RPC endpoint).
+
+    Maybe you should delete the label related part first, then start the tensorflow serving, and finally add the label related part to the config file on the fly.
+
 <!-- - response
 ``` bash
 
