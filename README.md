@@ -1,6 +1,6 @@
 # TFServing-setup-review
 
-## basic tutorial for Tensorflow Serving.
+## Basic tutorial for Tensorflow Serving.
 
 ## **Install Docker**
 
@@ -227,4 +227,45 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 #     "predictions": [[0.999035]
 #     ]
 # }
+```
+
+- set an alias label for each version. Only avaliable for gRPC.
+```protobuf
+model_config_list: {
+  config: {
+    name: "Toy",
+    base_path: "/models/save/Toy/",
+    model_platform: "tensorflow",
+    model_version_policy: {
+        specific {
+            versions: 1,
+            versions: 2
+        }
+    },
+    version_labels {
+      key: 'stable',
+      value: 1
+    },
+    version_labels {
+      key: 'canary',
+      value: 2
+    }
+  },
+  config: {
+    name: "Toy_double",
+    base_path: "/models/save/Toy_double/",
+    model_platform: "tensorflow"
+  }
+}
+```
+<!-- - response
+``` bash
+
+``` -->
+
+
+## **Obtain the information**
+- get the information data structure.
+```bash
+$ curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
 ```
