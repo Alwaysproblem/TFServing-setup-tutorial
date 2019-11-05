@@ -269,6 +269,27 @@ model_config_list: {
 
 ``` -->
 
+## **Other Configuration parameter**
+- batch: need to set `--enable_batching=true` and pass the config to `--batching_parameters_file`
+
+    `batch.config`
+    ```protobuf
+    max_batch_size { value: 1 }
+    batch_timeout_micros { value: 0 }
+    max_enqueued_batches { value: 1000000 }
+    num_batch_threads { value: 8 }
+    ```
+
+- monitor: pass file path to `--monitoring_config_file`
+
+    `monitor.config`
+    ```protobuf
+    prometheus_config {
+        enable: true,
+        path: "/models/metrics"
+    }
+    ```
+
 
 ## **Obtain the information**
 - get the information data structure.
