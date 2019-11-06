@@ -292,6 +292,11 @@ model_config_list: {
     num_batch_threads { value: 8 }
     ```
 
+- example
+```bash
+$ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -t tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
+```
+
 - monitor: pass file path to `--monitoring_config_file`
 
     `monitor.config`
@@ -307,4 +312,26 @@ model_config_list: {
 - get the information data structure.
 ```bash
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
+```
+
+
+## **Accerleration by GPU**
+- pull tensorflow server GPU version from DockerHub.
+```bash
+$ docker pull tensorflow/serving:latest-gpu
+```
+
+- clone the server.git if you haven't done it.
+```bash
+$ git clone https://github.com/tensorflow/serving
+```
+
+- set `--runtime==nvidia`
+```bash
+docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
+```
+
+- example
+```bash
+docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
 ```
