@@ -141,6 +141,18 @@ $ docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --mode
 - example
 ```bash
 $ docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/Toy.config
+
+$ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
+# {
+#     "predictions": [[6.80301666]
+#     ]
+# }
+
+$ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
+# {
+#     "predictions": [[0.999035]
+#     ]`
+# }
 ```
 
 - bind your own path to TFserver. The model target path is related to the configuration file.
