@@ -326,7 +326,7 @@ $ docker pull tensorflow/serving:latest-gpu
 $ git clone https://github.com/tensorflow/serving
 ```
 
-- set `--runtime==nvidia`
+- set `--runtime==nvidia` and use the `tensorflow/serving:latest-gpu`
 ```bash
 docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
 ```
@@ -334,4 +334,9 @@ docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1
 - example
 ```bash
 docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
+or
+nvidia-docker run -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
+or
+docker run --gpu &{all/1} -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
 ```
+
