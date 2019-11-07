@@ -116,7 +116,7 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 ## RESTful API
 - `instances` means a row of data
 - `inputs` means a column of data
-- if you have mutiple inputs, it should be like
+- if you have mutiple inputs, it should be like (' ' is not working)
 ```json
 {"instances": [
   {
