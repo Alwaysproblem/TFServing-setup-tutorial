@@ -113,6 +113,29 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 #     ]
 ```
 
+## RESTful API
+- `instances` means a row of data
+- `inputs` means a column of data
+- if you have mutiple inputs, it should be like
+```json
+{"instances": [
+  {
+    "a": [390511], 
+    "b": [25],
+    "c": [1],
+    "d": [1],
+    "e": [1], 
+    "f": [2], 
+    "g": [111], 
+    "j": [1], 
+    "s": [3617, 607, 42, 5, ...], 
+    "q": [141, 142, 143, ...]
+    }
+  ]
+}
+```
+- [REST API](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/api_rest.md)
+
 
 ## **Run multiple model in TFServer**
 
