@@ -67,5 +67,5 @@ new_model = tf.saved_model.load(savedir)
 # print(list(new_model.signatures.keys()))
 # print(new_model.summary())
 # infer = new_model.signatures["serving_default"]
-
+# infer(list or dict or array)
 print(new_model(tf.constant([[1., 1.]])))
