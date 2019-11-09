@@ -96,6 +96,13 @@ $ docker run -t --rm -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/model
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/${user_define_model_name}:predict
 ```
 
+- you also can use tensorflow_model_server command after entering docker bash
+```bash
+$ docker exec -it ${docker image name} bash -l
+
+$ tensorflow_model_server --port=8500 --rest_api_port=8501 --model_name=${MODEL_NAME} --model_base_path=${MODEL_BASE_PATH}/${MODEL_NAME}
+```
+
 - example
   + Save the model after running LinearKeras.py 
 
