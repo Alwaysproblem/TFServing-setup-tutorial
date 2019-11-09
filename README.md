@@ -48,14 +48,26 @@ $ curl -d '{"instances": [1.0, 2.0, 5.0]}' \
 #kill all the alive image.
 $ docker kill $(docker ps -q)
 
+#stop all the alinve image
+$ docker stop $(docker ps -q)
+
+# remove all non-running image
+$ docker rm $$(docker ps -aq)
+
+# check all images
+$ dokcker ps -a
+
 #check the all alive image.
 $ docker ps
 
-#run a serving image as a daemon
+#run a serving image as a daemon with a readable name.
 $ docker run -d --name serving_base tensorflow/serving
 
 #execute a command in the docker, you should substitute $(docker image name) for you own image name.
-$ docker run -it ${docker image name} sh -c "cd /tmp"
+$ docker exec -it ${docker image name} sh -c "cd /tmp"
+
+# enter docker ubuntu bash
+$ docker exec -it ${docker image name} bash -l
 ```
 
 ## **Run Server with your own saved pretrain models**
