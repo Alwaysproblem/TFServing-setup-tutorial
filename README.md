@@ -382,3 +382,46 @@ or
 docker run --gpu ${all/1} -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
 ```
 
+
+## Setup gRPC and POST request using Python files
+
+- setup environment
+```bash
+$ pip install numpy tensorflow tensorflow-serving-api grpcio
+```
+
+- run grpcRequest.py
+```bash
+$ python3 grpcRequest.py
+# outputs {
+#   key: "dense"
+#   value {
+#     dtype: DT_FLOAT
+#     tensor_shape {
+#       dim {
+#         size: 2
+#       }
+#       dim {
+#         size: 1
+#       }
+#     }
+#     float_val: 0.9901617765426636
+#     float_val: 0.9934704303741455
+#   }
+# }
+# model_spec {
+#   name: "Toy"
+#   version {
+#     value: 3
+#   }
+#   signature_name: "serving_default"
+# }
+```
+- run POSTreq.py
+```bash
+$ python3 POSTreq.py
+# {
+#     "predictions": [[0.990161777], [0.99347043]
+#     ]
+# }
+```
