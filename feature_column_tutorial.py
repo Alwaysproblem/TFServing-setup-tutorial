@@ -160,7 +160,7 @@ dense_feature_columns += [oldpeak]
 #%%
 class SumPooling(tf.keras.layers.Layer):
   def __init__(self, **kwargs):
-    super(SumPooling, self).__init__(self, **kwargs)
+    super(SumPooling, self).__init__(**kwargs)
   
   def build(self, input_shape):
     super(SumPooling, self).build(input_shape)
