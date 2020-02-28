@@ -4,7 +4,7 @@ import json
 import timeit
 
 model_name = 'Toy'
-port = 9009
+port = 8501
 host = '0.0.0.0'
 
 url = f'http://{host}:{port}/v1/models/{model_name}:predict'
