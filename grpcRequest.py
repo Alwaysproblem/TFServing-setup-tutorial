@@ -6,10 +6,14 @@ from grpc.beta import implementations
 
 
 host = '0.0.0.0'
-port = 9000
+port = 8500
 timeout_req = 30.0
 
-req_data = np.array([[1., 2.], [1., 3.]])
+# req_data = np.array([[1., 2.], [1., 3.]])
+# req_data = '{"userid":[["0"]], "adid":[["CoCo"]]}'
+userids = [["0"]]
+adids = [["CoCo"]]
+
 
 if __name__ == "__main__":
 
@@ -29,9 +33,11 @@ if __name__ == "__main__":
     #     data_proto = tf.make_tensor_proto(post_100[f], dtype=tf.int64)
     #     request.inputs[f].CopyFrom(data_proto)
 
-    data_proto = tf.make_tensor_proto(req_data, dtype=tf.float32)
+    user_proto = tf.make_tensor_proto(userids, dtype=tf.dtypes.string)
+    ad_proto = tf.make_tensor_proto(adids, dtype=tf.dtypes.string)
 
-    request.inputs["input_1"].CopyFrom(data_proto)
+    request.inputs["userid"].CopyFrom(user_proto)
+    request.inputs["adid"].CopyFrom(ad_proto)
 
     resp = stub.Predict(request, timeout_req)
 
