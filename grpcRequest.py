@@ -1,12 +1,13 @@
 import numpy as np
 
 import tensorflow as tf
-from tensorflow_serving.apis import predict_pb2, prediction_service_pb2
-from grpc.beta import implementations
+from tensorflow_serving.apis import predict_pb2, prediction_service_pb2_grpc
+import grpc
 
 
 host = '0.0.0.0'
-port = 9000
+port = 8500
+server = host + f":{port}"
 timeout_req = 30.0
 
 req_data = np.array([[1., 2.], [1., 3.]])
@@ -14,10 +15,11 @@ req_data = np.array([[1., 2.], [1., 3.]])
 if __name__ == "__main__":
 
     repeat = 10000
-    channel = implementations.insecure_channel(host, port)
-    stub = prediction_service_pb2.beta_create_PredictionService_stub(channel)
+    channel = grpc.insecure_channel(server)
+    stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
     request = predict_pb2.PredictRequest()
+
     request.model_spec.name = 'Toy'
     request.model_spec.signature_name = 'serving_default'
 
