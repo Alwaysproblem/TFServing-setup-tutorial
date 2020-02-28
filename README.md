@@ -4,18 +4,17 @@
 
 ## **Install Docker**
 
-
 - **Window/MacOS**: install Docker from [DockerHub](https://hub.docker.com/?overlay=onboarding). (*need to register new account if you are newbie*)
 
 - **linux**: install [Docker](https://runnable.com/docker/install-docker-on-linux)
 
-
 ## **Tutorial for starting**
+
 ```bash
 $ git clone https://github.com/Alwaysproblem/TFServing-setup-review.git
+
 $ cd TFServing-setup-review
 ```
-
 
 ## **Easy TFServer**
 
@@ -118,10 +117,13 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 
 - bind your own model to the server
   - bind bash path to the model.
+
 ```bash
 $ docker run -p 8501:8501 --mount type=bind,source=/path/to/my_model/,target=/models/my_model -e MODEL_NAME=my_model -t tensorflow/serving
 ```
+
 - example
+
 ```bash
 $ docker run -p 8501:8501 --mount type=bind,source=$(pwd)/save/Toy,target=/models/Toy -e MODEL_NAME=Toy -t tensorflow/serving
 
@@ -133,9 +135,11 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 ```
 
 ## RESTful API
+
 - `instances` means a row of data
 - `inputs` means a column of data
 - if you have mutiple inputs, it should be like (' ' is not working)
+
 ```json
 {"instances": [
   {
@@ -153,12 +157,14 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
   ]
 }
 ```
+
 - [REST API](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/api_rest.md)
 
 
 ## **Run multiple model in TFServer**
 
 - set up the configuration file named Toy.config
+
 ```protobuf
 model_config_list: {
   config: {
@@ -181,6 +187,7 @@ $ docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --mode
 ```
 
 - example
+
 ```bash
 $ docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/Toy.config
 
@@ -198,6 +205,7 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 ```
 
 - bind your own path to TFserver. The model target path is related to the configuration file.
+
 ```bash
 $ docker run -p 8500:8500 -p 8501:8501 \
   --mount type=bind,source=${/path/to/my_model/},target=/models/${my_model} \
@@ -205,6 +213,7 @@ $ docker run -p 8500:8500 -p 8501:8501 \
 ```
 
 - example
+
 ```bash
 $ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/Toy.config,target=/models/Toy.config -t tensorflow/serving --model_config_file=/models/Toy.config
 
@@ -222,7 +231,9 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 ```
 
 ## **Version control for TFServer**
+
 - set up single version control configuration file.
+
 ```protobuf
 model_config_list: {
   config: {
@@ -244,6 +255,7 @@ model_config_list: {
 ```
 
 - set up multiple version control configuration file.
+
 ```protobuf
 model_config_list: {
   config: {
@@ -266,6 +278,7 @@ model_config_list: {
 ```
 
 - example
+
 ```bash
 $ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -t tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
 
@@ -284,6 +297,7 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 ```
 
 - set an alias label for each version. Only avaliable for gRPC.
+
 ```protobuf
 model_config_list: {
   config: {
@@ -312,7 +326,8 @@ model_config_list: {
   }
 }
 ```
-- refer to https://www.tensorflow.org/tfx/serving/serving_config
+
+- refer to [serving_config](https://www.tensorflow.org/tfx/serving/serving_config)
 
     Please **note that** labels can only be assigned to model versions that are loaded and available for serving. Once a model version is available, one may reload the model config on the fly, to assign a label to it (can be achieved using HandleReloadConfigRequest RPC endpoint).
 
@@ -324,9 +339,11 @@ model_config_list: {
 ``` -->
 
 ## **Other Configuration parameter**
+
 - batch: need to set `--enable_batching=true` and pass the config to `--batching_parameters_file`
 
     `batch.config`
+
     ```protobuf
     max_batch_size { value: 1 }
     batch_timeout_micros { value: 0 }
@@ -335,6 +352,7 @@ model_config_list: {
     ```
 
 - example
+
 ```bash
 $ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -t tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
 ```
@@ -342,6 +360,7 @@ $ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/m
 - monitor: pass file path to `--monitoring_config_file`
 
     `monitor.config`
+
     ```protobuf
     prometheus_config {
         enable: true,
@@ -349,31 +368,37 @@ $ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/m
     }
     ```
 
-
 ## **Obtain the information**
+
 - get the information data structure.
+
 ```bash
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
 ```
 
 
 ## **Accerleration by GPU**
+
 - pull tensorflow server GPU version from DockerHub.
+
 ```bash
 $ docker pull tensorflow/serving:latest-gpu
 ```
 
 - clone the server.git if you haven't done it.
+
 ```bash
 $ git clone https://github.com/tensorflow/serving
 ```
 
 - set `--runtime==nvidia` and use the `tensorflow/serving:latest-gpu`
+
 ```bash
 docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
 ```
 
 - example
+
 ```bash
 docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
 or
@@ -382,15 +407,16 @@ or
 docker run --gpu ${all/1} -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
 ```
 
-
 ## Setup gRPC and POST request using Python files
 
 - setup environment
+
 ```bash
 $ pip install numpy tensorflow tensorflow-serving-api grpcio
 ```
 
 - run grpcRequest.py
+
 ```bash
 $ python3 grpcRequest.py
 # outputs {
@@ -417,7 +443,9 @@ $ python3 grpcRequest.py
 #   signature_name: "serving_default"
 # }
 ```
+
 - run POSTreq.py
+
 ```bash
 $ python3 POSTreq.py
 # {
@@ -425,3 +453,67 @@ $ python3 POSTreq.py
 #     ]
 # }
 ```
+
+## For non-standard input model
+
+- create a virtual env
+
+- git checkout -b feature_column_serving
+
+- mount current directory to model folder in docker.
+
+- substitute ${name} for your own alias for docker image.
+
+```bash
+$ docker run -it -d --name ${name} -p 8501:8501 -p 8500:8500 --mount type=bind,source=$(pwd),target=/models tensorflow/serving
+```
+
+- enter the internal bash under docker.
+
+```bash
+$ docker exec -it tf2 bash -l
+```
+
+- run the tensorflow_model_server or get help.
+
+```bash
+root@2f3ad5e231d6# cd models
+root@2f3ad5e231d6# tensorflow_model_server --model_name=Toy --model_base_path=/models/save/Toy/ --rest_api_port=8501
+```
+
+- run the grpcRequest.py and POSTreq.py
+  - run grpcRequest.py
+
+  ```bash
+  {
+      "predictions": [[0.000454923924]
+      ]
+  }
+  ```
+
+  - POSTreq.py
+
+  ```bash
+  outputs {
+    key: "sigmoid"
+    value {
+      dtype: DT_FLOAT
+      tensor_shape {
+        dim {
+          size: 1
+        }
+        dim {
+          size: 1
+        }
+      }
+      float_val: 0.0004549239238258451
+    }
+  }
+  model_spec {
+    name: "Toy"
+    version {
+      value: 1
+    }
+    signature_name: "serving_default"
+  }
+  ```
