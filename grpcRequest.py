@@ -38,4 +38,5 @@ if __name__ == "__main__":
     resp = stub.Predict(request, timeout_req)
 
     print(resp)
+    print(resp.outputs["dense"].float_val)
 
