@@ -428,14 +428,13 @@ $ python3 POSTreq.py
 
 ## Setup grpc request with go files
 
-- thanks to [datainq](https://github.com/Alwaysproblem/go-mnist-client)
+- thanks to [datainq](https://github.com/datainq/go-mnist-client)
 
 ```bash
 $ cd goframe/
-$ source env.sh
-$ cd src/
+$ source buildenv.sh
 $ docker run -t --rm -p 8501:8501 -p 8500:8500 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving
-$ go run main/main.go --server_addr 127.0.0.1:8500 --model_name Toy --model_version 3
+$ ./run.sh
 # ...
 # OK
 # tensor: dense, version: 0

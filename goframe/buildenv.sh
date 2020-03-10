@@ -1,3 +1,5 @@
+source env.sh
+
 rm -rf src/github.com/golang/
 rm -rf src/go.uber.org/
 rm -rf src/golang.org/
