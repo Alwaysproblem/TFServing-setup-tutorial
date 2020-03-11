@@ -43,8 +43,8 @@ if __name__ == "__main__":
         resp = stub.Predict(request, timeout_req)
         e = timeit.default_timer()
         # print(resp)
-        print(f"the duration is {(e-s) * 1000}ms")
+        # print(f"the duration is {(e-s) * 1000}ms")
         sT += (e-s)
     
-    print(f"the average time for request is {sT}ms")
+    print(f"the average time for request of {request.model_spec.name} is {sT}ms")
 
