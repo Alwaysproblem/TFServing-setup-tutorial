@@ -425,3 +425,37 @@ $ python3 POSTreq.py
 #     ]
 # }
 ```
+
+## XLA acceleration for tensorflow 2.0
+
+- Global CPU XLA
+
+```python
+import os
+os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
+# to enable XLA for autocluster compiler of CPU.
+```
+
+- GPU XLA
+
+```python
+tf.keras.backend.clear_session()
+tf.config.optimizer.set_jit(True) # for XLA JIT
+# the same as XLA tutorial on google website.
+```
+
+- run the example
+
+```bash
+$ git checkout xla
+$ docker run -it --rm -p 8500:8500 -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/CTR.config
+$ python grpc_XLA.py
+# ...
+# warmup...
+# ...
+# the average duration for CTR_XLA : 305.7246084000001ms.
+# the average duration for CTR : 358.0479980999998ms.
+# ...
+# the totoal average duration for XLA is 298.17482363000016ms.
+# the totoal average duration for normal is 311.3678210199998ms.
+```

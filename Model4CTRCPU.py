@@ -7,7 +7,7 @@ from deepctr.inputs import SparseFeat, VarLenSparseFeat, get_feature_names
 
 import os
 os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
-# this above will be enable the XLA CPU
+# this above will be enable the XLA for CPU
 
 class FeatureLayer(object):
     def __init__(self,
@@ -172,7 +172,7 @@ if __name__ == "__main__":
     linear_feature_columns, dnn_feature_columns = feature()
     
     tf.keras.backend.clear_session()
-    tf.config.optimizer.set_jit(True) # for XLA JIT
+    tf.config.optimizer.set_jit(True) # for GPU XLA JIT
     model_name = "CTR_XLA"
     # model_name = "CTR"
 
