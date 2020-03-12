@@ -269,7 +269,7 @@ def Decode(file_paths: list, col_type: dict, target: str, batchsize: int,
         if len(varlens) != 0 and len(globalVarlenPara) != 0:
             for v in varlens:
                 sample[v] = tf.sparse.to_dense(sample[v])
-                sample[v].set_shape((tf.newaxis, globalVarlenPara[v][-1]))
+                # sample[v].set_shape((tf.newaxis, globalVarlenPara[v][-1]))
 
         y = sample.pop(target)
         return (sample, y)
