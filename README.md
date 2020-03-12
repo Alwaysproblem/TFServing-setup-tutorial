@@ -448,6 +448,8 @@ tf.config.optimizer.set_jit(True) # for XLA JIT
 
 ```bash
 $ git checkout xla
+$ python Modle4CTRCPU.py
+# for XLA it should be greater than 1 epoch.
 $ docker run -it --rm -p 8500:8500 -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/CTR.config
 $ python grpc_XLA.py
 # ...
