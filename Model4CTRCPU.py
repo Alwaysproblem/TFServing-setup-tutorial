@@ -188,11 +188,18 @@ if __name__ == "__main__":
     # print(model.get_layer(name='input').output_shape)
 
     # print(model.summary())
+    from datetime import datetime
+    log_dir="logs"+ os.path.sep + datetime.now().strftime("%Y%m%d-%H%M%S")
+    tensorboard_callback = tf.keras.callbacks.TensorBoard(
+                log_dir=log_dir, histogram_freq=1, profile_batch = 3)
 
     history = model.fit(D_train, epochs=3, verbose=1, validation_data=D_valid,
-                        steps_per_epoch=max(len_train // batchsize, 1), validation_steps=max(len_valid // batchsize, 1),)
+                        steps_per_epoch=max(len_train // batchsize, 1), 
+                        validation_steps=max(len_valid // batchsize, 1),
+                        callbacks=[tensorboard_callback]
+                    )
     #                   use_multiprocessing = True, max_queue_size = num_para, workers = num_para)
-    #                   callbacks = [MemoryCallback()])
+                    #   callbacks = [MemoryCallback()])
 
     savedir = f'./save/{model_name}/1'
     tf.saved_model.save(model, savedir)
