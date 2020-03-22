@@ -25,7 +25,7 @@ if __name__ == "__main__":
     for _ in range(1000):
         s = timeit.default_timer()
         request = predict_pb2.PredictRequest()
-        request.model_spec.name = 'Toy_double_xla'
+        request.model_spec.name = 'CTR'
         request.model_spec.signature_name = 'serving_default'
 
         # if you have a structure data. example a dictionary,

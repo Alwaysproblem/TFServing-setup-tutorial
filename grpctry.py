@@ -35,16 +35,19 @@ varlen_features = ["click_adids", "install_pkgs"]
 
 if __name__ == "__main__":
 
-    repeat = 10
+    repeat = 100
     channel = grpc.insecure_channel(server) 
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
     request = predict_pb2.PredictRequest()
-    request.model_spec.name = 'CTR_XLA'
+    request.model_spec.name = 'CTR_tensorRT'
+    # request.model_spec.name = 'CTR_XLA'
+    # request.model_spec.name = 'CTR'
     request.model_spec.signature_name = 'serving_default'
 
     for f in sparse_features+varlen_features:
-        data_proto = tf.make_tensor_proto(post_100[f], dtype=tf.int64)
+        data_proto = tf.make_tensor_proto(post_100[f], dtype=tf.float32)
+        # data_proto = tf.make_tensor_proto(post_100[f], dtype=tf.int64)
         request.inputs[f].CopyFrom(data_proto)
 
     t100 = 0

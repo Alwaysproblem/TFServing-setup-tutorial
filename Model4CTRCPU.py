@@ -5,8 +5,8 @@ import tensorflow as tf
 from deepctr.models import DeepFM, WDL, xDeepFM, AutoInt
 from deepctr.inputs import SparseFeat, VarLenSparseFeat, get_feature_names
 
-import os
-os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
+# import os
+# os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
 # this above will be enable the XLA for CPU
 
 class FeatureLayer(object):
@@ -32,7 +32,7 @@ class FeatureLayer(object):
         self.feature_names = None
 
     def _DealWithvarlenFeatureCol(self, FeatureName, key2index, max_len):
-        return VarLenSparseFeat(SparseFeat(FeatureName, len(key2index) + 1, dtype=tf.int64), max_len, self.combiner)
+        return VarLenSparseFeat(SparseFeat(FeatureName, len(key2index) + 1, dtype=tf.float32), max_len, self.combiner)
 
     def DealWithvarlenFeatureCols(self):
         if self.globalVarlenPara == None:
@@ -49,7 +49,7 @@ class FeatureLayer(object):
     def DealWithSparseFeatureCols(self):
         if self.globalSparsePara == None:
             return []
-        return [SparseFeat(feat, len(self.globalSparsePara[feat]) + 2, dtype=tf.int64) for feat in sparse_features]
+        return [SparseFeat(feat, len(self.globalSparsePara[feat]) + 2, dtype=tf.float32) for feat in sparse_features]
 
     def DealWithNumericFeatureCols(self):
         if self.globalNumericPara == None:
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # globalSparsePara, globalVarlenPara = np.load(
     #     './config/globalpara.npy', allow_pickle=True)
     globalSparsePara, globalVarlenPara = np.load(
-        './Config/globalpara_toy.npy', allow_pickle=True)
+        './config/globalpara_toy.npy', allow_pickle=True)
 
     col_type = {
         'm1': 'int64',
@@ -171,9 +171,10 @@ if __name__ == "__main__":
 
     linear_feature_columns, dnn_feature_columns = feature()
     
-    tf.keras.backend.clear_session()
-    tf.config.optimizer.set_jit(True) # for GPU XLA JIT
-    model_name = "CTR_XLA"
+    # tf.keras.backend.clear_session()
+    # tf.config.optimizer.set_jit(True) # for GPU XLA JIT
+    model_name = "CTR_tensorRT"
+    # model_name = "CTR_XLA"
     # model_name = "CTR"
 
     model = DeepFM(linear_feature_columns, dnn_feature_columns,
@@ -196,7 +197,7 @@ if __name__ == "__main__":
     history = model.fit(D_train, epochs=3, verbose=1, validation_data=D_valid,
                         steps_per_epoch=max(len_train // batchsize, 1), 
                         validation_steps=max(len_valid // batchsize, 1),
-                        callbacks=[tensorboard_callback]
+                        # callbacks=[tensorboard_callback]
                     )
     #                   use_multiprocessing = True, max_queue_size = num_para, workers = num_para)
                     #   callbacks = [MemoryCallback()])
