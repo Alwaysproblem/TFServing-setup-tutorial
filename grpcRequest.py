@@ -2,12 +2,13 @@ import numpy as np
 
 import tensorflow as tf
 from tensorflow_serving.apis import predict_pb2, prediction_service_pb2_grpc
+# from grpc.beta import implementations
 import grpc
 
 
 host = '0.0.0.0'
 port = 8500
-server = host + f":{port}"
+server = host+":"+str(port)
 timeout_req = 30.0
 
 # req_data = np.array([[1., 2.], [1., 3.]])
