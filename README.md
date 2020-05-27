@@ -439,6 +439,7 @@ os.environ["TF_XLA_FLAGS"] = "--tf_xla_auto_jit=2 --tf_xla_cpu_global_jit"
 - GPU XLA
 
 ```python
+# for tensorflow 2.1
 tf.keras.backend.clear_session()
 tf.config.optimizer.set_jit(True) # for XLA JIT
 # the same as XLA tutorial on google website.
@@ -451,7 +452,7 @@ $ git checkout xla
 $ python Modle4CTRCPU.py
 # for XLA it should be greater than 1 epoch.
 $ docker run -it --rm -p 8500:8500 -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/CTR.config
-$ python grpc_XLA.py
+$ python grpc_XLA_timeit.py
 # ...
 # warmup...
 # ...
