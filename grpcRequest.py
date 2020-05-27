@@ -11,11 +11,32 @@ port = 8500
 server = host+":"+str(port)
 timeout_req = 30.0
 
-# req_data = np.array([[1., 2.], [1., 3.]])
-# req_data = '{"userid":[["0"]], "adid":[["CoCo"]]}'
+
 userids = [["0"]]
 adids = [["CoCo"]]
 
+inputs = {
+    "aid":[["dgadfadsfag"], ["sdfgad"]],
+    "click_adid":
+    [
+        ["sdfgad", "adgas", "adgasdfd", "asdgadsg",
+            "asdgadsfa", "Asdgasd", "Asdga", ""],
+        ["sdfgad", "adgas", "adgasdfd", "", "", "", "", ""]
+    ],
+    "age":[[63], [67]],
+    "cp":[[1], [4]],
+    "chol":[[233], [286]],
+    "oldpeak": [[2.3], [1.5]],
+}
+
+inputs_type = {
+    "aid": tf.string,
+    "click_adid": tf.string,
+    "age":tf.int64,
+    "cp":tf.int64,
+    "chol":tf.int64,
+    "oldpeak": tf.float32,
+}
 
 if __name__ == "__main__":
 
@@ -26,7 +47,7 @@ if __name__ == "__main__":
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
     request = predict_pb2.PredictRequest()
-    request.model_spec.name = 'Toy'
+    request.model_spec.name = 'FC'
     request.model_spec.signature_name = 'serving_default'
 
     # if you have a structure data. example a dictionary,
@@ -37,11 +58,15 @@ if __name__ == "__main__":
     #     data_proto = tf.make_tensor_proto(post_100[f], dtype=tf.int64)
     #     request.inputs[f].CopyFrom(data_proto)
 
-    user_proto = tf.make_tensor_proto(userids, dtype=tf.dtypes.string)
-    ad_proto = tf.make_tensor_proto(adids, dtype=tf.dtypes.string)
+    for f in inputs:
+        data_proto = tf.make_tensor_proto(inputs[f], dtype = inputs_type[f])
+        request.inputs[f].CopyFrom(data_proto)
 
-    request.inputs["userid"].CopyFrom(user_proto)
-    request.inputs["adid"].CopyFrom(ad_proto)
+    # user_proto = tf.make_tensor_proto(userids, dtype=tf.dtypes.string)
+    # ad_proto = tf.make_tensor_proto(adids, dtype=tf.dtypes.string)
+
+    # request.inputs["userid"].CopyFrom(user_proto)
+    # request.inputs["adid"].CopyFrom(ad_proto)
 
     resp = stub.Predict(request, timeout_req)
 

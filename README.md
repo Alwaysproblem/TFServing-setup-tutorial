@@ -456,6 +456,8 @@ $ python3 POSTreq.py
 
 ## For non-standard input model
 
+**Note that this example use my own dataset**
+
 - create a virtual env
 
 - git checkout -b feature_column_serving
@@ -478,42 +480,63 @@ $ docker exec -it tf2 bash -l
 
 ```bash
 root@2f3ad5e231d6# cd models
-root@2f3ad5e231d6# tensorflow_model_server --model_name=Toy --model_base_path=/models/save/Toy/ --rest_api_port=8501
+root@2f3ad5e231d6# tensorflow_model_server --model_name=FC --model_base_path=/models/save/FC/ --rest_api_port=8501
 ```
 
 - run the grpcRequest.py and POSTreq.py
   - run grpcRequest.py
 
   ```bash
-  {
-      "predictions": [[0.000454923924]
-      ]
-  }
-  ```
-
-  - POSTreq.py
-
-  ```bash
   outputs {
-    key: "sigmoid"
+    key: "dense"
     value {
       dtype: DT_FLOAT
       tensor_shape {
         dim {
-          size: 1
+          size: 2
         }
         dim {
           size: 1
         }
       }
-      float_val: 0.0004549239238258451
+      float_val: 0.21722325682640076
+      float_val: 0.7290472388267517
     }
   }
   model_spec {
-    name: "Toy"
+    name: "FC"
     version {
       value: 1
     }
     signature_name: "serving_default"
   }
   ```
+
+  - POSTreq.py
+
+  ```bash
+  this request is based on isntances
+  True
+  {
+      "predictions": [[0.217223257], [0.729047239]
+      ]
+  }
+  time consumption: 15.43633100000008ms
+  this request is based on inputs
+  True
+  {
+      "outputs": [
+          [
+              0.217223257
+          ],
+          [
+              0.729047239
+          ]
+      ]
+  }
+  time consumption: 6.197227999999999ms
+  ```
+
+## the format for POST
+
+[Here](https://www.tensorflow.org/tfx/serving/api_rest)
