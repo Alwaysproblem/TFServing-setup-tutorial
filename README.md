@@ -511,11 +511,23 @@ TODO:
   curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
   ```
 
-TODO:
 - get the information data structure with gRPC
 
   ```bash
-  curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
+  $ python grpcMetadata.py
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 2
+  #   }
+  # }
+  # metadata {
+  #   key: "signature_def"
+  #   value {
+  #     type_url: "type.googleapis.com/tensorflow.serving.SignatureDefMap"
+  #     value: "\n\253\001\n\017serving_default\022\227\001\n;\n\007input_1\0220\n\031serving_default_input_1:0\020\001\032\021\022\013\010\377\377\377\377\377\377\377\377\377\001\022\002\010\002\022<\n\010output_1\0220\n\031StatefulPartitionedCall:0\020\001\032\021\022\013\010\377\377\377\377\377\377\377\377\377\001\022\002\010\001\032\032tensorflow/serving/predict\n>\n\025__saved_model_init_op\022%\022#\n\025__saved_model_init_op\022\n\n\004NoOp\032\002\030\001"
+  #   }
+  # }
   ```
 
 ## **Accerleration by GPU**
