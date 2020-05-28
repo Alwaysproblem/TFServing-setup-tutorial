@@ -64,6 +64,9 @@ if __name__ == "__main__":
 
     request.inputs["input_1"].CopyFrom(data_proto)
 
+    # only get outputs you want model to response.
+    request.output_filter.append("output_1")
+
     resp = stub.Predict(request, timeout_req)
 
     print(resp)

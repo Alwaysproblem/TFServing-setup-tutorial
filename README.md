@@ -28,7 +28,7 @@ $ git clone https://github.com/tensorflow/serving
 TESTDATA="$(pwd)/serving/tensorflow_serving/servables/tensorflow/testdata"
 
 # Start TensorFlow Serving container and open the REST API port
-$ docker run -t --rm -p 8501:8501 \
+$ docker run -it --rm -p 8501:8501 \
     -v "$TESTDATA/saved_model_half_plus_two_cpu:/models/half_plus_two" \
     -e MODEL_NAME=half_plus_two \
     tensorflow/serving &
@@ -91,7 +91,7 @@ $ docker exec -it ${docker image name} bash -l
 
 ```bash
 # run the server.
-$ docker run -t --rm -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
+$ docker run -it --rm -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
 
 #run the client.
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/${user_define_model_name}:predict
@@ -109,7 +109,7 @@ $ tensorflow_model_server --port=8500 --rest_api_port=8501 --model_name=${MODEL_
   - Save the model after running LinearKeras.py 
 
 ```bash
-$ docker run -t --rm -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving &
+$ docker run -it --rm -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving &
 
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
 
@@ -122,13 +122,13 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
   - bind bash path to the model.
 
 ```bash
-$ docker run -p 8501:8501 --mount type=bind,source=/path/to/my_model/,target=/models/my_model -e MODEL_NAME=my_model -t tensorflow/serving
+$ docker run -p 8501:8501 --mount type=bind,source=/path/to/my_model/,target=/models/my_model -e MODEL_NAME=my_model -it tensorflow/serving
 ```
 
 - example
 
 ```bash
-$ docker run -p 8501:8501 --mount type=bind,source=$(pwd)/save/Toy,target=/models/Toy -e MODEL_NAME=Toy -t tensorflow/serving
+$ docker run -p 8501:8501 --mount type=bind,source=$(pwd)/save/Toy,target=/models/Toy -e MODEL_NAME=Toy -it tensorflow/serving
 
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
 
@@ -210,13 +210,13 @@ model_config_list: {
 - substitute **Config Path** for you own configeratin file.
   
 ```bash
-docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/${Config Path} --model_config_file_poll_wait_seconds=60
+docker run -it --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/${Config Path} --model_config_file_poll_wait_seconds=60
 ```
 
 - example
 
 ```bash
-$ docker run -t --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/Toy.config
+$ docker run -it --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/Toy.config
 
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
 # {
@@ -234,15 +234,15 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 - bind your own path to TFserver. The model target path is related to the configuration file.
 
 ```bash
-$ docker run -p 8500:8500 -p 8501:8501 \
+$ docker run --rm -p 8500:8500 -p 8501:8501 \
   --mount type=bind,source=${/path/to/my_model/},target=/models/${my_model} \
-  --mount type=bind,source=${/path/to/my/models.config},target=/models/${models.config} -t tensorflow/serving --model_config_file=/models/{models.config}
+  --mount type=bind,source=${/path/to/my/models.config},target=/models/${models.config} -it tensorflow/serving --model_config_file=/models/{models.config}
 ```
 
 - example
 
 ```bash
-$ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/Toy.config,target=/models/Toy.config -t tensorflow/serving --model_config_file=/models/Toy.config
+$ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/Toy.config,target=/models/Toy.config -it tensorflow/serving --model_config_file=/models/Toy.config
 
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
 # {
@@ -307,9 +307,12 @@ model_config_list: {
 - example
 
 ```bash
-$ docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -t tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
+$ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
+```
 
+- for POST
 
+```bash
 $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy/versions/1:predict
 # {
 #     "predictions": [[10.8054295]
@@ -321,6 +324,59 @@ $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/
 #     "predictions": [[0.999035]
 #     ]
 # }
+```
+
+- for gRPC
+
+```bash
+  $ python3 grpcRequest.py -v 1
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 10.805429458618164
+  #     float_val: 14.010123252868652
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 1
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  $ python3 grpcRequest.py -v 2
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 0.9990350008010864
+  #     float_val: 0.9997349381446838
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 2
+  #   }
+  #   signature_name: "serving_default"
+  # }
 ```
 
 - set an alias label for each version. Only avaliable for gRPC.
@@ -360,10 +416,62 @@ model_config_list: {
 
     Maybe you should delete the label related part first, then start the tensorflow serving, and finally add the label related part to the config file on the fly.
 
-<!-- - response
-``` bash
+- set flag --allow_version_labels_for_unavailable_models=true will be able to add version lables at the first runing.
 
-``` -->
+  ``` bash
+  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
+  ```
+
+  ```bash
+  $ python3 grpcRequest.py -l stable
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 10.805429458618164
+  #     float_val: 14.010123252868652
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 1
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  $ python3 grpcRequest.py -l canary
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 0.9990350008010864
+  #     float_val: 0.9997349381446838
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 2
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  ```
 
 ## **Other Configuration parameter**
 
@@ -381,7 +489,7 @@ model_config_list: {
 - example
 
   ```bash
-  docker run -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -t tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
+  docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
   ```
 
 - monitor: pass file path to `--monitoring_config_file`
@@ -402,6 +510,10 @@ model_config_list: {
   ```bash
   curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
   ```
+
+## TODO: Prediction Logs
+
+- 
 
 ## **Accerleration by GPU**
 
@@ -440,6 +552,8 @@ model_config_list: {
   ```bash
   pip install numpy tensorflow tensorflow-serving-api grpcio
   ```
+
+- grpc API for python
 
 - run grpcRequest.py
 
