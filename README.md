@@ -486,7 +486,7 @@ model_config_list: {
     num_batch_threads { value: 8 }
     ```
 
-- example
+- example TODO:
 
   ```bash
   docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
@@ -506,6 +506,13 @@ model_config_list: {
 ## **Obtain the information**
 
 - get the information data structure.
+
+  ```bash
+  curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
+  ```
+
+TODO:
+- get the information data structure with gRPC
 
   ```bash
   curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
@@ -553,6 +560,7 @@ model_config_list: {
   pip install numpy tensorflow tensorflow-serving-api grpcio
   ```
 
+TODO:
 - grpc API for python
 
 - run grpcRequest.py
@@ -584,6 +592,10 @@ model_config_list: {
   # }
   ```
 
+TODO: 
+- RESTful API
+
+
 - run POSTreq.py
 
   ```bash
@@ -609,3 +621,6 @@ model_config_list: {
   # }
   # time consumption: 6.932738000000049ms
   ```
+
+TODO:
+## build protobuf for tensorflow client 
