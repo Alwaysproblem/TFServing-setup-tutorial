@@ -415,7 +415,7 @@ $ cd TFServing-setup-review
 
     Maybe you should delete the label related part first, then start the tensorflow serving, and finally add the label related part to the config file on the fly.
 
-- set flag --allow_version_labels_for_unavailable_models=true will be able to add version lables at the first runing.
+- set flag `--allow_version_labels_for_unavailable_models` true will be able to add version lables at the first runing.
 
   ``` bash
   $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
