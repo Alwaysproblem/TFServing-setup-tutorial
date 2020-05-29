@@ -1,6 +1,6 @@
 # TFServing-setup-review
 
-## Basic tutorial for Tensorflow Serving.
+## Basic tutorial for Tensorflow Serving
 
 ## **Install Docker**
 
@@ -518,7 +518,7 @@ $ cd TFServing-setup-review
     }
     ```
 
-  - request through RESTful API <!-- [TODO: explore Prometheus monitor [docker](https://github.com/prometheus/prometheus)] -->
+  - request through RESTful API
     - example
       - server
 
@@ -546,9 +546,53 @@ $ cd TFServing-setup-review
         # # TYPE :tensorflow:serving:request_log_count counter
         ```
 
-  <!-- - request with gRPC TODO:
-    - example
-    -  -->
+  - show monitor data in the prometheus docker
+    - modified your own prometheus configuration file
+
+      ```yaml
+      # my global config
+      global:
+        scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+        evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+        # scrape_timeout is set to the global default (10s).
+
+      # Alertmanager configuration
+      alerting:
+        alertmanagers:
+        - static_configs:
+          - targets:
+            # - alertmanager:9093
+
+      # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+      rule_files:
+        # - "first_rules.yml"
+        # - "second_rules.yml"
+
+      # A scrape configuration containing exactly one endpoint to scrape:
+      # Here it's Prometheus itself.
+      scrape_configs:
+        - job_name: 'tensorflow'
+          scrape_interval: 5s
+          metrics_path: '/monitoring/prometheus/metrics'
+          static_configs:
+      - targets: ['docker.for.mac.localhost:8501'] # for `Mac users`
+      # - targets: ['127.0.0.1:8501']
+      ```
+
+    - start prometheus docker server
+
+    ```bash
+    $ docker run --rm -ti --name prometheus -p 127.0.0.1:9090:9090 -v "$(pwd)/monitor:/tmp" prom/prometheus --config.file=/tmp/prometheus/prome.yaml
+    ```
+
+    - access prometheus on the webUI
+      - check target and status
+      ![target](image4md/target.png)
+      ![status](image4md/status.png)
+      - webUI on [localhost:9090](http://localhost:9090/)
+      ![graph](image4md/prom_graph.png)
+
+  <!-- - request with gRPC TODO: -->
 
 ## **Obtain the information**
 
@@ -797,7 +841,7 @@ $ cd TFServing-setup-review
   - from Server
 
     ```bash
-    # 2020-05-28 10:38:51.057588: I tensorflow_serving/model_servers/model_service_impl.cc:47] 
+    # 2020-05-28 10:38:51.057588: I tensorflow_serving/model_servers/model_service_impl.cc:47]
     # Config entry
     #   index : 0
     #   path : /models/save/Toy/
@@ -847,6 +891,6 @@ $ cd TFServing-setup-review
 - `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
 
 TODO:
-## Build protobuf for tensorflow client use 
+## Build protobuf for tensorflow client use
 
 - [grpc API](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/apis)
