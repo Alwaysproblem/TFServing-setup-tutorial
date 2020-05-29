@@ -137,7 +137,7 @@ $ cd TFServing-setup-review
   #     ]
   ```
 
-## RESTful API TODO:
+## RESTful API
 
 - data is like
 
@@ -145,7 +145,6 @@ $ cd TFServing-setup-review
   | :---: | :---: | :---: | :---: | :---: | :---: |
   |  390  |  25   |   1   |   1   |   1   |   2   |
   |  345  |  34   |  45   |   2   |  34   | 3456  |
-
 
 - `instances` means a row of data
 
@@ -475,7 +474,23 @@ $ cd TFServing-setup-review
 
 ## **Other Configuration parameter**
 
-- batch: need to set `--enable_batching=true` and pass the config to `--batching_parameters_file`
+- [Configuration](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/config)
+
+- Batch Configuration: need to set `--enable_batching=true` and pass the config to `--batching_parameters_file`, [more](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning)
+
+  - CPU-only: One Approach
+  
+    If your system is CPU-only (no GPU), then consider starting with the following values: `num_batch_threads` equal to the number of CPU cores; `max_batch_size` to infinity; `batch_timeout_micros` to 0. Then experiment with `batch_timeout_micros` values in the 1-10 millisecond (1000-10000 microsecond) range, while keeping in mind that 0 may be the optimal value.
+
+  - GPU: One Approach
+
+    If your model uses a GPU device for part or all of your its inference work, consider the following approach:
+
+    Set `num_batch_threads` to the number of CPU cores.
+
+    Temporarily set `batch_timeout_micros` to infinity while you tune `max_batch_size` to achieve the desired balance between throughput and average latency. Consider values in the hundreds or thousands.
+
+    For online serving, tune `batch_timeout_micros` to rein in tail latency. The idea is that batches normally get filled to `max_batch_size`, but occasionally when there is a lapse in incoming requests, to avoid introducing a latency spike it makes sense to process whatever's in the queue even if it represents an underfull batch. The best value for `batch_timeout_micros` is typically a few milliseconds, and depends on your context and goals. Zero is a value to consider; it works well for some workloads. (For bulk processing jobs, choose a large value, perhaps a few seconds, to ensure good throughput but not wait too long for the final (and likely underfull) batch.)
 
     `batch.config`
 
@@ -486,12 +501,12 @@ $ cd TFServing-setup-review
     num_batch_threads { value: 8 }
     ```
 
-- example
+  - example
 
-  ```bash
-  docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
-  ```
-TODO:
+    ```bash
+    docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
+    ```
+
 - monitor: pass file path to `--monitoring_config_file`
 
     `monitor.config`
@@ -502,6 +517,38 @@ TODO:
         path: "/models/metrics"
     }
     ```
+
+  - request through RESTful API <!-- [TODO: explore Prometheus monitor [docker](https://github.com/prometheus/prometheus)] -->
+    - example
+      - server
+
+        ```bash
+        $ docker run --rm -p 8500:8500 -p 8501:8501 -v "$(pwd):/models" -it tensorflow/serving --model_config_file=/models/config/versionlabels.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models --monitoring_config_file=/models/monitor/monitor.config
+        ```
+
+      - client
+
+        ```bash
+        $ curl -X GET http://localhost:8501/monitoring/prometheus/metrics
+        # # TYPE :tensorflow:api:op:using_fake_quantization gauge
+        # # TYPE :tensorflow:cc:saved_model:load_attempt_count counter
+        # :tensorflow:cc:saved_model:load_attempt_count{model_path="/models/save/Toy/1",status="success"} 1
+        # :tensorflow:cc:saved_model:load_attempt_count{model_path="/models/save/Toy/2",status="success"} 1
+        # ...
+        # # TYPE :tensorflow:cc:saved_model:load_latency counter
+        # :tensorflow:cc:saved_model:load_latency{model_path="/models/save/Toy/1"} 54436
+        # :tensorflow:cc:saved_model:load_latency{model_path="/models/save/Toy/2"} 45230
+        # ...
+        # # TYPE :tensorflow:mlir:import_failure_count counter
+        # # TYPE :tensorflow:serving:model_warmup_latency histogram
+        # # TYPE :tensorflow:serving:request_example_count_total counter
+        # # TYPE :tensorflow:serving:request_example_counts histogram
+        # # TYPE :tensorflow:serving:request_log_count counter
+        ```
+
+  <!-- - request with gRPC TODO:
+    - example
+    -  -->
 
 ## **Obtain the information**
 
@@ -761,28 +808,7 @@ TODO:
     # 2020-05-28 10:38:51.156301: I tensorflow_serving/core/loader_harness.cc:138] Quiescing servable version {name: Toy_double version: 1}
     # 2020-05-28 10:38:51.156406: I tensorflow_serving/core/loader_harness.cc:145] Done quiescing servable version {name: Toy_double version: 1}
     # 2020-05-28 10:38:51.156442: I tensorflow_serving/core/loader_harness.cc:120] Unloading servable version {name: Toy_double version: 1}
-    # 2020-05-28 10:38:51.158319: I ./tensorflow_serving/core/simple_loader.h:363] Calling MallocExtension_ReleaseToSystem() after servable unload # with 45171
-    # 2020-05-28 10:38:51.158527: I tensorflow_serving/core/loader_harness.cc:128] Done unloading servable version {name: Toy_double version: 1}
-    # 2020-05-28 10:38:51.877408: I tensorflow_serving/core/loader_harness.cc:138] Quiescing servable version {name: Toy version: 1}
-    # 2020-05-28 10:38:51.877501: I tensorflow_serving/core/loader_harness.cc:145] Done quiescing servable version {name: Toy version: 1}
-    # 2020-05-28 10:38:51.877522: I tensorflow_serving/core/loader_harness.cc:120] Unloading servable version {name: Toy version: 1}
-    # 2020-05-28 10:38:51.879688: I ./tensorflow_serving/core/simple_loader.h:363] Calling MallocExtension_ReleaseToSystem() after servable unload # with 45171
-    # 2020-05-28 10:38:51.879814: I tensorflow_serving/core/loader_harness.cc:128] Done unloading servable version {name: Toy version: 1}
-    # 2020-05-28 10:38:52.003103: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: Toy version: # 3}
-    # 2020-05-28 10:38:52.003160: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: Toy version: 3}
-    # 2020-05-28 10:38:52.003174: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: Toy version: 3}
-    # 2020-05-28 10:38:52.003820: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /models/save/Toy/3
-    # 2020-05-28 10:38:52.010364: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
-    # 2020-05-28 10:38:52.010430: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:264] Reading SavedModel debug info (if present) from: /# models/save/Toy/3
-    # 2020-05-28 10:38:52.012509: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:203] Restoring SavedModel bundle.
-    # 2020-05-28 10:38:52.049792: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:152] Running initialization op on SavedModel bundle at # path: /models/save/Toy/3
-    # 2020-05-28 10:38:52.056076: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:333] SavedModel load for tags { serve }; Status: # success: OK. Took 52262 microseconds.
-    # 2020-05-28 10:38:52.057970: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:105] No warmup data file found at /models/save/Toy/3/# assets.extra/tf_serving_warmup_requests
-    # 2020-05-28 10:38:52.070164: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: Toy version: 3}
-    # 2020-05-28 10:38:52.081739: I tensorflow_serving/core/loader_harness.cc:138] Quiescing servable version {name: Toy version: 2}
-    # 2020-05-28 10:38:52.081995: I tensorflow_serving/core/loader_harness.cc:145] Done quiescing servable version {name: Toy version: 2}
-    # 2020-05-28 10:38:52.082034: I tensorflow_serving/core/loader_harness.cc:120] Unloading servable version {name: Toy version: 2}
-    # 2020-05-28 10:38:52.083708: I ./tensorflow_serving/core/simple_loader.h:363] Calling MallocExtension_ReleaseToSystem() after servable unload # with 45510
+    # ...
     # 2020-05-28 10:38:52.083807: I tensorflow_serving/core/loader_harness.cc:128] Done unloading servable version {name: Toy version: 2}
     ```
 
@@ -818,8 +844,9 @@ TODO:
 
 - [SavedModel Warmup](https://www.tensorflow.org/tfx/serving/saved_model_warmup)
 - please see grpcRequestLog.py
+- `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
 
 TODO:
-## build protobuf for tensorflow client use 
+## Build protobuf for tensorflow client use 
 
 - [grpc API](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/apis)

@@ -29,7 +29,7 @@ if __name__ == "__main__":
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
     request = predict_pb2.PredictRequest()
-    request.model_spec.name = 'Toy'
+    request.model_spec.name = 'monitor'
 
     if args.version > -1 :
         request.model_spec.version.value = args.version
@@ -49,10 +49,10 @@ if __name__ == "__main__":
 
     data_proto = tf.make_tensor_proto(req_data, dtype=tf.float32)
 
-    request.inputs["input_1"].CopyFrom(data_proto)
+    request.inputs["data_in"].CopyFrom(data_proto)
 
     # only get outputs you want model to response.
-    request.output_filter.append("output_1")
+    # request.output_filter.append("output_1")
 
     resp = stub.Predict(request, timeout_req)
 
