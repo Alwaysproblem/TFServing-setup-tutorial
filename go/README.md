@@ -61,8 +61,37 @@
   ```
 
 - copy test file to your own directory
-  
-  
+
+  ```bash
+  ```
+
+- run server
+
+  ```bash
+  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
+  ```
+
+- run the test on the client
+  - install dependency
+
+    ```bash
+    # assume you are in go directory
+    $ source env.sh
+    $ cd src
+    $ bash basic-run-env.sh
+    ```
+
+  - run go client
+
+    ```bash
+    # run under src directory
+    $ bash run.sh # test on local host
+    # OK
+    # time per request:  42.607813ms
+    # tensor: output_1, version: 0
+    # 0.999035
+    # 0.99973494
+    ```
 
 ## **Tutorial for starting**
 
