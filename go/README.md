@@ -16,6 +16,7 @@
 
   ```text
   go >= 1.11
+  protoc == 3.6.1
   ```
 
 - setup a new directory and the structure is like this:
@@ -36,8 +37,32 @@
   # assume that you are under go directory.
   cp dockerfile <your>
   # docker build -t <tag>:<label> path -f <dockerfile>
-  docker build -t <tag>:<label> path -f dockerfile
+  docker build -t alwaysproblem/tfclient-go:build path -f dockerfile
   ```
+
+- build inside docker
+
+  ```bash
+  $ docker run --rm -ti --name goenv -v `pwd`:/work alwaysproblem/tfclient-go:build /bin/bash
+  ```
+
+  ```bash
+  root@8c768509e690:/work# cd src
+  root@8c768509e690:/work/src# git clone -b r1.15 https://github.com/tensorflow/tensorflow.git
+  root@8c768509e690:/work/src# git clone -b r1.14 https://github.com/tensorflow/serving.git
+  root@8c768509e690:/work/src# go run protoc.go # ignore the warning but this procedure only works under specific protoc version
+  root@8c768509e690:/work/src# go mod init client
+  root@8c768509e690:/work/src# go mod edit -replace=github.com/tensorflow/tensorflow/tensorflow/go/core=./proto/tensorflow/core
+  root@8c768509e690:/work/src# go mod edit -replace=github.com/alwaysproblem/tensorflow_serving=./proto/tensorflow/serving
+  root@8c768509e690:/work/src# cd proto/tensorflow/core && go mod init github.com/tensorflow/tensorflow/tensorflow/go/core && cd -
+  root@8c768509e690:/work/src# cd proto/tensorflow/serving && go mod init github.com/alwaysproblem/tensorflow_serving && cd -
+  root@8c768509e690:/work/src# rm -rf tensorflow/ serving/
+  root@8c768509e690:/work/src# exit
+  ```
+
+- copy test file to your own directory
+  
+  
 
 ## **Tutorial for starting**
 
