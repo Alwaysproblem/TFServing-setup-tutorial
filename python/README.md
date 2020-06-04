@@ -1,123 +1,74 @@
 # Python API
 
+## **Go through README.md on parent directory first**
 
-## **Run Server with your own saved pretrain models**
-
-- make sure your model directory like this:
-
-  ```text
-  ---save
-      |
-      ---Model Name
-            |
-            ---1
-                |
-                ---asset
-                |
-                ---variables
-                |
-                ---model.pb
+- enter python directory
+  
+  ```bash
+  # assume that your are in the root of this repo
+  cd python
   ```
 
-- substitute **user_define_model_name** for you own model name and **path_to_your_own_models** for directory path of your own model
+## gRPC API
+
+- request different version through the version number
 
   ```bash
-  # run the server.
-  $ docker run -it --rm -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
-
-  #run the client.
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/${user_define_model_name}:predict
+    $ python3 grpcRequest.py -v 1
+    # outputs {
+    #   key: "output_1"
+    #   value {
+    #     dtype: DT_FLOAT
+    #     tensor_shape {
+    #       dim {
+    #         size: 2
+    #       }
+    #       dim {
+    #         size: 1
+    #       }
+    #     }
+    #     float_val: 10.805429458618164
+    #     float_val: 14.010123252868652
+    #   }
+    # }
+    # model_spec {
+    #   name: "Toy"
+    #   version {
+    #     value: 1
+    #   }
+    #   signature_name: "serving_default"
+    # }
+    $ python3 grpcRequest.py -v 2
+    # outputs {
+    #   key: "output_1"
+    #   value {
+    #     dtype: DT_FLOAT
+    #     tensor_shape {
+    #       dim {
+    #         size: 2
+    #       }
+    #       dim {
+    #         size: 1
+    #       }
+    #     }
+    #     float_val: 0.9990350008010864
+    #     float_val: 0.9997349381446838
+    #   }
+    # }
+    # model_spec {
+    #   name: "Toy"
+    #   version {
+    #     value: 2
+    #   }
+    #   signature_name: "serving_default"
+    # }
   ```
 
-- you also can use tensorflow_model_server command after entering docker bash
-
-  ```bash
-  $ docker exec -it ${docker image name} bash -l
-
-  $ tensorflow_model_server --port=8500 --rest_api_port=8501 --model_name=${MODEL_NAME} --model_base_path=${MODEL_BASE_PATH}/${MODEL_NAME}
-  ```
-
-- example
-  - Save the model after running LinearKeras.py 
-
-    ```bash
-    $ docker run -it --rm -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving &
-
-    $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
-
-    # {
-    #     "predictions": [[0.999035]
-    #     ]
-    ```
-
-- bind your own model to the server
-  - bind bash path to the model.
-
-    ```bash
-    $ docker run -p 8501:8501 --mount type=bind,source=/path/to/my_model/,target=/models/my_model -e MODEL_NAME=my_model -it tensorflow/serving
-    ```
-
-- example
-
-  ```bash
-  $ docker run -p 8501:8501 --mount type=bind,source=$(pwd)/save/Toy,target=/models/Toy -e MODEL_NAME=Toy -it tensorflow/serving
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
-
-  # {
-  #     "predictions": [[0.999035]
-  #     ]
-  ```
-
-## RESTful API
-
-- data is like
-
-  |   a   |   b   |   c   |   d   |   e   |   f   |
-  | :---: | :---: | :---: | :---: | :---: | :---: |
-  |  390  |  25   |   1   |   1   |   1   |   2   |
-  |  345  |  34   |  45   |   2   |  34   | 3456  |
-
-- `instances` means a row of data
-
-  ```json
-  {"instances": [
-      {
-        "a": [[390]],
-        "b": [[25]],
-        "c": [[1]],
-        "d": [[1]],
-        "e": [[1]],
-        "f": [[2]]
-      },
-      {
-        "a": [[345]],
-        "b": [[34]],
-        "c": [[45]],
-        "d": [[2]],
-        "e": [[34]],
-        "f": [[3456]]
-      }
-    ]
-  }
-  ```
-
-- `inputs` means a column of data
-
-  ```json
-    {"inputs":
-      {
-        "a": [[390], [345]],
-        "b": [[25], [34]],
-        "c": [[1], [45]],
-        "d": [[1], [2]],
-        "e": [[1], [34]],
-        "f": [[2], [3456]]
-      },
-    }
-  ```
-
-- [REST API](https://www.tensorflow.org/tfx/serving/api_rest)
+- request different version through the version annotation
+- request multiple model
+- request model status
+- reload model through gRPC API
+- request model log
 
 ## **Run multiple model in TFServer**
 
@@ -259,56 +210,7 @@
 
 - for gRPC
 
-  ```bash
-    $ python3 grpcRequest.py -v 1
-    # outputs {
-    #   key: "output_1"
-    #   value {
-    #     dtype: DT_FLOAT
-    #     tensor_shape {
-    #       dim {
-    #         size: 2
-    #       }
-    #       dim {
-    #         size: 1
-    #       }
-    #     }
-    #     float_val: 10.805429458618164
-    #     float_val: 14.010123252868652
-    #   }
-    # }
-    # model_spec {
-    #   name: "Toy"
-    #   version {
-    #     value: 1
-    #   }
-    #   signature_name: "serving_default"
-    # }
-    $ python3 grpcRequest.py -v 2
-    # outputs {
-    #   key: "output_1"
-    #   value {
-    #     dtype: DT_FLOAT
-    #     tensor_shape {
-    #       dim {
-    #         size: 2
-    #       }
-    #       dim {
-    #         size: 1
-    #       }
-    #     }
-    #     float_val: 0.9990350008010864
-    #     float_val: 0.9997349381446838
-    #   }
-    # }
-    # model_spec {
-    #   name: "Toy"
-    #   version {
-    #     value: 2
-    #   }
-    #   signature_name: "serving_default"
-    # }
-  ```
+
 
 - set an alias label for each version. Only avaliable for gRPC.
 

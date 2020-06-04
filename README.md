@@ -24,6 +24,14 @@ $ git checkout tfclient
 
 *[basic tutorial](https://github.com/Alwaysproblem/TFServing-setup-tutorial/tree/master)*
 
+## Run Server
+
+- here is no batch configuration only for demonstration
+
+```bash
+$ docker run --rm -p 8500:8500 -p 8501:8501 -v `pwd`:/models -it tensorflow/serving --model_config_file=/models/config/versionlabels.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
+```
+
 ## Tutorial for gRPC API
 
 - [GO](./go/README.md)
