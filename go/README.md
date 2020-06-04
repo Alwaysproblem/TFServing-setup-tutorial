@@ -63,6 +63,11 @@
 - copy test file to your own directory
 
   ```bash
+  $ cp env.sh <to your src>
+  $ cp basic-run-env.sh <to your src>
+  $ cp main.go <to your src>
+  $ cp -R utils <to your src>
+  $ cp run.sh <to your src>
   ```
 
 - run server
@@ -76,8 +81,8 @@
 
     ```bash
     # assume you are in go directory
-    $ source env.sh
     $ cd src
+    $ source env.sh
     $ bash basic-run-env.sh
     ```
 
