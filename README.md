@@ -328,7 +328,7 @@ $ cd TFServing-setup-review
 - for gRPC
 
   ```bash
-    $ python3 grpcRequest.py -v 1
+    $ python3 grpcRequest.py -m Toy -v 1
     # outputs {
     #   key: "output_1"
     #   value {
@@ -352,7 +352,7 @@ $ cd TFServing-setup-review
     #   }
     #   signature_name: "serving_default"
     # }
-    $ python3 grpcRequest.py -v 2
+    $ python3 grpcRequest.py -m Toy -v 2
     # outputs {
     #   key: "output_1"
     #   value {
@@ -422,7 +422,7 @@ $ cd TFServing-setup-review
   ```
 
   ```bash
-  $ python3 grpcRequest.py -l stable
+  $ python3 grpcRequest.py -m Toy -l stable
   # outputs {
   #   key: "output_1"
   #   value {
@@ -446,7 +446,7 @@ $ cd TFServing-setup-review
   #   }
   #   signature_name: "serving_default"
   # }
-  $ python3 grpcRequest.py -l canary
+  $ python3 grpcRequest.py -m Toy -l canary
   # outputs {
   #   key: "output_1"
   #   value {
@@ -502,10 +502,29 @@ $ cd TFServing-setup-review
     ```
 
   - example
+    - server
 
-    ```bash
-    docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
-    ```
+      ```bash
+      docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
+      ```
+
+    - client
+      - return error `"Task size 2 is larger than maximum batch size 1"`
+
+        ```bash
+        $ python3 grpcRequest.py -m Toy -v 1
+        # Traceback (most recent call last):
+        #   File "grpcRequest.py", line 58, in <module>
+        #     resp = stub.Predict(request, timeout_req)
+        #   File "/Users/yongxiyang/opt/anaconda3/envs/tf2cpu/lib/python3.7/site-packages/grpc/_channel.py", line 824, in __call__
+        #     return _end_unary_response_blocking(state, call, False, None)
+        #   File "/Users/yongxiyang/opt/anaconda3/envs/tf2cpu/lib/python3.7/site-packages/grpc/_channel.py", line 726, in _end_unary_response_blocking
+        #     raise _InactiveRpcError(state)
+        # grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+        #         status = StatusCode.INVALID_ARGUMENT
+        #         details = "Task size 2 is larger than maximum batch size 1"
+        #         debug_error_string = "{"created":"@1591246233.042335000","description":"Error received from peer ipv4:0.0.0.0:8500","file":"src# /core/lib/surface/call.cc","file_line":1056,"grpc_message":"Task size 2 is larger than maximum batch size 1","grpc_status":3}"
+        ```
 
 - monitor: pass file path to `--monitoring_config_file`
 
@@ -605,7 +624,7 @@ $ cd TFServing-setup-review
 - get the information data structure with gRPC
 
   ```bash
-  $ python grpcMetadata.py
+  $ python grpcMetadata.py -m Toy -v 2
   # model_spec {
   #   name: "Toy"
   #   version {
@@ -786,56 +805,23 @@ $ cd TFServing-setup-review
     $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,srce=$(pwd)/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
     ```
   
-  - run client
+  - obtain model status info
 
     ```bash
-    $ python grpcMetadata.py
-    # **********************************************outputs***********************************************
-    # outputs {
-    #   key: "output_1"
-    #   value {
-    #     dtype: DT_FLOAT
-    #     tensor_shape {
-    #       dim {
-    #         size: 2
-    #       }
-    #       dim {
-    #         size: 1
-    #       }
-    #     }
-    #     float_val: 0.9990350008010864
-    #     float_val: 0.9997349381446838
-    #   }
-    # }
-    # model_spec {
-    #   name: "Toy"
-    #   version {
-    #     value: 2
-    #   }
-    #   signature_name: "serving_default"
-    # }
-
-    # ************************************************end*************************************************
-
-    # *******************************************model metadata*******************************************
-    # model_version_status {
-    #   version: 2
-    #   state: AVAILABLE
-    #   status {
-    #   }
-    # }
+    $ python grpcModelStatus.py -m Toy -v 1
     # model_version_status {
     #   version: 1
     #   state: AVAILABLE
     #   status {
     #   }
     # }
-
-    # status {
-    # }
-
-    # Reload sucessfully
-    # ************************************************end*************************************************
+    ```
+  
+  - reload config file
+  
+    ```bash
+    $ python grpcReloadModel.py -m Toy
+    # model Toy reloaded sucessfully
     ```
 
   - from Server
@@ -889,4 +875,3 @@ $ cd TFServing-setup-review
 - [SavedModel Warmup](https://www.tensorflow.org/tfx/serving/saved_model_warmup)
 - please see grpcRequestLog.py
 - `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
-
