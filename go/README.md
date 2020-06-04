@@ -10,7 +10,7 @@
 
 ## Build your own go TFclient
 
-- Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
+- Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
 
 - requirement
 
