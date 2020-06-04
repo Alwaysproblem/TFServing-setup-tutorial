@@ -890,7 +890,3 @@ $ cd TFServing-setup-review
 - please see grpcRequestLog.py
 - `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
 
-<!-- TODO: -->
-## Build protobuf for tensorflow client use
-
-- [grpc API](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/apis)
