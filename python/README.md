@@ -6,15 +6,75 @@
   
   ```bash
   # assume that your are in the root of this repo
-  cd python
+  $ cd python
+  ```
+
+- setup environment
+
+  ```bash
+  $ pip install -U pip
+  $ pip install numpy tensorflow tensorflow-serving-api grpcio
   ```
 
 ## gRPC API
 
+- request different model name
+
+  ```bash
+  $ python3 grpcRequest.py -m Toy # python3 grpcRequest.py -m <model name>
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 0.9990350008010864
+  #     float_val: 0.9997349381446838
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 2
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  $ python3 grpcRequest.py -m Toy_double
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 6.803016662597656
+  #     float_val: 8.262093544006348
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy_double"
+  #   version {
+  #     value: 1
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  ```
+
 - request different version through the version number
 
   ```bash
-    $ python3 grpcRequest.py -v 1
+    $ python3 grpcRequest.py -v 1 # python3 grpcRequest.py -v <version number>
     # outputs {
     #   key: "output_1"
     #   value {
@@ -65,198 +125,9 @@
   ```
 
 - request different version through the version annotation
-- request multiple model
-- request model status
-- reload model through gRPC API
-- request model log
-
-## **Run multiple model in TFServer**
-
-- set up the configuration file named Toy.config
-
-  ```protobuf
-  model_config_list: {
-    config: {
-      name: "Toy",
-      base_path: "/models/save/Toy/",
-      model_platform: "tensorflow"
-    },
-    config: {
-      name: "Toy_double",
-      base_path: "/models/save/Toy_double/",
-      model_platform: "tensorflow"
-    }
-  }
-  ```
-
-- substitute **Config Path** for you own configeratin file.
-  
-  ```bash
-  docker run -it --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/${Config Path} --model_config_file_poll_wait_seconds=60
-  ```
-
-- example
 
   ```bash
-  $ docker run -it --rm -p 8501:8501 -v "$(pwd):/models/" tensorflow/serving --model_config_file=/models/config/Toy.config
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
-  # {
-  #     "predictions": [[6.80301666]
-  #     ]
-  # }
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
-  # {
-  #     "predictions": [[0.999035]
-  #     ]`
-  # }
-  ```
-
-- bind your own path to TFserver. The model target path is related to the configuration file.
-
-  ```bash
-  $ docker run --rm -p 8500:8500 -p 8501:8501 \
-    --mount type=bind,source=${/path/to/my_model/},target=/models/${my_model} \
-    --mount type=bind,source=${/path/to/my/models.config},target=/models/${models.config} -it tensorflow/serving --model_config_file=/models/{models.config}
-  ```
-
-- example
-
-  ```bash
-  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/Toy.config,target=/models/Toy.config -it tensorflow/serving --model_config_file=/models/Toy.config
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
-  # {
-  #     "predictions": [[6.80301666]
-  #     ]
-  # }
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy:predict
-  # {
-  #     "predictions": [[0.999035]
-  #     ]
-  # }
-  ```
-
-## **Version control for TFServer**
-
-- set up single version control configuration file.
-
-  ```protobuf
-  model_config_list: {
-    config: {
-      name: "Toy",
-      base_path: "/models/save/Toy/",
-      model_platform: "tensorflow",
-      model_version_policy: {
-          specific {
-              versions: 1
-          }
-      }
-    },
-    config: {
-      name: "Toy_double",
-      base_path: "/models/save/Toy_double/",
-      model_platform: "tensorflow"
-    }
-  }
-  ```
-
-- set up multiple version control configuration file.
-
-  ```protobuf
-  model_config_list: {
-    config: {
-      name: "Toy",
-      base_path: "/models/save/Toy/",
-      model_platform: "tensorflow",
-      model_version_policy: {
-          specific {
-              versions: 1,
-              versions: 2
-          }
-      }
-    },
-    config: {
-      name: "Toy_double",
-      base_path: "/models/save/Toy_double/",
-      model_platform: "tensorflow"
-    }
-  }
-  ```
-
-- example
-
-  ```bash
-  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
-  ```
-
-- for POST
-
-  ```bash
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy/versions/1:predict
-  # {
-  #     "predictions": [[10.8054295]
-  #     ]
-  # }
-
-  $ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy/versions/2:predict
-  # {
-  #     "predictions": [[0.999035]
-  #     ]
-  # }
-  ```
-
-- for gRPC
-
-
-
-- set an alias label for each version. Only avaliable for gRPC.
-
-  ```protobuf
-  model_config_list: {
-    config: {
-      name: "Toy",
-      base_path: "/models/save/Toy/",
-      model_platform: "tensorflow",
-      model_version_policy: {
-          specific {
-              versions: 1,
-              versions: 2
-          }
-      },
-      version_labels {
-        key: 'stable',
-        value: 1
-      },
-      version_labels {
-        key: 'canary',
-        value: 2
-      }
-    },
-    config: {
-      name: "Toy_double",
-      base_path: "/models/save/Toy_double/",
-      model_platform: "tensorflow"
-    }
-  }
-  ```
-
-- refer to [https://www.tensorflow.org/tfx/serving/serving_config](https://www.tensorflow.org/tfx/serving/serving_config)
-
-    Please **note that** labels can only be assigned to model versions that are loaded and available for serving. Once a model version is available, one may reload the model config on the fly, to assign a label to it (can be achieved using HandleReloadConfigRequest RPC endpoint).
-
-    Maybe you should delete the label related part first, then start the tensorflow serving, and finally add the label related part to the config file on the fly.
-
-- set flag `--allow_version_labels_for_unavailable_models` true will be able to add version lables at the first runing.
-
-  ``` bash
-  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,source=$(pwd)/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
-  ```
-
-  ```bash
-  $ python3 grpcRequest.py -l stable
+  $ python3 grpcRequest.py -l stable # python3 grpcRequest.py -l <model label or annotation>
   # outputs {
   #   key: "output_1"
   #   value {
@@ -306,137 +177,21 @@
   # }
   ```
 
-## **Other Configuration parameter**
+- request multiple task model
 
-- [Configuration](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/config)
-
-- Batch Configuration: need to set `--enable_batching=true` and pass the config to `--batching_parameters_file`, [more](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning)
-
-  - CPU-only: One Approach
-  
-    If your system is CPU-only (no GPU), then consider starting with the following values: `num_batch_threads` equal to the number of CPU cores; `max_batch_size` to infinity; `batch_timeout_micros` to 0. Then experiment with `batch_timeout_micros` values in the 1-10 millisecond (1000-10000 microsecond) range, while keeping in mind that 0 may be the optimal value.
-
-  - GPU: One Approach
-
-    If your model uses a GPU device for part or all of your its inference work, consider the following approach:
-
-    Set `num_batch_threads` to the number of CPU cores.
-
-    Temporarily set `batch_timeout_micros` to infinity while you tune `max_batch_size` to achieve the desired balance between throughput and average latency. Consider values in the hundreds or thousands.
-
-    For online serving, tune `batch_timeout_micros` to rein in tail latency. The idea is that batches normally get filled to `max_batch_size`, but occasionally when there is a lapse in incoming requests, to avoid introducing a latency spike it makes sense to process whatever's in the queue even if it represents an underfull batch. The best value for `batch_timeout_micros` is typically a few milliseconds, and depends on your context and goals. Zero is a value to consider; it works well for some workloads. (For bulk processing jobs, choose a large value, perhaps a few seconds, to ensure good throughput but not wait too long for the final (and likely underfull) batch.)
-
-    `batch.config`
-
-    ```protobuf
-    max_batch_size { value: 1 }
-    batch_timeout_micros { value: 0 }
-    max_enqueued_batches { value: 1000000 }
-    num_batch_threads { value: 8 }
-    ```
-
-  - example
-
-    ```bash
-    docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --enable_batching=true --batching_parameters_file=/models/batch/batchpara.config
-    ```
-
-- monitor: pass file path to `--monitoring_config_file`
-
-    `monitor.config`
-
-    ```protobuf
-    prometheus_config {
-        enable: true,
-        path: "/models/metrics"
-    }
-    ```
-
-  - request through RESTful API
-    - example
-      - server
-
-        ```bash
-        $ docker run --rm -p 8500:8500 -p 8501:8501 -v "$(pwd):/models" -it tensorflow/serving --model_config_file=/models/config/versionlabels.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models --monitoring_config_file=/models/monitor/monitor.config
-        ```
-
-      - client
-
-        ```bash
-        $ curl -X GET http://localhost:8501/monitoring/prometheus/metrics
-        # # TYPE :tensorflow:api:op:using_fake_quantization gauge
-        # # TYPE :tensorflow:cc:saved_model:load_attempt_count counter
-        # :tensorflow:cc:saved_model:load_attempt_count{model_path="/models/save/Toy/1",status="success"} 1
-        # :tensorflow:cc:saved_model:load_attempt_count{model_path="/models/save/Toy/2",status="success"} 1
-        # ...
-        # # TYPE :tensorflow:cc:saved_model:load_latency counter
-        # :tensorflow:cc:saved_model:load_latency{model_path="/models/save/Toy/1"} 54436
-        # :tensorflow:cc:saved_model:load_latency{model_path="/models/save/Toy/2"} 45230
-        # ...
-        # # TYPE :tensorflow:mlir:import_failure_count counter
-        # # TYPE :tensorflow:serving:model_warmup_latency histogram
-        # # TYPE :tensorflow:serving:request_example_count_total counter
-        # # TYPE :tensorflow:serving:request_example_counts histogram
-        # # TYPE :tensorflow:serving:request_log_count counter
-        ```
-
-  - show monitor data in the prometheus docker
-    - modified your own prometheus configuration file
-
-      ```yaml
-      # my global config
-      global:
-        scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
-        evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
-        # scrape_timeout is set to the global default (10s).
-
-      # Alertmanager configuration
-      alerting:
-        alertmanagers:
-        - static_configs:
-          - targets:
-            # - alertmanager:9093
-
-      # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
-      rule_files:
-        # - "first_rules.yml"
-        # - "second_rules.yml"
-
-      # A scrape configuration containing exactly one endpoint to scrape:
-      # Here it's Prometheus itself.
-      scrape_configs:
-        - job_name: 'tensorflow'
-          scrape_interval: 5s
-          metrics_path: '/monitoring/prometheus/metrics'
-          static_configs:
-      - targets: ['docker.for.mac.localhost:8501'] # for `Mac users`
-      # - targets: ['127.0.0.1:8501']
-      ```
-
-    - start prometheus docker server
-
-    ```bash
-    $ docker run --rm -ti --name prometheus -p 127.0.0.1:9090:9090 -v "$(pwd)/monitor:/tmp" prom/prometheus --config.file=/tmp/prometheus/prome.yaml
-    ```
-
-    - access prometheus on the webUI
-      - check target and status
-      ![target](image4md/target.png)
-      ![status](image4md/status.png)
-      - webUI on [localhost:9090](http://localhost:9090/)
-      ![graph](image4md/prom_graph.png)
-
-  <!-- - request with gRPC TODO: -->
-
-## **Obtain the information**
-
-- get the information data structure.
+- request model status
 
   ```bash
-  curl -d '{"instances": [[1.0, 2.0]]}' -X GET http://localhost:8501/v1/models/Toy/metadata
+  $ python grpcModelStatus.py -m Toy_double -v 1
+  # model_version_status {
+  #   version: 1
+  #   state: AVAILABLE
+  #   status {
+  #   }
+  # }
   ```
 
-- get the information data structure with gRPC
+- request model metadata
 
   ```bash
   $ python grpcMetadata.py
@@ -455,42 +210,68 @@
   # }
   ```
 
-## **Accerleration by GPU**
-
-- pull tensorflow server GPU version from DockerHub.
+- reload model through gRPC API
 
   ```bash
-  docker pull tensorflow/serving:latest-gpu
+  $ python grpcReloadModel.py -m Toy
+  # model Toy reloaded sucessfully
   ```
 
-- clone the server.git if you haven't done it.
+- request model log
 
   ```bash
-  git clone https://github.com/tensorflow/serving
-  ```
-
-- set `--runtime==nvidia` and use the `tensorflow/serving:latest-gpu`
-
-  ```bash
-  docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/${path_to_your_own_models}/1:/models/${user_define_model_name}" -e MODEL_NAME=${user_define_model_name} tensorflow/serving &
-  ```
-
-- example
-
-  ```bash
-  docker run --runtime=nvidia -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
-  or
-  nvidia-docker run -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
-  or
-  docker run --gpu ${all/1} -p 8501:8501 -v "$(pwd)/save/Toy:/models/Toy" -e MODEL_NAME=Toy tensorflow/serving:latest-gpu &
-  ```
-
-## Setup gRPC and POST request using Python files
-
-- setup environment
-
-  ```bash
-  pip install numpy tensorflow tensorflow-serving-api grpcio
+  $ python grpcRequestLog.py -m Toy
+  # ********************************************request logs********************************************
+  # predict_log {
+  #   request {
+  #     model_spec {
+  #       name: "Toy"
+  #       signature_name: "serving_default"
+  #     }
+  #     inputs {
+  #       key: "input_1"
+  #       value {
+  #         dtype: DT_FLOAT
+  #         tensor_shape {
+  #           dim {
+  #             size: 2
+  #           }
+  #           dim {
+  #             size: 2
+  #           }
+  #         }
+  #         tensor_content: "\000\000\200?\000\000\000@\000\000\200?\000\000@@"
+  #       }
+  #     }
+  #     output_filter: "output_1"
+  #   }
+  # }
+  # ************************************************end*************************************************
+  # **********************************************outputs***********************************************
+  # outputs {
+  #   key: "output_1"
+  #   value {
+  #     dtype: DT_FLOAT
+  #     tensor_shape {
+  #       dim {
+  #         size: 2
+  #       }
+  #       dim {
+  #         size: 1
+  #       }
+  #     }
+  #     float_val: 0.9990350008010864
+  #     float_val: 0.9997349381446838
+  #   }
+  # }
+  # model_spec {
+  #   name: "Toy"
+  #   version {
+  #     value: 2
+  #   }
+  #   signature_name: "serving_default"
+  # }
+  # ************************************************end*************************************************
   ```
 
 - grpc API for python
@@ -583,148 +364,7 @@
     }
     ```
 
-- run grpcRequest.py
-
-  ```bash
-  python3 grpcRequest.py
-  # outputs {
-  #   key: "dense"
-  #   value {
-  #     dtype: DT_FLOAT
-  #     tensor_shape {
-  #       dim {
-  #         size: 2
-  #       }
-  #       dim {
-  #         size: 1
-  #       }
-  #     }
-  #     float_val: 0.9901617765426636
-  #     float_val: 0.9934704303741455
-  #   }
-  # }
-  # model_spec {
-  #   name: "Toy"
-  #   version {
-  #     value: 3
-  #   }
-  #   signature_name: "serving_default"
-  # }
-  ```
-
-- get model status and reload model using grpc
-
-  - run server
-
-    ```bash
-    $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd)/save/,target=/models/save --mount type=bind,srce=$(pwd)/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
-    ```
-  
-  - run client
-
-    ```bash
-    $ python grpcMetadata.py
-    # **********************************************outputs***********************************************
-    # outputs {
-    #   key: "output_1"
-    #   value {
-    #     dtype: DT_FLOAT
-    #     tensor_shape {
-    #       dim {
-    #         size: 2
-    #       }
-    #       dim {
-    #         size: 1
-    #       }
-    #     }
-    #     float_val: 0.9990350008010864
-    #     float_val: 0.9997349381446838
-    #   }
-    # }
-    # model_spec {
-    #   name: "Toy"
-    #   version {
-    #     value: 2
-    #   }
-    #   signature_name: "serving_default"
-    # }
-
-    # ************************************************end*************************************************
-
-    # *******************************************model metadata*******************************************
-    # model_version_status {
-    #   version: 2
-    #   state: AVAILABLE
-    #   status {
-    #   }
-    # }
-    # model_version_status {
-    #   version: 1
-    #   state: AVAILABLE
-    #   status {
-    #   }
-    # }
-
-    # status {
-    # }
-
-    # Reload sucessfully
-    # ************************************************end*************************************************
-    ```
-
-  - from Server
-
-    ```bash
-    # 2020-05-28 10:38:51.057588: I tensorflow_serving/model_servers/model_service_impl.cc:47]
-    # Config entry
-    #   index : 0
-    #   path : /models/save/Toy/
-    #   name : Toy
-    #   platform : tensorflow
-    # 2020-05-28 10:38:51.057775: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
-    # 2020-05-28 10:38:51.057843: I tensorflow_serving/model_servers/server_core.cc:573]  (Re-)adding model: Toy
-    # 2020-05-28 10:38:51.156301: I tensorflow_serving/core/loader_harness.cc:138] Quiescing servable version {name: Toy_double version: 1}
-    # 2020-05-28 10:38:51.156406: I tensorflow_serving/core/loader_harness.cc:145] Done quiescing servable version {name: Toy_double version: 1}
-    # 2020-05-28 10:38:51.156442: I tensorflow_serving/core/loader_harness.cc:120] Unloading servable version {name: Toy_double version: 1}
-    # ...
-    # 2020-05-28 10:38:52.083807: I tensorflow_serving/core/loader_harness.cc:128] Done unloading servable version {name: Toy version: 2}
-    ```
-
-- [RESTful API](https://www.tensorflow.org/tfx/serving/api_rest)
-
-- run POSTreq.py
-
-  ```bash
-  python3 POSTreq.py
-  # this request is based on isntances
-  # True
-  # {
-  #     "predictions": [[0.990161777], [0.99347043]
-  #     ]
-  # }
-  # time consumption: 47.346710999999985ms
-  # this request is based on inputs
-  # True
-  # {
-  #     "outputs": [
-  #         [
-  #             0.985201657
-  #         ],
-  #         [
-  #             0.99923408
-  #         ]
-  #     ]
-  # }
-  # time consumption: 6.932738000000049ms
-  ```
-
 ## For production
 
 - [SavedModel Warmup](https://www.tensorflow.org/tfx/serving/saved_model_warmup)
-- please see grpcRequestLog.py
 - `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
-
-<!-- TODO: -->
-## Build protobuf for tensorflow client use
-
-- [grpc API](https://github.com/tensorflow/serving/tree/master/tensorflow_serving/apis)

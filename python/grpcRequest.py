@@ -17,6 +17,7 @@ if __name__ == "__main__":
     import argparse
 
     parse = argparse.ArgumentParser(prog="the tensorflow client for python.")
+    parse.add_argument('-m', '--model', type=str, action="store", dest="model", default="Toy")
     parse.add_argument('-v', '--version', type=int, action="store", dest="version", default=-1)
     parse.add_argument('-l', '--version-labels', type=str, action="store", dest="labels", default=None)
 
@@ -29,7 +30,7 @@ if __name__ == "__main__":
     stub = prediction_service_pb2_grpc.PredictionServiceStub(channel)
 
     request = predict_pb2.PredictRequest()
-    request.model_spec.name = 'Toy'
+    request.model_spec.name = args.model
 
     if args.version > -1 :
         request.model_spec.version.value = args.version
