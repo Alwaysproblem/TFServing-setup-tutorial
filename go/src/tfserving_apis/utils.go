@@ -1,28 +1,97 @@
 // Package utils the helper function
-package utils
+package tfserving_apis
 
 import (
 	"errors"
-	"reflect"
 	"fmt"
-	google_protobuf "github.com/golang/protobuf/ptypes/wrappers"
+	"reflect"
+
 	pb "github.com/alwaysproblem/tensorflow_serving"
+	google_protobuf "github.com/golang/protobuf/ptypes/wrappers"
 	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
 )
 
-func NewPredictRequest(modelName string, modelVersion int64) (pr *pb.PredictRequest) {
-	return &pb.PredictRequest{
-		ModelSpec: &pb.ModelSpec{
-			Name: modelName,
-			VersionChoice: &pb.ModelSpec_Version{
-				Version: &google_protobuf.Int64Value{
-					Value: modelVersion,
+// MakeTensorProto only for list and map 
+func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp *framework.TensorProto, err error){
+	v := reflect.ValueOf(tensor)
+	if v.Kind() != reflect.Slice {
+		return nil, errors.New("tensor must be slice")
+	}
+	size := v.Len()
+
+	frameworkprotoMap := map[string]framework.DataType{
+		"DT_HALF": framework.DataType_DT_HALF, 
+		"DT_FLOAT": framework.DataType_DT_FLOAT, 
+		"DT_DOUBLE": framework.DataType_DT_DOUBLE, 
+		"DT_INT16": framework.DataType_DT_INT16, 
+		"DT_INT32": framework.DataType_DT_INT32, 
+		"DT_INT8": framework.DataType_DT_INT8, 
+		"DT_UINT8": framework.DataType_DT_UINT8, 
+		"DT_STRING": framework.DataType_DT_STRING, 
+		"DT_COMPLEX64": framework.DataType_DT_COMPLEX64, 
+		"DT_INT64": framework.DataType_DT_INT64, 
+		"DT_BOOL": framework.DataType_DT_BOOL, 
+		"DT_COMPLEX128": framework.DataType_DT_COMPLEX128, 
+		"DT_RESOURCE": framework.DataType_DT_RESOURCE,
+	}
+	tp = &framework.TensorProto{
+		Dtype: frameworkprotoMap[dataType],
+	}
+
+	var ok bool
+	switch dataType {
+		case "DT_HALF":
+			tp.HalfVal, ok = tensor.([]int32)
+		case "DT_FLOAT":
+			tp.FloatVal, ok = tensor.([]float32)
+		case "DT_DOUBLE":
+			tp.DoubleVal, ok = tensor.([]float64)
+		case "DT_INT16", "DT_INT32", "DT_INT8", "DT_UINT8":
+			tp.IntVal, ok = tensor.([]int32)
+		case "DT_STRING":
+			tp.StringVal, ok = tensor.([][]byte)
+		case "DT_COMPLEX64":
+			tp.ScomplexVal, ok = tensor.([]float32)
+		case "DT_INT64":
+			tp.Int64Val, ok = tensor.([]int64)
+		case "DT_BOOL":
+			tp.BoolVal, ok = tensor.([]bool)
+		case "DT_COMPLEX128":
+			tp.DcomplexVal, ok = tensor.([]float64)
+		case "DT_RESOURCE":
+			tp.ResourceHandleVal, ok = tensor.([]*framework.ResourceHandleProto)
+		default:
+			err = errors.New("Unknown data type")
+	}
+
+	if !ok {
+		if err != nil {
+			err = errors.New("Type switch failed")
+		}
+		return
+	}
+
+	if shapeSize == nil {
+		tp.TensorShape = &framework.TensorShapeProto{
+			Dim: []*framework.TensorShapeProto_Dim{
+				&framework.TensorShapeProto_Dim{
+					Size: int64(size),
 				},
 			},
-		},
-		Inputs: make(map[string]*framework.TensorProto),
+		}
+	} else {
+		tp.TensorShape = &framework.TensorShapeProto{
+			Dim: []*framework.TensorShapeProto_Dim{},
+		}
+		for _, size := range shapeSize {
+			tp.TensorShape.Dim = append(tp.TensorShape.Dim, &framework.TensorShapeProto_Dim{
+				Size: size,
+			})
+		}
 	}
+	return
 }
+
 
 // if tensor is one dim, shapeSize is nil
 func AddInput(pr *pb.PredictRequest, tensorName string, dataType framework.DataType, tensor interface{},
@@ -128,4 +197,18 @@ func PrintTP(tp *framework.TensorProto, dim, idx int, indexes []int) int {
 func PrintTensorProto(tp *framework.TensorProto) {
 	// fmt.Printf("%v\n", tp.TensorShape)
 	PrintTP(tp, 0, 0, nil)
+}
+
+func ModelVersion(version int64) (VersionSpec *pb.ModelSpec_Version){
+	return &pb.ModelSpec_Version{
+		Version: &google_protobuf.Int64Value{
+			Value: version,
+		},
+	}
+}
+
+func ModelVersionLabel(label string) (VersionLabelSpec *pb.ModelSpec_VersionLabel){
+	return &pb.ModelSpec_VersionLabel{
+		VersionLabel: label,
+	}
 }

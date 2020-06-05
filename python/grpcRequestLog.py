@@ -74,7 +74,7 @@ if __name__ == "__main__":
     print("outputs".center(100, "*"))
     print(resp)
     print("end".center(100, "*"))
-
+    print(predict_log)
     # # for output filter out (you can also check the grpc api `predict.proto` ) 
     # print(resp.outputs["output_1"].float_val)
 

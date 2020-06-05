@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package tfdemo;
+
+message Request {
+  float x = 1;
+  float y = 2;
+}
+
+message Response {
+  float sum = 1;
+}
+
+// The service simply sum x with y.
+service SumService {
+  rpc Sum(Request) returns (Response);
+}
