@@ -56,7 +56,7 @@ if __name__ == "__main__":
     # only get outputs you want model to response.
     request.output_filter.append("output_1")
 
-    # predict_log=prediction_log_pb2.PredictLog(request=request)
+    # without responseLog
     predict_log = prediction_log_pb2.PredictionLog(
             predict_log=prediction_log_pb2.PredictLog(request=request))
 
@@ -73,8 +73,15 @@ if __name__ == "__main__":
 
     print("outputs".center(100, "*"))
     print(resp)
-    print("end".center(100, "*"))
+    print("end".center(100, "*"), end='\n\n')
+
+    # logging
+    
+    print("responseLog".center(100, "*"))
+    predict_log = prediction_log_pb2.PredictionLog(
+            predict_log=prediction_log_pb2.PredictLog(request=request, response=resp))
     print(predict_log)
+    print("end".center(100, "*"), end='\n\n')
     # # for output filter out (you can also check the grpc api `predict.proto` ) 
     # print(resp.outputs["output_1"].float_val)
 
