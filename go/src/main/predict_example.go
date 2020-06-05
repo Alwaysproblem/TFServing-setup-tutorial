@@ -3,15 +3,16 @@ package main
 import (
 	"flag"
 	"fmt"
+	"time"
 
 	// framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
-	// pb "github.com/alwaysproblem/tensorflow_serving"
+	pb "github.com/alwaysproblem/tensorflow_serving"
 	// "go.uber.org/ratelimit"
-	// "golang.org/x/net/context"
-	// "google.golang.org/grpc"
+	"golang.org/x/net/context"
+	"google.golang.org/grpc"
 	// "google.golang.org/grpc/credentials"
-	// "google.golang.org/grpc/grpclog"
-	api "client/tfserving_apis"
+	"google.golang.org/grpc/grpclog"
+	utils "client/utils"
 )
 
 var (
@@ -23,14 +24,16 @@ var (
 func main() {
 	flag.Parse()
 
-	var timeoutReq float32 = 30.0
+	// var timeoutReq float32 = 30.0
+	var opts []grpc.DialOption
+	opts = append(opts, grpc.WithInsecure())
+	conn, err := grpc.Dial(*serverAddr, opts...)
+	if err != nil {
+		grpclog.Fatalf("fail to dial: %v", err)
+	}
+	defer conn.Close()
 
-	stub, _ := api.NewPredictionServiceStub(*serverAddr)
-	stub.Dial()
-
-	defer stub.Close()
-
-	request := api.NewPredictRequest()
+	request := utils.NewPredictRequest()
 	request.ModelSpec.Name = *modelName
 
 	// data should be the flatten values of tensor (1D Array)
@@ -43,9 +46,12 @@ func main() {
 	}
 
 	// _, _ = api.MakeTensorProto(data, "DT_FLOAT", dataShape)
-	dataProto, _ := api.MakeTensorProto(data, "DT_FLOAT", dataShape)
+	dataProto, _ := utils.MakeTensorProto(data, "DT_FLOAT", dataShape)
 	request.Inputs["input_1"] = dataProto
 
-	resp, _ := stub.Predict(request, timeoutReq)
+	client := pb.NewPredictionServiceClient(conn)
+	ctx, canc := context.WithTimeout(context.Background(), time.Duration(int64(20))*time.Second)
+	defer canc()
+	resp, _ := client.Predict(ctx, request)
 	fmt.Println(resp)
 }
