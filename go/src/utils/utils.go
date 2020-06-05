@@ -1,15 +1,16 @@
 // Package utils the helper function
-package tfserving_apis
+package utils
 
 import (
 	"errors"
 	"fmt"
 	"reflect"
-
+	
 	pb "github.com/alwaysproblem/tensorflow_serving"
-	google_protobuf "github.com/golang/protobuf/ptypes/wrappers"
 	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
 )
+
+
 
 // MakeTensorProto only for list and map 
 func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp *framework.TensorProto, err error){
@@ -197,18 +198,4 @@ func PrintTP(tp *framework.TensorProto, dim, idx int, indexes []int) int {
 func PrintTensorProto(tp *framework.TensorProto) {
 	// fmt.Printf("%v\n", tp.TensorShape)
 	PrintTP(tp, 0, 0, nil)
-}
-
-func ModelVersion(version int64) (VersionSpec *pb.ModelSpec_Version){
-	return &pb.ModelSpec_Version{
-		Version: &google_protobuf.Int64Value{
-			Value: version,
-		},
-	}
-}
-
-func ModelVersionLabel(label string) (VersionLabelSpec *pb.ModelSpec_VersionLabel){
-	return &pb.ModelSpec_VersionLabel{
-		VersionLabel: label,
-	}
 }

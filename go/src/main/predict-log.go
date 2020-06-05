@@ -16,15 +16,16 @@ import (
 )
 
 var (
-	serverAddr         = flag.String("server_addr", "127.0.0.1:9000", "The server address in the format of host:port")
-	modelName          = flag.String("model_name", "mnist", "TensorFlow model name")
-	modelVersion       = flag.Int64("model_version", 1, "TensorFlow model version")
+	serverAddr         = flag.String("server_addr", "127.0.0.1:8500", "The server address in the format of host:port")
+	modelName          = flag.String("model_name", "Toy", "TensorFlow model name")
+	modelVersion       = flag.Int64("model_version", -1, "TensorFlow model version")
+	modelVersionLabel  = flag.String("model_version_label", "", "TensorFlow model version label")
 )
 
 func main() {
 	flag.Parse()
 
-	// var timeoutReq float32 = 30.0
+	var timeoutReq float32 = 30.0
 	var opts []grpc.DialOption
 	opts = append(opts, grpc.WithInsecure())
 	conn, err := grpc.Dial(*serverAddr, opts...)
@@ -35,14 +36,16 @@ func main() {
 
 	request := utils.NewPredictRequest()
 	request.ModelSpec.Name = *modelName
+	request.ModelSpec.SignatureName = "serving_default"
 
 	// data should be the flatten values of tensor (1D Array)
 	data := []float32{ 
 		1., 2.,
 		1., 3.,
+		1., 4.,
 	}
 	dataShape := []int64{
-		2, 2,
+		3, 2,
 	}
 
 	// _, _ = api.MakeTensorProto(data, "DT_FLOAT", dataShape)
@@ -50,8 +53,18 @@ func main() {
 	request.Inputs["input_1"] = dataProto
 
 	client := pb.NewPredictionServiceClient(conn)
-	ctx, canc := context.WithTimeout(context.Background(), time.Duration(int64(20))*time.Second)
+	ctx, canc := context.WithTimeout(context.Background(), time.Duration(int64(timeoutReq))*time.Second)
 	defer canc()
+
+	// predict_log = prediction_log_pb2.PredictionLog(
+	// 	predict_log=prediction_log_pb2.PredictLog(request=request))
+		
+		
 	resp, _ := client.Predict(ctx, request)
 	fmt.Println(resp)
+		
+	predicLog := utils.NewPredictionLog(request, resp)
+	predicLog.LogMetadata.ModelSpec = request.ModelSpec
+
+	fmt.Println(predicLog)
 }
