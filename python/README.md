@@ -368,3 +368,5 @@
 
 - [SavedModel Warmup](https://www.tensorflow.org/tfx/serving/saved_model_warmup)
 - `--enable_model_warmup`: Enables model warmup using user-provided PredictionLogs in assets.extra/ directory
+
+<!-- TODO: need to decode the tfrecord file from serilized logs and check if it is right.-->
