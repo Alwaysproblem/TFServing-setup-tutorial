@@ -45,10 +45,10 @@ func main() {
 	metadata := utils.NewGetModelMetadataRequest([]string{"signature_def",})
 	metadata.ModelSpec.Name = *modelName
 	if *modelVersion > -1 {
-		request.ModelSpec.VersionChoice = utils.ModelVersion(*modelVersion)
+		metadata.ModelSpec.VersionChoice = utils.ModelVersion(*modelVersion)
 	}
 	if *modelVersionLabel != "" {
-		request.ModelSpec.VersionChoice = utils.ModelVersionLabel(*modelVersionLabel)
+		metadata.ModelSpec.VersionChoice = utils.ModelVersionLabel(*modelVersionLabel)
 	}
 	// get model metadata
 	meta, _ := client.GetModelMetadata(ctx, metadata)

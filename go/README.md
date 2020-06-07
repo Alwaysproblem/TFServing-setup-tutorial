@@ -5,7 +5,7 @@
 - Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
 
 - requirement
-
+  - [go installation](https://golang.org/doc/install)
   ```text
   go >= 1.11
   protoc == 3.6.1
@@ -59,15 +59,16 @@
   ```bash
   $ cp env.sh <to your src>
   $ cp basic-run-env.sh <to your src>
-  $ cp main.go <to your src>
-  $ cp -R tfserving_apis <to your src>
+  $ cp -R main <to your src>
+  $ cp -R utils <to your src>
   $ cp run.sh <to your src>
   ```
 
 - run server
-
+  *if you forget to run in the first place.*
   ```bash
-  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$(pwd),target=/models --mount type=bind,source=$(pwd)/config/versionctrl.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60
+  $ ROOT=/Users/yongxiyang/Desktop/TFServing-setup-tutorial/
+  $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$ROOT,target=/models --mount type=bind,source=$ROOT/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
   ```
 
 - run the test on the client
@@ -80,17 +81,74 @@
     $ bash basic-run-env.sh
     ```
 
-  - run go client
+  - run go client for a simple example
+    **don't forget source env.sh**
+    - request data from server
 
-    ```bash
-    # run under src directory
-    $ bash run.sh # test on local host
-    # OK
-    # time per request:  42.607813ms
-    # tensor: output_1, version: 0
-    # 0.999035
-    # 0.99973494
-    ```
+      ```bash
+      # run under src directory
+      $ bash run.sh main/predict-service.go # test on local host
+      # model_spec:{name:"Toy"  version:{value:1}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:10.805429  float_val:14.010123  float_val:17.214817}}
+      ```
+
+    - request different model name
+
+      ```bash
+      $ go run main/predict-service.go --model_name Toy
+      # model_spec:{name:"Toy"  version:{value:2}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:0.999035  float_val:0.99973494  float_val:0.9999273}}
+      $ go run main/predict-service.go --model_name Toy_double
+      # model_spec:{name:"Toy_double"  version:{value:1}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:6.8030167  float_val:8.262094  float_val:9.72117}}
+      ```
+
+    - request different version through the version number
+
+      ```bash
+      $ go run main/predict-service.go --model_name Toy --model_version 1
+      # model_spec:{name:"Toy"  version:{value:1}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:10.805429  float_val:14.010123  float_val:17.214817}}
+      $ go run main/predict-service.go --model_name Toy --model_version 2
+      # model_spec:{name:"Toy"  version:{value:2}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:0.999035  float_val:0.99973494  float_val:0.9999273}}
+      ```
+
+    - request different version through the version annotation
+
+      ```bash
+      $ go run main/predict-service.go --model_name Toy --model_version_label stable
+      # model_spec:{name:"Toy"  version:{value:1}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:10.805429  float_val:14.010123  float_val:17.214817}}
+      ```
+
+    - request multiple task model <!--  TODO: -->
+
+      ```bash
+      ```
+
+    - request model status
+
+      ```bash
+      $ go run main/model-status.go --model_name Toy
+      # model_version_status:{version:2 state:AVAILABLE status:{}} model_version_status:{version:1 state:AVAILABLE status:{}}
+      ```
+
+    - request model metadata
+
+      ```bash
+      $ go run main/predict-model-metadata.go --model_name Toy
+      # model_spec:{name:"Toy"  version:{value:2}}  metadata:{key:"signature_def"  value:{[type.googleapis.com/tensorflow.serving.SignatureDefMap]:{signature_def:{key:"__saved_model_init_op"  value:{outputs:{key:"__saved_model_init_op"  value:{name:"NoOp"  tensor_shape:{unknown_rank:true}}}}}  signature_def:{key:"serving_default"  value:{inputs:{key:"input_1"  value:{name:"serving_default_input_1:0"  dtype:DT_FLOAT  tensor_shape:{dim:{size:-1}  dim:{size:2}}}}  outputs:{key:"output_1"  value:{name:"StatefulPartitionedCall:0"  dtype:DT_FLOAT  tensor_shape:{dim:{size:-1}  dim:{size:1}}}}  method_name:"tensorflow/serving/predict"}}}}}
+      ```
+
+    - reload model through gRPC API
+
+      ```bash
+      $ go run main/model-reload.go --model_name Toy
+      # model Toy reloaded sucessfully
+      ```
+
+    - request model log
+
+      ```bash
+      $ go run main/predict-log.go --model_name Toy # --model_version 1 --model_version_label stable
+      # model_spec:{name:"Toy"  version:{value:2}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:0.999035  float_val:0.99973494  float_val:0.9999273}}
+      # log_metadata:{model_spec:{name:"Toy"  signature_name:"serving_default"}}  predict_log:{request:{model_spec:{name:"Toy"  signature_name:"serving_default"}  inputs:{key:"input_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:2}}  float_val:1  float_val:2  float_val:1  float_val:3  float_val:1  float_val:4}}}  response:{model_spec:{name:"Toy"  version:{value:2}  signature_name:"serving_default"}  outputs:{key:"output_1"  value:{dtype:DT_FLOAT  tensor_shape:{dim:{size:3}  dim:{size:1}}  float_val:0.999035  float_val:0.99973494  float_val:0.9999273}}}}
+      ```
 
 - GO gRPC api
   1. framework TensorProto

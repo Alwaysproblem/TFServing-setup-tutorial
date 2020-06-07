@@ -37,6 +37,12 @@ func main() {
 	request := utils.NewPredictRequest()
 	request.ModelSpec.Name = *modelName
 	request.ModelSpec.SignatureName = "serving_default"
+	if *modelVersion > -1 {
+		request.ModelSpec.VersionChoice = utils.ModelVersion(*modelVersion)
+	}
+	if *modelVersionLabel != "" {
+		request.ModelSpec.VersionChoice = utils.ModelVersionLabel(*modelVersionLabel)
+	}
 
 	// data should be the flatten values of tensor (1D Array)
 	data := []float32{ 
