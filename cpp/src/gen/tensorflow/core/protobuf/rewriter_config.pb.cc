@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -55,7 +54,7 @@ static void InitDefaultsscc_info_AutoParallelOptions_tensorflow_2fcore_2fprotobu
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AutoParallelOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AutoParallelOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AutoParallelOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {}};
 
 static void InitDefaultsscc_info_RewriterConfig_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -69,7 +68,7 @@ static void InitDefaultsscc_info_RewriterConfig_tensorflow_2fcore_2fprotobuf_2fr
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_RewriterConfig_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, InitDefaultsscc_info_RewriterConfig_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_RewriterConfig_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
       &scc_info_AutoParallelOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto.base,
       &scc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto.base,
       &scc_info_RewriterConfig_CustomGraphOptimizer_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto.base,
@@ -87,7 +86,7 @@ static void InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_tensorflow_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RewriterConfig_CustomGraphOptimizer_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
       &scc_info_RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto.base,}};
 
 static void InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto() {
@@ -101,7 +100,7 @@ static void InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_ParameterMa
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {
       &scc_info_AttrValue_tensorflow_2fcore_2fframework_2fattr_5fvalue_2eproto.base,}};
 
 static void InitDefaultsscc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto() {
@@ -116,7 +115,7 @@ static void InitDefaultsscc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprot
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto[3];
@@ -203,7 +202,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_RewriterConfig_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n.tensorflow/core/protobuf/rewriter_conf"
   "ig.proto\022\ntensorflow\032*tensorflow/core/fr"
   "amework/attr_value.proto\032.tensorflow/cor"
@@ -282,16 +281,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_ScopedAllocatorOptions_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto, "tensorflow/core/protobuf/rewriter_config.proto", 2595,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto, "tensorflow/core/protobuf/rewriter_config.proto", 2595,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto_deps, 5, 2,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto, 5, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto)), true);
 namespace tensorflow {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* RewriterConfig_Toggle_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2frewriter_5fconfig_2eproto);
@@ -377,31 +375,19 @@ constexpr int RewriterConfig::MemOptType_ARRAYSIZE;
 
 void AutoParallelOptions::InitAsDefaultInstance() {
 }
-class AutoParallelOptions::HasBitSetters {
+class AutoParallelOptions::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AutoParallelOptions::kEnableFieldNumber;
-const int AutoParallelOptions::kNumReplicasFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-AutoParallelOptions::AutoParallelOptions()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.AutoParallelOptions)
-}
 AutoParallelOptions::AutoParallelOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.AutoParallelOptions)
 }
 AutoParallelOptions::AutoParallelOptions(const AutoParallelOptions& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&enable_, &from.enable_,
     static_cast<size_t>(reinterpret_cast<char*>(&num_replicas_) -
     reinterpret_cast<char*>(&enable_)) + sizeof(num_replicas_));
@@ -417,10 +403,11 @@ void AutoParallelOptions::SharedCtor() {
 AutoParallelOptions::~AutoParallelOptions() {
   // @@protoc_insertion_point(destructor:tensorflow.AutoParallelOptions)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoParallelOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void AutoParallelOptions::ArenaDtor(void* object) {
@@ -447,13 +434,12 @@ void AutoParallelOptions::Clear() {
   ::memset(&enable_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&num_replicas_) -
       reinterpret_cast<char*>(&enable_)) + sizeof(num_replicas_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* AutoParallelOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -462,14 +448,14 @@ const char* AutoParallelOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // bool enable = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          enable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          enable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 num_replicas = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          num_replicas_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          num_replicas_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -479,7 +465,9 @@ const char* AutoParallelOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -492,106 +480,28 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool AutoParallelOptions::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.AutoParallelOptions)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool enable = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &enable_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 num_replicas = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &num_replicas_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.AutoParallelOptions)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.AutoParallelOptions)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void AutoParallelOptions::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.AutoParallelOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool enable = 1;
-  if (this->enable() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(1, this->enable(), output);
-  }
-
-  // int32 num_replicas = 2;
-  if (this->num_replicas() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->num_replicas(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.AutoParallelOptions)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* AutoParallelOptions::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* AutoParallelOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.AutoParallelOptions)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bool enable = 1;
   if (this->enable() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->enable(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_enable(), target);
   }
 
   // int32 num_replicas = 2;
   if (this->num_replicas() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->num_replicas(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_num_replicas(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.AutoParallelOptions)
   return target;
@@ -601,11 +511,6 @@ size_t AutoParallelOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.AutoParallelOptions)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -619,9 +524,13 @@ size_t AutoParallelOptions::ByteSizeLong() const {
   if (this->num_replicas() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->num_replicas());
+        this->_internal_num_replicas());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -645,15 +554,15 @@ void AutoParallelOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void AutoParallelOptions::MergeFrom(const AutoParallelOptions& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.AutoParallelOptions)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.enable() != 0) {
-    set_enable(from.enable());
+    _internal_set_enable(from._internal_enable());
   }
   if (from.num_replicas() != 0) {
-    set_num_replicas(from.num_replicas());
+    _internal_set_num_replicas(from._internal_num_replicas());
   }
 }
 
@@ -675,30 +584,15 @@ bool AutoParallelOptions::IsInitialized() const {
   return true;
 }
 
-void AutoParallelOptions::Swap(AutoParallelOptions* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AutoParallelOptions* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void AutoParallelOptions::UnsafeArenaSwap(AutoParallelOptions* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AutoParallelOptions::InternalSwap(AutoParallelOptions* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(enable_, other->enable_);
-  swap(num_replicas_, other->num_replicas_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AutoParallelOptions, num_replicas_)
+      + sizeof(AutoParallelOptions::num_replicas_)
+      - PROTOBUF_FIELD_OFFSET(AutoParallelOptions, enable_)>(
+          reinterpret_cast<char*>(&enable_),
+          reinterpret_cast<char*>(&other->enable_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AutoParallelOptions::GetMetadata() const {
@@ -710,22 +604,12 @@ void AutoParallelOptions::InternalSwap(AutoParallelOptions* other) {
 
 void ScopedAllocatorOptions::InitAsDefaultInstance() {
 }
-class ScopedAllocatorOptions::HasBitSetters {
+class ScopedAllocatorOptions::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ScopedAllocatorOptions::kEnableOpFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ScopedAllocatorOptions::ScopedAllocatorOptions()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ScopedAllocatorOptions)
-}
 ScopedAllocatorOptions::ScopedAllocatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   enable_op_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -733,9 +617,8 @@ ScopedAllocatorOptions::ScopedAllocatorOptions(::PROTOBUF_NAMESPACE_ID::Arena* a
 }
 ScopedAllocatorOptions::ScopedAllocatorOptions(const ScopedAllocatorOptions& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       enable_op_(from.enable_op_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.ScopedAllocatorOptions)
 }
 
@@ -746,10 +629,11 @@ void ScopedAllocatorOptions::SharedCtor() {
 ScopedAllocatorOptions::~ScopedAllocatorOptions() {
   // @@protoc_insertion_point(destructor:tensorflow.ScopedAllocatorOptions)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ScopedAllocatorOptions::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void ScopedAllocatorOptions::ArenaDtor(void* object) {
@@ -774,13 +658,12 @@ void ScopedAllocatorOptions::Clear() {
   (void) cached_has_bits;
 
   enable_op_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ScopedAllocatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -792,10 +675,12 @@ const char* ScopedAllocatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_N
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_enable_op(), ptr, ctx, "tensorflow.ScopedAllocatorOptions.enable_op");
+            auto str = _internal_add_enable_op();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.ScopedAllocatorOptions.enable_op"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -804,7 +689,9 @@ const char* ScopedAllocatorOptions::_InternalParse(const char* ptr, ::PROTOBUF_N
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -817,96 +704,26 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ScopedAllocatorOptions::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ScopedAllocatorOptions)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated string enable_op = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_enable_op()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->enable_op(this->enable_op_size() - 1).data(),
-            static_cast<int>(this->enable_op(this->enable_op_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ScopedAllocatorOptions.enable_op"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ScopedAllocatorOptions)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ScopedAllocatorOptions)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ScopedAllocatorOptions::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ScopedAllocatorOptions)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated string enable_op = 1;
-  for (int i = 0, n = this->enable_op_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->enable_op(i).data(), static_cast<int>(this->enable_op(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.ScopedAllocatorOptions.enable_op");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      1, this->enable_op(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ScopedAllocatorOptions)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ScopedAllocatorOptions::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ScopedAllocatorOptions::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ScopedAllocatorOptions)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated string enable_op = 1;
-  for (int i = 0, n = this->enable_op_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_enable_op_size(); i < n; i++) {
+    const auto& s = this->_internal_enable_op(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->enable_op(i).data(), static_cast<int>(this->enable_op(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.ScopedAllocatorOptions.enable_op");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(1, this->enable_op(i), target);
+    target = stream->WriteString(1, s, target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ScopedAllocatorOptions)
   return target;
@@ -916,23 +733,22 @@ size_t ScopedAllocatorOptions::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ScopedAllocatorOptions)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string enable_op = 1;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->enable_op_size());
-  for (int i = 0, n = this->enable_op_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(enable_op_.size());
+  for (int i = 0, n = enable_op_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->enable_op(i));
+      enable_op_.Get(i));
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -956,7 +772,7 @@ void ScopedAllocatorOptions::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void ScopedAllocatorOptions::MergeFrom(const ScopedAllocatorOptions& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ScopedAllocatorOptions)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -981,29 +797,10 @@ bool ScopedAllocatorOptions::IsInitialized() const {
   return true;
 }
 
-void ScopedAllocatorOptions::Swap(ScopedAllocatorOptions* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ScopedAllocatorOptions* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ScopedAllocatorOptions::UnsafeArenaSwap(ScopedAllocatorOptions* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ScopedAllocatorOptions::InternalSwap(ScopedAllocatorOptions* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  enable_op_.InternalSwap(CastToBase(&other->enable_op_));
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  enable_op_.InternalSwap(&other->enable_op_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ScopedAllocatorOptions::GetMetadata() const {
@@ -1032,40 +829,28 @@ void RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MergeFrom(
 
 void RewriterConfig_CustomGraphOptimizer::InitAsDefaultInstance() {
 }
-class RewriterConfig_CustomGraphOptimizer::HasBitSetters {
+class RewriterConfig_CustomGraphOptimizer::_Internal {
  public:
 };
 
 void RewriterConfig_CustomGraphOptimizer::clear_parameter_map() {
   parameter_map_.Clear();
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RewriterConfig_CustomGraphOptimizer::kNameFieldNumber;
-const int RewriterConfig_CustomGraphOptimizer::kParameterMapFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RewriterConfig_CustomGraphOptimizer::RewriterConfig_CustomGraphOptimizer()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.RewriterConfig.CustomGraphOptimizer)
-}
 RewriterConfig_CustomGraphOptimizer::RewriterConfig_CustomGraphOptimizer(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   parameter_map_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.RewriterConfig.CustomGraphOptimizer)
 }
 RewriterConfig_CustomGraphOptimizer::RewriterConfig_CustomGraphOptimizer(const RewriterConfig_CustomGraphOptimizer& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   parameter_map_.MergeFrom(from.parameter_map_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.name().size() > 0) {
-    name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name(),
-      GetArenaNoVirtual());
+  if (!from._internal_name().empty()) {
+    name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_name(),
+      GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:tensorflow.RewriterConfig.CustomGraphOptimizer)
 }
@@ -1078,10 +863,11 @@ void RewriterConfig_CustomGraphOptimizer::SharedCtor() {
 RewriterConfig_CustomGraphOptimizer::~RewriterConfig_CustomGraphOptimizer() {
   // @@protoc_insertion_point(destructor:tensorflow.RewriterConfig.CustomGraphOptimizer)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RewriterConfig_CustomGraphOptimizer::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1107,14 +893,13 @@ void RewriterConfig_CustomGraphOptimizer::Clear() {
   (void) cached_has_bits;
 
   parameter_map_.Clear();
-  name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  _internal_metadata_.Clear();
+  name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RewriterConfig_CustomGraphOptimizer::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1123,7 +908,9 @@ const char* RewriterConfig_CustomGraphOptimizer::_InternalParse(const char* ptr,
       // string name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_name(), ptr, ctx, "tensorflow.RewriterConfig.CustomGraphOptimizer.name");
+          auto str = _internal_mutable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RewriterConfig.CustomGraphOptimizer.name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1136,7 +923,7 @@ const char* RewriterConfig_CustomGraphOptimizer::_InternalParse(const char* ptr,
             ptr = ctx->ParseMessage(&parameter_map_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 18);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1145,7 +932,9 @@ const char* RewriterConfig_CustomGraphOptimizer::_InternalParse(const char* ptr,
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1158,143 +947,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RewriterConfig_CustomGraphOptimizer::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.RewriterConfig.CustomGraphOptimizer)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->name().data(), static_cast<int>(this->name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RewriterConfig.CustomGraphOptimizer.name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // map<string, .tensorflow.AttrValue> parameter_map = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
-              RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse,
-              std::string, ::tensorflow::AttrValue,
-              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
-              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_MESSAGE,
-              0 >,
-            ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue > > parser(&parameter_map_);
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
-              input, &parser));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            parser.key().data(), static_cast<int>(parser.key().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RewriterConfig.CustomGraphOptimizer.ParameterMapEntry.key"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.RewriterConfig.CustomGraphOptimizer)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.RewriterConfig.CustomGraphOptimizer)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RewriterConfig_CustomGraphOptimizer::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.RewriterConfig.CustomGraphOptimizer)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string name = 1;
-  if (this->name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->name().data(), static_cast<int>(this->name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RewriterConfig.CustomGraphOptimizer.name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->name(), output);
-  }
-
-  // map<string, .tensorflow.AttrValue> parameter_map = 2;
-  if (!this->parameter_map().empty()) {
-    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), static_cast<int>(p->first.length()),
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-          "tensorflow.RewriterConfig.CustomGraphOptimizer.ParameterMapEntry.key");
-      }
-    };
-
-    if (output->IsSerializationDeterministic() &&
-        this->parameter_map().size() > 1) {
-      ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->parameter_map().size()]);
-      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::size_type size_type;
-      size_type n = 0;
-      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_iterator
-          it = this->parameter_map().begin();
-          it != this->parameter_map().end(); ++it, ++n) {
-        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      for (size_type i = 0; i < n; i++) {
-        RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(2, entry, output);
-        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
-      }
-    } else {
-      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_iterator
-          it = this->parameter_map().begin();
-          it != this->parameter_map().end(); ++it) {
-        RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(2, entry, output);
-        Utf8Check::Check(&(*it));
-      }
-    }
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.RewriterConfig.CustomGraphOptimizer)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RewriterConfig_CustomGraphOptimizer::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RewriterConfig_CustomGraphOptimizer::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RewriterConfig.CustomGraphOptimizer)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1302,16 +957,15 @@ void RewriterConfig_CustomGraphOptimizer::SerializeWithCachedSizes(
   // string name = 1;
   if (this->name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->name().data(), static_cast<int>(this->name().length()),
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RewriterConfig.CustomGraphOptimizer.name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_name(), target);
   }
 
   // map<string, .tensorflow.AttrValue> parameter_map = 2;
-  if (!this->parameter_map().empty()) {
+  if (!this->_internal_parameter_map().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -1325,37 +979,35 @@ void RewriterConfig_CustomGraphOptimizer::SerializeWithCachedSizes(
       }
     };
 
-    if (false &&
-        this->parameter_map().size() > 1) {
+    if (stream->IsSerializationDeterministic() &&
+        this->_internal_parameter_map().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->parameter_map().size()]);
+          new SortItem[this->_internal_parameter_map().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_iterator
-          it = this->parameter_map().begin();
-          it != this->parameter_map().end(); ++it, ++n) {
+          it = this->_internal_parameter_map().begin();
+          it != this->_internal_parameter_map().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
-        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(2, entry, target);
+        target = RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::Funcs::InternalSerialize(2, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_iterator
-          it = this->parameter_map().begin();
-          it != this->parameter_map().end(); ++it) {
-        RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(2, entry, target);
+          it = this->_internal_parameter_map().begin();
+          it != this->_internal_parameter_map().end(); ++it) {
+        target = RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::Funcs::InternalSerialize(2, it->first, it->second, target, stream);
         Utf8Check::Check(&(*it));
       }
     }
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RewriterConfig.CustomGraphOptimizer)
   return target;
@@ -1365,33 +1017,30 @@ size_t RewriterConfig_CustomGraphOptimizer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.RewriterConfig.CustomGraphOptimizer)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // map<string, .tensorflow.AttrValue> parameter_map = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->parameter_map_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_parameter_map_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, ::tensorflow::AttrValue >::const_iterator
-      it = this->parameter_map().begin();
-      it != this->parameter_map().end(); ++it) {
-    RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        MessageSizeNoVirtual(entry);
+      it = this->_internal_parameter_map().begin();
+      it != this->_internal_parameter_map().end(); ++it) {
+    total_size += RewriterConfig_CustomGraphOptimizer_ParameterMapEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
   }
 
   // string name = 1;
   if (this->name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->name());
+        this->_internal_name());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1415,13 +1064,13 @@ void RewriterConfig_CustomGraphOptimizer::MergeFrom(const ::PROTOBUF_NAMESPACE_I
 void RewriterConfig_CustomGraphOptimizer::MergeFrom(const RewriterConfig_CustomGraphOptimizer& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RewriterConfig.CustomGraphOptimizer)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   parameter_map_.MergeFrom(from.parameter_map_);
   if (from.name().size() > 0) {
-    set_name(from.name());
+    _internal_set_name(from._internal_name());
   }
 }
 
@@ -1443,31 +1092,11 @@ bool RewriterConfig_CustomGraphOptimizer::IsInitialized() const {
   return true;
 }
 
-void RewriterConfig_CustomGraphOptimizer::Swap(RewriterConfig_CustomGraphOptimizer* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    RewriterConfig_CustomGraphOptimizer* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void RewriterConfig_CustomGraphOptimizer::UnsafeArenaSwap(RewriterConfig_CustomGraphOptimizer* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void RewriterConfig_CustomGraphOptimizer::InternalSwap(RewriterConfig_CustomGraphOptimizer* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   parameter_map_.Swap(&other->parameter_map_);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RewriterConfig_CustomGraphOptimizer::GetMetadata() const {
@@ -1487,7 +1116,7 @@ void RewriterConfig::InitAsDefaultInstance() {
   ::tensorflow::_RewriterConfig_default_instance_._instance.get_mutable()->post_optimization_verifier_config_ = const_cast< ::tensorflow::VerifierConfig*>(
       ::tensorflow::VerifierConfig::internal_default_instance());
 }
-class RewriterConfig::HasBitSetters {
+class RewriterConfig::_Internal {
  public:
   static const ::tensorflow::AutoParallelOptions& auto_parallel(const RewriterConfig* msg);
   static const ::tensorflow::ScopedAllocatorOptions& scoped_allocator_opts(const RewriterConfig* msg);
@@ -1496,125 +1125,35 @@ class RewriterConfig::HasBitSetters {
 };
 
 const ::tensorflow::AutoParallelOptions&
-RewriterConfig::HasBitSetters::auto_parallel(const RewriterConfig* msg) {
+RewriterConfig::_Internal::auto_parallel(const RewriterConfig* msg) {
   return *msg->auto_parallel_;
 }
 const ::tensorflow::ScopedAllocatorOptions&
-RewriterConfig::HasBitSetters::scoped_allocator_opts(const RewriterConfig* msg) {
+RewriterConfig::_Internal::scoped_allocator_opts(const RewriterConfig* msg) {
   return *msg->scoped_allocator_opts_;
 }
 const ::tensorflow::VerifierConfig&
-RewriterConfig::HasBitSetters::inter_optimizer_verifier_config(const RewriterConfig* msg) {
+RewriterConfig::_Internal::inter_optimizer_verifier_config(const RewriterConfig* msg) {
   return *msg->inter_optimizer_verifier_config_;
 }
 const ::tensorflow::VerifierConfig&
-RewriterConfig::HasBitSetters::post_optimization_verifier_config(const RewriterConfig* msg) {
+RewriterConfig::_Internal::post_optimization_verifier_config(const RewriterConfig* msg) {
   return *msg->post_optimization_verifier_config_;
 }
-void RewriterConfig::unsafe_arena_set_allocated_auto_parallel(
-    ::tensorflow::AutoParallelOptions* auto_parallel) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete auto_parallel_;
-  }
-  auto_parallel_ = auto_parallel;
-  if (auto_parallel) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RewriterConfig.auto_parallel)
-}
-void RewriterConfig::unsafe_arena_set_allocated_scoped_allocator_opts(
-    ::tensorflow::ScopedAllocatorOptions* scoped_allocator_opts) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete scoped_allocator_opts_;
-  }
-  scoped_allocator_opts_ = scoped_allocator_opts;
-  if (scoped_allocator_opts) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RewriterConfig.scoped_allocator_opts)
-}
-void RewriterConfig::unsafe_arena_set_allocated_inter_optimizer_verifier_config(
-    ::tensorflow::VerifierConfig* inter_optimizer_verifier_config) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete inter_optimizer_verifier_config_;
-  }
-  inter_optimizer_verifier_config_ = inter_optimizer_verifier_config;
-  if (inter_optimizer_verifier_config) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RewriterConfig.inter_optimizer_verifier_config)
-}
 void RewriterConfig::clear_inter_optimizer_verifier_config() {
-  if (GetArenaNoVirtual() == nullptr && inter_optimizer_verifier_config_ != nullptr) {
+  if (GetArena() == nullptr && inter_optimizer_verifier_config_ != nullptr) {
     delete inter_optimizer_verifier_config_;
   }
   inter_optimizer_verifier_config_ = nullptr;
 }
-void RewriterConfig::unsafe_arena_set_allocated_post_optimization_verifier_config(
-    ::tensorflow::VerifierConfig* post_optimization_verifier_config) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete post_optimization_verifier_config_;
-  }
-  post_optimization_verifier_config_ = post_optimization_verifier_config;
-  if (post_optimization_verifier_config) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RewriterConfig.post_optimization_verifier_config)
-}
 void RewriterConfig::clear_post_optimization_verifier_config() {
-  if (GetArenaNoVirtual() == nullptr && post_optimization_verifier_config_ != nullptr) {
+  if (GetArena() == nullptr && post_optimization_verifier_config_ != nullptr) {
     delete post_optimization_verifier_config_;
   }
   post_optimization_verifier_config_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RewriterConfig::kLayoutOptimizerFieldNumber;
-const int RewriterConfig::kConstantFoldingFieldNumber;
-const int RewriterConfig::kShapeOptimizationFieldNumber;
-const int RewriterConfig::kRemappingFieldNumber;
-const int RewriterConfig::kCommonSubgraphEliminationFieldNumber;
-const int RewriterConfig::kArithmeticOptimizationFieldNumber;
-const int RewriterConfig::kDependencyOptimizationFieldNumber;
-const int RewriterConfig::kLoopOptimizationFieldNumber;
-const int RewriterConfig::kFunctionOptimizationFieldNumber;
-const int RewriterConfig::kDebugStripperFieldNumber;
-const int RewriterConfig::kDisableModelPruningFieldNumber;
-const int RewriterConfig::kScopedAllocatorOptimizationFieldNumber;
-const int RewriterConfig::kPinToHostOptimizationFieldNumber;
-const int RewriterConfig::kImplementationSelectorFieldNumber;
-const int RewriterConfig::kAutoMixedPrecisionFieldNumber;
-const int RewriterConfig::kAutoMixedPrecisionMklFieldNumber;
-const int RewriterConfig::kDisableMetaOptimizerFieldNumber;
-const int RewriterConfig::kMetaOptimizerIterationsFieldNumber;
-const int RewriterConfig::kMinGraphNodesFieldNumber;
-const int RewriterConfig::kMemoryOptimizationFieldNumber;
-const int RewriterConfig::kMemoryOptimizerTargetNodeNameScopeFieldNumber;
-const int RewriterConfig::kMetaOptimizerTimeoutMsFieldNumber;
-const int RewriterConfig::kAutoParallelFieldNumber;
-const int RewriterConfig::kFailOnOptimizerErrorsFieldNumber;
-const int RewriterConfig::kScopedAllocatorOptsFieldNumber;
-const int RewriterConfig::kOptimizersFieldNumber;
-const int RewriterConfig::kCustomOptimizersFieldNumber;
-const int RewriterConfig::kInterOptimizerVerifierConfigFieldNumber;
-const int RewriterConfig::kPostOptimizationVerifierConfigFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RewriterConfig::RewriterConfig()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.RewriterConfig)
-}
 RewriterConfig::RewriterConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   optimizers_(arena),
   custom_optimizers_(arena) {
   SharedCtor();
@@ -1623,31 +1162,30 @@ RewriterConfig::RewriterConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 RewriterConfig::RewriterConfig(const RewriterConfig& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       optimizers_(from.optimizers_),
       custom_optimizers_(from.custom_optimizers_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   memory_optimizer_target_node_name_scope_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.memory_optimizer_target_node_name_scope().size() > 0) {
-    memory_optimizer_target_node_name_scope_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.memory_optimizer_target_node_name_scope(),
-      GetArenaNoVirtual());
+  if (!from._internal_memory_optimizer_target_node_name_scope().empty()) {
+    memory_optimizer_target_node_name_scope_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_memory_optimizer_target_node_name_scope(),
+      GetArena());
   }
-  if (from.has_auto_parallel()) {
+  if (from._internal_has_auto_parallel()) {
     auto_parallel_ = new ::tensorflow::AutoParallelOptions(*from.auto_parallel_);
   } else {
     auto_parallel_ = nullptr;
   }
-  if (from.has_scoped_allocator_opts()) {
+  if (from._internal_has_scoped_allocator_opts()) {
     scoped_allocator_opts_ = new ::tensorflow::ScopedAllocatorOptions(*from.scoped_allocator_opts_);
   } else {
     scoped_allocator_opts_ = nullptr;
   }
-  if (from.has_inter_optimizer_verifier_config()) {
+  if (from._internal_has_inter_optimizer_verifier_config()) {
     inter_optimizer_verifier_config_ = new ::tensorflow::VerifierConfig(*from.inter_optimizer_verifier_config_);
   } else {
     inter_optimizer_verifier_config_ = nullptr;
   }
-  if (from.has_post_optimization_verifier_config()) {
+  if (from._internal_has_post_optimization_verifier_config()) {
     post_optimization_verifier_config_ = new ::tensorflow::VerifierConfig(*from.post_optimization_verifier_config_);
   } else {
     post_optimization_verifier_config_ = nullptr;
@@ -1669,10 +1207,11 @@ void RewriterConfig::SharedCtor() {
 RewriterConfig::~RewriterConfig() {
   // @@protoc_insertion_point(destructor:tensorflow.RewriterConfig)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RewriterConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   memory_optimizer_target_node_name_scope_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete auto_parallel_;
   if (this != internal_default_instance()) delete scoped_allocator_opts_;
@@ -1703,33 +1242,32 @@ void RewriterConfig::Clear() {
 
   optimizers_.Clear();
   custom_optimizers_.Clear();
-  memory_optimizer_target_node_name_scope_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && auto_parallel_ != nullptr) {
+  memory_optimizer_target_node_name_scope_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && auto_parallel_ != nullptr) {
     delete auto_parallel_;
   }
   auto_parallel_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && scoped_allocator_opts_ != nullptr) {
+  if (GetArena() == nullptr && scoped_allocator_opts_ != nullptr) {
     delete scoped_allocator_opts_;
   }
   scoped_allocator_opts_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && inter_optimizer_verifier_config_ != nullptr) {
+  if (GetArena() == nullptr && inter_optimizer_verifier_config_ != nullptr) {
     delete inter_optimizer_verifier_config_;
   }
   inter_optimizer_verifier_config_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && post_optimization_verifier_config_ != nullptr) {
+  if (GetArena() == nullptr && post_optimization_verifier_config_ != nullptr) {
     delete post_optimization_verifier_config_;
   }
   post_optimization_verifier_config_ = nullptr;
   ::memset(&layout_optimizer_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&auto_mixed_precision_mkl_) -
       reinterpret_cast<char*>(&layout_optimizer_)) + sizeof(auto_mixed_precision_mkl_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RewriterConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1738,193 +1276,195 @@ const char* RewriterConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_layout_optimizer(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_layout_optimizer(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // bool disable_model_pruning = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          disable_model_pruning_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          disable_model_pruning_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle constant_folding = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_constant_folding(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_constant_folding(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_memory_optimization(static_cast<::tensorflow::RewriterConfig_MemOptType>(val));
+          _internal_set_memory_optimization(static_cast<::tensorflow::RewriterConfig_MemOptType>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.AutoParallelOptions auto_parallel = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_auto_parallel(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_auto_parallel(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string memory_optimizer_target_node_name_scope = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_memory_optimizer_target_node_name_scope(), ptr, ctx, "tensorflow.RewriterConfig.memory_optimizer_target_node_name_scope");
+          auto str = _internal_mutable_memory_optimizer_target_node_name_scope();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RewriterConfig.memory_optimizer_target_node_name_scope"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_arithmetic_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_arithmetic_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle dependency_optimization = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_dependency_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_dependency_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle loop_optimization = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_loop_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_loop_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle function_optimization = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_function_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_function_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle debug_stripper = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_debug_stripper(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_debug_stripper(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_meta_optimizer_iterations(static_cast<::tensorflow::RewriterConfig_NumIterationsType>(val));
+          _internal_set_meta_optimizer_iterations(static_cast<::tensorflow::RewriterConfig_NumIterationsType>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle shape_optimization = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_shape_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_shape_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle remapping = 14;
       case 14:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_remapping(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_remapping(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
       case 15:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_scoped_allocator_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_scoped_allocator_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.ScopedAllocatorOptions scoped_allocator_opts = 16;
       case 16:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
-          ptr = ctx->ParseMessage(mutable_scoped_allocator_opts(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_scoped_allocator_opts(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 min_graph_nodes = 17;
       case 17:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 136)) {
-          min_graph_nodes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          min_graph_nodes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
       case 18:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 144)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_pin_to_host_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_pin_to_host_optimization(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // bool disable_meta_optimizer = 19;
       case 19:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 152)) {
-          disable_meta_optimizer_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          disable_meta_optimizer_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 meta_optimizer_timeout_ms = 20;
       case 20:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 160)) {
-          meta_optimizer_timeout_ms_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          meta_optimizer_timeout_ms_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool fail_on_optimizer_errors = 21;
       case 21:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 168)) {
-          fail_on_optimizer_errors_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          fail_on_optimizer_errors_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
       case 22:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 176)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_implementation_selector(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_implementation_selector(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle auto_mixed_precision = 23;
       case 23:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 184)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_auto_mixed_precision(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_auto_mixed_precision(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
       case 24:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 192)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_common_subgraph_elimination(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_common_subgraph_elimination(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
       case 25:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 200)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_auto_mixed_precision_mkl(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
+          _internal_set_auto_mixed_precision_mkl(static_cast<::tensorflow::RewriterConfig_Toggle>(val));
         } else goto handle_unusual;
         continue;
       // repeated string optimizers = 100;
@@ -1933,10 +1473,12 @@ const char* RewriterConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ptr -= 2;
           do {
             ptr += 2;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_optimizers(), ptr, ctx, "tensorflow.RewriterConfig.optimizers");
+            auto str = _internal_add_optimizers();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RewriterConfig.optimizers"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint16>(ptr) == 1698);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<802>(ptr));
         } else goto handle_unusual;
         continue;
       // repeated .tensorflow.RewriterConfig.CustomGraphOptimizer custom_optimizers = 200;
@@ -1945,23 +1487,23 @@ const char* RewriterConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ptr -= 2;
           do {
             ptr += 2;
-            ptr = ctx->ParseMessage(add_custom_optimizers(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_custom_optimizers(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint16>(ptr) == 3266);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<1602>(ptr));
         } else goto handle_unusual;
         continue;
       // .tensorflow.VerifierConfig inter_optimizer_verifier_config = 300;
       case 300:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
-          ptr = ctx->ParseMessage(mutable_inter_optimizer_verifier_config(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_inter_optimizer_verifier_config(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.VerifierConfig post_optimization_verifier_config = 301;
       case 301:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
-          ptr = ctx->ParseMessage(mutable_post_optimization_verifier_config(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_post_optimization_verifier_config(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1971,7 +1513,9 @@ const char* RewriterConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1984,813 +1528,225 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RewriterConfig::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.RewriterConfig)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_layout_optimizer(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // bool disable_model_pruning = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &disable_model_pruning_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle constant_folding = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_constant_folding(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_memory_optimization(static_cast< ::tensorflow::RewriterConfig_MemOptType >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.AutoParallelOptions auto_parallel = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_auto_parallel()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string memory_optimizer_target_node_name_scope = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_memory_optimizer_target_node_name_scope()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->memory_optimizer_target_node_name_scope().data(), static_cast<int>(this->memory_optimizer_target_node_name_scope().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RewriterConfig.memory_optimizer_target_node_name_scope"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (56 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_arithmetic_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle dependency_optimization = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_dependency_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle loop_optimization = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_loop_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle function_optimization = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_function_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle debug_stripper = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_debug_stripper(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_meta_optimizer_iterations(static_cast< ::tensorflow::RewriterConfig_NumIterationsType >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle shape_optimization = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (104 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_shape_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle remapping = 14;
-      case 14: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (112 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_remapping(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
-      case 15: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (120 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_scoped_allocator_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ScopedAllocatorOptions scoped_allocator_opts = 16;
-      case 16: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (130 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_scoped_allocator_opts()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 min_graph_nodes = 17;
-      case 17: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (136 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &min_graph_nodes_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
-      case 18: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (144 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_pin_to_host_optimization(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool disable_meta_optimizer = 19;
-      case 19: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (152 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &disable_meta_optimizer_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 meta_optimizer_timeout_ms = 20;
-      case 20: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (160 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &meta_optimizer_timeout_ms_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool fail_on_optimizer_errors = 21;
-      case 21: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (168 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &fail_on_optimizer_errors_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
-      case 22: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (176 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_implementation_selector(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle auto_mixed_precision = 23;
-      case 23: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (184 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_auto_mixed_precision(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
-      case 24: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (192 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_common_subgraph_elimination(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
-      case 25: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (200 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_auto_mixed_precision_mkl(static_cast< ::tensorflow::RewriterConfig_Toggle >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string optimizers = 100;
-      case 100: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (802 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_optimizers()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->optimizers(this->optimizers_size() - 1).data(),
-            static_cast<int>(this->optimizers(this->optimizers_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RewriterConfig.optimizers"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.RewriterConfig.CustomGraphOptimizer custom_optimizers = 200;
-      case 200: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (1602 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_custom_optimizers()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.VerifierConfig inter_optimizer_verifier_config = 300;
-      case 300: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (2402 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_inter_optimizer_verifier_config()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.VerifierConfig post_optimization_verifier_config = 301;
-      case 301: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (2410 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_post_optimization_verifier_config()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.RewriterConfig)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.RewriterConfig)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RewriterConfig::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.RewriterConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
-  if (this->layout_optimizer() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->layout_optimizer(), output);
-  }
-
-  // bool disable_model_pruning = 2;
-  if (this->disable_model_pruning() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(2, this->disable_model_pruning(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle constant_folding = 3;
-  if (this->constant_folding() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      3, this->constant_folding(), output);
-  }
-
-  // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
-  if (this->memory_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      4, this->memory_optimization(), output);
-  }
-
-  // .tensorflow.AutoParallelOptions auto_parallel = 5;
-  if (this->has_auto_parallel()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, HasBitSetters::auto_parallel(this), output);
-  }
-
-  // string memory_optimizer_target_node_name_scope = 6;
-  if (this->memory_optimizer_target_node_name_scope().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->memory_optimizer_target_node_name_scope().data(), static_cast<int>(this->memory_optimizer_target_node_name_scope().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RewriterConfig.memory_optimizer_target_node_name_scope");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      6, this->memory_optimizer_target_node_name_scope(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
-  if (this->arithmetic_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      7, this->arithmetic_optimization(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle dependency_optimization = 8;
-  if (this->dependency_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      8, this->dependency_optimization(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle loop_optimization = 9;
-  if (this->loop_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      9, this->loop_optimization(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle function_optimization = 10;
-  if (this->function_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      10, this->function_optimization(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle debug_stripper = 11;
-  if (this->debug_stripper() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      11, this->debug_stripper(), output);
-  }
-
-  // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
-  if (this->meta_optimizer_iterations() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      12, this->meta_optimizer_iterations(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle shape_optimization = 13;
-  if (this->shape_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      13, this->shape_optimization(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle remapping = 14;
-  if (this->remapping() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      14, this->remapping(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
-  if (this->scoped_allocator_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      15, this->scoped_allocator_optimization(), output);
-  }
-
-  // .tensorflow.ScopedAllocatorOptions scoped_allocator_opts = 16;
-  if (this->has_scoped_allocator_opts()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      16, HasBitSetters::scoped_allocator_opts(this), output);
-  }
-
-  // int32 min_graph_nodes = 17;
-  if (this->min_graph_nodes() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(17, this->min_graph_nodes(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
-  if (this->pin_to_host_optimization() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      18, this->pin_to_host_optimization(), output);
-  }
-
-  // bool disable_meta_optimizer = 19;
-  if (this->disable_meta_optimizer() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(19, this->disable_meta_optimizer(), output);
-  }
-
-  // int64 meta_optimizer_timeout_ms = 20;
-  if (this->meta_optimizer_timeout_ms() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(20, this->meta_optimizer_timeout_ms(), output);
-  }
-
-  // bool fail_on_optimizer_errors = 21;
-  if (this->fail_on_optimizer_errors() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(21, this->fail_on_optimizer_errors(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
-  if (this->implementation_selector() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      22, this->implementation_selector(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision = 23;
-  if (this->auto_mixed_precision() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      23, this->auto_mixed_precision(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
-  if (this->common_subgraph_elimination() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      24, this->common_subgraph_elimination(), output);
-  }
-
-  // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
-  if (this->auto_mixed_precision_mkl() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      25, this->auto_mixed_precision_mkl(), output);
-  }
-
-  // repeated string optimizers = 100;
-  for (int i = 0, n = this->optimizers_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->optimizers(i).data(), static_cast<int>(this->optimizers(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RewriterConfig.optimizers");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      100, this->optimizers(i), output);
-  }
-
-  // repeated .tensorflow.RewriterConfig.CustomGraphOptimizer custom_optimizers = 200;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->custom_optimizers_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      200,
-      this->custom_optimizers(static_cast<int>(i)),
-      output);
-  }
-
-  // .tensorflow.VerifierConfig inter_optimizer_verifier_config = 300;
-  if (this->has_inter_optimizer_verifier_config()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      300, HasBitSetters::inter_optimizer_verifier_config(this), output);
-  }
-
-  // .tensorflow.VerifierConfig post_optimization_verifier_config = 301;
-  if (this->has_post_optimization_verifier_config()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      301, HasBitSetters::post_optimization_verifier_config(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.RewriterConfig)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RewriterConfig::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RewriterConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RewriterConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
   if (this->layout_optimizer() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->layout_optimizer(), target);
+      1, this->_internal_layout_optimizer(), target);
   }
 
   // bool disable_model_pruning = 2;
   if (this->disable_model_pruning() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->disable_model_pruning(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_disable_model_pruning(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle constant_folding = 3;
   if (this->constant_folding() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      3, this->constant_folding(), target);
+      3, this->_internal_constant_folding(), target);
   }
 
   // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
   if (this->memory_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      4, this->memory_optimization(), target);
+      4, this->_internal_memory_optimization(), target);
   }
 
   // .tensorflow.AutoParallelOptions auto_parallel = 5;
   if (this->has_auto_parallel()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, HasBitSetters::auto_parallel(this), target);
+      InternalWriteMessage(
+        5, _Internal::auto_parallel(this), target, stream);
   }
 
   // string memory_optimizer_target_node_name_scope = 6;
   if (this->memory_optimizer_target_node_name_scope().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->memory_optimizer_target_node_name_scope().data(), static_cast<int>(this->memory_optimizer_target_node_name_scope().length()),
+      this->_internal_memory_optimizer_target_node_name_scope().data(), static_cast<int>(this->_internal_memory_optimizer_target_node_name_scope().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RewriterConfig.memory_optimizer_target_node_name_scope");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        6, this->memory_optimizer_target_node_name_scope(), target);
+    target = stream->WriteStringMaybeAliased(
+        6, this->_internal_memory_optimizer_target_node_name_scope(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
   if (this->arithmetic_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      7, this->arithmetic_optimization(), target);
+      7, this->_internal_arithmetic_optimization(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle dependency_optimization = 8;
   if (this->dependency_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      8, this->dependency_optimization(), target);
+      8, this->_internal_dependency_optimization(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle loop_optimization = 9;
   if (this->loop_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      9, this->loop_optimization(), target);
+      9, this->_internal_loop_optimization(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle function_optimization = 10;
   if (this->function_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      10, this->function_optimization(), target);
+      10, this->_internal_function_optimization(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle debug_stripper = 11;
   if (this->debug_stripper() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      11, this->debug_stripper(), target);
+      11, this->_internal_debug_stripper(), target);
   }
 
   // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
   if (this->meta_optimizer_iterations() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      12, this->meta_optimizer_iterations(), target);
+      12, this->_internal_meta_optimizer_iterations(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle shape_optimization = 13;
   if (this->shape_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      13, this->shape_optimization(), target);
+      13, this->_internal_shape_optimization(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle remapping = 14;
   if (this->remapping() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      14, this->remapping(), target);
+      14, this->_internal_remapping(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
   if (this->scoped_allocator_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      15, this->scoped_allocator_optimization(), target);
+      15, this->_internal_scoped_allocator_optimization(), target);
   }
 
   // .tensorflow.ScopedAllocatorOptions scoped_allocator_opts = 16;
   if (this->has_scoped_allocator_opts()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        16, HasBitSetters::scoped_allocator_opts(this), target);
+      InternalWriteMessage(
+        16, _Internal::scoped_allocator_opts(this), target, stream);
   }
 
   // int32 min_graph_nodes = 17;
   if (this->min_graph_nodes() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(17, this->min_graph_nodes(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(17, this->_internal_min_graph_nodes(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
   if (this->pin_to_host_optimization() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      18, this->pin_to_host_optimization(), target);
+      18, this->_internal_pin_to_host_optimization(), target);
   }
 
   // bool disable_meta_optimizer = 19;
   if (this->disable_meta_optimizer() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(19, this->disable_meta_optimizer(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(19, this->_internal_disable_meta_optimizer(), target);
   }
 
   // int64 meta_optimizer_timeout_ms = 20;
   if (this->meta_optimizer_timeout_ms() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->meta_optimizer_timeout_ms(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(20, this->_internal_meta_optimizer_timeout_ms(), target);
   }
 
   // bool fail_on_optimizer_errors = 21;
   if (this->fail_on_optimizer_errors() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(21, this->fail_on_optimizer_errors(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(21, this->_internal_fail_on_optimizer_errors(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
   if (this->implementation_selector() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      22, this->implementation_selector(), target);
+      22, this->_internal_implementation_selector(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle auto_mixed_precision = 23;
   if (this->auto_mixed_precision() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      23, this->auto_mixed_precision(), target);
+      23, this->_internal_auto_mixed_precision(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
   if (this->common_subgraph_elimination() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      24, this->common_subgraph_elimination(), target);
+      24, this->_internal_common_subgraph_elimination(), target);
   }
 
   // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
   if (this->auto_mixed_precision_mkl() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      25, this->auto_mixed_precision_mkl(), target);
+      25, this->_internal_auto_mixed_precision_mkl(), target);
   }
 
   // repeated string optimizers = 100;
-  for (int i = 0, n = this->optimizers_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_optimizers_size(); i < n; i++) {
+    const auto& s = this->_internal_optimizers(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->optimizers(i).data(), static_cast<int>(this->optimizers(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RewriterConfig.optimizers");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(100, this->optimizers(i), target);
+    target = stream->WriteString(100, s, target);
   }
 
   // repeated .tensorflow.RewriterConfig.CustomGraphOptimizer custom_optimizers = 200;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->custom_optimizers_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_custom_optimizers_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        200, this->custom_optimizers(static_cast<int>(i)), target);
+      InternalWriteMessage(200, this->_internal_custom_optimizers(i), target, stream);
   }
 
   // .tensorflow.VerifierConfig inter_optimizer_verifier_config = 300;
   if (this->has_inter_optimizer_verifier_config()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        300, HasBitSetters::inter_optimizer_verifier_config(this), target);
+      InternalWriteMessage(
+        300, _Internal::inter_optimizer_verifier_config(this), target, stream);
   }
 
   // .tensorflow.VerifierConfig post_optimization_verifier_config = 301;
   if (this->has_post_optimization_verifier_config()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        301, HasBitSetters::post_optimization_verifier_config(this), target);
+      InternalWriteMessage(
+        301, _Internal::post_optimization_verifier_config(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RewriterConfig)
   return target;
@@ -2800,39 +1756,30 @@ size_t RewriterConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.RewriterConfig)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string optimizers = 100;
   total_size += 2 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->optimizers_size());
-  for (int i = 0, n = this->optimizers_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(optimizers_.size());
+  for (int i = 0, n = optimizers_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->optimizers(i));
+      optimizers_.Get(i));
   }
 
   // repeated .tensorflow.RewriterConfig.CustomGraphOptimizer custom_optimizers = 200;
-  {
-    unsigned int count = static_cast<unsigned int>(this->custom_optimizers_size());
-    total_size += 2UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->custom_optimizers(static_cast<int>(i)));
-    }
+  total_size += 2UL * this->_internal_custom_optimizers_size();
+  for (const auto& msg : this->custom_optimizers_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string memory_optimizer_target_node_name_scope = 6;
   if (this->memory_optimizer_target_node_name_scope().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->memory_optimizer_target_node_name_scope());
+        this->_internal_memory_optimizer_target_node_name_scope());
   }
 
   // .tensorflow.AutoParallelOptions auto_parallel = 5;
@@ -2866,67 +1813,67 @@ size_t RewriterConfig::ByteSizeLong() const {
   // .tensorflow.RewriterConfig.Toggle layout_optimizer = 1;
   if (this->layout_optimizer() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->layout_optimizer());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_layout_optimizer());
   }
 
   // .tensorflow.RewriterConfig.Toggle constant_folding = 3;
   if (this->constant_folding() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->constant_folding());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_constant_folding());
   }
 
   // .tensorflow.RewriterConfig.MemOptType memory_optimization = 4;
   if (this->memory_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->memory_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_memory_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle arithmetic_optimization = 7;
   if (this->arithmetic_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->arithmetic_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_arithmetic_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle dependency_optimization = 8;
   if (this->dependency_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->dependency_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dependency_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle loop_optimization = 9;
   if (this->loop_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->loop_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_loop_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle function_optimization = 10;
   if (this->function_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->function_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_function_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle debug_stripper = 11;
   if (this->debug_stripper() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->debug_stripper());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_debug_stripper());
   }
 
   // .tensorflow.RewriterConfig.NumIterationsType meta_optimizer_iterations = 12;
   if (this->meta_optimizer_iterations() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->meta_optimizer_iterations());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_meta_optimizer_iterations());
   }
 
   // .tensorflow.RewriterConfig.Toggle shape_optimization = 13;
   if (this->shape_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->shape_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_shape_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle remapping = 14;
   if (this->remapping() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->remapping());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_remapping());
   }
 
   // bool disable_model_pruning = 2;
@@ -2947,53 +1894,57 @@ size_t RewriterConfig::ByteSizeLong() const {
   // .tensorflow.RewriterConfig.Toggle scoped_allocator_optimization = 15;
   if (this->scoped_allocator_optimization() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->scoped_allocator_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_scoped_allocator_optimization());
   }
 
   // int32 min_graph_nodes = 17;
   if (this->min_graph_nodes() != 0) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->min_graph_nodes());
+        this->_internal_min_graph_nodes());
   }
 
   // int64 meta_optimizer_timeout_ms = 20;
   if (this->meta_optimizer_timeout_ms() != 0) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->meta_optimizer_timeout_ms());
+        this->_internal_meta_optimizer_timeout_ms());
   }
 
   // .tensorflow.RewriterConfig.Toggle pin_to_host_optimization = 18;
   if (this->pin_to_host_optimization() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->pin_to_host_optimization());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_pin_to_host_optimization());
   }
 
   // .tensorflow.RewriterConfig.Toggle implementation_selector = 22;
   if (this->implementation_selector() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->implementation_selector());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_implementation_selector());
   }
 
   // .tensorflow.RewriterConfig.Toggle auto_mixed_precision = 23;
   if (this->auto_mixed_precision() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->auto_mixed_precision());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_auto_mixed_precision());
   }
 
   // .tensorflow.RewriterConfig.Toggle common_subgraph_elimination = 24;
   if (this->common_subgraph_elimination() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->common_subgraph_elimination());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_common_subgraph_elimination());
   }
 
   // .tensorflow.RewriterConfig.Toggle auto_mixed_precision_mkl = 25;
   if (this->auto_mixed_precision_mkl() != 0) {
     total_size += 2 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->auto_mixed_precision_mkl());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_auto_mixed_precision_mkl());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -3017,92 +1968,92 @@ void RewriterConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void RewriterConfig::MergeFrom(const RewriterConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RewriterConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   optimizers_.MergeFrom(from.optimizers_);
   custom_optimizers_.MergeFrom(from.custom_optimizers_);
   if (from.memory_optimizer_target_node_name_scope().size() > 0) {
-    set_memory_optimizer_target_node_name_scope(from.memory_optimizer_target_node_name_scope());
+    _internal_set_memory_optimizer_target_node_name_scope(from._internal_memory_optimizer_target_node_name_scope());
   }
   if (from.has_auto_parallel()) {
-    mutable_auto_parallel()->::tensorflow::AutoParallelOptions::MergeFrom(from.auto_parallel());
+    _internal_mutable_auto_parallel()->::tensorflow::AutoParallelOptions::MergeFrom(from._internal_auto_parallel());
   }
   if (from.has_scoped_allocator_opts()) {
-    mutable_scoped_allocator_opts()->::tensorflow::ScopedAllocatorOptions::MergeFrom(from.scoped_allocator_opts());
+    _internal_mutable_scoped_allocator_opts()->::tensorflow::ScopedAllocatorOptions::MergeFrom(from._internal_scoped_allocator_opts());
   }
   if (from.has_inter_optimizer_verifier_config()) {
-    mutable_inter_optimizer_verifier_config()->::tensorflow::VerifierConfig::MergeFrom(from.inter_optimizer_verifier_config());
+    _internal_mutable_inter_optimizer_verifier_config()->::tensorflow::VerifierConfig::MergeFrom(from._internal_inter_optimizer_verifier_config());
   }
   if (from.has_post_optimization_verifier_config()) {
-    mutable_post_optimization_verifier_config()->::tensorflow::VerifierConfig::MergeFrom(from.post_optimization_verifier_config());
+    _internal_mutable_post_optimization_verifier_config()->::tensorflow::VerifierConfig::MergeFrom(from._internal_post_optimization_verifier_config());
   }
   if (from.layout_optimizer() != 0) {
-    set_layout_optimizer(from.layout_optimizer());
+    _internal_set_layout_optimizer(from._internal_layout_optimizer());
   }
   if (from.constant_folding() != 0) {
-    set_constant_folding(from.constant_folding());
+    _internal_set_constant_folding(from._internal_constant_folding());
   }
   if (from.memory_optimization() != 0) {
-    set_memory_optimization(from.memory_optimization());
+    _internal_set_memory_optimization(from._internal_memory_optimization());
   }
   if (from.arithmetic_optimization() != 0) {
-    set_arithmetic_optimization(from.arithmetic_optimization());
+    _internal_set_arithmetic_optimization(from._internal_arithmetic_optimization());
   }
   if (from.dependency_optimization() != 0) {
-    set_dependency_optimization(from.dependency_optimization());
+    _internal_set_dependency_optimization(from._internal_dependency_optimization());
   }
   if (from.loop_optimization() != 0) {
-    set_loop_optimization(from.loop_optimization());
+    _internal_set_loop_optimization(from._internal_loop_optimization());
   }
   if (from.function_optimization() != 0) {
-    set_function_optimization(from.function_optimization());
+    _internal_set_function_optimization(from._internal_function_optimization());
   }
   if (from.debug_stripper() != 0) {
-    set_debug_stripper(from.debug_stripper());
+    _internal_set_debug_stripper(from._internal_debug_stripper());
   }
   if (from.meta_optimizer_iterations() != 0) {
-    set_meta_optimizer_iterations(from.meta_optimizer_iterations());
+    _internal_set_meta_optimizer_iterations(from._internal_meta_optimizer_iterations());
   }
   if (from.shape_optimization() != 0) {
-    set_shape_optimization(from.shape_optimization());
+    _internal_set_shape_optimization(from._internal_shape_optimization());
   }
   if (from.remapping() != 0) {
-    set_remapping(from.remapping());
+    _internal_set_remapping(from._internal_remapping());
   }
   if (from.disable_model_pruning() != 0) {
-    set_disable_model_pruning(from.disable_model_pruning());
+    _internal_set_disable_model_pruning(from._internal_disable_model_pruning());
   }
   if (from.disable_meta_optimizer() != 0) {
-    set_disable_meta_optimizer(from.disable_meta_optimizer());
+    _internal_set_disable_meta_optimizer(from._internal_disable_meta_optimizer());
   }
   if (from.fail_on_optimizer_errors() != 0) {
-    set_fail_on_optimizer_errors(from.fail_on_optimizer_errors());
+    _internal_set_fail_on_optimizer_errors(from._internal_fail_on_optimizer_errors());
   }
   if (from.scoped_allocator_optimization() != 0) {
-    set_scoped_allocator_optimization(from.scoped_allocator_optimization());
+    _internal_set_scoped_allocator_optimization(from._internal_scoped_allocator_optimization());
   }
   if (from.min_graph_nodes() != 0) {
-    set_min_graph_nodes(from.min_graph_nodes());
+    _internal_set_min_graph_nodes(from._internal_min_graph_nodes());
   }
   if (from.meta_optimizer_timeout_ms() != 0) {
-    set_meta_optimizer_timeout_ms(from.meta_optimizer_timeout_ms());
+    _internal_set_meta_optimizer_timeout_ms(from._internal_meta_optimizer_timeout_ms());
   }
   if (from.pin_to_host_optimization() != 0) {
-    set_pin_to_host_optimization(from.pin_to_host_optimization());
+    _internal_set_pin_to_host_optimization(from._internal_pin_to_host_optimization());
   }
   if (from.implementation_selector() != 0) {
-    set_implementation_selector(from.implementation_selector());
+    _internal_set_implementation_selector(from._internal_implementation_selector());
   }
   if (from.auto_mixed_precision() != 0) {
-    set_auto_mixed_precision(from.auto_mixed_precision());
+    _internal_set_auto_mixed_precision(from._internal_auto_mixed_precision());
   }
   if (from.common_subgraph_elimination() != 0) {
-    set_common_subgraph_elimination(from.common_subgraph_elimination());
+    _internal_set_common_subgraph_elimination(from._internal_common_subgraph_elimination());
   }
   if (from.auto_mixed_precision_mkl() != 0) {
-    set_auto_mixed_precision_mkl(from.auto_mixed_precision_mkl());
+    _internal_set_auto_mixed_precision_mkl(from._internal_auto_mixed_precision_mkl());
   }
 }
 
@@ -3124,58 +2075,18 @@ bool RewriterConfig::IsInitialized() const {
   return true;
 }
 
-void RewriterConfig::Swap(RewriterConfig* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    RewriterConfig* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void RewriterConfig::UnsafeArenaSwap(RewriterConfig* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void RewriterConfig::InternalSwap(RewriterConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  optimizers_.InternalSwap(CastToBase(&other->optimizers_));
-  CastToBase(&custom_optimizers_)->InternalSwap(CastToBase(&other->custom_optimizers_));
-  memory_optimizer_target_node_name_scope_.Swap(&other->memory_optimizer_target_node_name_scope_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(auto_parallel_, other->auto_parallel_);
-  swap(scoped_allocator_opts_, other->scoped_allocator_opts_);
-  swap(inter_optimizer_verifier_config_, other->inter_optimizer_verifier_config_);
-  swap(post_optimization_verifier_config_, other->post_optimization_verifier_config_);
-  swap(layout_optimizer_, other->layout_optimizer_);
-  swap(constant_folding_, other->constant_folding_);
-  swap(memory_optimization_, other->memory_optimization_);
-  swap(arithmetic_optimization_, other->arithmetic_optimization_);
-  swap(dependency_optimization_, other->dependency_optimization_);
-  swap(loop_optimization_, other->loop_optimization_);
-  swap(function_optimization_, other->function_optimization_);
-  swap(debug_stripper_, other->debug_stripper_);
-  swap(meta_optimizer_iterations_, other->meta_optimizer_iterations_);
-  swap(shape_optimization_, other->shape_optimization_);
-  swap(remapping_, other->remapping_);
-  swap(disable_model_pruning_, other->disable_model_pruning_);
-  swap(disable_meta_optimizer_, other->disable_meta_optimizer_);
-  swap(fail_on_optimizer_errors_, other->fail_on_optimizer_errors_);
-  swap(scoped_allocator_optimization_, other->scoped_allocator_optimization_);
-  swap(min_graph_nodes_, other->min_graph_nodes_);
-  swap(meta_optimizer_timeout_ms_, other->meta_optimizer_timeout_ms_);
-  swap(pin_to_host_optimization_, other->pin_to_host_optimization_);
-  swap(implementation_selector_, other->implementation_selector_);
-  swap(auto_mixed_precision_, other->auto_mixed_precision_);
-  swap(common_subgraph_elimination_, other->common_subgraph_elimination_);
-  swap(auto_mixed_precision_mkl_, other->auto_mixed_precision_mkl_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  optimizers_.InternalSwap(&other->optimizers_);
+  custom_optimizers_.InternalSwap(&other->custom_optimizers_);
+  memory_optimizer_target_node_name_scope_.Swap(&other->memory_optimizer_target_node_name_scope_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RewriterConfig, auto_mixed_precision_mkl_)
+      + sizeof(RewriterConfig::auto_mixed_precision_mkl_)
+      - PROTOBUF_FIELD_OFFSET(RewriterConfig, auto_parallel_)>(
+          reinterpret_cast<char*>(&auto_parallel_),
+          reinterpret_cast<char*>(&other->auto_parallel_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RewriterConfig::GetMetadata() const {

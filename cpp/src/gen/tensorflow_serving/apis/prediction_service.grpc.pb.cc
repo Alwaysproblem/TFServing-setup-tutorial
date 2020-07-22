@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -188,27 +189,52 @@ PredictionService::Service::Service() {
       PredictionService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< PredictionService::Service, ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>(
-          std::mem_fn(&PredictionService::Service::Classify), this)));
+          [](PredictionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::ClassificationRequest* req,
+             ::tensorflow::serving::ClassificationResponse* resp) {
+               return service->Classify(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       PredictionService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< PredictionService::Service, ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>(
-          std::mem_fn(&PredictionService::Service::Regress), this)));
+          [](PredictionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::RegressionRequest* req,
+             ::tensorflow::serving::RegressionResponse* resp) {
+               return service->Regress(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       PredictionService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< PredictionService::Service, ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>(
-          std::mem_fn(&PredictionService::Service::Predict), this)));
+          [](PredictionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::PredictRequest* req,
+             ::tensorflow::serving::PredictResponse* resp) {
+               return service->Predict(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       PredictionService_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< PredictionService::Service, ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>(
-          std::mem_fn(&PredictionService::Service::MultiInference), this)));
+          [](PredictionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::MultiInferenceRequest* req,
+             ::tensorflow::serving::MultiInferenceResponse* resp) {
+               return service->MultiInference(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       PredictionService_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< PredictionService::Service, ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>(
-          std::mem_fn(&PredictionService::Service::GetModelMetadata), this)));
+          [](PredictionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::GetModelMetadataRequest* req,
+             ::tensorflow::serving::GetModelMetadataResponse* resp) {
+               return service->GetModelMetadata(ctx, req, resp);
+             }, this)));
 }
 
 PredictionService::Service::~Service() {

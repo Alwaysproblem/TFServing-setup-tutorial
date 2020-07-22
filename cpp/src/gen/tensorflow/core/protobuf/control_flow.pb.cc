@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -66,7 +65,7 @@ static void InitDefaultsscc_info_CondContextDef_tensorflow_2fcore_2fprotobuf_2fc
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_CondContextDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_CondContextDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_CondContextDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {
       &scc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto.base,}};
 
 static void InitDefaultsscc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto() {
@@ -81,7 +80,7 @@ static void InitDefaultsscc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontro
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ValuesDef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {
       &scc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto.base,}};
 
 static void InitDefaultsscc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto() {
@@ -95,7 +94,7 @@ static void InitDefaultsscc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorfl
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto = nullptr;
@@ -171,7 +170,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_WhileContextDef_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n+tensorflow/core/protobuf/control_flow."
   "proto\022\ntensorflow\"\226\001\n\tValuesDef\022\016\n\006value"
   "s\030\001 \003(\t\022B\n\017external_values\030\002 \003(\0132).tenso"
@@ -208,16 +207,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_ValuesDef_ExternalValuesEntry_DoNotUse_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto, "tensorflow/core/protobuf/control_flow.proto", 1053,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto, "tensorflow/core/protobuf/control_flow.proto", 1053,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto_deps, 3, 0,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto, 5, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fcontrol_5fflow_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -241,23 +239,12 @@ void ValuesDef_ExternalValuesEntry_DoNotUse::MergeFrom(
 
 void ValuesDef::InitAsDefaultInstance() {
 }
-class ValuesDef::HasBitSetters {
+class ValuesDef::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ValuesDef::kValuesFieldNumber;
-const int ValuesDef::kExternalValuesFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ValuesDef::ValuesDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ValuesDef)
-}
 ValuesDef::ValuesDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   values_(arena),
   external_values_(arena) {
   SharedCtor();
@@ -266,9 +253,8 @@ ValuesDef::ValuesDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 ValuesDef::ValuesDef(const ValuesDef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       values_(from.values_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   external_values_.MergeFrom(from.external_values_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.ValuesDef)
 }
@@ -280,10 +266,11 @@ void ValuesDef::SharedCtor() {
 ValuesDef::~ValuesDef() {
   // @@protoc_insertion_point(destructor:tensorflow.ValuesDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ValuesDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void ValuesDef::ArenaDtor(void* object) {
@@ -309,13 +296,12 @@ void ValuesDef::Clear() {
 
   values_.Clear();
   external_values_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ValuesDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -327,10 +313,12 @@ const char* ValuesDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_values(), ptr, ctx, "tensorflow.ValuesDef.values");
+            auto str = _internal_add_values();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.ValuesDef.values"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       // map<string, string> external_values = 2;
@@ -342,7 +330,7 @@ const char* ValuesDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
             ptr = ctx->ParseMessage(&external_values_, ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 18);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -351,7 +339,9 @@ const char* ValuesDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -364,168 +354,25 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ValuesDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ValuesDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated string values = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_values()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->values(this->values_size() - 1).data(),
-            static_cast<int>(this->values(this->values_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ValuesDef.values"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // map<string, string> external_values = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          ValuesDef_ExternalValuesEntry_DoNotUse::Parser< ::PROTOBUF_NAMESPACE_ID::internal::MapField<
-              ValuesDef_ExternalValuesEntry_DoNotUse,
-              std::string, std::string,
-              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
-              ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_STRING,
-              0 >,
-            ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string > > parser(&external_values_);
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessageNoVirtual(
-              input, &parser));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            parser.key().data(), static_cast<int>(parser.key().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ValuesDef.ExternalValuesEntry.key"));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            parser.value().data(), static_cast<int>(parser.value().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ValuesDef.ExternalValuesEntry.value"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ValuesDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ValuesDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ValuesDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ValuesDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated string values = 1;
-  for (int i = 0, n = this->values_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->values(i).data(), static_cast<int>(this->values(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.ValuesDef.values");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      1, this->values(i), output);
-  }
-
-  // map<string, string> external_values = 2;
-  if (!this->external_values().empty()) {
-    typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
-        ConstPtr;
-    typedef ConstPtr SortItem;
-    typedef ::PROTOBUF_NAMESPACE_ID::internal::CompareByDerefFirst<SortItem> Less;
-    struct Utf8Check {
-      static void Check(ConstPtr p) {
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-          p->first.data(), static_cast<int>(p->first.length()),
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-          "tensorflow.ValuesDef.ExternalValuesEntry.key");
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-          p->second.data(), static_cast<int>(p->second.length()),
-          ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-          "tensorflow.ValuesDef.ExternalValuesEntry.value");
-      }
-    };
-
-    if (output->IsSerializationDeterministic() &&
-        this->external_values().size() > 1) {
-      ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->external_values().size()]);
-      typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
-      size_type n = 0;
-      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->external_values().begin();
-          it != this->external_values().end(); ++it, ++n) {
-        items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
-      }
-      ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
-      for (size_type i = 0; i < n; i++) {
-        ValuesDef_ExternalValuesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(2, entry, output);
-        Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
-      }
-    } else {
-      for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->external_values().begin();
-          it != this->external_values().end(); ++it) {
-        ValuesDef_ExternalValuesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(2, entry, output);
-        Utf8Check::Check(&(*it));
-      }
-    }
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ValuesDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ValuesDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ValuesDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ValuesDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated string values = 1;
-  for (int i = 0, n = this->values_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_values_size(); i < n; i++) {
+    const auto& s = this->_internal_values(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->values(i).data(), static_cast<int>(this->values(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.ValuesDef.values");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(1, this->values(i), target);
+    target = stream->WriteString(1, s, target);
   }
 
   // map<string, string> external_values = 2;
-  if (!this->external_values().empty()) {
+  if (!this->_internal_external_values().empty()) {
     typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_pointer
         ConstPtr;
     typedef ConstPtr SortItem;
@@ -543,37 +390,35 @@ void ValuesDef::SerializeWithCachedSizes(
       }
     };
 
-    if (false &&
-        this->external_values().size() > 1) {
+    if (stream->IsSerializationDeterministic() &&
+        this->_internal_external_values().size() > 1) {
       ::std::unique_ptr<SortItem[]> items(
-          new SortItem[this->external_values().size()]);
+          new SortItem[this->_internal_external_values().size()]);
       typedef ::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::size_type size_type;
       size_type n = 0;
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->external_values().begin();
-          it != this->external_values().end(); ++it, ++n) {
+          it = this->_internal_external_values().begin();
+          it != this->_internal_external_values().end(); ++it, ++n) {
         items[static_cast<ptrdiff_t>(n)] = SortItem(&*it);
       }
       ::std::sort(&items[0], &items[static_cast<ptrdiff_t>(n)], Less());
       for (size_type i = 0; i < n; i++) {
-        ValuesDef_ExternalValuesEntry_DoNotUse::MapEntryWrapper entry(nullptr, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second);
-        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(2, entry, target);
+        target = ValuesDef_ExternalValuesEntry_DoNotUse::Funcs::InternalSerialize(2, items[static_cast<ptrdiff_t>(i)]->first, items[static_cast<ptrdiff_t>(i)]->second, target, stream);
         Utf8Check::Check(&(*items[static_cast<ptrdiff_t>(i)]));
       }
     } else {
       for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-          it = this->external_values().begin();
-          it != this->external_values().end(); ++it) {
-        ValuesDef_ExternalValuesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-        target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::InternalWriteMessageNoVirtualToArray(2, entry, target);
+          it = this->_internal_external_values().begin();
+          it != this->_internal_external_values().end(); ++it) {
+        target = ValuesDef_ExternalValuesEntry_DoNotUse::Funcs::InternalSerialize(2, it->first, it->second, target, stream);
         Utf8Check::Check(&(*it));
       }
     }
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ValuesDef)
   return target;
@@ -583,34 +428,31 @@ size_t ValuesDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ValuesDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string values = 1;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->values_size());
-  for (int i = 0, n = this->values_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(values_.size());
+  for (int i = 0, n = values_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->values(i));
+      values_.Get(i));
   }
 
   // map<string, string> external_values = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->external_values_size());
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->_internal_external_values_size());
   for (::PROTOBUF_NAMESPACE_ID::Map< std::string, std::string >::const_iterator
-      it = this->external_values().begin();
-      it != this->external_values().end(); ++it) {
-    ValuesDef_ExternalValuesEntry_DoNotUse::MapEntryWrapper entry(nullptr, it->first, it->second);
-    total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        MessageSizeNoVirtual(entry);
+      it = this->_internal_external_values().begin();
+      it != this->_internal_external_values().end(); ++it) {
+    total_size += ValuesDef_ExternalValuesEntry_DoNotUse::Funcs::ByteSizeLong(it->first, it->second);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -634,7 +476,7 @@ void ValuesDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ValuesDef::MergeFrom(const ValuesDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ValuesDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -660,29 +502,10 @@ bool ValuesDef::IsInitialized() const {
   return true;
 }
 
-void ValuesDef::Swap(ValuesDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ValuesDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ValuesDef::UnsafeArenaSwap(ValuesDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ValuesDef::InternalSwap(ValuesDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  values_.InternalSwap(CastToBase(&other->values_));
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  values_.InternalSwap(&other->values_);
   external_values_.Swap(&other->external_values_);
 }
 
@@ -699,22 +522,22 @@ void ControlFlowContextDef::InitAsDefaultInstance() {
   ::tensorflow::_ControlFlowContextDef_default_instance_.while_ctxt_ = const_cast< ::tensorflow::WhileContextDef*>(
       ::tensorflow::WhileContextDef::internal_default_instance());
 }
-class ControlFlowContextDef::HasBitSetters {
+class ControlFlowContextDef::_Internal {
  public:
   static const ::tensorflow::CondContextDef& cond_ctxt(const ControlFlowContextDef* msg);
   static const ::tensorflow::WhileContextDef& while_ctxt(const ControlFlowContextDef* msg);
 };
 
 const ::tensorflow::CondContextDef&
-ControlFlowContextDef::HasBitSetters::cond_ctxt(const ControlFlowContextDef* msg) {
+ControlFlowContextDef::_Internal::cond_ctxt(const ControlFlowContextDef* msg) {
   return *msg->ctxt_.cond_ctxt_;
 }
 const ::tensorflow::WhileContextDef&
-ControlFlowContextDef::HasBitSetters::while_ctxt(const ControlFlowContextDef* msg) {
+ControlFlowContextDef::_Internal::while_ctxt(const ControlFlowContextDef* msg) {
   return *msg->ctxt_.while_ctxt_;
 }
 void ControlFlowContextDef::set_allocated_cond_ctxt(::tensorflow::CondContextDef* cond_ctxt) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_ctxt();
   if (cond_ctxt) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -729,7 +552,7 @@ void ControlFlowContextDef::set_allocated_cond_ctxt(::tensorflow::CondContextDef
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ControlFlowContextDef.cond_ctxt)
 }
 void ControlFlowContextDef::set_allocated_while_ctxt(::tensorflow::WhileContextDef* while_ctxt) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_ctxt();
   if (while_ctxt) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -743,35 +566,23 @@ void ControlFlowContextDef::set_allocated_while_ctxt(::tensorflow::WhileContextD
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ControlFlowContextDef.while_ctxt)
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ControlFlowContextDef::kCondCtxtFieldNumber;
-const int ControlFlowContextDef::kWhileCtxtFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ControlFlowContextDef::ControlFlowContextDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ControlFlowContextDef)
-}
 ControlFlowContextDef::ControlFlowContextDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.ControlFlowContextDef)
 }
 ControlFlowContextDef::ControlFlowContextDef(const ControlFlowContextDef& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clear_has_ctxt();
   switch (from.ctxt_case()) {
     case kCondCtxt: {
-      mutable_cond_ctxt()->::tensorflow::CondContextDef::MergeFrom(from.cond_ctxt());
+      _internal_mutable_cond_ctxt()->::tensorflow::CondContextDef::MergeFrom(from._internal_cond_ctxt());
       break;
     }
     case kWhileCtxt: {
-      mutable_while_ctxt()->::tensorflow::WhileContextDef::MergeFrom(from.while_ctxt());
+      _internal_mutable_while_ctxt()->::tensorflow::WhileContextDef::MergeFrom(from._internal_while_ctxt());
       break;
     }
     case CTXT_NOT_SET: {
@@ -789,10 +600,11 @@ void ControlFlowContextDef::SharedCtor() {
 ControlFlowContextDef::~ControlFlowContextDef() {
   // @@protoc_insertion_point(destructor:tensorflow.ControlFlowContextDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ControlFlowContextDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_ctxt()) {
     clear_ctxt();
   }
@@ -817,13 +629,13 @@ void ControlFlowContextDef::clear_ctxt() {
 // @@protoc_insertion_point(one_of_clear_start:tensorflow.ControlFlowContextDef)
   switch (ctxt_case()) {
     case kCondCtxt: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete ctxt_.cond_ctxt_;
       }
       break;
     }
     case kWhileCtxt: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete ctxt_.while_ctxt_;
       }
       break;
@@ -843,13 +655,12 @@ void ControlFlowContextDef::Clear() {
   (void) cached_has_bits;
 
   clear_ctxt();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ControlFlowContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -858,14 +669,14 @@ const char* ControlFlowContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // .tensorflow.CondContextDef cond_ctxt = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_cond_ctxt(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_cond_ctxt(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.WhileContextDef while_ctxt = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_while_ctxt(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_while_ctxt(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -875,7 +686,9 @@ const char* ControlFlowContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -888,108 +701,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ControlFlowContextDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ControlFlowContextDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.CondContextDef cond_ctxt = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_cond_ctxt()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.WhileContextDef while_ctxt = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_while_ctxt()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ControlFlowContextDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ControlFlowContextDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ControlFlowContextDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ControlFlowContextDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.CondContextDef cond_ctxt = 1;
-  if (has_cond_ctxt()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::cond_ctxt(this), output);
-  }
-
-  // .tensorflow.WhileContextDef while_ctxt = 2;
-  if (has_while_ctxt()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::while_ctxt(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ControlFlowContextDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ControlFlowContextDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ControlFlowContextDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ControlFlowContextDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.CondContextDef cond_ctxt = 1;
-  if (has_cond_ctxt()) {
+  if (_internal_has_cond_ctxt()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::cond_ctxt(this), target);
+      InternalWriteMessage(
+        1, _Internal::cond_ctxt(this), target, stream);
   }
 
   // .tensorflow.WhileContextDef while_ctxt = 2;
-  if (has_while_ctxt()) {
+  if (_internal_has_while_ctxt()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::while_ctxt(this), target);
+      InternalWriteMessage(
+        2, _Internal::while_ctxt(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ControlFlowContextDef)
   return target;
@@ -999,11 +736,6 @@ size_t ControlFlowContextDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ControlFlowContextDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1026,6 +758,10 @@ size_t ControlFlowContextDef::ByteSizeLong() const {
     case CTXT_NOT_SET: {
       break;
     }
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -1050,17 +786,17 @@ void ControlFlowContextDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void ControlFlowContextDef::MergeFrom(const ControlFlowContextDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ControlFlowContextDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.ctxt_case()) {
     case kCondCtxt: {
-      mutable_cond_ctxt()->::tensorflow::CondContextDef::MergeFrom(from.cond_ctxt());
+      _internal_mutable_cond_ctxt()->::tensorflow::CondContextDef::MergeFrom(from._internal_cond_ctxt());
       break;
     }
     case kWhileCtxt: {
-      mutable_while_ctxt()->::tensorflow::WhileContextDef::MergeFrom(from.while_ctxt());
+      _internal_mutable_while_ctxt()->::tensorflow::WhileContextDef::MergeFrom(from._internal_while_ctxt());
       break;
     }
     case CTXT_NOT_SET: {
@@ -1087,28 +823,9 @@ bool ControlFlowContextDef::IsInitialized() const {
   return true;
 }
 
-void ControlFlowContextDef::Swap(ControlFlowContextDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ControlFlowContextDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ControlFlowContextDef::UnsafeArenaSwap(ControlFlowContextDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ControlFlowContextDef::InternalSwap(ControlFlowContextDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(ctxt_, other->ctxt_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1124,45 +841,17 @@ void CondContextDef::InitAsDefaultInstance() {
   ::tensorflow::_CondContextDef_default_instance_._instance.get_mutable()->values_def_ = const_cast< ::tensorflow::ValuesDef*>(
       ::tensorflow::ValuesDef::internal_default_instance());
 }
-class CondContextDef::HasBitSetters {
+class CondContextDef::_Internal {
  public:
   static const ::tensorflow::ValuesDef& values_def(const CondContextDef* msg);
 };
 
 const ::tensorflow::ValuesDef&
-CondContextDef::HasBitSetters::values_def(const CondContextDef* msg) {
+CondContextDef::_Internal::values_def(const CondContextDef* msg) {
   return *msg->values_def_;
 }
-void CondContextDef::unsafe_arena_set_allocated_values_def(
-    ::tensorflow::ValuesDef* values_def) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete values_def_;
-  }
-  values_def_ = values_def;
-  if (values_def) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.CondContextDef.values_def)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int CondContextDef::kContextNameFieldNumber;
-const int CondContextDef::kPredNameFieldNumber;
-const int CondContextDef::kPivotNameFieldNumber;
-const int CondContextDef::kBranchFieldNumber;
-const int CondContextDef::kValuesDefFieldNumber;
-const int CondContextDef::kNestedContextsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-CondContextDef::CondContextDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.CondContextDef)
-}
 CondContextDef::CondContextDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   nested_contexts_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -1170,25 +859,24 @@ CondContextDef::CondContextDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 CondContextDef::CondContextDef(const CondContextDef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       nested_contexts_(from.nested_contexts_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   context_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.context_name().size() > 0) {
-    context_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.context_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_context_name().empty()) {
+    context_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_context_name(),
+      GetArena());
   }
   pred_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.pred_name().size() > 0) {
-    pred_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pred_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_pred_name().empty()) {
+    pred_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_pred_name(),
+      GetArena());
   }
   pivot_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.pivot_name().size() > 0) {
-    pivot_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pivot_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_pivot_name().empty()) {
+    pivot_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_pivot_name(),
+      GetArena());
   }
-  if (from.has_values_def()) {
+  if (from._internal_has_values_def()) {
     values_def_ = new ::tensorflow::ValuesDef(*from.values_def_);
   } else {
     values_def_ = nullptr;
@@ -1210,10 +898,11 @@ void CondContextDef::SharedCtor() {
 CondContextDef::~CondContextDef() {
   // @@protoc_insertion_point(destructor:tensorflow.CondContextDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void CondContextDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   context_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pred_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pivot_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -1242,21 +931,20 @@ void CondContextDef::Clear() {
   (void) cached_has_bits;
 
   nested_contexts_.Clear();
-  context_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  pred_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  pivot_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && values_def_ != nullptr) {
+  context_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pred_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && values_def_ != nullptr) {
     delete values_def_;
   }
   values_def_ = nullptr;
   branch_ = 0;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* CondContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1265,35 +953,41 @@ const char* CondContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string context_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_context_name(), ptr, ctx, "tensorflow.CondContextDef.context_name");
+          auto str = _internal_mutable_context_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.CondContextDef.context_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string pred_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_pred_name(), ptr, ctx, "tensorflow.CondContextDef.pred_name");
+          auto str = _internal_mutable_pred_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.CondContextDef.pred_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string pivot_name = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_pivot_name(), ptr, ctx, "tensorflow.CondContextDef.pivot_name");
+          auto str = _internal_mutable_pivot_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.CondContextDef.pivot_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 branch = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          branch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          branch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ValuesDef values_def = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_values_def(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_values_def(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1303,10 +997,10 @@ const char* CondContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_nested_contexts(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_nested_contexts(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 50);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -1315,7 +1009,9 @@ const char* CondContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1328,183 +1024,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool CondContextDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.CondContextDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string context_name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_context_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->context_name().data(), static_cast<int>(this->context_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.CondContextDef.context_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // string pred_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_pred_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->pred_name().data(), static_cast<int>(this->pred_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.CondContextDef.pred_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string pivot_name = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_pivot_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.CondContextDef.pivot_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 branch = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &branch_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ValuesDef values_def = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_values_def()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.ControlFlowContextDef nested_contexts = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_nested_contexts()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.CondContextDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.CondContextDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void CondContextDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.CondContextDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string context_name = 1;
-  if (this->context_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->context_name().data(), static_cast<int>(this->context_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CondContextDef.context_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->context_name(), output);
-  }
-
-  // string pred_name = 2;
-  if (this->pred_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pred_name().data(), static_cast<int>(this->pred_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CondContextDef.pred_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->pred_name(), output);
-  }
-
-  // string pivot_name = 3;
-  if (this->pivot_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.CondContextDef.pivot_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->pivot_name(), output);
-  }
-
-  // int32 branch = 4;
-  if (this->branch() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(4, this->branch(), output);
-  }
-
-  // .tensorflow.ValuesDef values_def = 5;
-  if (this->has_values_def()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, HasBitSetters::values_def(this), output);
-  }
-
-  // repeated .tensorflow.ControlFlowContextDef nested_contexts = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->nested_contexts_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6,
-      this->nested_contexts(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.CondContextDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* CondContextDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* CondContextDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.CondContextDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1512,59 +1034,58 @@ void CondContextDef::SerializeWithCachedSizes(
   // string context_name = 1;
   if (this->context_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->context_name().data(), static_cast<int>(this->context_name().length()),
+      this->_internal_context_name().data(), static_cast<int>(this->_internal_context_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.CondContextDef.context_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->context_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_context_name(), target);
   }
 
   // string pred_name = 2;
   if (this->pred_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pred_name().data(), static_cast<int>(this->pred_name().length()),
+      this->_internal_pred_name().data(), static_cast<int>(this->_internal_pred_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.CondContextDef.pred_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->pred_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_pred_name(), target);
   }
 
   // string pivot_name = 3;
   if (this->pivot_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
+      this->_internal_pivot_name().data(), static_cast<int>(this->_internal_pivot_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.CondContextDef.pivot_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->pivot_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_pivot_name(), target);
   }
 
   // int32 branch = 4;
   if (this->branch() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->branch(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_branch(), target);
   }
 
   // .tensorflow.ValuesDef values_def = 5;
   if (this->has_values_def()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, HasBitSetters::values_def(this), target);
+      InternalWriteMessage(
+        5, _Internal::values_def(this), target, stream);
   }
 
   // repeated .tensorflow.ControlFlowContextDef nested_contexts = 6;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->nested_contexts_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_nested_contexts_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, this->nested_contexts(static_cast<int>(i)), target);
+      InternalWriteMessage(6, this->_internal_nested_contexts(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.CondContextDef)
   return target;
@@ -1574,45 +1095,36 @@ size_t CondContextDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.CondContextDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .tensorflow.ControlFlowContextDef nested_contexts = 6;
-  {
-    unsigned int count = static_cast<unsigned int>(this->nested_contexts_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->nested_contexts(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_nested_contexts_size();
+  for (const auto& msg : this->nested_contexts_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string context_name = 1;
   if (this->context_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->context_name());
+        this->_internal_context_name());
   }
 
   // string pred_name = 2;
   if (this->pred_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->pred_name());
+        this->_internal_pred_name());
   }
 
   // string pivot_name = 3;
   if (this->pivot_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->pivot_name());
+        this->_internal_pivot_name());
   }
 
   // .tensorflow.ValuesDef values_def = 5;
@@ -1626,9 +1138,13 @@ size_t CondContextDef::ByteSizeLong() const {
   if (this->branch() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->branch());
+        this->_internal_branch());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1652,25 +1168,25 @@ void CondContextDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void CondContextDef::MergeFrom(const CondContextDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.CondContextDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   nested_contexts_.MergeFrom(from.nested_contexts_);
   if (from.context_name().size() > 0) {
-    set_context_name(from.context_name());
+    _internal_set_context_name(from._internal_context_name());
   }
   if (from.pred_name().size() > 0) {
-    set_pred_name(from.pred_name());
+    _internal_set_pred_name(from._internal_pred_name());
   }
   if (from.pivot_name().size() > 0) {
-    set_pivot_name(from.pivot_name());
+    _internal_set_pivot_name(from._internal_pivot_name());
   }
   if (from.has_values_def()) {
-    mutable_values_def()->::tensorflow::ValuesDef::MergeFrom(from.values_def());
+    _internal_mutable_values_def()->::tensorflow::ValuesDef::MergeFrom(from._internal_values_def());
   }
   if (from.branch() != 0) {
-    set_branch(from.branch());
+    _internal_set_branch(from._internal_branch());
   }
 }
 
@@ -1692,37 +1208,19 @@ bool CondContextDef::IsInitialized() const {
   return true;
 }
 
-void CondContextDef::Swap(CondContextDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    CondContextDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void CondContextDef::UnsafeArenaSwap(CondContextDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void CondContextDef::InternalSwap(CondContextDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&nested_contexts_)->InternalSwap(CastToBase(&other->nested_contexts_));
-  context_name_.Swap(&other->context_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  pred_name_.Swap(&other->pred_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  pivot_name_.Swap(&other->pivot_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(values_def_, other->values_def_);
-  swap(branch_, other->branch_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  nested_contexts_.InternalSwap(&other->nested_contexts_);
+  context_name_.Swap(&other->context_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pred_name_.Swap(&other->pred_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_name_.Swap(&other->pivot_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(CondContextDef, branch_)
+      + sizeof(CondContextDef::branch_)
+      - PROTOBUF_FIELD_OFFSET(CondContextDef, values_def_)>(
+          reinterpret_cast<char*>(&values_def_),
+          reinterpret_cast<char*>(&other->values_def_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata CondContextDef::GetMetadata() const {
@@ -1736,51 +1234,17 @@ void WhileContextDef::InitAsDefaultInstance() {
   ::tensorflow::_WhileContextDef_default_instance_._instance.get_mutable()->values_def_ = const_cast< ::tensorflow::ValuesDef*>(
       ::tensorflow::ValuesDef::internal_default_instance());
 }
-class WhileContextDef::HasBitSetters {
+class WhileContextDef::_Internal {
  public:
   static const ::tensorflow::ValuesDef& values_def(const WhileContextDef* msg);
 };
 
 const ::tensorflow::ValuesDef&
-WhileContextDef::HasBitSetters::values_def(const WhileContextDef* msg) {
+WhileContextDef::_Internal::values_def(const WhileContextDef* msg) {
   return *msg->values_def_;
 }
-void WhileContextDef::unsafe_arena_set_allocated_values_def(
-    ::tensorflow::ValuesDef* values_def) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete values_def_;
-  }
-  values_def_ = values_def;
-  if (values_def) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.WhileContextDef.values_def)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int WhileContextDef::kContextNameFieldNumber;
-const int WhileContextDef::kParallelIterationsFieldNumber;
-const int WhileContextDef::kBackPropFieldNumber;
-const int WhileContextDef::kSwapMemoryFieldNumber;
-const int WhileContextDef::kPivotNameFieldNumber;
-const int WhileContextDef::kPivotForPredNameFieldNumber;
-const int WhileContextDef::kPivotForBodyNameFieldNumber;
-const int WhileContextDef::kLoopExitNamesFieldNumber;
-const int WhileContextDef::kLoopEnterNamesFieldNumber;
-const int WhileContextDef::kValuesDefFieldNumber;
-const int WhileContextDef::kMaximumIterationsNameFieldNumber;
-const int WhileContextDef::kNestedContextsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-WhileContextDef::WhileContextDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.WhileContextDef)
-}
 WhileContextDef::WhileContextDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   loop_exit_names_(arena),
   loop_enter_names_(arena),
   nested_contexts_(arena) {
@@ -1790,37 +1254,36 @@ WhileContextDef::WhileContextDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 WhileContextDef::WhileContextDef(const WhileContextDef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       loop_exit_names_(from.loop_exit_names_),
       loop_enter_names_(from.loop_enter_names_),
       nested_contexts_(from.nested_contexts_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   context_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.context_name().size() > 0) {
-    context_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.context_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_context_name().empty()) {
+    context_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_context_name(),
+      GetArena());
   }
   pivot_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.pivot_name().size() > 0) {
-    pivot_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pivot_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_pivot_name().empty()) {
+    pivot_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_pivot_name(),
+      GetArena());
   }
   pivot_for_pred_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.pivot_for_pred_name().size() > 0) {
-    pivot_for_pred_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pivot_for_pred_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_pivot_for_pred_name().empty()) {
+    pivot_for_pred_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_pivot_for_pred_name(),
+      GetArena());
   }
   pivot_for_body_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.pivot_for_body_name().size() > 0) {
-    pivot_for_body_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pivot_for_body_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_pivot_for_body_name().empty()) {
+    pivot_for_body_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_pivot_for_body_name(),
+      GetArena());
   }
   maximum_iterations_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.maximum_iterations_name().size() > 0) {
-    maximum_iterations_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.maximum_iterations_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_maximum_iterations_name().empty()) {
+    maximum_iterations_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_maximum_iterations_name(),
+      GetArena());
   }
-  if (from.has_values_def()) {
+  if (from._internal_has_values_def()) {
     values_def_ = new ::tensorflow::ValuesDef(*from.values_def_);
   } else {
     values_def_ = nullptr;
@@ -1846,10 +1309,11 @@ void WhileContextDef::SharedCtor() {
 WhileContextDef::~WhileContextDef() {
   // @@protoc_insertion_point(destructor:tensorflow.WhileContextDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void WhileContextDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   context_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pivot_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pivot_for_pred_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -1882,25 +1346,24 @@ void WhileContextDef::Clear() {
   loop_exit_names_.Clear();
   loop_enter_names_.Clear();
   nested_contexts_.Clear();
-  context_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  pivot_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  pivot_for_pred_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  pivot_for_body_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  maximum_iterations_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && values_def_ != nullptr) {
+  context_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_for_pred_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_for_body_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  maximum_iterations_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && values_def_ != nullptr) {
     delete values_def_;
   }
   values_def_ = nullptr;
   ::memset(&parallel_iterations_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&swap_memory_) -
       reinterpret_cast<char*>(&parallel_iterations_)) + sizeof(swap_memory_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1909,49 +1372,57 @@ const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // string context_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_context_name(), ptr, ctx, "tensorflow.WhileContextDef.context_name");
+          auto str = _internal_mutable_context_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.context_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 parallel_iterations = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          parallel_iterations_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          parallel_iterations_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool back_prop = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          back_prop_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          back_prop_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool swap_memory = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          swap_memory_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          swap_memory_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string pivot_name = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_pivot_name(), ptr, ctx, "tensorflow.WhileContextDef.pivot_name");
+          auto str = _internal_mutable_pivot_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.pivot_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string pivot_for_pred_name = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_pivot_for_pred_name(), ptr, ctx, "tensorflow.WhileContextDef.pivot_for_pred_name");
+          auto str = _internal_mutable_pivot_for_pred_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.pivot_for_pred_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string pivot_for_body_name = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_pivot_for_body_name(), ptr, ctx, "tensorflow.WhileContextDef.pivot_for_body_name");
+          auto str = _internal_mutable_pivot_for_body_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.pivot_for_body_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1961,16 +1432,18 @@ const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_loop_exit_names(), ptr, ctx, "tensorflow.WhileContextDef.loop_exit_names");
+            auto str = _internal_add_loop_exit_names();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.loop_exit_names"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 66);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<66>(ptr));
         } else goto handle_unusual;
         continue;
       // .tensorflow.ValuesDef values_def = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ctx->ParseMessage(mutable_values_def(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_values_def(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1980,16 +1453,20 @@ const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_loop_enter_names(), ptr, ctx, "tensorflow.WhileContextDef.loop_enter_names");
+            auto str = _internal_add_loop_enter_names();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.loop_enter_names"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 82);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<82>(ptr));
         } else goto handle_unusual;
         continue;
       // string maximum_iterations_name = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_maximum_iterations_name(), ptr, ctx, "tensorflow.WhileContextDef.maximum_iterations_name");
+          auto str = _internal_mutable_maximum_iterations_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.WhileContextDef.maximum_iterations_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1999,10 +1476,10 @@ const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_nested_contexts(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_nested_contexts(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 98);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<98>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -2011,7 +1488,9 @@ const char* WhileContextDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2024,321 +1503,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool WhileContextDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.WhileContextDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string context_name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_context_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->context_name().data(), static_cast<int>(this->context_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.context_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // int32 parallel_iterations = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &parallel_iterations_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool back_prop = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &back_prop_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool swap_memory = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &swap_memory_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string pivot_name = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_pivot_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.pivot_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string pivot_for_pred_name = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_pivot_for_pred_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->pivot_for_pred_name().data(), static_cast<int>(this->pivot_for_pred_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.pivot_for_pred_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string pivot_for_body_name = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_pivot_for_body_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->pivot_for_body_name().data(), static_cast<int>(this->pivot_for_body_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.pivot_for_body_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string loop_exit_names = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_loop_exit_names()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->loop_exit_names(this->loop_exit_names_size() - 1).data(),
-            static_cast<int>(this->loop_exit_names(this->loop_exit_names_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.loop_exit_names"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ValuesDef values_def = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_values_def()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string loop_enter_names = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_loop_enter_names()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->loop_enter_names(this->loop_enter_names_size() - 1).data(),
-            static_cast<int>(this->loop_enter_names(this->loop_enter_names_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.loop_enter_names"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string maximum_iterations_name = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_maximum_iterations_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->maximum_iterations_name().data(), static_cast<int>(this->maximum_iterations_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.WhileContextDef.maximum_iterations_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.ControlFlowContextDef nested_contexts = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (98 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_nested_contexts()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.WhileContextDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.WhileContextDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void WhileContextDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.WhileContextDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string context_name = 1;
-  if (this->context_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->context_name().data(), static_cast<int>(this->context_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.context_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->context_name(), output);
-  }
-
-  // int32 parallel_iterations = 2;
-  if (this->parallel_iterations() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(2, this->parallel_iterations(), output);
-  }
-
-  // bool back_prop = 3;
-  if (this->back_prop() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(3, this->back_prop(), output);
-  }
-
-  // bool swap_memory = 4;
-  if (this->swap_memory() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(4, this->swap_memory(), output);
-  }
-
-  // string pivot_name = 5;
-  if (this->pivot_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.pivot_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      5, this->pivot_name(), output);
-  }
-
-  // string pivot_for_pred_name = 6;
-  if (this->pivot_for_pred_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_for_pred_name().data(), static_cast<int>(this->pivot_for_pred_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.pivot_for_pred_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      6, this->pivot_for_pred_name(), output);
-  }
-
-  // string pivot_for_body_name = 7;
-  if (this->pivot_for_body_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_for_body_name().data(), static_cast<int>(this->pivot_for_body_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.pivot_for_body_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      7, this->pivot_for_body_name(), output);
-  }
-
-  // repeated string loop_exit_names = 8;
-  for (int i = 0, n = this->loop_exit_names_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->loop_exit_names(i).data(), static_cast<int>(this->loop_exit_names(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.loop_exit_names");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      8, this->loop_exit_names(i), output);
-  }
-
-  // .tensorflow.ValuesDef values_def = 9;
-  if (this->has_values_def()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, HasBitSetters::values_def(this), output);
-  }
-
-  // repeated string loop_enter_names = 10;
-  for (int i = 0, n = this->loop_enter_names_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->loop_enter_names(i).data(), static_cast<int>(this->loop_enter_names(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.loop_enter_names");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      10, this->loop_enter_names(i), output);
-  }
-
-  // string maximum_iterations_name = 11;
-  if (this->maximum_iterations_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->maximum_iterations_name().data(), static_cast<int>(this->maximum_iterations_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.WhileContextDef.maximum_iterations_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      11, this->maximum_iterations_name(), output);
-  }
-
-  // repeated .tensorflow.ControlFlowContextDef nested_contexts = 12;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->nested_contexts_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      12,
-      this->nested_contexts(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.WhileContextDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* WhileContextDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* WhileContextDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.WhileContextDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2346,111 +1513,110 @@ void WhileContextDef::SerializeWithCachedSizes(
   // string context_name = 1;
   if (this->context_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->context_name().data(), static_cast<int>(this->context_name().length()),
+      this->_internal_context_name().data(), static_cast<int>(this->_internal_context_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.context_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->context_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_context_name(), target);
   }
 
   // int32 parallel_iterations = 2;
   if (this->parallel_iterations() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->parallel_iterations(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_parallel_iterations(), target);
   }
 
   // bool back_prop = 3;
   if (this->back_prop() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->back_prop(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_back_prop(), target);
   }
 
   // bool swap_memory = 4;
   if (this->swap_memory() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->swap_memory(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_swap_memory(), target);
   }
 
   // string pivot_name = 5;
   if (this->pivot_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_name().data(), static_cast<int>(this->pivot_name().length()),
+      this->_internal_pivot_name().data(), static_cast<int>(this->_internal_pivot_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.pivot_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        5, this->pivot_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        5, this->_internal_pivot_name(), target);
   }
 
   // string pivot_for_pred_name = 6;
   if (this->pivot_for_pred_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_for_pred_name().data(), static_cast<int>(this->pivot_for_pred_name().length()),
+      this->_internal_pivot_for_pred_name().data(), static_cast<int>(this->_internal_pivot_for_pred_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.pivot_for_pred_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        6, this->pivot_for_pred_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        6, this->_internal_pivot_for_pred_name(), target);
   }
 
   // string pivot_for_body_name = 7;
   if (this->pivot_for_body_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->pivot_for_body_name().data(), static_cast<int>(this->pivot_for_body_name().length()),
+      this->_internal_pivot_for_body_name().data(), static_cast<int>(this->_internal_pivot_for_body_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.pivot_for_body_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        7, this->pivot_for_body_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        7, this->_internal_pivot_for_body_name(), target);
   }
 
   // repeated string loop_exit_names = 8;
-  for (int i = 0, n = this->loop_exit_names_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_loop_exit_names_size(); i < n; i++) {
+    const auto& s = this->_internal_loop_exit_names(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->loop_exit_names(i).data(), static_cast<int>(this->loop_exit_names(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.loop_exit_names");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(8, this->loop_exit_names(i), target);
+    target = stream->WriteString(8, s, target);
   }
 
   // .tensorflow.ValuesDef values_def = 9;
   if (this->has_values_def()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        9, HasBitSetters::values_def(this), target);
+      InternalWriteMessage(
+        9, _Internal::values_def(this), target, stream);
   }
 
   // repeated string loop_enter_names = 10;
-  for (int i = 0, n = this->loop_enter_names_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_loop_enter_names_size(); i < n; i++) {
+    const auto& s = this->_internal_loop_enter_names(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->loop_enter_names(i).data(), static_cast<int>(this->loop_enter_names(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.loop_enter_names");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(10, this->loop_enter_names(i), target);
+    target = stream->WriteString(10, s, target);
   }
 
   // string maximum_iterations_name = 11;
   if (this->maximum_iterations_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->maximum_iterations_name().data(), static_cast<int>(this->maximum_iterations_name().length()),
+      this->_internal_maximum_iterations_name().data(), static_cast<int>(this->_internal_maximum_iterations_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.WhileContextDef.maximum_iterations_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        11, this->maximum_iterations_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        11, this->_internal_maximum_iterations_name(), target);
   }
 
   // repeated .tensorflow.ControlFlowContextDef nested_contexts = 12;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->nested_contexts_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_nested_contexts_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        12, this->nested_contexts(static_cast<int>(i)), target);
+      InternalWriteMessage(12, this->_internal_nested_contexts(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.WhileContextDef)
   return target;
@@ -2460,75 +1626,66 @@ size_t WhileContextDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.WhileContextDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string loop_exit_names = 8;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->loop_exit_names_size());
-  for (int i = 0, n = this->loop_exit_names_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(loop_exit_names_.size());
+  for (int i = 0, n = loop_exit_names_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->loop_exit_names(i));
+      loop_exit_names_.Get(i));
   }
 
   // repeated string loop_enter_names = 10;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->loop_enter_names_size());
-  for (int i = 0, n = this->loop_enter_names_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(loop_enter_names_.size());
+  for (int i = 0, n = loop_enter_names_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->loop_enter_names(i));
+      loop_enter_names_.Get(i));
   }
 
   // repeated .tensorflow.ControlFlowContextDef nested_contexts = 12;
-  {
-    unsigned int count = static_cast<unsigned int>(this->nested_contexts_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->nested_contexts(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_nested_contexts_size();
+  for (const auto& msg : this->nested_contexts_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string context_name = 1;
   if (this->context_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->context_name());
+        this->_internal_context_name());
   }
 
   // string pivot_name = 5;
   if (this->pivot_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->pivot_name());
+        this->_internal_pivot_name());
   }
 
   // string pivot_for_pred_name = 6;
   if (this->pivot_for_pred_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->pivot_for_pred_name());
+        this->_internal_pivot_for_pred_name());
   }
 
   // string pivot_for_body_name = 7;
   if (this->pivot_for_body_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->pivot_for_body_name());
+        this->_internal_pivot_for_body_name());
   }
 
   // string maximum_iterations_name = 11;
   if (this->maximum_iterations_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->maximum_iterations_name());
+        this->_internal_maximum_iterations_name());
   }
 
   // .tensorflow.ValuesDef values_def = 9;
@@ -2542,7 +1699,7 @@ size_t WhileContextDef::ByteSizeLong() const {
   if (this->parallel_iterations() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->parallel_iterations());
+        this->_internal_parallel_iterations());
   }
 
   // bool back_prop = 3;
@@ -2555,6 +1712,10 @@ size_t WhileContextDef::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2578,7 +1739,7 @@ void WhileContextDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void WhileContextDef::MergeFrom(const WhileContextDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.WhileContextDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2586,31 +1747,31 @@ void WhileContextDef::MergeFrom(const WhileContextDef& from) {
   loop_enter_names_.MergeFrom(from.loop_enter_names_);
   nested_contexts_.MergeFrom(from.nested_contexts_);
   if (from.context_name().size() > 0) {
-    set_context_name(from.context_name());
+    _internal_set_context_name(from._internal_context_name());
   }
   if (from.pivot_name().size() > 0) {
-    set_pivot_name(from.pivot_name());
+    _internal_set_pivot_name(from._internal_pivot_name());
   }
   if (from.pivot_for_pred_name().size() > 0) {
-    set_pivot_for_pred_name(from.pivot_for_pred_name());
+    _internal_set_pivot_for_pred_name(from._internal_pivot_for_pred_name());
   }
   if (from.pivot_for_body_name().size() > 0) {
-    set_pivot_for_body_name(from.pivot_for_body_name());
+    _internal_set_pivot_for_body_name(from._internal_pivot_for_body_name());
   }
   if (from.maximum_iterations_name().size() > 0) {
-    set_maximum_iterations_name(from.maximum_iterations_name());
+    _internal_set_maximum_iterations_name(from._internal_maximum_iterations_name());
   }
   if (from.has_values_def()) {
-    mutable_values_def()->::tensorflow::ValuesDef::MergeFrom(from.values_def());
+    _internal_mutable_values_def()->::tensorflow::ValuesDef::MergeFrom(from._internal_values_def());
   }
   if (from.parallel_iterations() != 0) {
-    set_parallel_iterations(from.parallel_iterations());
+    _internal_set_parallel_iterations(from._internal_parallel_iterations());
   }
   if (from.back_prop() != 0) {
-    set_back_prop(from.back_prop());
+    _internal_set_back_prop(from._internal_back_prop());
   }
   if (from.swap_memory() != 0) {
-    set_swap_memory(from.swap_memory());
+    _internal_set_swap_memory(from._internal_swap_memory());
   }
 }
 
@@ -2632,45 +1793,23 @@ bool WhileContextDef::IsInitialized() const {
   return true;
 }
 
-void WhileContextDef::Swap(WhileContextDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    WhileContextDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void WhileContextDef::UnsafeArenaSwap(WhileContextDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void WhileContextDef::InternalSwap(WhileContextDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  loop_exit_names_.InternalSwap(CastToBase(&other->loop_exit_names_));
-  loop_enter_names_.InternalSwap(CastToBase(&other->loop_enter_names_));
-  CastToBase(&nested_contexts_)->InternalSwap(CastToBase(&other->nested_contexts_));
-  context_name_.Swap(&other->context_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  pivot_name_.Swap(&other->pivot_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  pivot_for_pred_name_.Swap(&other->pivot_for_pred_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  pivot_for_body_name_.Swap(&other->pivot_for_body_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  maximum_iterations_name_.Swap(&other->maximum_iterations_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(values_def_, other->values_def_);
-  swap(parallel_iterations_, other->parallel_iterations_);
-  swap(back_prop_, other->back_prop_);
-  swap(swap_memory_, other->swap_memory_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  loop_exit_names_.InternalSwap(&other->loop_exit_names_);
+  loop_enter_names_.InternalSwap(&other->loop_enter_names_);
+  nested_contexts_.InternalSwap(&other->nested_contexts_);
+  context_name_.Swap(&other->context_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_name_.Swap(&other->pivot_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_for_pred_name_.Swap(&other->pivot_for_pred_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  pivot_for_body_name_.Swap(&other->pivot_for_body_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  maximum_iterations_name_.Swap(&other->maximum_iterations_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(WhileContextDef, swap_memory_)
+      + sizeof(WhileContextDef::swap_memory_)
+      - PROTOBUF_FIELD_OFFSET(WhileContextDef, values_def_)>(
+          reinterpret_cast<char*>(&values_def_),
+          reinterpret_cast<char*>(&other->values_def_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata WhileContextDef::GetMetadata() const {

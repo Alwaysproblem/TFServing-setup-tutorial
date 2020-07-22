@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -338,52 +339,102 @@ MasterService::Service::Service() {
       MasterService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::CreateSessionRequest, ::tensorflow::CreateSessionResponse>(
-          std::mem_fn(&MasterService::Service::CreateSession), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CreateSessionRequest* req,
+             ::tensorflow::CreateSessionResponse* resp) {
+               return service->CreateSession(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::ExtendSessionRequest, ::tensorflow::ExtendSessionResponse>(
-          std::mem_fn(&MasterService::Service::ExtendSession), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::ExtendSessionRequest* req,
+             ::tensorflow::ExtendSessionResponse* resp) {
+               return service->ExtendSession(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::PartialRunSetupRequest, ::tensorflow::PartialRunSetupResponse>(
-          std::mem_fn(&MasterService::Service::PartialRunSetup), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::PartialRunSetupRequest* req,
+             ::tensorflow::PartialRunSetupResponse* resp) {
+               return service->PartialRunSetup(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::RunStepRequest, ::tensorflow::RunStepResponse>(
-          std::mem_fn(&MasterService::Service::RunStep), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RunStepRequest* req,
+             ::tensorflow::RunStepResponse* resp) {
+               return service->RunStep(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::CloseSessionRequest, ::tensorflow::CloseSessionResponse>(
-          std::mem_fn(&MasterService::Service::CloseSession), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CloseSessionRequest* req,
+             ::tensorflow::CloseSessionResponse* resp) {
+               return service->CloseSession(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[5],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::ListDevicesRequest, ::tensorflow::ListDevicesResponse>(
-          std::mem_fn(&MasterService::Service::ListDevices), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::ListDevicesRequest* req,
+             ::tensorflow::ListDevicesResponse* resp) {
+               return service->ListDevices(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[6],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::ResetRequest, ::tensorflow::ResetResponse>(
-          std::mem_fn(&MasterService::Service::Reset), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::ResetRequest* req,
+             ::tensorflow::ResetResponse* resp) {
+               return service->Reset(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[7],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::MakeCallableRequest, ::tensorflow::MakeCallableResponse>(
-          std::mem_fn(&MasterService::Service::MakeCallable), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::MakeCallableRequest* req,
+             ::tensorflow::MakeCallableResponse* resp) {
+               return service->MakeCallable(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[8],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::RunCallableRequest, ::tensorflow::RunCallableResponse>(
-          std::mem_fn(&MasterService::Service::RunCallable), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RunCallableRequest* req,
+             ::tensorflow::RunCallableResponse* resp) {
+               return service->RunCallable(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       MasterService_method_names[9],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< MasterService::Service, ::tensorflow::ReleaseCallableRequest, ::tensorflow::ReleaseCallableResponse>(
-          std::mem_fn(&MasterService::Service::ReleaseCallable), this)));
+          [](MasterService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::ReleaseCallableRequest* req,
+             ::tensorflow::ReleaseCallableResponse* resp) {
+               return service->ReleaseCallable(ctx, req, resp);
+             }, this)));
 }
 
 MasterService::Service::~Service() {

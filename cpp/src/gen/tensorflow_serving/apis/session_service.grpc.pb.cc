@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -68,7 +69,12 @@ SessionService::Service::Service() {
       SessionService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< SessionService::Service, ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>(
-          std::mem_fn(&SessionService::Service::SessionRun), this)));
+          [](SessionService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::SessionRunRequest* req,
+             ::tensorflow::serving::SessionRunResponse* resp) {
+               return service->SessionRun(ctx, req, resp);
+             }, this)));
 }
 
 SessionService::Service::~Service() {

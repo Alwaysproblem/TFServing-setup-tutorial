@@ -7,12 +7,14 @@
 #include "tensorflow_serving/apis/prediction_service.pb.h"
 
 #include <functional>
+#include <grpc/impl/codegen/port_platform.h>
 #include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/client_context.h>
 #include <grpcpp/impl/codegen/completion_queue.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/proto_utils.h>
 #include <grpcpp/impl/codegen/rpc_method.h>
@@ -23,19 +25,6 @@
 #include <grpcpp/impl/codegen/status.h>
 #include <grpcpp/impl/codegen/stub_options.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
-
-namespace grpc_impl {
-class CompletionQueue;
-class ServerCompletionQueue;
-class ServerContext;
-}  // namespace grpc_impl
-
-namespace grpc {
-namespace experimental {
-template <typename RequestT, typename ResponseT>
-class MessageAllocator;
-}  // namespace experimental
-}  // namespace grpc
 
 namespace tensorflow {
 namespace serving {
@@ -97,29 +86,75 @@ class PredictionService final {
       // Classify.
       virtual void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // Regress.
       virtual void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // Predict -- provides access to loaded TensorFlow model.
       virtual void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // MultiInference API for multi-headed models.
       virtual void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // GetModelMetadata - provides access to metadata for loaded models.
       virtual void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
     };
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    typedef class experimental_async_interface async_interface;
+    #endif
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    async_interface* async() { return experimental_async(); }
+    #endif
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::tensorflow::serving::ClassificationResponse>* AsyncClassifyRaw(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -176,24 +211,64 @@ class PredictionService final {
      public:
       void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, std::function<void(::grpc::Status)>) override;
       void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Classify(::grpc::ClientContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Classify(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ClassificationResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, std::function<void(::grpc::Status)>) override;
       void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Regress(::grpc::ClientContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Regress(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::RegressionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, std::function<void(::grpc::Status)>) override;
       void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Predict(::grpc::ClientContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Predict(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::PredictResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, std::function<void(::grpc::Status)>) override;
       void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void MultiInference(::grpc::ClientContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void MultiInference(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::MultiInferenceResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, std::function<void(::grpc::Status)>) override;
       void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void GetModelMetadata(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void GetModelMetadata(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelMetadataResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
      private:
       friend class Stub;
       explicit experimental_async(Stub* stub): stub_(stub) { }
@@ -345,13 +420,28 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_Classify() {
-      ::grpc::Service::experimental().MarkMethodCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response) { return this->Classify(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::ClassificationRequest* request, ::tensorflow::serving::ClassificationResponse* response) { return this->Classify(context, request, response); }));}
     void SetMessageAllocatorFor_Classify(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>*>(
-          ::grpc::Service::experimental().GetHandler(0))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(0);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_Classify() override {
@@ -362,7 +452,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Classify(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::ClassificationRequest* /*request*/, ::tensorflow::serving::ClassificationResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Classify(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::ClassificationRequest* /*request*/, ::tensorflow::serving::ClassificationResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Classify(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::ClassificationRequest* /*request*/, ::tensorflow::serving::ClassificationResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_Regress : public BaseClass {
@@ -370,13 +467,28 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_Regress() {
-      ::grpc::Service::experimental().MarkMethodCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response) { return this->Regress(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::RegressionRequest* request, ::tensorflow::serving::RegressionResponse* response) { return this->Regress(context, request, response); }));}
     void SetMessageAllocatorFor_Regress(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>*>(
-          ::grpc::Service::experimental().GetHandler(1))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(1);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_Regress() override {
@@ -387,7 +499,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Regress(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::RegressionRequest* /*request*/, ::tensorflow::serving::RegressionResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Regress(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::RegressionRequest* /*request*/, ::tensorflow::serving::RegressionResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Regress(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::RegressionRequest* /*request*/, ::tensorflow::serving::RegressionResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_Predict : public BaseClass {
@@ -395,13 +514,28 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_Predict() {
-      ::grpc::Service::experimental().MarkMethodCallback(2,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response) { return this->Predict(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(2,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::PredictRequest* request, ::tensorflow::serving::PredictResponse* response) { return this->Predict(context, request, response); }));}
     void SetMessageAllocatorFor_Predict(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>*>(
-          ::grpc::Service::experimental().GetHandler(2))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(2);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_Predict() override {
@@ -412,7 +546,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Predict(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::PredictRequest* /*request*/, ::tensorflow::serving::PredictResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Predict(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::PredictRequest* /*request*/, ::tensorflow::serving::PredictResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Predict(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::PredictRequest* /*request*/, ::tensorflow::serving::PredictResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_MultiInference : public BaseClass {
@@ -420,13 +561,28 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_MultiInference() {
-      ::grpc::Service::experimental().MarkMethodCallback(3,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response) { return this->MultiInference(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(3,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::MultiInferenceRequest* request, ::tensorflow::serving::MultiInferenceResponse* response) { return this->MultiInference(context, request, response); }));}
     void SetMessageAllocatorFor_MultiInference(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>*>(
-          ::grpc::Service::experimental().GetHandler(3))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(3);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(3);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_MultiInference() override {
@@ -437,7 +593,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* MultiInference(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::MultiInferenceRequest* /*request*/, ::tensorflow::serving::MultiInferenceResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* MultiInference(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::MultiInferenceRequest* /*request*/, ::tensorflow::serving::MultiInferenceResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* MultiInference(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::MultiInferenceRequest* /*request*/, ::tensorflow::serving::MultiInferenceResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_GetModelMetadata : public BaseClass {
@@ -445,13 +608,28 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_GetModelMetadata() {
-      ::grpc::Service::experimental().MarkMethodCallback(4,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response) { return this->GetModelMetadata(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(4,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::GetModelMetadataRequest* request, ::tensorflow::serving::GetModelMetadataResponse* response) { return this->GetModelMetadata(context, request, response); }));}
     void SetMessageAllocatorFor_GetModelMetadata(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>*>(
-          ::grpc::Service::experimental().GetHandler(4))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(4);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(4);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_GetModelMetadata() override {
@@ -462,8 +640,19 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* GetModelMetadata(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelMetadataRequest* /*request*/, ::tensorflow::serving::GetModelMetadataResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* GetModelMetadata(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelMetadataRequest* /*request*/, ::tensorflow::serving::GetModelMetadataResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* GetModelMetadata(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelMetadataRequest* /*request*/, ::tensorflow::serving::GetModelMetadataResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
+  #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+  typedef ExperimentalWithCallbackMethod_Classify<ExperimentalWithCallbackMethod_Regress<ExperimentalWithCallbackMethod_Predict<ExperimentalWithCallbackMethod_MultiInference<ExperimentalWithCallbackMethod_GetModelMetadata<Service > > > > > CallbackService;
+  #endif
+
   typedef ExperimentalWithCallbackMethod_Classify<ExperimentalWithCallbackMethod_Regress<ExperimentalWithCallbackMethod_Predict<ExperimentalWithCallbackMethod_MultiInference<ExperimentalWithCallbackMethod_GetModelMetadata<Service > > > > > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_Classify : public BaseClass {
@@ -656,9 +845,20 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_Classify() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Classify(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Classify(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_Classify() override {
       BaseClassMustBeDerivedFromService(this);
@@ -668,7 +868,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Classify(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Classify(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Classify(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_Regress : public BaseClass {
@@ -676,9 +883,20 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_Regress() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Regress(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Regress(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_Regress() override {
       BaseClassMustBeDerivedFromService(this);
@@ -688,7 +906,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Regress(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Regress(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Regress(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_Predict : public BaseClass {
@@ -696,9 +921,20 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_Predict() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(2,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Predict(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(2,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Predict(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_Predict() override {
       BaseClassMustBeDerivedFromService(this);
@@ -708,7 +944,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Predict(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Predict(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Predict(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_MultiInference : public BaseClass {
@@ -716,9 +959,20 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_MultiInference() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(3,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->MultiInference(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(3,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->MultiInference(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_MultiInference() override {
       BaseClassMustBeDerivedFromService(this);
@@ -728,7 +982,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* MultiInference(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* MultiInference(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* MultiInference(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_GetModelMetadata : public BaseClass {
@@ -736,9 +997,20 @@ class PredictionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_GetModelMetadata() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(4,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetModelMetadata(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(4,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetModelMetadata(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_GetModelMetadata() override {
       BaseClassMustBeDerivedFromService(this);
@@ -748,7 +1020,14 @@ class PredictionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* GetModelMetadata(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* GetModelMetadata(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* GetModelMetadata(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Classify : public BaseClass {
@@ -757,7 +1036,14 @@ class PredictionService final {
    public:
     WithStreamedUnaryMethod_Classify() {
       ::grpc::Service::MarkMethodStreamed(0,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>(std::bind(&WithStreamedUnaryMethod_Classify<BaseClass>::StreamedClassify, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::ClassificationRequest, ::tensorflow::serving::ClassificationResponse>* streamer) {
+                       return this->StreamedClassify(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_Classify() override {
       BaseClassMustBeDerivedFromService(this);
@@ -777,7 +1063,14 @@ class PredictionService final {
    public:
     WithStreamedUnaryMethod_Regress() {
       ::grpc::Service::MarkMethodStreamed(1,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>(std::bind(&WithStreamedUnaryMethod_Regress<BaseClass>::StreamedRegress, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::RegressionRequest, ::tensorflow::serving::RegressionResponse>* streamer) {
+                       return this->StreamedRegress(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_Regress() override {
       BaseClassMustBeDerivedFromService(this);
@@ -797,7 +1090,14 @@ class PredictionService final {
    public:
     WithStreamedUnaryMethod_Predict() {
       ::grpc::Service::MarkMethodStreamed(2,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>(std::bind(&WithStreamedUnaryMethod_Predict<BaseClass>::StreamedPredict, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::PredictRequest, ::tensorflow::serving::PredictResponse>* streamer) {
+                       return this->StreamedPredict(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_Predict() override {
       BaseClassMustBeDerivedFromService(this);
@@ -817,7 +1117,14 @@ class PredictionService final {
    public:
     WithStreamedUnaryMethod_MultiInference() {
       ::grpc::Service::MarkMethodStreamed(3,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>(std::bind(&WithStreamedUnaryMethod_MultiInference<BaseClass>::StreamedMultiInference, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::MultiInferenceRequest, ::tensorflow::serving::MultiInferenceResponse>* streamer) {
+                       return this->StreamedMultiInference(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_MultiInference() override {
       BaseClassMustBeDerivedFromService(this);
@@ -837,7 +1144,14 @@ class PredictionService final {
    public:
     WithStreamedUnaryMethod_GetModelMetadata() {
       ::grpc::Service::MarkMethodStreamed(4,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>(std::bind(&WithStreamedUnaryMethod_GetModelMetadata<BaseClass>::StreamedGetModelMetadata, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::GetModelMetadataRequest, ::tensorflow::serving::GetModelMetadataResponse>* streamer) {
+                       return this->StreamedGetModelMetadata(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_GetModelMetadata() override {
       BaseClassMustBeDerivedFromService(this);

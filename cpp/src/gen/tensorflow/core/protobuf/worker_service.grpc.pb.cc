@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -488,77 +489,152 @@ WorkerService::Service::Service() {
       WorkerService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::GetStatusRequest, ::tensorflow::GetStatusResponse>(
-          std::mem_fn(&WorkerService::Service::GetStatus), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::GetStatusRequest* req,
+             ::tensorflow::GetStatusResponse* resp) {
+               return service->GetStatus(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::CreateWorkerSessionRequest, ::tensorflow::CreateWorkerSessionResponse>(
-          std::mem_fn(&WorkerService::Service::CreateWorkerSession), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CreateWorkerSessionRequest* req,
+             ::tensorflow::CreateWorkerSessionResponse* resp) {
+               return service->CreateWorkerSession(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::DeleteWorkerSessionRequest, ::tensorflow::DeleteWorkerSessionResponse>(
-          std::mem_fn(&WorkerService::Service::DeleteWorkerSession), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::DeleteWorkerSessionRequest* req,
+             ::tensorflow::DeleteWorkerSessionResponse* resp) {
+               return service->DeleteWorkerSession(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[3],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::RegisterGraphRequest, ::tensorflow::RegisterGraphResponse>(
-          std::mem_fn(&WorkerService::Service::RegisterGraph), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RegisterGraphRequest* req,
+             ::tensorflow::RegisterGraphResponse* resp) {
+               return service->RegisterGraph(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::DeregisterGraphRequest, ::tensorflow::DeregisterGraphResponse>(
-          std::mem_fn(&WorkerService::Service::DeregisterGraph), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::DeregisterGraphRequest* req,
+             ::tensorflow::DeregisterGraphResponse* resp) {
+               return service->DeregisterGraph(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[5],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::RunGraphRequest, ::tensorflow::RunGraphResponse>(
-          std::mem_fn(&WorkerService::Service::RunGraph), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RunGraphRequest* req,
+             ::tensorflow::RunGraphResponse* resp) {
+               return service->RunGraph(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[6],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::CleanupGraphRequest, ::tensorflow::CleanupGraphResponse>(
-          std::mem_fn(&WorkerService::Service::CleanupGraph), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CleanupGraphRequest* req,
+             ::tensorflow::CleanupGraphResponse* resp) {
+               return service->CleanupGraph(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[7],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::CleanupAllRequest, ::tensorflow::CleanupAllResponse>(
-          std::mem_fn(&WorkerService::Service::CleanupAll), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CleanupAllRequest* req,
+             ::tensorflow::CleanupAllResponse* resp) {
+               return service->CleanupAll(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[8],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::RecvTensorRequest, ::tensorflow::RecvTensorResponse>(
-          std::mem_fn(&WorkerService::Service::RecvTensor), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RecvTensorRequest* req,
+             ::tensorflow::RecvTensorResponse* resp) {
+               return service->RecvTensor(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[9],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::LoggingRequest, ::tensorflow::LoggingResponse>(
-          std::mem_fn(&WorkerService::Service::Logging), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::LoggingRequest* req,
+             ::tensorflow::LoggingResponse* resp) {
+               return service->Logging(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[10],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::TracingRequest, ::tensorflow::TracingResponse>(
-          std::mem_fn(&WorkerService::Service::Tracing), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::TracingRequest* req,
+             ::tensorflow::TracingResponse* resp) {
+               return service->Tracing(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[11],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::RecvBufRequest, ::tensorflow::RecvBufResponse>(
-          std::mem_fn(&WorkerService::Service::RecvBuf), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::RecvBufRequest* req,
+             ::tensorflow::RecvBufResponse* resp) {
+               return service->RecvBuf(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[12],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::GetStepSequenceRequest, ::tensorflow::GetStepSequenceResponse>(
-          std::mem_fn(&WorkerService::Service::GetStepSequence), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::GetStepSequenceRequest* req,
+             ::tensorflow::GetStepSequenceResponse* resp) {
+               return service->GetStepSequence(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[13],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::CompleteGroupRequest, ::tensorflow::CompleteGroupResponse>(
-          std::mem_fn(&WorkerService::Service::CompleteGroup), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CompleteGroupRequest* req,
+             ::tensorflow::CompleteGroupResponse* resp) {
+               return service->CompleteGroup(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       WorkerService_method_names[14],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< WorkerService::Service, ::tensorflow::CompleteInstanceRequest, ::tensorflow::CompleteInstanceResponse>(
-          std::mem_fn(&WorkerService::Service::CompleteInstance), this)));
+          [](WorkerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::CompleteInstanceRequest* req,
+             ::tensorflow::CompleteInstanceResponse* resp) {
+               return service->CompleteInstance(ctx, req, resp);
+             }, this)));
 }
 
 WorkerService::Service::~Service() {

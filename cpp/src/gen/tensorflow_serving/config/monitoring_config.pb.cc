@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -40,7 +39,7 @@ static void InitDefaultsscc_info_MonitoringConfig_tensorflow_5fserving_2fconfig_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MonitoringConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_MonitoringConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MonitoringConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto}, {
       &scc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto.base,}};
 
 static void InitDefaultsscc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto() {
@@ -55,7 +54,7 @@ static void InitDefaultsscc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto = nullptr;
@@ -86,7 +85,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::serving::_MonitoringConfig_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto[] =
+const char descriptor_table_protodef_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n1tensorflow_serving/config/monitoring_c"
   "onfig.proto\022\022tensorflow.serving\"0\n\020Prome"
   "theusConfig\022\016\n\006enable\030\001 \001(\010\022\014\n\004path\030\002 \001("
@@ -101,16 +100,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_PrometheusConfig_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_once;
-static bool descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto = {
-  &descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_initialized, descriptor_table_protodef_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto, "tensorflow_serving/config/monitoring_config.proto", 219,
+  false, false, descriptor_table_protodef_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto, "tensorflow_serving/config/monitoring_config.proto", 219,
   &descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_once, descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_sccs, descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto::offsets,
   file_level_metadata_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto, 2, file_level_enum_descriptors_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto, file_level_service_descriptors_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fconfig_2fmonitoring_5fconfig_2eproto)), true);
 namespace tensorflow {
 namespace serving {
 
@@ -118,35 +116,23 @@ namespace serving {
 
 void PrometheusConfig::InitAsDefaultInstance() {
 }
-class PrometheusConfig::HasBitSetters {
+class PrometheusConfig::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int PrometheusConfig::kEnableFieldNumber;
-const int PrometheusConfig::kPathFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-PrometheusConfig::PrometheusConfig()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.PrometheusConfig)
-}
 PrometheusConfig::PrometheusConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.PrometheusConfig)
 }
 PrometheusConfig::PrometheusConfig(const PrometheusConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.path().size() > 0) {
-    path_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.path(),
-      GetArenaNoVirtual());
+  if (!from._internal_path().empty()) {
+    path_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_path(),
+      GetArena());
   }
   enable_ = from.enable_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.PrometheusConfig)
@@ -161,10 +147,11 @@ void PrometheusConfig::SharedCtor() {
 PrometheusConfig::~PrometheusConfig() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.PrometheusConfig)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void PrometheusConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -189,15 +176,14 @@ void PrometheusConfig::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  path_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  path_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   enable_ = false;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* PrometheusConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -206,14 +192,16 @@ const char* PrometheusConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // bool enable = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          enable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          enable_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string path = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_path(), ptr, ctx, "tensorflow.serving.PrometheusConfig.path");
+          auto str = _internal_mutable_path();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.PrometheusConfig.path"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -223,7 +211,9 @@ const char* PrometheusConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -236,119 +226,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool PrometheusConfig::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.PrometheusConfig)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // bool enable = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &enable_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string path = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_path()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->path().data(), static_cast<int>(this->path().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.PrometheusConfig.path"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.PrometheusConfig)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.PrometheusConfig)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void PrometheusConfig::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.PrometheusConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // bool enable = 1;
-  if (this->enable() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(1, this->enable(), output);
-  }
-
-  // string path = 2;
-  if (this->path().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->path().data(), static_cast<int>(this->path().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.PrometheusConfig.path");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->path(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.PrometheusConfig)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* PrometheusConfig::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PrometheusConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.PrometheusConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // bool enable = 1;
   if (this->enable() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->enable(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_enable(), target);
   }
 
   // string path = 2;
   if (this->path().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->path().data(), static_cast<int>(this->path().length()),
+      this->_internal_path().data(), static_cast<int>(this->_internal_path().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.PrometheusConfig.path");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->path(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_path(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.PrometheusConfig)
   return target;
@@ -358,11 +261,6 @@ size_t PrometheusConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.PrometheusConfig)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -371,7 +269,7 @@ size_t PrometheusConfig::ByteSizeLong() const {
   if (this->path().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->path());
+        this->_internal_path());
   }
 
   // bool enable = 1;
@@ -379,6 +277,10 @@ size_t PrometheusConfig::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -402,15 +304,15 @@ void PrometheusConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void PrometheusConfig::MergeFrom(const PrometheusConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.PrometheusConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.path().size() > 0) {
-    set_path(from.path());
+    _internal_set_path(from._internal_path());
   }
   if (from.enable() != 0) {
-    set_enable(from.enable());
+    _internal_set_enable(from._internal_enable());
   }
 }
 
@@ -432,30 +334,10 @@ bool PrometheusConfig::IsInitialized() const {
   return true;
 }
 
-void PrometheusConfig::Swap(PrometheusConfig* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    PrometheusConfig* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void PrometheusConfig::UnsafeArenaSwap(PrometheusConfig* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void PrometheusConfig::InternalSwap(PrometheusConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  path_.Swap(&other->path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  path_.Swap(&other->path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(enable_, other->enable_);
 }
 
@@ -470,49 +352,25 @@ void MonitoringConfig::InitAsDefaultInstance() {
   ::tensorflow::serving::_MonitoringConfig_default_instance_._instance.get_mutable()->prometheus_config_ = const_cast< ::tensorflow::serving::PrometheusConfig*>(
       ::tensorflow::serving::PrometheusConfig::internal_default_instance());
 }
-class MonitoringConfig::HasBitSetters {
+class MonitoringConfig::_Internal {
  public:
   static const ::tensorflow::serving::PrometheusConfig& prometheus_config(const MonitoringConfig* msg);
 };
 
 const ::tensorflow::serving::PrometheusConfig&
-MonitoringConfig::HasBitSetters::prometheus_config(const MonitoringConfig* msg) {
+MonitoringConfig::_Internal::prometheus_config(const MonitoringConfig* msg) {
   return *msg->prometheus_config_;
 }
-void MonitoringConfig::unsafe_arena_set_allocated_prometheus_config(
-    ::tensorflow::serving::PrometheusConfig* prometheus_config) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete prometheus_config_;
-  }
-  prometheus_config_ = prometheus_config;
-  if (prometheus_config) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.MonitoringConfig.prometheus_config)
-}
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MonitoringConfig::kPrometheusConfigFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MonitoringConfig::MonitoringConfig()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.MonitoringConfig)
-}
 MonitoringConfig::MonitoringConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.MonitoringConfig)
 }
 MonitoringConfig::MonitoringConfig(const MonitoringConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_prometheus_config()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_prometheus_config()) {
     prometheus_config_ = new ::tensorflow::serving::PrometheusConfig(*from.prometheus_config_);
   } else {
     prometheus_config_ = nullptr;
@@ -528,10 +386,11 @@ void MonitoringConfig::SharedCtor() {
 MonitoringConfig::~MonitoringConfig() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.MonitoringConfig)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MonitoringConfig::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete prometheus_config_;
 }
 
@@ -556,17 +415,16 @@ void MonitoringConfig::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && prometheus_config_ != nullptr) {
+  if (GetArena() == nullptr && prometheus_config_ != nullptr) {
     delete prometheus_config_;
   }
   prometheus_config_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MonitoringConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -575,7 +433,7 @@ const char* MonitoringConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // .tensorflow.serving.PrometheusConfig prometheus_config = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_prometheus_config(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_prometheus_config(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -585,7 +443,9 @@ const char* MonitoringConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -598,84 +458,24 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MonitoringConfig::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.MonitoringConfig)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.PrometheusConfig prometheus_config = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_prometheus_config()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.MonitoringConfig)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.MonitoringConfig)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MonitoringConfig::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.MonitoringConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.PrometheusConfig prometheus_config = 1;
-  if (this->has_prometheus_config()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::prometheus_config(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.MonitoringConfig)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MonitoringConfig::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MonitoringConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.MonitoringConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.PrometheusConfig prometheus_config = 1;
   if (this->has_prometheus_config()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::prometheus_config(this), target);
+      InternalWriteMessage(
+        1, _Internal::prometheus_config(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.MonitoringConfig)
   return target;
@@ -685,11 +485,6 @@ size_t MonitoringConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.MonitoringConfig)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -701,6 +496,10 @@ size_t MonitoringConfig::ByteSizeLong() const {
         *prometheus_config_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -724,12 +523,12 @@ void MonitoringConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void MonitoringConfig::MergeFrom(const MonitoringConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.MonitoringConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_prometheus_config()) {
-    mutable_prometheus_config()->::tensorflow::serving::PrometheusConfig::MergeFrom(from.prometheus_config());
+    _internal_mutable_prometheus_config()->::tensorflow::serving::PrometheusConfig::MergeFrom(from._internal_prometheus_config());
   }
 }
 
@@ -751,28 +550,9 @@ bool MonitoringConfig::IsInitialized() const {
   return true;
 }
 
-void MonitoringConfig::Swap(MonitoringConfig* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MonitoringConfig* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MonitoringConfig::UnsafeArenaSwap(MonitoringConfig* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MonitoringConfig::InternalSwap(MonitoringConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(prometheus_config_, other->prometheus_config_);
 }
 

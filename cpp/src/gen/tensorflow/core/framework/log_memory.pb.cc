@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -54,7 +53,7 @@ static void InitDefaultsscc_info_MemoryLogRawAllocation_tensorflow_2fcore_2ffram
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MemoryLogRawAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_MemoryLogRawAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MemoryLogRawAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
 
 static void InitDefaultsscc_info_MemoryLogRawDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -68,7 +67,7 @@ static void InitDefaultsscc_info_MemoryLogRawDeallocation_tensorflow_2fcore_2ffr
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MemoryLogRawDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_MemoryLogRawDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MemoryLogRawDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
 
 static void InitDefaultsscc_info_MemoryLogStep_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -82,7 +81,7 @@ static void InitDefaultsscc_info_MemoryLogStep_tensorflow_2fcore_2fframework_2fl
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MemoryLogStep_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_MemoryLogStep_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MemoryLogStep_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
 
 static void InitDefaultsscc_info_MemoryLogTensorAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -96,7 +95,7 @@ static void InitDefaultsscc_info_MemoryLogTensorAllocation_tensorflow_2fcore_2ff
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MemoryLogTensorAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_MemoryLogTensorAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MemoryLogTensorAllocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {
       &scc_info_TensorDescription_tensorflow_2fcore_2fframework_2ftensor_5fdescription_2eproto.base,}};
 
 static void InitDefaultsscc_info_MemoryLogTensorDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto() {
@@ -111,7 +110,7 @@ static void InitDefaultsscc_info_MemoryLogTensorDeallocation_tensorflow_2fcore_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_MemoryLogTensorDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_MemoryLogTensorDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_MemoryLogTensorDeallocation_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {}};
 
 static void InitDefaultsscc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -125,7 +124,7 @@ static void InitDefaultsscc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframe
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto}, {
       &scc_info_TensorDescription_tensorflow_2fcore_2fframework_2ftensor_5fdescription_2eproto.base,}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto[6];
@@ -204,7 +203,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_MemoryLogRawDeallocation_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n*tensorflow/core/framework/log_memory.p"
   "roto\022\ntensorflow\0322tensorflow/core/framew"
   "ork/tensor_description.proto\"0\n\rMemoryLo"
@@ -241,51 +240,38 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_MemoryLogTensorOutput_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto, "tensorflow/core/framework/log_memory.proto", 888,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto, "tensorflow/core/framework/log_memory.proto", 888,
   &descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_once, descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto_deps, 6, 1,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto, 6, file_level_enum_descriptors_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2flog_5fmemory_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
 
 void MemoryLogStep::InitAsDefaultInstance() {
 }
-class MemoryLogStep::HasBitSetters {
+class MemoryLogStep::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogStep::kStepIdFieldNumber;
-const int MemoryLogStep::kHandleFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogStep::MemoryLogStep()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogStep)
-}
 MemoryLogStep::MemoryLogStep(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogStep)
 }
 MemoryLogStep::MemoryLogStep(const MemoryLogStep& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   handle_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.handle().size() > 0) {
-    handle_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.handle(),
-      GetArenaNoVirtual());
+  if (!from._internal_handle().empty()) {
+    handle_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_handle(),
+      GetArena());
   }
   step_id_ = from.step_id_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.MemoryLogStep)
@@ -300,10 +286,11 @@ void MemoryLogStep::SharedCtor() {
 MemoryLogStep::~MemoryLogStep() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogStep)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogStep::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   handle_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -328,15 +315,14 @@ void MemoryLogStep::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  handle_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  handle_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   step_id_ = PROTOBUF_LONGLONG(0);
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogStep::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -345,14 +331,16 @@ const char* MemoryLogStep::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // int64 step_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string handle = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_handle(), ptr, ctx, "tensorflow.MemoryLogStep.handle");
+          auto str = _internal_mutable_handle();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogStep.handle"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -362,7 +350,9 @@ const char* MemoryLogStep::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -375,119 +365,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogStep::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogStep)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 step_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &step_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string handle = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_handle()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->handle().data(), static_cast<int>(this->handle().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogStep.handle"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogStep)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogStep)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogStep::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogStep)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 step_id = 1;
-  if (this->step_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
-  }
-
-  // string handle = 2;
-  if (this->handle().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->handle().data(), static_cast<int>(this->handle().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogStep.handle");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->handle(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogStep)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogStep::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogStep::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogStep)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_step_id(), target);
   }
 
   // string handle = 2;
   if (this->handle().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->handle().data(), static_cast<int>(this->handle().length()),
+      this->_internal_handle().data(), static_cast<int>(this->_internal_handle().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogStep.handle");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->handle(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_handle(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogStep)
   return target;
@@ -497,11 +400,6 @@ size_t MemoryLogStep::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogStep)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -510,16 +408,20 @@ size_t MemoryLogStep::ByteSizeLong() const {
   if (this->handle().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->handle());
+        this->_internal_handle());
   }
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->step_id());
+        this->_internal_step_id());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -543,15 +445,15 @@ void MemoryLogStep::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void MemoryLogStep::MergeFrom(const MemoryLogStep& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogStep)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.handle().size() > 0) {
-    set_handle(from.handle());
+    _internal_set_handle(from._internal_handle());
   }
   if (from.step_id() != 0) {
-    set_step_id(from.step_id());
+    _internal_set_step_id(from._internal_step_id());
   }
 }
 
@@ -573,30 +475,10 @@ bool MemoryLogStep::IsInitialized() const {
   return true;
 }
 
-void MemoryLogStep::Swap(MemoryLogStep* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogStep* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogStep::UnsafeArenaSwap(MemoryLogStep* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogStep::InternalSwap(MemoryLogStep* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  handle_.Swap(&other->handle_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  handle_.Swap(&other->handle_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(step_id_, other->step_id_);
 }
 
@@ -611,62 +493,36 @@ void MemoryLogTensorAllocation::InitAsDefaultInstance() {
   ::tensorflow::_MemoryLogTensorAllocation_default_instance_._instance.get_mutable()->tensor_ = const_cast< ::tensorflow::TensorDescription*>(
       ::tensorflow::TensorDescription::internal_default_instance());
 }
-class MemoryLogTensorAllocation::HasBitSetters {
+class MemoryLogTensorAllocation::_Internal {
  public:
   static const ::tensorflow::TensorDescription& tensor(const MemoryLogTensorAllocation* msg);
 };
 
 const ::tensorflow::TensorDescription&
-MemoryLogTensorAllocation::HasBitSetters::tensor(const MemoryLogTensorAllocation* msg) {
+MemoryLogTensorAllocation::_Internal::tensor(const MemoryLogTensorAllocation* msg) {
   return *msg->tensor_;
 }
-void MemoryLogTensorAllocation::unsafe_arena_set_allocated_tensor(
-    ::tensorflow::TensorDescription* tensor) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete tensor_;
-  }
-  tensor_ = tensor;
-  if (tensor) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.MemoryLogTensorAllocation.tensor)
-}
 void MemoryLogTensorAllocation::clear_tensor() {
-  if (GetArenaNoVirtual() == nullptr && tensor_ != nullptr) {
+  if (GetArena() == nullptr && tensor_ != nullptr) {
     delete tensor_;
   }
   tensor_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogTensorAllocation::kStepIdFieldNumber;
-const int MemoryLogTensorAllocation::kKernelNameFieldNumber;
-const int MemoryLogTensorAllocation::kTensorFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogTensorAllocation::MemoryLogTensorAllocation()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogTensorAllocation)
-}
 MemoryLogTensorAllocation::MemoryLogTensorAllocation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogTensorAllocation)
 }
 MemoryLogTensorAllocation::MemoryLogTensorAllocation(const MemoryLogTensorAllocation& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   kernel_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.kernel_name().size() > 0) {
-    kernel_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.kernel_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_kernel_name().empty()) {
+    kernel_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_kernel_name(),
+      GetArena());
   }
-  if (from.has_tensor()) {
+  if (from._internal_has_tensor()) {
     tensor_ = new ::tensorflow::TensorDescription(*from.tensor_);
   } else {
     tensor_ = nullptr;
@@ -686,10 +542,11 @@ void MemoryLogTensorAllocation::SharedCtor() {
 MemoryLogTensorAllocation::~MemoryLogTensorAllocation() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogTensorAllocation)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogTensorAllocation::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   kernel_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete tensor_;
 }
@@ -715,19 +572,18 @@ void MemoryLogTensorAllocation::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  kernel_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && tensor_ != nullptr) {
+  kernel_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && tensor_ != nullptr) {
     delete tensor_;
   }
   tensor_ = nullptr;
   step_id_ = PROTOBUF_LONGLONG(0);
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogTensorAllocation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -736,21 +592,23 @@ const char* MemoryLogTensorAllocation::_InternalParse(const char* ptr, ::PROTOBU
       // int64 step_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string kernel_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_kernel_name(), ptr, ctx, "tensorflow.MemoryLogTensorAllocation.kernel_name");
+          auto str = _internal_mutable_kernel_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogTensorAllocation.kernel_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.TensorDescription tensor = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(mutable_tensor(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_tensor(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -760,7 +618,9 @@ const char* MemoryLogTensorAllocation::_InternalParse(const char* ptr, ::PROTOBU
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -773,143 +633,40 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogTensorAllocation::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogTensorAllocation)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 step_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &step_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string kernel_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_kernel_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogTensorAllocation.kernel_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.TensorDescription tensor = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_tensor()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogTensorAllocation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogTensorAllocation)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogTensorAllocation::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogTensorAllocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 step_id = 1;
-  if (this->step_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
-  }
-
-  // string kernel_name = 2;
-  if (this->kernel_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogTensorAllocation.kernel_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->kernel_name(), output);
-  }
-
-  // .tensorflow.TensorDescription tensor = 3;
-  if (this->has_tensor()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, HasBitSetters::tensor(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogTensorAllocation)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorAllocation::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorAllocation::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogTensorAllocation)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_step_id(), target);
   }
 
   // string kernel_name = 2;
   if (this->kernel_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
+      this->_internal_kernel_name().data(), static_cast<int>(this->_internal_kernel_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogTensorAllocation.kernel_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->kernel_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_kernel_name(), target);
   }
 
   // .tensorflow.TensorDescription tensor = 3;
   if (this->has_tensor()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, HasBitSetters::tensor(this), target);
+      InternalWriteMessage(
+        3, _Internal::tensor(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogTensorAllocation)
   return target;
@@ -919,11 +676,6 @@ size_t MemoryLogTensorAllocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogTensorAllocation)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -932,7 +684,7 @@ size_t MemoryLogTensorAllocation::ByteSizeLong() const {
   if (this->kernel_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->kernel_name());
+        this->_internal_kernel_name());
   }
 
   // .tensorflow.TensorDescription tensor = 3;
@@ -946,9 +698,13 @@ size_t MemoryLogTensorAllocation::ByteSizeLong() const {
   if (this->step_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->step_id());
+        this->_internal_step_id());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -972,18 +728,18 @@ void MemoryLogTensorAllocation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message
 void MemoryLogTensorAllocation::MergeFrom(const MemoryLogTensorAllocation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogTensorAllocation)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.kernel_name().size() > 0) {
-    set_kernel_name(from.kernel_name());
+    _internal_set_kernel_name(from._internal_kernel_name());
   }
   if (from.has_tensor()) {
-    mutable_tensor()->::tensorflow::TensorDescription::MergeFrom(from.tensor());
+    _internal_mutable_tensor()->::tensorflow::TensorDescription::MergeFrom(from._internal_tensor());
   }
   if (from.step_id() != 0) {
-    set_step_id(from.step_id());
+    _internal_set_step_id(from._internal_step_id());
   }
 }
 
@@ -1005,32 +761,16 @@ bool MemoryLogTensorAllocation::IsInitialized() const {
   return true;
 }
 
-void MemoryLogTensorAllocation::Swap(MemoryLogTensorAllocation* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogTensorAllocation* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogTensorAllocation::UnsafeArenaSwap(MemoryLogTensorAllocation* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogTensorAllocation::InternalSwap(MemoryLogTensorAllocation* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  kernel_name_.Swap(&other->kernel_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(tensor_, other->tensor_);
-  swap(step_id_, other->step_id_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  kernel_name_.Swap(&other->kernel_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MemoryLogTensorAllocation, step_id_)
+      + sizeof(MemoryLogTensorAllocation::step_id_)
+      - PROTOBUF_FIELD_OFFSET(MemoryLogTensorAllocation, tensor_)>(
+          reinterpret_cast<char*>(&tensor_),
+          reinterpret_cast<char*>(&other->tensor_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MemoryLogTensorAllocation::GetMetadata() const {
@@ -1042,35 +782,23 @@ void MemoryLogTensorAllocation::InternalSwap(MemoryLogTensorAllocation* other) {
 
 void MemoryLogTensorDeallocation::InitAsDefaultInstance() {
 }
-class MemoryLogTensorDeallocation::HasBitSetters {
+class MemoryLogTensorDeallocation::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogTensorDeallocation::kAllocationIdFieldNumber;
-const int MemoryLogTensorDeallocation::kAllocatorNameFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogTensorDeallocation::MemoryLogTensorDeallocation()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogTensorDeallocation)
-}
 MemoryLogTensorDeallocation::MemoryLogTensorDeallocation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogTensorDeallocation)
 }
 MemoryLogTensorDeallocation::MemoryLogTensorDeallocation(const MemoryLogTensorDeallocation& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   allocator_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.allocator_name().size() > 0) {
-    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.allocator_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_allocator_name().empty()) {
+    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_allocator_name(),
+      GetArena());
   }
   allocation_id_ = from.allocation_id_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.MemoryLogTensorDeallocation)
@@ -1085,10 +813,11 @@ void MemoryLogTensorDeallocation::SharedCtor() {
 MemoryLogTensorDeallocation::~MemoryLogTensorDeallocation() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogTensorDeallocation)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogTensorDeallocation::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   allocator_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -1113,15 +842,14 @@ void MemoryLogTensorDeallocation::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   allocation_id_ = PROTOBUF_LONGLONG(0);
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogTensorDeallocation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1130,14 +858,16 @@ const char* MemoryLogTensorDeallocation::_InternalParse(const char* ptr, ::PROTO
       // int64 allocation_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string allocator_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_allocator_name(), ptr, ctx, "tensorflow.MemoryLogTensorDeallocation.allocator_name");
+          auto str = _internal_mutable_allocator_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogTensorDeallocation.allocator_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1147,7 +877,9 @@ const char* MemoryLogTensorDeallocation::_InternalParse(const char* ptr, ::PROTO
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1160,119 +892,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogTensorDeallocation::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogTensorDeallocation)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 allocation_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &allocation_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string allocator_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_allocator_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogTensorDeallocation.allocator_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogTensorDeallocation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogTensorDeallocation)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogTensorDeallocation::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogTensorDeallocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 allocation_id = 1;
-  if (this->allocation_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->allocation_id(), output);
-  }
-
-  // string allocator_name = 2;
-  if (this->allocator_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogTensorDeallocation.allocator_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->allocator_name(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogTensorDeallocation)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorDeallocation::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorDeallocation::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogTensorDeallocation)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 allocation_id = 1;
   if (this->allocation_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->allocation_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_allocation_id(), target);
   }
 
   // string allocator_name = 2;
   if (this->allocator_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
+      this->_internal_allocator_name().data(), static_cast<int>(this->_internal_allocator_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogTensorDeallocation.allocator_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->allocator_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_allocator_name(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogTensorDeallocation)
   return target;
@@ -1282,11 +927,6 @@ size_t MemoryLogTensorDeallocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogTensorDeallocation)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1295,16 +935,20 @@ size_t MemoryLogTensorDeallocation::ByteSizeLong() const {
   if (this->allocator_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->allocator_name());
+        this->_internal_allocator_name());
   }
 
   // int64 allocation_id = 1;
   if (this->allocation_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->allocation_id());
+        this->_internal_allocation_id());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1328,15 +972,15 @@ void MemoryLogTensorDeallocation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messa
 void MemoryLogTensorDeallocation::MergeFrom(const MemoryLogTensorDeallocation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogTensorDeallocation)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.allocator_name().size() > 0) {
-    set_allocator_name(from.allocator_name());
+    _internal_set_allocator_name(from._internal_allocator_name());
   }
   if (from.allocation_id() != 0) {
-    set_allocation_id(from.allocation_id());
+    _internal_set_allocation_id(from._internal_allocation_id());
   }
 }
 
@@ -1358,30 +1002,10 @@ bool MemoryLogTensorDeallocation::IsInitialized() const {
   return true;
 }
 
-void MemoryLogTensorDeallocation::Swap(MemoryLogTensorDeallocation* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogTensorDeallocation* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogTensorDeallocation::UnsafeArenaSwap(MemoryLogTensorDeallocation* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogTensorDeallocation::InternalSwap(MemoryLogTensorDeallocation* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(allocation_id_, other->allocation_id_);
 }
 
@@ -1396,63 +1020,36 @@ void MemoryLogTensorOutput::InitAsDefaultInstance() {
   ::tensorflow::_MemoryLogTensorOutput_default_instance_._instance.get_mutable()->tensor_ = const_cast< ::tensorflow::TensorDescription*>(
       ::tensorflow::TensorDescription::internal_default_instance());
 }
-class MemoryLogTensorOutput::HasBitSetters {
+class MemoryLogTensorOutput::_Internal {
  public:
   static const ::tensorflow::TensorDescription& tensor(const MemoryLogTensorOutput* msg);
 };
 
 const ::tensorflow::TensorDescription&
-MemoryLogTensorOutput::HasBitSetters::tensor(const MemoryLogTensorOutput* msg) {
+MemoryLogTensorOutput::_Internal::tensor(const MemoryLogTensorOutput* msg) {
   return *msg->tensor_;
 }
-void MemoryLogTensorOutput::unsafe_arena_set_allocated_tensor(
-    ::tensorflow::TensorDescription* tensor) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete tensor_;
-  }
-  tensor_ = tensor;
-  if (tensor) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.MemoryLogTensorOutput.tensor)
-}
 void MemoryLogTensorOutput::clear_tensor() {
-  if (GetArenaNoVirtual() == nullptr && tensor_ != nullptr) {
+  if (GetArena() == nullptr && tensor_ != nullptr) {
     delete tensor_;
   }
   tensor_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogTensorOutput::kStepIdFieldNumber;
-const int MemoryLogTensorOutput::kKernelNameFieldNumber;
-const int MemoryLogTensorOutput::kIndexFieldNumber;
-const int MemoryLogTensorOutput::kTensorFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogTensorOutput::MemoryLogTensorOutput()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogTensorOutput)
-}
 MemoryLogTensorOutput::MemoryLogTensorOutput(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogTensorOutput)
 }
 MemoryLogTensorOutput::MemoryLogTensorOutput(const MemoryLogTensorOutput& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   kernel_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.kernel_name().size() > 0) {
-    kernel_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.kernel_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_kernel_name().empty()) {
+    kernel_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_kernel_name(),
+      GetArena());
   }
-  if (from.has_tensor()) {
+  if (from._internal_has_tensor()) {
     tensor_ = new ::tensorflow::TensorDescription(*from.tensor_);
   } else {
     tensor_ = nullptr;
@@ -1474,10 +1071,11 @@ void MemoryLogTensorOutput::SharedCtor() {
 MemoryLogTensorOutput::~MemoryLogTensorOutput() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogTensorOutput)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogTensorOutput::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   kernel_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete tensor_;
 }
@@ -1503,21 +1101,20 @@ void MemoryLogTensorOutput::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  kernel_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && tensor_ != nullptr) {
+  kernel_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && tensor_ != nullptr) {
     delete tensor_;
   }
   tensor_ = nullptr;
   ::memset(&step_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&index_) -
       reinterpret_cast<char*>(&step_id_)) + sizeof(index_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogTensorOutput::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1526,28 +1123,30 @@ const char* MemoryLogTensorOutput::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // int64 step_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string kernel_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_kernel_name(), ptr, ctx, "tensorflow.MemoryLogTensorOutput.kernel_name");
+          auto str = _internal_mutable_kernel_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogTensorOutput.kernel_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 index = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.TensorDescription tensor = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_tensor(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_tensor(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1557,7 +1156,9 @@ const char* MemoryLogTensorOutput::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1570,166 +1171,46 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogTensorOutput::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogTensorOutput)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 step_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &step_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string kernel_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_kernel_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogTensorOutput.kernel_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 index = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &index_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.TensorDescription tensor = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_tensor()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogTensorOutput)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogTensorOutput)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogTensorOutput::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogTensorOutput)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 step_id = 1;
-  if (this->step_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
-  }
-
-  // string kernel_name = 2;
-  if (this->kernel_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogTensorOutput.kernel_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->kernel_name(), output);
-  }
-
-  // int32 index = 3;
-  if (this->index() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(3, this->index(), output);
-  }
-
-  // .tensorflow.TensorDescription tensor = 4;
-  if (this->has_tensor()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::tensor(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogTensorOutput)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorOutput::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogTensorOutput::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogTensorOutput)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_step_id(), target);
   }
 
   // string kernel_name = 2;
   if (this->kernel_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->kernel_name().data(), static_cast<int>(this->kernel_name().length()),
+      this->_internal_kernel_name().data(), static_cast<int>(this->_internal_kernel_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogTensorOutput.kernel_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->kernel_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_kernel_name(), target);
   }
 
   // int32 index = 3;
   if (this->index() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->index(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_index(), target);
   }
 
   // .tensorflow.TensorDescription tensor = 4;
   if (this->has_tensor()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::tensor(this), target);
+      InternalWriteMessage(
+        4, _Internal::tensor(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogTensorOutput)
   return target;
@@ -1739,11 +1220,6 @@ size_t MemoryLogTensorOutput::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogTensorOutput)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1752,7 +1228,7 @@ size_t MemoryLogTensorOutput::ByteSizeLong() const {
   if (this->kernel_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->kernel_name());
+        this->_internal_kernel_name());
   }
 
   // .tensorflow.TensorDescription tensor = 4;
@@ -1766,16 +1242,20 @@ size_t MemoryLogTensorOutput::ByteSizeLong() const {
   if (this->step_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->step_id());
+        this->_internal_step_id());
   }
 
   // int32 index = 3;
   if (this->index() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->index());
+        this->_internal_index());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1799,21 +1279,21 @@ void MemoryLogTensorOutput::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void MemoryLogTensorOutput::MergeFrom(const MemoryLogTensorOutput& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogTensorOutput)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.kernel_name().size() > 0) {
-    set_kernel_name(from.kernel_name());
+    _internal_set_kernel_name(from._internal_kernel_name());
   }
   if (from.has_tensor()) {
-    mutable_tensor()->::tensorflow::TensorDescription::MergeFrom(from.tensor());
+    _internal_mutable_tensor()->::tensorflow::TensorDescription::MergeFrom(from._internal_tensor());
   }
   if (from.step_id() != 0) {
-    set_step_id(from.step_id());
+    _internal_set_step_id(from._internal_step_id());
   }
   if (from.index() != 0) {
-    set_index(from.index());
+    _internal_set_index(from._internal_index());
   }
 }
 
@@ -1835,33 +1315,16 @@ bool MemoryLogTensorOutput::IsInitialized() const {
   return true;
 }
 
-void MemoryLogTensorOutput::Swap(MemoryLogTensorOutput* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogTensorOutput* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogTensorOutput::UnsafeArenaSwap(MemoryLogTensorOutput* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogTensorOutput::InternalSwap(MemoryLogTensorOutput* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  kernel_name_.Swap(&other->kernel_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(tensor_, other->tensor_);
-  swap(step_id_, other->step_id_);
-  swap(index_, other->index_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  kernel_name_.Swap(&other->kernel_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MemoryLogTensorOutput, index_)
+      + sizeof(MemoryLogTensorOutput::index_)
+      - PROTOBUF_FIELD_OFFSET(MemoryLogTensorOutput, tensor_)>(
+          reinterpret_cast<char*>(&tensor_),
+          reinterpret_cast<char*>(&other->tensor_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MemoryLogTensorOutput::GetMetadata() const {
@@ -1873,44 +1336,28 @@ void MemoryLogTensorOutput::InternalSwap(MemoryLogTensorOutput* other) {
 
 void MemoryLogRawAllocation::InitAsDefaultInstance() {
 }
-class MemoryLogRawAllocation::HasBitSetters {
+class MemoryLogRawAllocation::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogRawAllocation::kStepIdFieldNumber;
-const int MemoryLogRawAllocation::kOperationFieldNumber;
-const int MemoryLogRawAllocation::kNumBytesFieldNumber;
-const int MemoryLogRawAllocation::kPtrFieldNumber;
-const int MemoryLogRawAllocation::kAllocationIdFieldNumber;
-const int MemoryLogRawAllocation::kAllocatorNameFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogRawAllocation::MemoryLogRawAllocation()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogRawAllocation)
-}
 MemoryLogRawAllocation::MemoryLogRawAllocation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogRawAllocation)
 }
 MemoryLogRawAllocation::MemoryLogRawAllocation(const MemoryLogRawAllocation& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   operation_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.operation().size() > 0) {
-    operation_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.operation(),
-      GetArenaNoVirtual());
+  if (!from._internal_operation().empty()) {
+    operation_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_operation(),
+      GetArena());
   }
   allocator_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.allocator_name().size() > 0) {
-    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.allocator_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_allocator_name().empty()) {
+    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_allocator_name(),
+      GetArena());
   }
   ::memcpy(&step_id_, &from.step_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&allocation_id_) -
@@ -1930,10 +1377,11 @@ void MemoryLogRawAllocation::SharedCtor() {
 MemoryLogRawAllocation::~MemoryLogRawAllocation() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogRawAllocation)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogRawAllocation::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   operation_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   allocator_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -1959,18 +1407,17 @@ void MemoryLogRawAllocation::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  operation_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  operation_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::memset(&step_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&allocation_id_) -
       reinterpret_cast<char*>(&step_id_)) + sizeof(allocation_id_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogRawAllocation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1979,42 +1426,46 @@ const char* MemoryLogRawAllocation::_InternalParse(const char* ptr, ::PROTOBUF_N
       // int64 step_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string operation = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_operation(), ptr, ctx, "tensorflow.MemoryLogRawAllocation.operation");
+          auto str = _internal_mutable_operation();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogRawAllocation.operation"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 num_bytes = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          num_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          num_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint64 ptr = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          ptr_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ptr_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 allocation_id = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string allocator_name = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_allocator_name(), ptr, ctx, "tensorflow.MemoryLogRawAllocation.allocator_name");
+          auto str = _internal_mutable_allocator_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogRawAllocation.allocator_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2024,7 +1475,9 @@ const char* MemoryLogRawAllocation::_InternalParse(const char* ptr, ::PROTOBUF_N
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2037,224 +1490,60 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogRawAllocation::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogRawAllocation)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 step_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &step_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string operation = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_operation()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->operation().data(), static_cast<int>(this->operation().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogRawAllocation.operation"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 num_bytes = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &num_bytes_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint64 ptr = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &ptr_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 allocation_id = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &allocation_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string allocator_name = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_allocator_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogRawAllocation.allocator_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogRawAllocation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogRawAllocation)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogRawAllocation::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogRawAllocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 step_id = 1;
-  if (this->step_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
-  }
-
-  // string operation = 2;
-  if (this->operation().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->operation().data(), static_cast<int>(this->operation().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogRawAllocation.operation");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->operation(), output);
-  }
-
-  // int64 num_bytes = 3;
-  if (this->num_bytes() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->num_bytes(), output);
-  }
-
-  // uint64 ptr = 4;
-  if (this->ptr() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(4, this->ptr(), output);
-  }
-
-  // int64 allocation_id = 5;
-  if (this->allocation_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(5, this->allocation_id(), output);
-  }
-
-  // string allocator_name = 6;
-  if (this->allocator_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogRawAllocation.allocator_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      6, this->allocator_name(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogRawAllocation)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogRawAllocation::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogRawAllocation::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogRawAllocation)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_step_id(), target);
   }
 
   // string operation = 2;
   if (this->operation().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->operation().data(), static_cast<int>(this->operation().length()),
+      this->_internal_operation().data(), static_cast<int>(this->_internal_operation().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogRawAllocation.operation");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->operation(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_operation(), target);
   }
 
   // int64 num_bytes = 3;
   if (this->num_bytes() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->num_bytes(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_num_bytes(), target);
   }
 
   // uint64 ptr = 4;
   if (this->ptr() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->ptr(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(4, this->_internal_ptr(), target);
   }
 
   // int64 allocation_id = 5;
   if (this->allocation_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->allocation_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(5, this->_internal_allocation_id(), target);
   }
 
   // string allocator_name = 6;
   if (this->allocator_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
+      this->_internal_allocator_name().data(), static_cast<int>(this->_internal_allocator_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogRawAllocation.allocator_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        6, this->allocator_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        6, this->_internal_allocator_name(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogRawAllocation)
   return target;
@@ -2264,11 +1553,6 @@ size_t MemoryLogRawAllocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogRawAllocation)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2277,44 +1561,48 @@ size_t MemoryLogRawAllocation::ByteSizeLong() const {
   if (this->operation().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->operation());
+        this->_internal_operation());
   }
 
   // string allocator_name = 6;
   if (this->allocator_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->allocator_name());
+        this->_internal_allocator_name());
   }
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->step_id());
+        this->_internal_step_id());
   }
 
   // int64 num_bytes = 3;
   if (this->num_bytes() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->num_bytes());
+        this->_internal_num_bytes());
   }
 
   // uint64 ptr = 4;
   if (this->ptr() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->ptr());
+        this->_internal_ptr());
   }
 
   // int64 allocation_id = 5;
   if (this->allocation_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->allocation_id());
+        this->_internal_allocation_id());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2338,27 +1626,27 @@ void MemoryLogRawAllocation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void MemoryLogRawAllocation::MergeFrom(const MemoryLogRawAllocation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogRawAllocation)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.operation().size() > 0) {
-    set_operation(from.operation());
+    _internal_set_operation(from._internal_operation());
   }
   if (from.allocator_name().size() > 0) {
-    set_allocator_name(from.allocator_name());
+    _internal_set_allocator_name(from._internal_allocator_name());
   }
   if (from.step_id() != 0) {
-    set_step_id(from.step_id());
+    _internal_set_step_id(from._internal_step_id());
   }
   if (from.num_bytes() != 0) {
-    set_num_bytes(from.num_bytes());
+    _internal_set_num_bytes(from._internal_num_bytes());
   }
   if (from.ptr() != 0) {
-    set_ptr(from.ptr());
+    _internal_set_ptr(from._internal_ptr());
   }
   if (from.allocation_id() != 0) {
-    set_allocation_id(from.allocation_id());
+    _internal_set_allocation_id(from._internal_allocation_id());
   }
 }
 
@@ -2380,36 +1668,17 @@ bool MemoryLogRawAllocation::IsInitialized() const {
   return true;
 }
 
-void MemoryLogRawAllocation::Swap(MemoryLogRawAllocation* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogRawAllocation* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogRawAllocation::UnsafeArenaSwap(MemoryLogRawAllocation* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogRawAllocation::InternalSwap(MemoryLogRawAllocation* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  operation_.Swap(&other->operation_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(step_id_, other->step_id_);
-  swap(num_bytes_, other->num_bytes_);
-  swap(ptr_, other->ptr_);
-  swap(allocation_id_, other->allocation_id_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  operation_.Swap(&other->operation_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MemoryLogRawAllocation, allocation_id_)
+      + sizeof(MemoryLogRawAllocation::allocation_id_)
+      - PROTOBUF_FIELD_OFFSET(MemoryLogRawAllocation, step_id_)>(
+          reinterpret_cast<char*>(&step_id_),
+          reinterpret_cast<char*>(&other->step_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MemoryLogRawAllocation::GetMetadata() const {
@@ -2421,43 +1690,28 @@ void MemoryLogRawAllocation::InternalSwap(MemoryLogRawAllocation* other) {
 
 void MemoryLogRawDeallocation::InitAsDefaultInstance() {
 }
-class MemoryLogRawDeallocation::HasBitSetters {
+class MemoryLogRawDeallocation::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MemoryLogRawDeallocation::kStepIdFieldNumber;
-const int MemoryLogRawDeallocation::kOperationFieldNumber;
-const int MemoryLogRawDeallocation::kAllocationIdFieldNumber;
-const int MemoryLogRawDeallocation::kAllocatorNameFieldNumber;
-const int MemoryLogRawDeallocation::kDeferredFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MemoryLogRawDeallocation::MemoryLogRawDeallocation()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.MemoryLogRawDeallocation)
-}
 MemoryLogRawDeallocation::MemoryLogRawDeallocation(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.MemoryLogRawDeallocation)
 }
 MemoryLogRawDeallocation::MemoryLogRawDeallocation(const MemoryLogRawDeallocation& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   operation_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.operation().size() > 0) {
-    operation_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.operation(),
-      GetArenaNoVirtual());
+  if (!from._internal_operation().empty()) {
+    operation_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_operation(),
+      GetArena());
   }
   allocator_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.allocator_name().size() > 0) {
-    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.allocator_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_allocator_name().empty()) {
+    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_allocator_name(),
+      GetArena());
   }
   ::memcpy(&step_id_, &from.step_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&deferred_) -
@@ -2477,10 +1731,11 @@ void MemoryLogRawDeallocation::SharedCtor() {
 MemoryLogRawDeallocation::~MemoryLogRawDeallocation() {
   // @@protoc_insertion_point(destructor:tensorflow.MemoryLogRawDeallocation)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MemoryLogRawDeallocation::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   operation_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   allocator_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -2506,18 +1761,17 @@ void MemoryLogRawDeallocation::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  operation_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  operation_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::memset(&step_id_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&deferred_) -
       reinterpret_cast<char*>(&step_id_)) + sizeof(deferred_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MemoryLogRawDeallocation::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -2526,35 +1780,39 @@ const char* MemoryLogRawDeallocation::_InternalParse(const char* ptr, ::PROTOBUF
       // int64 step_id = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          step_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string operation = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_operation(), ptr, ctx, "tensorflow.MemoryLogRawDeallocation.operation");
+          auto str = _internal_mutable_operation();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogRawDeallocation.operation"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 allocation_id = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string allocator_name = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_allocator_name(), ptr, ctx, "tensorflow.MemoryLogRawDeallocation.allocator_name");
+          auto str = _internal_mutable_allocator_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.MemoryLogRawDeallocation.allocator_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool deferred = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          deferred_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          deferred_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2564,7 +1822,9 @@ const char* MemoryLogRawDeallocation::_InternalParse(const char* ptr, ::PROTOBUF
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2577,201 +1837,54 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MemoryLogRawDeallocation::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.MemoryLogRawDeallocation)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 step_id = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &step_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string operation = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_operation()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->operation().data(), static_cast<int>(this->operation().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogRawDeallocation.operation"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 allocation_id = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &allocation_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string allocator_name = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_allocator_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.MemoryLogRawDeallocation.allocator_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool deferred = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &deferred_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.MemoryLogRawDeallocation)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.MemoryLogRawDeallocation)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MemoryLogRawDeallocation::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.MemoryLogRawDeallocation)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 step_id = 1;
-  if (this->step_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->step_id(), output);
-  }
-
-  // string operation = 2;
-  if (this->operation().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->operation().data(), static_cast<int>(this->operation().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogRawDeallocation.operation");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->operation(), output);
-  }
-
-  // int64 allocation_id = 3;
-  if (this->allocation_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->allocation_id(), output);
-  }
-
-  // string allocator_name = 4;
-  if (this->allocator_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.MemoryLogRawDeallocation.allocator_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->allocator_name(), output);
-  }
-
-  // bool deferred = 5;
-  if (this->deferred() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(5, this->deferred(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.MemoryLogRawDeallocation)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogRawDeallocation::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MemoryLogRawDeallocation::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.MemoryLogRawDeallocation)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->step_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_step_id(), target);
   }
 
   // string operation = 2;
   if (this->operation().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->operation().data(), static_cast<int>(this->operation().length()),
+      this->_internal_operation().data(), static_cast<int>(this->_internal_operation().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogRawDeallocation.operation");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->operation(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_operation(), target);
   }
 
   // int64 allocation_id = 3;
   if (this->allocation_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->allocation_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_allocation_id(), target);
   }
 
   // string allocator_name = 4;
   if (this->allocator_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
+      this->_internal_allocator_name().data(), static_cast<int>(this->_internal_allocator_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.MemoryLogRawDeallocation.allocator_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        4, this->allocator_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_allocator_name(), target);
   }
 
   // bool deferred = 5;
   if (this->deferred() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->deferred(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_deferred(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.MemoryLogRawDeallocation)
   return target;
@@ -2781,11 +1894,6 @@ size_t MemoryLogRawDeallocation::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.MemoryLogRawDeallocation)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2794,28 +1902,28 @@ size_t MemoryLogRawDeallocation::ByteSizeLong() const {
   if (this->operation().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->operation());
+        this->_internal_operation());
   }
 
   // string allocator_name = 4;
   if (this->allocator_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->allocator_name());
+        this->_internal_allocator_name());
   }
 
   // int64 step_id = 1;
   if (this->step_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->step_id());
+        this->_internal_step_id());
   }
 
   // int64 allocation_id = 3;
   if (this->allocation_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->allocation_id());
+        this->_internal_allocation_id());
   }
 
   // bool deferred = 5;
@@ -2823,6 +1931,10 @@ size_t MemoryLogRawDeallocation::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2846,24 +1958,24 @@ void MemoryLogRawDeallocation::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message&
 void MemoryLogRawDeallocation::MergeFrom(const MemoryLogRawDeallocation& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.MemoryLogRawDeallocation)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.operation().size() > 0) {
-    set_operation(from.operation());
+    _internal_set_operation(from._internal_operation());
   }
   if (from.allocator_name().size() > 0) {
-    set_allocator_name(from.allocator_name());
+    _internal_set_allocator_name(from._internal_allocator_name());
   }
   if (from.step_id() != 0) {
-    set_step_id(from.step_id());
+    _internal_set_step_id(from._internal_step_id());
   }
   if (from.allocation_id() != 0) {
-    set_allocation_id(from.allocation_id());
+    _internal_set_allocation_id(from._internal_allocation_id());
   }
   if (from.deferred() != 0) {
-    set_deferred(from.deferred());
+    _internal_set_deferred(from._internal_deferred());
   }
 }
 
@@ -2885,35 +1997,17 @@ bool MemoryLogRawDeallocation::IsInitialized() const {
   return true;
 }
 
-void MemoryLogRawDeallocation::Swap(MemoryLogRawDeallocation* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MemoryLogRawDeallocation* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MemoryLogRawDeallocation::UnsafeArenaSwap(MemoryLogRawDeallocation* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MemoryLogRawDeallocation::InternalSwap(MemoryLogRawDeallocation* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  operation_.Swap(&other->operation_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(step_id_, other->step_id_);
-  swap(allocation_id_, other->allocation_id_);
-  swap(deferred_, other->deferred_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  operation_.Swap(&other->operation_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MemoryLogRawDeallocation, deferred_)
+      + sizeof(MemoryLogRawDeallocation::deferred_)
+      - PROTOBUF_FIELD_OFFSET(MemoryLogRawDeallocation, step_id_)>(
+          reinterpret_cast<char*>(&step_id_),
+          reinterpret_cast<char*>(&other->step_id_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MemoryLogRawDeallocation::GetMetadata() const {

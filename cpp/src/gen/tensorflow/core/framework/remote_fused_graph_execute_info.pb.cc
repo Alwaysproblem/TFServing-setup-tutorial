@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -40,7 +39,7 @@ static void InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_tensorflow_2fcore_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_RemoteFusedGraphExecuteInfo_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto}, {
       &scc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_2eproto.base,
       &scc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto.base,}};
 
@@ -56,7 +55,7 @@ static void InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProt
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto}, {
       &scc_info_TensorShapeProto_tensorflow_2fcore_2fframework_2ftensor_5fshape_2eproto.base,}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto[2];
@@ -94,7 +93,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_RemoteFusedGraphExecuteInfo_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\?tensorflow/core/framework/remote_fused"
   "_graph_execute_info.proto\022\ntensorflow\032%t"
   "ensorflow/core/framework/graph.proto\032,te"
@@ -129,16 +128,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto, "tensorflow/core/framework/remote_fused_graph_execute_info.proto", 898,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto, "tensorflow/core/framework/remote_fused_graph_execute_info.proto", 898,
   &descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_once, descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto_deps, 2, 3,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto, 2, file_level_enum_descriptors_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fremote_5ffused_5fgraph_5fexecute_5finfo_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -147,56 +145,31 @@ void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::InitAsDefaultInstance() {
   ::tensorflow::_RemoteFusedGraphExecuteInfo_TensorShapeTypeProto_default_instance_._instance.get_mutable()->shape_ = const_cast< ::tensorflow::TensorShapeProto*>(
       ::tensorflow::TensorShapeProto::internal_default_instance());
 }
-class RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::HasBitSetters {
+class RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_Internal {
  public:
   static const ::tensorflow::TensorShapeProto& shape(const RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* msg);
 };
 
 const ::tensorflow::TensorShapeProto&
-RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::HasBitSetters::shape(const RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* msg) {
+RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_Internal::shape(const RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* msg) {
   return *msg->shape_;
 }
-void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::unsafe_arena_set_allocated_shape(
-    ::tensorflow::TensorShapeProto* shape) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete shape_;
-  }
-  shape_ = shape;
-  if (shape) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto.shape)
-}
 void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::clear_shape() {
-  if (GetArenaNoVirtual() == nullptr && shape_ != nullptr) {
+  if (GetArena() == nullptr && shape_ != nullptr) {
     delete shape_;
   }
   shape_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::kDtypeFieldNumber;
-const int RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::kShapeFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::RemoteFusedGraphExecuteInfo_TensorShapeTypeProto()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-}
 RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::RemoteFusedGraphExecuteInfo_TensorShapeTypeProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
 }
 RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::RemoteFusedGraphExecuteInfo_TensorShapeTypeProto(const RemoteFusedGraphExecuteInfo_TensorShapeTypeProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_shape()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_shape()) {
     shape_ = new ::tensorflow::TensorShapeProto(*from.shape_);
   } else {
     shape_ = nullptr;
@@ -215,10 +188,11 @@ void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::SharedCtor() {
 RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::~RemoteFusedGraphExecuteInfo_TensorShapeTypeProto() {
   // @@protoc_insertion_point(destructor:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete shape_;
 }
 
@@ -243,18 +217,17 @@ void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && shape_ != nullptr) {
+  if (GetArena() == nullptr && shape_ != nullptr) {
     delete shape_;
   }
   shape_ = nullptr;
   dtype_ = 0;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -263,15 +236,15 @@ const char* RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_InternalParse(con
       // .tensorflow.DataType dtype = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_dtype(static_cast<::tensorflow::DataType>(val));
+          _internal_set_dtype(static_cast<::tensorflow::DataType>(val));
         } else goto handle_unusual;
         continue;
       // .tensorflow.TensorShapeProto shape = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_shape(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_shape(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -281,7 +254,9 @@ const char* RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_InternalParse(con
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -294,110 +269,31 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.DataType dtype = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_dtype(static_cast< ::tensorflow::DataType >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.TensorShapeProto shape = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_shape()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.DataType dtype = 1;
-  if (this->dtype() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->dtype(), output);
-  }
-
-  // .tensorflow.TensorShapeProto shape = 2;
-  if (this->has_shape()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::shape(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.DataType dtype = 1;
   if (this->dtype() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->dtype(), target);
+      1, this->_internal_dtype(), target);
   }
 
   // .tensorflow.TensorShapeProto shape = 2;
   if (this->has_shape()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::shape(this), target);
+      InternalWriteMessage(
+        2, _Internal::shape(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
   return target;
@@ -407,11 +303,6 @@ size_t RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -426,9 +317,13 @@ size_t RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::ByteSizeLong() const {
   // .tensorflow.DataType dtype = 1;
   if (this->dtype() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->dtype());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_dtype());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -452,15 +347,15 @@ void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::MergeFrom(const ::PROTOBU
 void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::MergeFrom(const RemoteFusedGraphExecuteInfo_TensorShapeTypeProto& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_shape()) {
-    mutable_shape()->::tensorflow::TensorShapeProto::MergeFrom(from.shape());
+    _internal_mutable_shape()->::tensorflow::TensorShapeProto::MergeFrom(from._internal_shape());
   }
   if (from.dtype() != 0) {
-    set_dtype(from.dtype());
+    _internal_set_dtype(from._internal_dtype());
   }
 }
 
@@ -482,30 +377,15 @@ bool RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::IsInitialized() const {
   return true;
 }
 
-void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::Swap(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::UnsafeArenaSwap(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::InternalSwap(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(shape_, other->shape_);
-  swap(dtype_, other->dtype_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto, dtype_)
+      + sizeof(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::dtype_)
+      - PROTOBUF_FIELD_OFFSET(RemoteFusedGraphExecuteInfo_TensorShapeTypeProto, shape_)>(
+          reinterpret_cast<char*>(&shape_),
+          reinterpret_cast<char*>(&other->shape_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RemoteFusedGraphExecuteInfo_TensorShapeTypeProto::GetMetadata() const {
@@ -519,52 +399,23 @@ void RemoteFusedGraphExecuteInfo::InitAsDefaultInstance() {
   ::tensorflow::_RemoteFusedGraphExecuteInfo_default_instance_._instance.get_mutable()->remote_graph_ = const_cast< ::tensorflow::GraphDef*>(
       ::tensorflow::GraphDef::internal_default_instance());
 }
-class RemoteFusedGraphExecuteInfo::HasBitSetters {
+class RemoteFusedGraphExecuteInfo::_Internal {
  public:
   static const ::tensorflow::GraphDef& remote_graph(const RemoteFusedGraphExecuteInfo* msg);
 };
 
 const ::tensorflow::GraphDef&
-RemoteFusedGraphExecuteInfo::HasBitSetters::remote_graph(const RemoteFusedGraphExecuteInfo* msg) {
+RemoteFusedGraphExecuteInfo::_Internal::remote_graph(const RemoteFusedGraphExecuteInfo* msg) {
   return *msg->remote_graph_;
 }
-void RemoteFusedGraphExecuteInfo::unsafe_arena_set_allocated_remote_graph(
-    ::tensorflow::GraphDef* remote_graph) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete remote_graph_;
-  }
-  remote_graph_ = remote_graph;
-  if (remote_graph) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.RemoteFusedGraphExecuteInfo.remote_graph)
-}
 void RemoteFusedGraphExecuteInfo::clear_remote_graph() {
-  if (GetArenaNoVirtual() == nullptr && remote_graph_ != nullptr) {
+  if (GetArena() == nullptr && remote_graph_ != nullptr) {
     delete remote_graph_;
   }
   remote_graph_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RemoteFusedGraphExecuteInfo::kRemoteGraphFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kGraphInputNodeNameFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kGraphOutputNodeNameFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kExecutorNameFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kSerializedExecutorParametersFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kDefaultGraphInputTensorShapeFieldNumber;
-const int RemoteFusedGraphExecuteInfo::kDefaultGraphOutputTensorShapeFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RemoteFusedGraphExecuteInfo::RemoteFusedGraphExecuteInfo()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.RemoteFusedGraphExecuteInfo)
-}
 RemoteFusedGraphExecuteInfo::RemoteFusedGraphExecuteInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   graph_input_node_name_(arena),
   graph_output_node_name_(arena),
   default_graph_input_tensor_shape_(arena),
@@ -575,23 +426,22 @@ RemoteFusedGraphExecuteInfo::RemoteFusedGraphExecuteInfo(::PROTOBUF_NAMESPACE_ID
 }
 RemoteFusedGraphExecuteInfo::RemoteFusedGraphExecuteInfo(const RemoteFusedGraphExecuteInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       graph_input_node_name_(from.graph_input_node_name_),
       graph_output_node_name_(from.graph_output_node_name_),
       default_graph_input_tensor_shape_(from.default_graph_input_tensor_shape_),
       default_graph_output_tensor_shape_(from.default_graph_output_tensor_shape_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   executor_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.executor_name().size() > 0) {
-    executor_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.executor_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_executor_name().empty()) {
+    executor_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_executor_name(),
+      GetArena());
   }
   serialized_executor_parameters_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.serialized_executor_parameters().size() > 0) {
-    serialized_executor_parameters_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.serialized_executor_parameters(),
-      GetArenaNoVirtual());
+  if (!from._internal_serialized_executor_parameters().empty()) {
+    serialized_executor_parameters_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_serialized_executor_parameters(),
+      GetArena());
   }
-  if (from.has_remote_graph()) {
+  if (from._internal_has_remote_graph()) {
     remote_graph_ = new ::tensorflow::GraphDef(*from.remote_graph_);
   } else {
     remote_graph_ = nullptr;
@@ -609,10 +459,11 @@ void RemoteFusedGraphExecuteInfo::SharedCtor() {
 RemoteFusedGraphExecuteInfo::~RemoteFusedGraphExecuteInfo() {
   // @@protoc_insertion_point(destructor:tensorflow.RemoteFusedGraphExecuteInfo)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RemoteFusedGraphExecuteInfo::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   executor_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   serialized_executor_parameters_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete remote_graph_;
@@ -643,19 +494,18 @@ void RemoteFusedGraphExecuteInfo::Clear() {
   graph_output_node_name_.Clear();
   default_graph_input_tensor_shape_.Clear();
   default_graph_output_tensor_shape_.Clear();
-  executor_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  serialized_executor_parameters_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && remote_graph_ != nullptr) {
+  executor_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  serialized_executor_parameters_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && remote_graph_ != nullptr) {
     delete remote_graph_;
   }
   remote_graph_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -664,7 +514,7 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
       // .tensorflow.GraphDef remote_graph = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_remote_graph(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_remote_graph(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -674,10 +524,12 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_graph_input_node_name(), ptr, ctx, "tensorflow.RemoteFusedGraphExecuteInfo.graph_input_node_name");
+            auto str = _internal_add_graph_input_node_name();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RemoteFusedGraphExecuteInfo.graph_input_node_name"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 18);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       // repeated string graph_output_node_name = 3;
@@ -686,23 +538,28 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_graph_output_node_name(), ptr, ctx, "tensorflow.RemoteFusedGraphExecuteInfo.graph_output_node_name");
+            auto str = _internal_add_graph_output_node_name();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RemoteFusedGraphExecuteInfo.graph_output_node_name"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 26);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<26>(ptr));
         } else goto handle_unusual;
         continue;
       // string executor_name = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_executor_name(), ptr, ctx, "tensorflow.RemoteFusedGraphExecuteInfo.executor_name");
+          auto str = _internal_mutable_executor_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.RemoteFusedGraphExecuteInfo.executor_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bytes serialized_executor_parameters = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(mutable_serialized_executor_parameters(), ptr, ctx);
+          auto str = _internal_mutable_serialized_executor_parameters();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -712,10 +569,10 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_default_graph_input_tensor_shape(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_default_graph_input_tensor_shape(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 50);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<50>(ptr));
         } else goto handle_unusual;
         continue;
       // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_output_tensor_shape = 7;
@@ -724,10 +581,10 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_default_graph_output_tensor_shape(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_default_graph_output_tensor_shape(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 58);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<58>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -736,7 +593,9 @@ const char* RemoteFusedGraphExecuteInfo::_InternalParse(const char* ptr, ::PROTO
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -749,272 +608,76 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RemoteFusedGraphExecuteInfo::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.RemoteFusedGraphExecuteInfo)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.GraphDef remote_graph = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_remote_graph()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // repeated string graph_input_node_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_graph_input_node_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->graph_input_node_name(this->graph_input_node_name_size() - 1).data(),
-            static_cast<int>(this->graph_input_node_name(this->graph_input_node_name_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RemoteFusedGraphExecuteInfo.graph_input_node_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated string graph_output_node_name = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_graph_output_node_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->graph_output_node_name(this->graph_output_node_name_size() - 1).data(),
-            static_cast<int>(this->graph_output_node_name(this->graph_output_node_name_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RemoteFusedGraphExecuteInfo.graph_output_node_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string executor_name = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_executor_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->executor_name().data(), static_cast<int>(this->executor_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.RemoteFusedGraphExecuteInfo.executor_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bytes serialized_executor_parameters = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadBytes(
-                input, this->mutable_serialized_executor_parameters()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_input_tensor_shape = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_default_graph_input_tensor_shape()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_output_tensor_shape = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_default_graph_output_tensor_shape()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.RemoteFusedGraphExecuteInfo)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.RemoteFusedGraphExecuteInfo)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RemoteFusedGraphExecuteInfo::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.RemoteFusedGraphExecuteInfo)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.GraphDef remote_graph = 1;
-  if (this->has_remote_graph()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::remote_graph(this), output);
-  }
-
-  // repeated string graph_input_node_name = 2;
-  for (int i = 0, n = this->graph_input_node_name_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->graph_input_node_name(i).data(), static_cast<int>(this->graph_input_node_name(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RemoteFusedGraphExecuteInfo.graph_input_node_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      2, this->graph_input_node_name(i), output);
-  }
-
-  // repeated string graph_output_node_name = 3;
-  for (int i = 0, n = this->graph_output_node_name_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->graph_output_node_name(i).data(), static_cast<int>(this->graph_output_node_name(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RemoteFusedGraphExecuteInfo.graph_output_node_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      3, this->graph_output_node_name(i), output);
-  }
-
-  // string executor_name = 4;
-  if (this->executor_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->executor_name().data(), static_cast<int>(this->executor_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.RemoteFusedGraphExecuteInfo.executor_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->executor_name(), output);
-  }
-
-  // bytes serialized_executor_parameters = 5;
-  if (this->serialized_executor_parameters().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesMaybeAliased(
-      5, this->serialized_executor_parameters(), output);
-  }
-
-  // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_input_tensor_shape = 6;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->default_graph_input_tensor_shape_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6,
-      this->default_graph_input_tensor_shape(static_cast<int>(i)),
-      output);
-  }
-
-  // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_output_tensor_shape = 7;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->default_graph_output_tensor_shape_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7,
-      this->default_graph_output_tensor_shape(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.RemoteFusedGraphExecuteInfo)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RemoteFusedGraphExecuteInfo::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RemoteFusedGraphExecuteInfo::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RemoteFusedGraphExecuteInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.GraphDef remote_graph = 1;
   if (this->has_remote_graph()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::remote_graph(this), target);
+      InternalWriteMessage(
+        1, _Internal::remote_graph(this), target, stream);
   }
 
   // repeated string graph_input_node_name = 2;
-  for (int i = 0, n = this->graph_input_node_name_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_graph_input_node_name_size(); i < n; i++) {
+    const auto& s = this->_internal_graph_input_node_name(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->graph_input_node_name(i).data(), static_cast<int>(this->graph_input_node_name(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RemoteFusedGraphExecuteInfo.graph_input_node_name");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(2, this->graph_input_node_name(i), target);
+    target = stream->WriteString(2, s, target);
   }
 
   // repeated string graph_output_node_name = 3;
-  for (int i = 0, n = this->graph_output_node_name_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_graph_output_node_name_size(); i < n; i++) {
+    const auto& s = this->_internal_graph_output_node_name(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->graph_output_node_name(i).data(), static_cast<int>(this->graph_output_node_name(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RemoteFusedGraphExecuteInfo.graph_output_node_name");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(3, this->graph_output_node_name(i), target);
+    target = stream->WriteString(3, s, target);
   }
 
   // string executor_name = 4;
   if (this->executor_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->executor_name().data(), static_cast<int>(this->executor_name().length()),
+      this->_internal_executor_name().data(), static_cast<int>(this->_internal_executor_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.RemoteFusedGraphExecuteInfo.executor_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        4, this->executor_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_executor_name(), target);
   }
 
   // bytes serialized_executor_parameters = 5;
   if (this->serialized_executor_parameters().size() > 0) {
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytesToArray(
-        5, this->serialized_executor_parameters(), target);
+    target = stream->WriteBytesMaybeAliased(
+        5, this->_internal_serialized_executor_parameters(), target);
   }
 
   // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_input_tensor_shape = 6;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->default_graph_input_tensor_shape_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_default_graph_input_tensor_shape_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, this->default_graph_input_tensor_shape(static_cast<int>(i)), target);
+      InternalWriteMessage(6, this->_internal_default_graph_input_tensor_shape(i), target, stream);
   }
 
   // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_output_tensor_shape = 7;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->default_graph_output_tensor_shape_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_default_graph_output_tensor_shape_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        7, this->default_graph_output_tensor_shape(static_cast<int>(i)), target);
+      InternalWriteMessage(7, this->_internal_default_graph_output_tensor_shape(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RemoteFusedGraphExecuteInfo)
   return target;
@@ -1024,65 +687,52 @@ size_t RemoteFusedGraphExecuteInfo::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.RemoteFusedGraphExecuteInfo)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string graph_input_node_name = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->graph_input_node_name_size());
-  for (int i = 0, n = this->graph_input_node_name_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(graph_input_node_name_.size());
+  for (int i = 0, n = graph_input_node_name_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->graph_input_node_name(i));
+      graph_input_node_name_.Get(i));
   }
 
   // repeated string graph_output_node_name = 3;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->graph_output_node_name_size());
-  for (int i = 0, n = this->graph_output_node_name_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(graph_output_node_name_.size());
+  for (int i = 0, n = graph_output_node_name_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->graph_output_node_name(i));
+      graph_output_node_name_.Get(i));
   }
 
   // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_input_tensor_shape = 6;
-  {
-    unsigned int count = static_cast<unsigned int>(this->default_graph_input_tensor_shape_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->default_graph_input_tensor_shape(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_default_graph_input_tensor_shape_size();
+  for (const auto& msg : this->default_graph_input_tensor_shape_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // repeated .tensorflow.RemoteFusedGraphExecuteInfo.TensorShapeTypeProto default_graph_output_tensor_shape = 7;
-  {
-    unsigned int count = static_cast<unsigned int>(this->default_graph_output_tensor_shape_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->default_graph_output_tensor_shape(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_default_graph_output_tensor_shape_size();
+  for (const auto& msg : this->default_graph_output_tensor_shape_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string executor_name = 4;
   if (this->executor_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->executor_name());
+        this->_internal_executor_name());
   }
 
   // bytes serialized_executor_parameters = 5;
   if (this->serialized_executor_parameters().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-        this->serialized_executor_parameters());
+        this->_internal_serialized_executor_parameters());
   }
 
   // .tensorflow.GraphDef remote_graph = 1;
@@ -1092,6 +742,10 @@ size_t RemoteFusedGraphExecuteInfo::ByteSizeLong() const {
         *remote_graph_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1115,7 +769,7 @@ void RemoteFusedGraphExecuteInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messa
 void RemoteFusedGraphExecuteInfo::MergeFrom(const RemoteFusedGraphExecuteInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RemoteFusedGraphExecuteInfo)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1124,13 +778,13 @@ void RemoteFusedGraphExecuteInfo::MergeFrom(const RemoteFusedGraphExecuteInfo& f
   default_graph_input_tensor_shape_.MergeFrom(from.default_graph_input_tensor_shape_);
   default_graph_output_tensor_shape_.MergeFrom(from.default_graph_output_tensor_shape_);
   if (from.executor_name().size() > 0) {
-    set_executor_name(from.executor_name());
+    _internal_set_executor_name(from._internal_executor_name());
   }
   if (from.serialized_executor_parameters().size() > 0) {
-    set_serialized_executor_parameters(from.serialized_executor_parameters());
+    _internal_set_serialized_executor_parameters(from._internal_serialized_executor_parameters());
   }
   if (from.has_remote_graph()) {
-    mutable_remote_graph()->::tensorflow::GraphDef::MergeFrom(from.remote_graph());
+    _internal_mutable_remote_graph()->::tensorflow::GraphDef::MergeFrom(from._internal_remote_graph());
   }
 }
 
@@ -1152,36 +806,15 @@ bool RemoteFusedGraphExecuteInfo::IsInitialized() const {
   return true;
 }
 
-void RemoteFusedGraphExecuteInfo::Swap(RemoteFusedGraphExecuteInfo* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    RemoteFusedGraphExecuteInfo* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void RemoteFusedGraphExecuteInfo::UnsafeArenaSwap(RemoteFusedGraphExecuteInfo* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void RemoteFusedGraphExecuteInfo::InternalSwap(RemoteFusedGraphExecuteInfo* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  graph_input_node_name_.InternalSwap(CastToBase(&other->graph_input_node_name_));
-  graph_output_node_name_.InternalSwap(CastToBase(&other->graph_output_node_name_));
-  CastToBase(&default_graph_input_tensor_shape_)->InternalSwap(CastToBase(&other->default_graph_input_tensor_shape_));
-  CastToBase(&default_graph_output_tensor_shape_)->InternalSwap(CastToBase(&other->default_graph_output_tensor_shape_));
-  executor_name_.Swap(&other->executor_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  serialized_executor_parameters_.Swap(&other->serialized_executor_parameters_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  graph_input_node_name_.InternalSwap(&other->graph_input_node_name_);
+  graph_output_node_name_.InternalSwap(&other->graph_output_node_name_);
+  default_graph_input_tensor_shape_.InternalSwap(&other->default_graph_input_tensor_shape_);
+  default_graph_output_tensor_shape_.InternalSwap(&other->default_graph_output_tensor_shape_);
+  executor_name_.Swap(&other->executor_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  serialized_executor_parameters_.Swap(&other->serialized_executor_parameters_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(remote_graph_, other->remote_graph_);
 }
 

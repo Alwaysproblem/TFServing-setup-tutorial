@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -33,7 +32,7 @@ static void InitDefaultsscc_info_AllocationDescription_tensorflow_2fcore_2fframe
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_AllocationDescription_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_AllocationDescription_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_AllocationDescription_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto = nullptr;
@@ -60,7 +59,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_AllocationDescription_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n6tensorflow/core/framework/allocation_d"
   "escription.proto\022\ntensorflow\"\243\001\n\025Allocat"
   "ionDescription\022\027\n\017requested_bytes\030\001 \001(\003\022"
@@ -78,55 +77,38 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_AllocationDescription_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto, "tensorflow/core/framework/allocation_description.proto", 400,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto, "tensorflow/core/framework/allocation_description.proto", 400,
   &descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_once, descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto_deps, 1, 0,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fallocation_5fdescription_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
 
 void AllocationDescription::InitAsDefaultInstance() {
 }
-class AllocationDescription::HasBitSetters {
+class AllocationDescription::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int AllocationDescription::kRequestedBytesFieldNumber;
-const int AllocationDescription::kAllocatedBytesFieldNumber;
-const int AllocationDescription::kAllocatorNameFieldNumber;
-const int AllocationDescription::kAllocationIdFieldNumber;
-const int AllocationDescription::kHasSingleReferenceFieldNumber;
-const int AllocationDescription::kPtrFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-AllocationDescription::AllocationDescription()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.AllocationDescription)
-}
 AllocationDescription::AllocationDescription(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.AllocationDescription)
 }
 AllocationDescription::AllocationDescription(const AllocationDescription& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   allocator_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.allocator_name().size() > 0) {
-    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.allocator_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_allocator_name().empty()) {
+    allocator_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_allocator_name(),
+      GetArena());
   }
   ::memcpy(&requested_bytes_, &from.requested_bytes_,
     static_cast<size_t>(reinterpret_cast<char*>(&has_single_reference_) -
@@ -145,10 +127,11 @@ void AllocationDescription::SharedCtor() {
 AllocationDescription::~AllocationDescription() {
   // @@protoc_insertion_point(destructor:tensorflow.AllocationDescription)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AllocationDescription::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   allocator_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
@@ -173,17 +156,16 @@ void AllocationDescription::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  allocator_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::memset(&requested_bytes_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&has_single_reference_) -
       reinterpret_cast<char*>(&requested_bytes_)) + sizeof(has_single_reference_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* AllocationDescription::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -192,42 +174,44 @@ const char* AllocationDescription::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // int64 requested_bytes = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          requested_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          requested_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 allocated_bytes = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          allocated_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          allocated_bytes_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string allocator_name = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_allocator_name(), ptr, ctx, "tensorflow.AllocationDescription.allocator_name");
+          auto str = _internal_mutable_allocator_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.AllocationDescription.allocator_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 allocation_id = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          allocation_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool has_single_reference = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          has_single_reference_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          has_single_reference_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint64 ptr = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          ptr_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ptr_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -237,7 +221,9 @@ const char* AllocationDescription::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -250,211 +236,56 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool AllocationDescription::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.AllocationDescription)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 requested_bytes = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &requested_bytes_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 allocated_bytes = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &allocated_bytes_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string allocator_name = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_allocator_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.AllocationDescription.allocator_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 allocation_id = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &allocation_id_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool has_single_reference = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &has_single_reference_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // uint64 ptr = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT64>(
-                 input, &ptr_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.AllocationDescription)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.AllocationDescription)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void AllocationDescription::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.AllocationDescription)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 requested_bytes = 1;
-  if (this->requested_bytes() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->requested_bytes(), output);
-  }
-
-  // int64 allocated_bytes = 2;
-  if (this->allocated_bytes() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->allocated_bytes(), output);
-  }
-
-  // string allocator_name = 3;
-  if (this->allocator_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.AllocationDescription.allocator_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->allocator_name(), output);
-  }
-
-  // int64 allocation_id = 4;
-  if (this->allocation_id() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(4, this->allocation_id(), output);
-  }
-
-  // bool has_single_reference = 5;
-  if (this->has_single_reference() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(5, this->has_single_reference(), output);
-  }
-
-  // uint64 ptr = 6;
-  if (this->ptr() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64(6, this->ptr(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.AllocationDescription)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* AllocationDescription::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* AllocationDescription::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.AllocationDescription)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 requested_bytes = 1;
   if (this->requested_bytes() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->requested_bytes(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_requested_bytes(), target);
   }
 
   // int64 allocated_bytes = 2;
   if (this->allocated_bytes() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->allocated_bytes(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_allocated_bytes(), target);
   }
 
   // string allocator_name = 3;
   if (this->allocator_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->allocator_name().data(), static_cast<int>(this->allocator_name().length()),
+      this->_internal_allocator_name().data(), static_cast<int>(this->_internal_allocator_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.AllocationDescription.allocator_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->allocator_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_allocator_name(), target);
   }
 
   // int64 allocation_id = 4;
   if (this->allocation_id() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->allocation_id(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(4, this->_internal_allocation_id(), target);
   }
 
   // bool has_single_reference = 5;
   if (this->has_single_reference() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->has_single_reference(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_has_single_reference(), target);
   }
 
   // uint64 ptr = 6;
   if (this->ptr() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(6, this->ptr(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(6, this->_internal_ptr(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.AllocationDescription)
   return target;
@@ -464,11 +295,6 @@ size_t AllocationDescription::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.AllocationDescription)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -477,35 +303,35 @@ size_t AllocationDescription::ByteSizeLong() const {
   if (this->allocator_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->allocator_name());
+        this->_internal_allocator_name());
   }
 
   // int64 requested_bytes = 1;
   if (this->requested_bytes() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->requested_bytes());
+        this->_internal_requested_bytes());
   }
 
   // int64 allocated_bytes = 2;
   if (this->allocated_bytes() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->allocated_bytes());
+        this->_internal_allocated_bytes());
   }
 
   // int64 allocation_id = 4;
   if (this->allocation_id() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->allocation_id());
+        this->_internal_allocation_id());
   }
 
   // uint64 ptr = 6;
   if (this->ptr() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
-        this->ptr());
+        this->_internal_ptr());
   }
 
   // bool has_single_reference = 5;
@@ -513,6 +339,10 @@ size_t AllocationDescription::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -536,27 +366,27 @@ void AllocationDescription::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void AllocationDescription::MergeFrom(const AllocationDescription& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.AllocationDescription)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.allocator_name().size() > 0) {
-    set_allocator_name(from.allocator_name());
+    _internal_set_allocator_name(from._internal_allocator_name());
   }
   if (from.requested_bytes() != 0) {
-    set_requested_bytes(from.requested_bytes());
+    _internal_set_requested_bytes(from._internal_requested_bytes());
   }
   if (from.allocated_bytes() != 0) {
-    set_allocated_bytes(from.allocated_bytes());
+    _internal_set_allocated_bytes(from._internal_allocated_bytes());
   }
   if (from.allocation_id() != 0) {
-    set_allocation_id(from.allocation_id());
+    _internal_set_allocation_id(from._internal_allocation_id());
   }
   if (from.ptr() != 0) {
-    set_ptr(from.ptr());
+    _internal_set_ptr(from._internal_ptr());
   }
   if (from.has_single_reference() != 0) {
-    set_has_single_reference(from.has_single_reference());
+    _internal_set_has_single_reference(from._internal_has_single_reference());
   }
 }
 
@@ -578,35 +408,16 @@ bool AllocationDescription::IsInitialized() const {
   return true;
 }
 
-void AllocationDescription::Swap(AllocationDescription* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    AllocationDescription* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void AllocationDescription::UnsafeArenaSwap(AllocationDescription* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void AllocationDescription::InternalSwap(AllocationDescription* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(requested_bytes_, other->requested_bytes_);
-  swap(allocated_bytes_, other->allocated_bytes_);
-  swap(allocation_id_, other->allocation_id_);
-  swap(ptr_, other->ptr_);
-  swap(has_single_reference_, other->has_single_reference_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  allocator_name_.Swap(&other->allocator_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(AllocationDescription, has_single_reference_)
+      + sizeof(AllocationDescription::has_single_reference_)
+      - PROTOBUF_FIELD_OFFSET(AllocationDescription, requested_bytes_)>(
+          reinterpret_cast<char*>(&requested_bytes_),
+          reinterpret_cast<char*>(&other->requested_bytes_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AllocationDescription::GetMetadata() const {

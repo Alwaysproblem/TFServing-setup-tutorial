@@ -1,8 +1,10 @@
 #bin/bash
 
 set -ex
-OUT=/cpp/gen2
 
+mkdir -p /cpp/gen
+
+OUT=/cpp/gen
 
 INT=/tensorflow
 protoc -I=$INT --cpp_out=$OUT --grpc_out=$OUT --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` \

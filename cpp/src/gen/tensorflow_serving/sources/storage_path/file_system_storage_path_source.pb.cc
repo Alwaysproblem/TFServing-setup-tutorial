@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -63,7 +62,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_tensorflow_5f
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FileSystemStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
       &scc_info_FileSystemStoragePathSourceConfig_ServableToMonitor_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,}};
 
 static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableToMonitor_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto() {
@@ -78,7 +77,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableToMon
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_FileSystemStoragePathSourceConfig_ServableToMonitor_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableToMonitor_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableToMonitor_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
       &scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,}};
 
 static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto() {
@@ -93,7 +92,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersi
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {
       &scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,
       &scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_All_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,
       &scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,}};
@@ -110,7 +109,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersi
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_All_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_All_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_All_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
 
 static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -124,7 +123,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersi
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
 
 static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
@@ -138,7 +137,7 @@ static void InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersi
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto[6];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto = nullptr;
@@ -209,7 +208,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::serving::_FileSystemStoragePathSourceConfig_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto[] =
+const char descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\nMtensorflow_serving/sources/storage_pat"
   "h/file_system_storage_path_source.proto\022"
   "\022tensorflow.serving\"\204\007\n!FileSystemStorag"
@@ -248,16 +247,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_once;
-static bool descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto = {
-  &descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_initialized, descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto, "tensorflow_serving/sources/storage_path/file_system_storage_path_source.proto", 1010,
+  false, false, descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto, "tensorflow_serving/sources/storage_path/file_system_storage_path_source.proto", 1010,
   &descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_once, descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_sccs, descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto_deps, 6, 0,
   schemas, file_default_instances, TableStruct_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto::offsets,
   file_level_metadata_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto, 6, file_level_enum_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto, file_level_service_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2ffile_5fsystem_5fstorage_5fpath_5fsource_2eproto)), true);
 namespace tensorflow {
 namespace serving {
 
@@ -265,23 +263,19 @@ namespace serving {
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::InitAsDefaultInstance() {
 }
-class FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::HasBitSetters {
+class FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::kNumVersionsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
 }
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   num_versions_ = from.num_versions_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
 }
@@ -293,11 +287,19 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::SharedCtor(
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::~FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* _this = reinterpret_cast< FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -314,12 +316,12 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::Clear() {
   (void) cached_has_bits;
 
   num_versions_ = 0u;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -328,7 +330,7 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::_Int
       // uint32 num_versions = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          num_versions_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          num_versions_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -338,7 +340,9 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::_Int
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -351,83 +355,22 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // uint32 num_versions = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::uint32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_UINT32>(
-                 input, &num_versions_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // uint32 num_versions = 1;
-  if (this->num_versions() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32(1, this->num_versions(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // uint32 num_versions = 1;
   if (this->num_versions() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->num_versions(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_num_versions(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
   return target;
@@ -437,11 +380,6 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::ByteSizeL
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -450,9 +388,13 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::ByteSizeL
   if (this->num_versions() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->num_versions());
+        this->_internal_num_versions());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -476,12 +418,12 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(c
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.num_versions() != 0) {
-    set_num_versions(from.num_versions());
+    _internal_set_num_versions(from._internal_num_versions());
   }
 }
 
@@ -503,13 +445,9 @@ bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::IsInitializ
   return true;
 }
 
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::Swap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::InternalSwap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(num_versions_, other->num_versions_);
 }
 
@@ -522,22 +460,19 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::InternalSwa
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::InitAsDefaultInstance() {
 }
-class FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::HasBitSetters {
+class FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
 }
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_All& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
 }
 
@@ -547,11 +482,19 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::SharedCtor() {
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::~FileSystemStoragePathSourceConfig_ServableVersionPolicy_All() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* _this = reinterpret_cast< FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -567,27 +510,25 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
-    switch (tag >> 3) {
-      default: {
         if ((tag & 7) == 4 || tag == 0) {
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
-      }
-    }  // switch
   }  // while
 success:
   return ptr;
@@ -596,55 +537,16 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0) {
-      goto success;
-    }
-    DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-          input, tag, _internal_metadata_.mutable_unknown_fields()));
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
   return target;
@@ -654,15 +556,14 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::ByteSizeLong
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -686,7 +587,7 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(cons
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_All& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -710,13 +611,9 @@ bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::IsInitialized(
   return true;
 }
 
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::Swap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::InternalSwap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::GetMetadata() const {
@@ -728,24 +625,21 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::InternalSwap(F
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::InitAsDefaultInstance() {
 }
-class FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::HasBitSetters {
+class FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::kVersionsFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  versions_(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
 }
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       versions_(from.versions_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
 }
 
@@ -755,11 +649,19 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::SharedCto
 FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::~FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* _this = reinterpret_cast< FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -776,12 +678,12 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::Clear() {
   (void) cached_has_bits;
 
   versions_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -790,10 +692,10 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::_I
       // repeated int64 versions = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(mutable_versions(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedInt64Parser(_internal_mutable_versions(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8) {
-          add_versions(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          _internal_add_versions(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -803,7 +705,9 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -816,100 +720,25 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated int64 versions = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPackedPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, this->mutable_versions())));
-        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 1, 10u, input, this->mutable_versions())));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated int64 versions = 1;
-  if (this->versions_size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(1, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_versions_cached_byte_size_.load(
-        std::memory_order_relaxed));
-  }
-  for (int i = 0, n = this->versions_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64NoTag(
-      this->versions(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated int64 versions = 1;
-  if (this->versions_size() > 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
-      1,
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(
-        _versions_cached_byte_size_.load(std::memory_order_relaxed),
-         target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteInt64NoTagToArray(this->versions_, target);
+  {
+    int byte_size = _versions_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteInt64Packed(
+          1, _internal_versions(), byte_size, target);
+    }
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
   return target;
@@ -919,11 +748,6 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::ByteSiz
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -943,6 +767,10 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::ByteSiz
     total_size += data_size;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -966,7 +794,7 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom(const FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -991,13 +819,9 @@ bool FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::IsInitial
   return true;
 }
 
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::Swap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::InternalSwap(FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   versions_.InternalSwap(&other->versions_);
 }
 
@@ -1016,7 +840,7 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::InitAsDefaultInsta
   ::tensorflow::serving::_FileSystemStoragePathSourceConfig_ServableVersionPolicy_default_instance_.specific_ = const_cast< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific*>(
       ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::internal_default_instance());
 }
-class FileSystemStoragePathSourceConfig_ServableVersionPolicy::HasBitSetters {
+class FileSystemStoragePathSourceConfig_ServableVersionPolicy::_Internal {
  public:
   static const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest& latest(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg);
   static const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All& all(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg);
@@ -1024,22 +848,23 @@ class FileSystemStoragePathSourceConfig_ServableVersionPolicy::HasBitSetters {
 };
 
 const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest&
-FileSystemStoragePathSourceConfig_ServableVersionPolicy::HasBitSetters::latest(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy::_Internal::latest(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
   return *msg->policy_choice_.latest_;
 }
 const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All&
-FileSystemStoragePathSourceConfig_ServableVersionPolicy::HasBitSetters::all(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy::_Internal::all(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
   return *msg->policy_choice_.all_;
 }
 const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific&
-FileSystemStoragePathSourceConfig_ServableVersionPolicy::HasBitSetters::specific(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy::_Internal::specific(const FileSystemStoragePathSourceConfig_ServableVersionPolicy* msg) {
   return *msg->policy_choice_.specific_;
 }
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_latest(::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* latest) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_policy_choice();
   if (latest) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(latest);
     if (message_arena != submessage_arena) {
       latest = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, latest, submessage_arena);
@@ -1050,10 +875,11 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_late
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.latest)
 }
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_all(::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* all) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_policy_choice();
   if (all) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(all);
     if (message_arena != submessage_arena) {
       all = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, all, submessage_arena);
@@ -1064,10 +890,11 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_all(
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.all)
 }
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_specific(::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* specific) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_policy_choice();
   if (specific) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(specific);
     if (message_arena != submessage_arena) {
       specific = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, specific, submessage_arena);
@@ -1077,33 +904,27 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::set_allocated_spec
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.specific)
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int FileSystemStoragePathSourceConfig_ServableVersionPolicy::kLatestFieldNumber;
-const int FileSystemStoragePathSourceConfig_ServableVersionPolicy::kAllFieldNumber;
-const int FileSystemStoragePathSourceConfig_ServableVersionPolicy::kSpecificFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig_ServableVersionPolicy::FileSystemStoragePathSourceConfig_ServableVersionPolicy()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig_ServableVersionPolicy::FileSystemStoragePathSourceConfig_ServableVersionPolicy(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
 }
 FileSystemStoragePathSourceConfig_ServableVersionPolicy::FileSystemStoragePathSourceConfig_ServableVersionPolicy(const FileSystemStoragePathSourceConfig_ServableVersionPolicy& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   clear_has_policy_choice();
   switch (from.policy_choice_case()) {
     case kLatest: {
-      mutable_latest()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(from.latest());
+      _internal_mutable_latest()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(from._internal_latest());
       break;
     }
     case kAll: {
-      mutable_all()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(from.all());
+      _internal_mutable_all()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(from._internal_all());
       break;
     }
     case kSpecific: {
-      mutable_specific()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom(from.specific());
+      _internal_mutable_specific()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom(from._internal_specific());
       break;
     }
     case POLICY_CHOICE_NOT_SET: {
@@ -1121,14 +942,22 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::SharedCtor() {
 FileSystemStoragePathSourceConfig_ServableVersionPolicy::~FileSystemStoragePathSourceConfig_ServableVersionPolicy() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_policy_choice()) {
     clear_policy_choice();
   }
 }
 
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig_ServableVersionPolicy* _this = reinterpret_cast< FileSystemStoragePathSourceConfig_ServableVersionPolicy* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig_ServableVersionPolicy::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -1142,15 +971,21 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::clear_policy_choic
 // @@protoc_insertion_point(one_of_clear_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   switch (policy_choice_case()) {
     case kLatest: {
-      delete policy_choice_.latest_;
+      if (GetArena() == nullptr) {
+        delete policy_choice_.latest_;
+      }
       break;
     }
     case kAll: {
-      delete policy_choice_.all_;
+      if (GetArena() == nullptr) {
+        delete policy_choice_.all_;
+      }
       break;
     }
     case kSpecific: {
-      delete policy_choice_.specific_;
+      if (GetArena() == nullptr) {
+        delete policy_choice_.specific_;
+      }
       break;
     }
     case POLICY_CHOICE_NOT_SET: {
@@ -1168,12 +1003,12 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::Clear() {
   (void) cached_has_bits;
 
   clear_policy_choice();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1182,21 +1017,21 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy::_InternalPa
       // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest latest = 100;
       case 100:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_latest(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_latest(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All all = 101;
       case 101:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_all(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_all(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific specific = 102;
       case 102:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(mutable_specific(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_specific(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1206,7 +1041,9 @@ const char* FileSystemStoragePathSourceConfig_ServableVersionPolicy::_InternalPa
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1219,132 +1056,40 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig_ServableVersionPolicy::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest latest = 100;
-      case 100: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (802 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_latest()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All all = 101;
-      case 101: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (810 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_all()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific specific = 102;
-      case 102: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (818 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_specific()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest latest = 100;
-  if (has_latest()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      100, HasBitSetters::latest(this), output);
-  }
-
-  // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All all = 101;
-  if (has_all()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      101, HasBitSetters::all(this), output);
-  }
-
-  // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific specific = 102;
-  if (has_specific()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      102, HasBitSetters::specific(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableVersionPolicy::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Latest latest = 100;
-  if (has_latest()) {
+  if (_internal_has_latest()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        100, HasBitSetters::latest(this), target);
+      InternalWriteMessage(
+        100, _Internal::latest(this), target, stream);
   }
 
   // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.All all = 101;
-  if (has_all()) {
+  if (_internal_has_all()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        101, HasBitSetters::all(this), target);
+      InternalWriteMessage(
+        101, _Internal::all(this), target, stream);
   }
 
   // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy.Specific specific = 102;
-  if (has_specific()) {
+  if (_internal_has_specific()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        102, HasBitSetters::specific(this), target);
+      InternalWriteMessage(
+        102, _Internal::specific(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   return target;
@@ -1354,11 +1099,6 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy::ByteSizeLong() c
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1389,6 +1129,10 @@ size_t FileSystemStoragePathSourceConfig_ServableVersionPolicy::ByteSizeLong() c
       break;
     }
   }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1412,21 +1156,21 @@ void FileSystemStoragePathSourceConfig_ServableVersionPolicy::MergeFrom(const ::
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::MergeFrom(const FileSystemStoragePathSourceConfig_ServableVersionPolicy& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   switch (from.policy_choice_case()) {
     case kLatest: {
-      mutable_latest()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(from.latest());
+      _internal_mutable_latest()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest::MergeFrom(from._internal_latest());
       break;
     }
     case kAll: {
-      mutable_all()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(from.all());
+      _internal_mutable_all()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All::MergeFrom(from._internal_all());
       break;
     }
     case kSpecific: {
-      mutable_specific()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom(from.specific());
+      _internal_mutable_specific()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific::MergeFrom(from._internal_specific());
       break;
     }
     case POLICY_CHOICE_NOT_SET: {
@@ -1453,13 +1197,9 @@ bool FileSystemStoragePathSourceConfig_ServableVersionPolicy::IsInitialized() co
   return true;
 }
 
-void FileSystemStoragePathSourceConfig_ServableVersionPolicy::Swap(FileSystemStoragePathSourceConfig_ServableVersionPolicy* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig_ServableVersionPolicy::InternalSwap(FileSystemStoragePathSourceConfig_ServableVersionPolicy* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(policy_choice_, other->policy_choice_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1475,39 +1215,35 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::InitAsDefaultInstance(
   ::tensorflow::serving::_FileSystemStoragePathSourceConfig_ServableToMonitor_default_instance_._instance.get_mutable()->servable_version_policy_ = const_cast< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy*>(
       ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy::internal_default_instance());
 }
-class FileSystemStoragePathSourceConfig_ServableToMonitor::HasBitSetters {
+class FileSystemStoragePathSourceConfig_ServableToMonitor::_Internal {
  public:
   static const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy& servable_version_policy(const FileSystemStoragePathSourceConfig_ServableToMonitor* msg);
 };
 
 const ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy&
-FileSystemStoragePathSourceConfig_ServableToMonitor::HasBitSetters::servable_version_policy(const FileSystemStoragePathSourceConfig_ServableToMonitor* msg) {
+FileSystemStoragePathSourceConfig_ServableToMonitor::_Internal::servable_version_policy(const FileSystemStoragePathSourceConfig_ServableToMonitor* msg) {
   return *msg->servable_version_policy_;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int FileSystemStoragePathSourceConfig_ServableToMonitor::kServableNameFieldNumber;
-const int FileSystemStoragePathSourceConfig_ServableToMonitor::kBasePathFieldNumber;
-const int FileSystemStoragePathSourceConfig_ServableToMonitor::kServableVersionPolicyFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig_ServableToMonitor::FileSystemStoragePathSourceConfig_ServableToMonitor()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig_ServableToMonitor::FileSystemStoragePathSourceConfig_ServableToMonitor(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
 }
 FileSystemStoragePathSourceConfig_ServableToMonitor::FileSystemStoragePathSourceConfig_ServableToMonitor(const FileSystemStoragePathSourceConfig_ServableToMonitor& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   servable_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.servable_name().size() > 0) {
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+  if (!from._internal_servable_name().empty()) {
+    servable_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_servable_name(),
+      GetArena());
   }
   base_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.base_path().size() > 0) {
-    base_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.base_path_);
+  if (!from._internal_base_path().empty()) {
+    base_path_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_base_path(),
+      GetArena());
   }
-  if (from.has_servable_version_policy()) {
+  if (from._internal_has_servable_version_policy()) {
     servable_version_policy_ = new ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy(*from.servable_version_policy_);
   } else {
     servable_version_policy_ = nullptr;
@@ -1525,14 +1261,22 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::SharedCtor() {
 FileSystemStoragePathSourceConfig_ServableToMonitor::~FileSystemStoragePathSourceConfig_ServableToMonitor() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig_ServableToMonitor::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   servable_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   base_path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete servable_version_policy_;
 }
 
+void FileSystemStoragePathSourceConfig_ServableToMonitor::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig_ServableToMonitor* _this = reinterpret_cast< FileSystemStoragePathSourceConfig_ServableToMonitor* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig_ServableToMonitor::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig_ServableToMonitor::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -1548,18 +1292,18 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  servable_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  base_path_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (GetArenaNoVirtual() == nullptr && servable_version_policy_ != nullptr) {
+  servable_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  base_path_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && servable_version_policy_ != nullptr) {
     delete servable_version_policy_;
   }
   servable_version_policy_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig_ServableToMonitor::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1568,21 +1312,25 @@ const char* FileSystemStoragePathSourceConfig_ServableToMonitor::_InternalParse(
       // string servable_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_servable_name(), ptr, ctx, "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.servable_name");
+          auto str = _internal_mutable_servable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.servable_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string base_path = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_base_path(), ptr, ctx, "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.base_path");
+          auto str = _internal_mutable_base_path();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.base_path"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy servable_version_policy = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_servable_version_policy(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_servable_version_policy(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1592,7 +1340,9 @@ const char* FileSystemStoragePathSourceConfig_ServableToMonitor::_InternalParse(
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1605,120 +1355,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig_ServableToMonitor::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string servable_name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_servable_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.servable_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // string base_path = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_base_path()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->base_path().data(), static_cast<int>(this->base_path().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.base_path"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy servable_version_policy = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_servable_version_policy()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void FileSystemStoragePathSourceConfig_ServableToMonitor::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string servable_name = 1;
-  if (this->servable_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.servable_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->servable_name(), output);
-  }
-
-  // string base_path = 2;
-  if (this->base_path().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->base_path().data(), static_cast<int>(this->base_path().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.base_path");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->base_path(), output);
-  }
-
-  // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy servable_version_policy = 4;
-  if (this->has_servable_version_policy()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::servable_version_policy(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableToMonitor::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig_ServableToMonitor::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1726,35 +1365,34 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::SerializeWithCachedSiz
   // string servable_name = 1;
   if (this->servable_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
+      this->_internal_servable_name().data(), static_cast<int>(this->_internal_servable_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.servable_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->servable_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_servable_name(), target);
   }
 
   // string base_path = 2;
   if (this->base_path().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->base_path().data(), static_cast<int>(this->base_path().length()),
+      this->_internal_base_path().data(), static_cast<int>(this->_internal_base_path().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor.base_path");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->base_path(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_base_path(), target);
   }
 
   // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy servable_version_policy = 4;
   if (this->has_servable_version_policy()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::servable_version_policy(this), target);
+      InternalWriteMessage(
+        4, _Internal::servable_version_policy(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
   return target;
@@ -1764,11 +1402,6 @@ size_t FileSystemStoragePathSourceConfig_ServableToMonitor::ByteSizeLong() const
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1777,14 +1410,14 @@ size_t FileSystemStoragePathSourceConfig_ServableToMonitor::ByteSizeLong() const
   if (this->servable_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->servable_name());
+        this->_internal_servable_name());
   }
 
   // string base_path = 2;
   if (this->base_path().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->base_path());
+        this->_internal_base_path());
   }
 
   // .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableVersionPolicy servable_version_policy = 4;
@@ -1794,6 +1427,10 @@ size_t FileSystemStoragePathSourceConfig_ServableToMonitor::ByteSizeLong() const
         *servable_version_policy_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1817,20 +1454,18 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::MergeFrom(const ::PROT
 void FileSystemStoragePathSourceConfig_ServableToMonitor::MergeFrom(const FileSystemStoragePathSourceConfig_ServableToMonitor& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.servable_name().size() > 0) {
-
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+    _internal_set_servable_name(from._internal_servable_name());
   }
   if (from.base_path().size() > 0) {
-
-    base_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.base_path_);
+    _internal_set_base_path(from._internal_base_path());
   }
   if (from.has_servable_version_policy()) {
-    mutable_servable_version_policy()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy::MergeFrom(from.servable_version_policy());
+    _internal_mutable_servable_version_policy()->::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy::MergeFrom(from._internal_servable_version_policy());
   }
 }
 
@@ -1852,17 +1487,11 @@ bool FileSystemStoragePathSourceConfig_ServableToMonitor::IsInitialized() const 
   return true;
 }
 
-void FileSystemStoragePathSourceConfig_ServableToMonitor::Swap(FileSystemStoragePathSourceConfig_ServableToMonitor* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig_ServableToMonitor::InternalSwap(FileSystemStoragePathSourceConfig_ServableToMonitor* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  base_path_.Swap(&other->base_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  base_path_.Swap(&other->base_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(servable_version_policy_, other->servable_version_policy_);
 }
 
@@ -1875,36 +1504,30 @@ void FileSystemStoragePathSourceConfig_ServableToMonitor::InternalSwap(FileSyste
 
 void FileSystemStoragePathSourceConfig::InitAsDefaultInstance() {
 }
-class FileSystemStoragePathSourceConfig::HasBitSetters {
+class FileSystemStoragePathSourceConfig::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int FileSystemStoragePathSourceConfig::kServablesFieldNumber;
-const int FileSystemStoragePathSourceConfig::kServableNameFieldNumber;
-const int FileSystemStoragePathSourceConfig::kBasePathFieldNumber;
-const int FileSystemStoragePathSourceConfig::kFileSystemPollWaitSecondsFieldNumber;
-const int FileSystemStoragePathSourceConfig::kFailIfZeroVersionsAtStartupFieldNumber;
-const int FileSystemStoragePathSourceConfig::kServableVersionsAlwaysPresentFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-FileSystemStoragePathSourceConfig::FileSystemStoragePathSourceConfig()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+FileSystemStoragePathSourceConfig::FileSystemStoragePathSourceConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  servables_(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.FileSystemStoragePathSourceConfig)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.FileSystemStoragePathSourceConfig)
 }
 FileSystemStoragePathSourceConfig::FileSystemStoragePathSourceConfig(const FileSystemStoragePathSourceConfig& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       servables_(from.servables_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   servable_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.servable_name().size() > 0) {
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+  if (!from._internal_servable_name().empty()) {
+    servable_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_servable_name(),
+      GetArena());
   }
   base_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.base_path().size() > 0) {
-    base_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.base_path_);
+  if (!from._internal_base_path().empty()) {
+    base_path_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_base_path(),
+      GetArena());
   }
   ::memcpy(&file_system_poll_wait_seconds_, &from.file_system_poll_wait_seconds_,
     static_cast<size_t>(reinterpret_cast<char*>(&servable_versions_always_present_) -
@@ -1924,13 +1547,21 @@ void FileSystemStoragePathSourceConfig::SharedCtor() {
 FileSystemStoragePathSourceConfig::~FileSystemStoragePathSourceConfig() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.FileSystemStoragePathSourceConfig)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void FileSystemStoragePathSourceConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   servable_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   base_path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void FileSystemStoragePathSourceConfig::ArenaDtor(void* object) {
+  FileSystemStoragePathSourceConfig* _this = reinterpret_cast< FileSystemStoragePathSourceConfig* >(object);
+  (void)_this;
+}
+void FileSystemStoragePathSourceConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void FileSystemStoragePathSourceConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -1947,17 +1578,17 @@ void FileSystemStoragePathSourceConfig::Clear() {
   (void) cached_has_bits;
 
   servables_.Clear();
-  servable_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  base_path_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  servable_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  base_path_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::memset(&file_system_poll_wait_seconds_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&servable_versions_always_present_) -
       reinterpret_cast<char*>(&file_system_poll_wait_seconds_)) + sizeof(servable_versions_always_present_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* FileSystemStoragePathSourceConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1966,28 +1597,32 @@ const char* FileSystemStoragePathSourceConfig::_InternalParse(const char* ptr, :
       // string servable_name = 1 [deprecated = true];
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_servable_name(), ptr, ctx, "tensorflow.serving.FileSystemStoragePathSourceConfig.servable_name");
+          auto str = _internal_mutable_servable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.FileSystemStoragePathSourceConfig.servable_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string base_path = 2 [deprecated = true];
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_base_path(), ptr, ctx, "tensorflow.serving.FileSystemStoragePathSourceConfig.base_path");
+          auto str = _internal_mutable_base_path();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.FileSystemStoragePathSourceConfig.base_path"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 file_system_poll_wait_seconds = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          file_system_poll_wait_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          file_system_poll_wait_seconds_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool fail_if_zero_versions_at_startup = 4 [deprecated = true];
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          fail_if_zero_versions_at_startup_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          fail_if_zero_versions_at_startup_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1997,16 +1632,16 @@ const char* FileSystemStoragePathSourceConfig::_InternalParse(const char* ptr, :
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_servables(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_servables(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 42);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<42>(ptr));
         } else goto handle_unusual;
         continue;
       // bool servable_versions_always_present = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          servable_versions_always_present_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          servable_versions_always_present_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2016,7 +1651,9 @@ const char* FileSystemStoragePathSourceConfig::_InternalParse(const char* ptr, :
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2029,177 +1666,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool FileSystemStoragePathSourceConfig::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.FileSystemStoragePathSourceConfig)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string servable_name = 1 [deprecated = true];
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_servable_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.FileSystemStoragePathSourceConfig.servable_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // string base_path = 2 [deprecated = true];
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_base_path()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->base_path().data(), static_cast<int>(this->base_path().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.FileSystemStoragePathSourceConfig.base_path"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 file_system_poll_wait_seconds = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &file_system_poll_wait_seconds_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool fail_if_zero_versions_at_startup = 4 [deprecated = true];
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (32 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &fail_if_zero_versions_at_startup_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor servables = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_servables()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // bool servable_versions_always_present = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   bool, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_BOOL>(
-                 input, &servable_versions_always_present_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.FileSystemStoragePathSourceConfig)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.FileSystemStoragePathSourceConfig)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void FileSystemStoragePathSourceConfig::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.FileSystemStoragePathSourceConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string servable_name = 1 [deprecated = true];
-  if (this->servable_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.FileSystemStoragePathSourceConfig.servable_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->servable_name(), output);
-  }
-
-  // string base_path = 2 [deprecated = true];
-  if (this->base_path().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->base_path().data(), static_cast<int>(this->base_path().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.FileSystemStoragePathSourceConfig.base_path");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->base_path(), output);
-  }
-
-  // int64 file_system_poll_wait_seconds = 3;
-  if (this->file_system_poll_wait_seconds() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(3, this->file_system_poll_wait_seconds(), output);
-  }
-
-  // bool fail_if_zero_versions_at_startup = 4 [deprecated = true];
-  if (this->fail_if_zero_versions_at_startup() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(4, this->fail_if_zero_versions_at_startup(), output);
-  }
-
-  // repeated .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor servables = 5;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->servables_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5,
-      this->servables(static_cast<int>(i)),
-      output);
-  }
-
-  // bool servable_versions_always_present = 6;
-  if (this->servable_versions_always_present() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBool(6, this->servable_versions_always_present(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.FileSystemStoragePathSourceConfig)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* FileSystemStoragePathSourceConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.FileSystemStoragePathSourceConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2207,51 +1676,52 @@ void FileSystemStoragePathSourceConfig::SerializeWithCachedSizes(
   // string servable_name = 1 [deprecated = true];
   if (this->servable_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
+      this->_internal_servable_name().data(), static_cast<int>(this->_internal_servable_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.FileSystemStoragePathSourceConfig.servable_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->servable_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_servable_name(), target);
   }
 
   // string base_path = 2 [deprecated = true];
   if (this->base_path().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->base_path().data(), static_cast<int>(this->base_path().length()),
+      this->_internal_base_path().data(), static_cast<int>(this->_internal_base_path().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.FileSystemStoragePathSourceConfig.base_path");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->base_path(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_base_path(), target);
   }
 
   // int64 file_system_poll_wait_seconds = 3;
   if (this->file_system_poll_wait_seconds() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->file_system_poll_wait_seconds(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(3, this->_internal_file_system_poll_wait_seconds(), target);
   }
 
   // bool fail_if_zero_versions_at_startup = 4 [deprecated = true];
   if (this->fail_if_zero_versions_at_startup() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->fail_if_zero_versions_at_startup(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_fail_if_zero_versions_at_startup(), target);
   }
 
   // repeated .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor servables = 5;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->servables_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_servables_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, this->servables(static_cast<int>(i)), target);
+      InternalWriteMessage(5, this->_internal_servables(i), target, stream);
   }
 
   // bool servable_versions_always_present = 6;
   if (this->servable_versions_always_present() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->servable_versions_always_present(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_servable_versions_always_present(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.FileSystemStoragePathSourceConfig)
   return target;
@@ -2261,45 +1731,36 @@ size_t FileSystemStoragePathSourceConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.FileSystemStoragePathSourceConfig)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .tensorflow.serving.FileSystemStoragePathSourceConfig.ServableToMonitor servables = 5;
-  {
-    unsigned int count = static_cast<unsigned int>(this->servables_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->servables(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_servables_size();
+  for (const auto& msg : this->servables_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // string servable_name = 1 [deprecated = true];
   if (this->servable_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->servable_name());
+        this->_internal_servable_name());
   }
 
   // string base_path = 2 [deprecated = true];
   if (this->base_path().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->base_path());
+        this->_internal_base_path());
   }
 
   // int64 file_system_poll_wait_seconds = 3;
   if (this->file_system_poll_wait_seconds() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->file_system_poll_wait_seconds());
+        this->_internal_file_system_poll_wait_seconds());
   }
 
   // bool fail_if_zero_versions_at_startup = 4 [deprecated = true];
@@ -2312,6 +1773,10 @@ size_t FileSystemStoragePathSourceConfig::ByteSizeLong() const {
     total_size += 1 + 1;
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2335,27 +1800,25 @@ void FileSystemStoragePathSourceConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID:
 void FileSystemStoragePathSourceConfig::MergeFrom(const FileSystemStoragePathSourceConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.FileSystemStoragePathSourceConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   servables_.MergeFrom(from.servables_);
   if (from.servable_name().size() > 0) {
-
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+    _internal_set_servable_name(from._internal_servable_name());
   }
   if (from.base_path().size() > 0) {
-
-    base_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.base_path_);
+    _internal_set_base_path(from._internal_base_path());
   }
   if (from.file_system_poll_wait_seconds() != 0) {
-    set_file_system_poll_wait_seconds(from.file_system_poll_wait_seconds());
+    _internal_set_file_system_poll_wait_seconds(from._internal_file_system_poll_wait_seconds());
   }
   if (from.fail_if_zero_versions_at_startup() != 0) {
-    set_fail_if_zero_versions_at_startup(from.fail_if_zero_versions_at_startup());
+    _internal_set_fail_if_zero_versions_at_startup(from._internal_fail_if_zero_versions_at_startup());
   }
   if (from.servable_versions_always_present() != 0) {
-    set_servable_versions_always_present(from.servable_versions_always_present());
+    _internal_set_servable_versions_always_present(from._internal_servable_versions_always_present());
   }
 }
 
@@ -2377,21 +1840,18 @@ bool FileSystemStoragePathSourceConfig::IsInitialized() const {
   return true;
 }
 
-void FileSystemStoragePathSourceConfig::Swap(FileSystemStoragePathSourceConfig* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void FileSystemStoragePathSourceConfig::InternalSwap(FileSystemStoragePathSourceConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&servables_)->InternalSwap(CastToBase(&other->servables_));
-  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  base_path_.Swap(&other->base_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(file_system_poll_wait_seconds_, other->file_system_poll_wait_seconds_);
-  swap(fail_if_zero_versions_at_startup_, other->fail_if_zero_versions_at_startup_);
-  swap(servable_versions_always_present_, other->servable_versions_always_present_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  servables_.InternalSwap(&other->servables_);
+  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  base_path_.Swap(&other->base_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(FileSystemStoragePathSourceConfig, servable_versions_always_present_)
+      + sizeof(FileSystemStoragePathSourceConfig::servable_versions_always_present_)
+      - PROTOBUF_FIELD_OFFSET(FileSystemStoragePathSourceConfig, file_system_poll_wait_seconds_)>(
+          reinterpret_cast<char*>(&file_system_poll_wait_seconds_),
+          reinterpret_cast<char*>(&other->file_system_poll_wait_seconds_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FileSystemStoragePathSourceConfig::GetMetadata() const {
@@ -2404,22 +1864,22 @@ void FileSystemStoragePathSourceConfig::InternalSwap(FileSystemStoragePathSource
 }  // namespace tensorflow
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Latest >(arena);
 }
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_All >(arena);
 }
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy_Specific >(arena);
 }
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableVersionPolicy >(arena);
 }
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableToMonitor* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableToMonitor >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableToMonitor >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig_ServableToMonitor >(arena);
 }
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::FileSystemStoragePathSourceConfig* Arena::CreateMaybeMessage< ::tensorflow::serving::FileSystemStoragePathSourceConfig >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::FileSystemStoragePathSourceConfig >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

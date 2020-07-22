@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -35,7 +34,7 @@ static void InitDefaultsscc_info_ConvolutionProto_tensorflow_2fcore_2fprotobuf_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ConvolutionProto_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_ConvolutionProto_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ConvolutionProto_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto}, {
       &scc_info_TensorDescriptorProto_tensorflow_2fstream_5fexecutor_2fdnn_2eproto.base,
       &scc_info_ConvolutionDescriptorProto_tensorflow_2fstream_5fexecutor_2fdnn_2eproto.base,}};
 
@@ -71,7 +70,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_ConvolutionProto_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n.tensorflow/core/protobuf/conv_autotuni"
   "ng.proto\022\ntensorflow\032$tensorflow/stream_"
   "executor/dnn.proto\"\235\004\n\020ConvolutionProto\022"
@@ -99,16 +98,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_ConvolutionProto_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto, "tensorflow/core/protobuf/conv_autotuning.proto", 726,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto, "tensorflow/core/protobuf/conv_autotuning.proto", 726,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fconv_5fautotuning_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -123,7 +121,7 @@ void ConvolutionProto::InitAsDefaultInstance() {
   ::tensorflow::_ConvolutionProto_default_instance_._instance.get_mutable()->conv_desc_ = const_cast< ::stream_executor::dnn::ConvolutionDescriptorProto*>(
       ::stream_executor::dnn::ConvolutionDescriptorProto::internal_default_instance());
 }
-class ConvolutionProto::HasBitSetters {
+class ConvolutionProto::_Internal {
  public:
   static const ::stream_executor::dnn::TensorDescriptorProto& input(const ConvolutionProto* msg);
   static const ::stream_executor::dnn::TensorDescriptorProto& filter(const ConvolutionProto* msg);
@@ -132,86 +130,70 @@ class ConvolutionProto::HasBitSetters {
 };
 
 const ::stream_executor::dnn::TensorDescriptorProto&
-ConvolutionProto::HasBitSetters::input(const ConvolutionProto* msg) {
+ConvolutionProto::_Internal::input(const ConvolutionProto* msg) {
   return *msg->input_;
 }
 const ::stream_executor::dnn::TensorDescriptorProto&
-ConvolutionProto::HasBitSetters::filter(const ConvolutionProto* msg) {
+ConvolutionProto::_Internal::filter(const ConvolutionProto* msg) {
   return *msg->filter_;
 }
 const ::stream_executor::dnn::TensorDescriptorProto&
-ConvolutionProto::HasBitSetters::output(const ConvolutionProto* msg) {
+ConvolutionProto::_Internal::output(const ConvolutionProto* msg) {
   return *msg->output_;
 }
 const ::stream_executor::dnn::ConvolutionDescriptorProto&
-ConvolutionProto::HasBitSetters::conv_desc(const ConvolutionProto* msg) {
+ConvolutionProto::_Internal::conv_desc(const ConvolutionProto* msg) {
   return *msg->conv_desc_;
 }
 void ConvolutionProto::clear_input() {
-  if (GetArenaNoVirtual() == nullptr && input_ != nullptr) {
+  if (GetArena() == nullptr && input_ != nullptr) {
     delete input_;
   }
   input_ = nullptr;
 }
 void ConvolutionProto::clear_filter() {
-  if (GetArenaNoVirtual() == nullptr && filter_ != nullptr) {
+  if (GetArena() == nullptr && filter_ != nullptr) {
     delete filter_;
   }
   filter_ = nullptr;
 }
 void ConvolutionProto::clear_output() {
-  if (GetArenaNoVirtual() == nullptr && output_ != nullptr) {
+  if (GetArena() == nullptr && output_ != nullptr) {
     delete output_;
   }
   output_ = nullptr;
 }
 void ConvolutionProto::clear_conv_desc() {
-  if (GetArenaNoVirtual() == nullptr && conv_desc_ != nullptr) {
+  if (GetArena() == nullptr && conv_desc_ != nullptr) {
     delete conv_desc_;
   }
   conv_desc_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ConvolutionProto::kKindFieldNumber;
-const int ConvolutionProto::kInputFieldNumber;
-const int ConvolutionProto::kFilterFieldNumber;
-const int ConvolutionProto::kOutputFieldNumber;
-const int ConvolutionProto::kConvDescFieldNumber;
-const int ConvolutionProto::kConvScaleFieldNumber;
-const int ConvolutionProto::kSideValueScaleFieldNumber;
-const int ConvolutionProto::kActivationFieldNumber;
-const int ConvolutionProto::kInputAddressFieldNumber;
-const int ConvolutionProto::kFilterAddressFieldNumber;
-const int ConvolutionProto::kOutputAddressFieldNumber;
-const int ConvolutionProto::kBiasAddressFieldNumber;
-const int ConvolutionProto::kSideInputAddressFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ConvolutionProto::ConvolutionProto()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+ConvolutionProto::ConvolutionProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ConvolutionProto)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.ConvolutionProto)
 }
 ConvolutionProto::ConvolutionProto(const ConvolutionProto& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_input()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_input()) {
     input_ = new ::stream_executor::dnn::TensorDescriptorProto(*from.input_);
   } else {
     input_ = nullptr;
   }
-  if (from.has_filter()) {
+  if (from._internal_has_filter()) {
     filter_ = new ::stream_executor::dnn::TensorDescriptorProto(*from.filter_);
   } else {
     filter_ = nullptr;
   }
-  if (from.has_output()) {
+  if (from._internal_has_output()) {
     output_ = new ::stream_executor::dnn::TensorDescriptorProto(*from.output_);
   } else {
     output_ = nullptr;
   }
-  if (from.has_conv_desc()) {
+  if (from._internal_has_conv_desc()) {
     conv_desc_ = new ::stream_executor::dnn::ConvolutionDescriptorProto(*from.conv_desc_);
   } else {
     conv_desc_ = nullptr;
@@ -232,15 +214,23 @@ void ConvolutionProto::SharedCtor() {
 ConvolutionProto::~ConvolutionProto() {
   // @@protoc_insertion_point(destructor:tensorflow.ConvolutionProto)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ConvolutionProto::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete input_;
   if (this != internal_default_instance()) delete filter_;
   if (this != internal_default_instance()) delete output_;
   if (this != internal_default_instance()) delete conv_desc_;
 }
 
+void ConvolutionProto::ArenaDtor(void* object) {
+  ConvolutionProto* _this = reinterpret_cast< ConvolutionProto* >(object);
+  (void)_this;
+}
+void ConvolutionProto::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void ConvolutionProto::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -256,31 +246,31 @@ void ConvolutionProto::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && input_ != nullptr) {
+  if (GetArena() == nullptr && input_ != nullptr) {
     delete input_;
   }
   input_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && filter_ != nullptr) {
+  if (GetArena() == nullptr && filter_ != nullptr) {
     delete filter_;
   }
   filter_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && output_ != nullptr) {
+  if (GetArena() == nullptr && output_ != nullptr) {
     delete output_;
   }
   output_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && conv_desc_ != nullptr) {
+  if (GetArena() == nullptr && conv_desc_ != nullptr) {
     delete conv_desc_;
   }
   conv_desc_ = nullptr;
   ::memset(&kind_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&side_input_address_) -
       reinterpret_cast<char*>(&kind_)) + sizeof(side_input_address_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ConvolutionProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -289,36 +279,36 @@ const char* ConvolutionProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // .stream_executor.dnn.ConvolutionKind kind = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_kind(static_cast<::stream_executor::dnn::ConvolutionKind>(val));
+          _internal_set_kind(static_cast<::stream_executor::dnn::ConvolutionKind>(val));
         } else goto handle_unusual;
         continue;
       // .stream_executor.dnn.TensorDescriptorProto input = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_input(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_input(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .stream_executor.dnn.TensorDescriptorProto filter = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(mutable_filter(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_filter(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .stream_executor.dnn.TensorDescriptorProto output = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_output(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_output(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .stream_executor.dnn.ConvolutionDescriptorProto conv_desc = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_conv_desc(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_conv_desc(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -339,43 +329,43 @@ const char* ConvolutionProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // .stream_executor.dnn.ActivationMode activation = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          set_activation(static_cast<::stream_executor::dnn::ActivationMode>(val));
+          _internal_set_activation(static_cast<::stream_executor::dnn::ActivationMode>(val));
         } else goto handle_unusual;
         continue;
       // int64 input_address = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
-          input_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          input_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 filter_address = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
-          filter_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          filter_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 output_address = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
-          output_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          output_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 bias_address = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          bias_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          bias_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 side_input_address = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
-          side_input_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          side_input_address_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -385,7 +375,9 @@ const char* ConvolutionProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -398,369 +390,104 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ConvolutionProto::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ConvolutionProto)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .stream_executor.dnn.ConvolutionKind kind = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_kind(static_cast< ::stream_executor::dnn::ConvolutionKind >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .stream_executor.dnn.TensorDescriptorProto input = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_input()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .stream_executor.dnn.TensorDescriptorProto filter = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_filter()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .stream_executor.dnn.TensorDescriptorProto output = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_output()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .stream_executor.dnn.ConvolutionDescriptorProto conv_desc = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_conv_desc()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double conv_scale = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (49 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &conv_scale_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double side_value_scale = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (57 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &side_value_scale_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .stream_executor.dnn.ActivationMode activation = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (64 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          set_activation(static_cast< ::stream_executor::dnn::ActivationMode >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 input_address = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (72 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &input_address_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 filter_address = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (80 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &filter_address_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 output_address = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (88 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &output_address_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 bias_address = 12;
-      case 12: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (96 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &bias_address_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 side_input_address = 13;
-      case 13: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (104 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &side_input_address_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ConvolutionProto)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ConvolutionProto)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ConvolutionProto::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ConvolutionProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .stream_executor.dnn.ConvolutionKind kind = 1;
-  if (this->kind() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      1, this->kind(), output);
-  }
-
-  // .stream_executor.dnn.TensorDescriptorProto input = 2;
-  if (this->has_input()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::input(this), output);
-  }
-
-  // .stream_executor.dnn.TensorDescriptorProto filter = 3;
-  if (this->has_filter()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, HasBitSetters::filter(this), output);
-  }
-
-  // .stream_executor.dnn.TensorDescriptorProto output = 4;
-  if (this->has_output()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::output(this), output);
-  }
-
-  // .stream_executor.dnn.ConvolutionDescriptorProto conv_desc = 5;
-  if (this->has_conv_desc()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, HasBitSetters::conv_desc(this), output);
-  }
-
-  // double conv_scale = 6;
-  if (!(this->conv_scale() <= 0 && this->conv_scale() >= 0)) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(6, this->conv_scale(), output);
-  }
-
-  // double side_value_scale = 7;
-  if (!(this->side_value_scale() <= 0 && this->side_value_scale() >= 0)) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(7, this->side_value_scale(), output);
-  }
-
-  // .stream_executor.dnn.ActivationMode activation = 8;
-  if (this->activation() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnum(
-      8, this->activation(), output);
-  }
-
-  // int64 input_address = 9;
-  if (this->input_address() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(9, this->input_address(), output);
-  }
-
-  // int64 filter_address = 10;
-  if (this->filter_address() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(10, this->filter_address(), output);
-  }
-
-  // int64 output_address = 11;
-  if (this->output_address() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(11, this->output_address(), output);
-  }
-
-  // int64 bias_address = 12;
-  if (this->bias_address() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(12, this->bias_address(), output);
-  }
-
-  // int64 side_input_address = 13;
-  if (this->side_input_address() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(13, this->side_input_address(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ConvolutionProto)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ConvolutionProto::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ConvolutionProto::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ConvolutionProto)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .stream_executor.dnn.ConvolutionKind kind = 1;
   if (this->kind() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      1, this->kind(), target);
+      1, this->_internal_kind(), target);
   }
 
   // .stream_executor.dnn.TensorDescriptorProto input = 2;
   if (this->has_input()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::input(this), target);
+      InternalWriteMessage(
+        2, _Internal::input(this), target, stream);
   }
 
   // .stream_executor.dnn.TensorDescriptorProto filter = 3;
   if (this->has_filter()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, HasBitSetters::filter(this), target);
+      InternalWriteMessage(
+        3, _Internal::filter(this), target, stream);
   }
 
   // .stream_executor.dnn.TensorDescriptorProto output = 4;
   if (this->has_output()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::output(this), target);
+      InternalWriteMessage(
+        4, _Internal::output(this), target, stream);
   }
 
   // .stream_executor.dnn.ConvolutionDescriptorProto conv_desc = 5;
   if (this->has_conv_desc()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, HasBitSetters::conv_desc(this), target);
+      InternalWriteMessage(
+        5, _Internal::conv_desc(this), target, stream);
   }
 
   // double conv_scale = 6;
   if (!(this->conv_scale() <= 0 && this->conv_scale() >= 0)) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->conv_scale(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(6, this->_internal_conv_scale(), target);
   }
 
   // double side_value_scale = 7;
   if (!(this->side_value_scale() <= 0 && this->side_value_scale() >= 0)) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->side_value_scale(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(7, this->_internal_side_value_scale(), target);
   }
 
   // .stream_executor.dnn.ActivationMode activation = 8;
   if (this->activation() != 0) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
-      8, this->activation(), target);
+      8, this->_internal_activation(), target);
   }
 
   // int64 input_address = 9;
   if (this->input_address() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->input_address(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(9, this->_internal_input_address(), target);
   }
 
   // int64 filter_address = 10;
   if (this->filter_address() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(10, this->filter_address(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(10, this->_internal_filter_address(), target);
   }
 
   // int64 output_address = 11;
   if (this->output_address() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->output_address(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(11, this->_internal_output_address(), target);
   }
 
   // int64 bias_address = 12;
   if (this->bias_address() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(12, this->bias_address(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(12, this->_internal_bias_address(), target);
   }
 
   // int64 side_input_address = 13;
   if (this->side_input_address() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(13, this->side_input_address(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(13, this->_internal_side_input_address(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ConvolutionProto)
   return target;
@@ -770,11 +497,6 @@ size_t ConvolutionProto::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ConvolutionProto)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -810,13 +532,13 @@ size_t ConvolutionProto::ByteSizeLong() const {
   // .stream_executor.dnn.ConvolutionKind kind = 1;
   if (this->kind() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->kind());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_kind());
   }
 
   // .stream_executor.dnn.ActivationMode activation = 8;
   if (this->activation() != 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->activation());
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_activation());
   }
 
   // double conv_scale = 6;
@@ -833,37 +555,41 @@ size_t ConvolutionProto::ByteSizeLong() const {
   if (this->input_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->input_address());
+        this->_internal_input_address());
   }
 
   // int64 filter_address = 10;
   if (this->filter_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->filter_address());
+        this->_internal_filter_address());
   }
 
   // int64 output_address = 11;
   if (this->output_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->output_address());
+        this->_internal_output_address());
   }
 
   // int64 bias_address = 12;
   if (this->bias_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->bias_address());
+        this->_internal_bias_address());
   }
 
   // int64 side_input_address = 13;
   if (this->side_input_address() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->side_input_address());
+        this->_internal_side_input_address());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -887,48 +613,48 @@ void ConvolutionProto::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ConvolutionProto::MergeFrom(const ConvolutionProto& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ConvolutionProto)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_input()) {
-    mutable_input()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from.input());
+    _internal_mutable_input()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from._internal_input());
   }
   if (from.has_filter()) {
-    mutable_filter()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from.filter());
+    _internal_mutable_filter()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from._internal_filter());
   }
   if (from.has_output()) {
-    mutable_output()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from.output());
+    _internal_mutable_output()->::stream_executor::dnn::TensorDescriptorProto::MergeFrom(from._internal_output());
   }
   if (from.has_conv_desc()) {
-    mutable_conv_desc()->::stream_executor::dnn::ConvolutionDescriptorProto::MergeFrom(from.conv_desc());
+    _internal_mutable_conv_desc()->::stream_executor::dnn::ConvolutionDescriptorProto::MergeFrom(from._internal_conv_desc());
   }
   if (from.kind() != 0) {
-    set_kind(from.kind());
+    _internal_set_kind(from._internal_kind());
   }
   if (from.activation() != 0) {
-    set_activation(from.activation());
+    _internal_set_activation(from._internal_activation());
   }
   if (!(from.conv_scale() <= 0 && from.conv_scale() >= 0)) {
-    set_conv_scale(from.conv_scale());
+    _internal_set_conv_scale(from._internal_conv_scale());
   }
   if (!(from.side_value_scale() <= 0 && from.side_value_scale() >= 0)) {
-    set_side_value_scale(from.side_value_scale());
+    _internal_set_side_value_scale(from._internal_side_value_scale());
   }
   if (from.input_address() != 0) {
-    set_input_address(from.input_address());
+    _internal_set_input_address(from._internal_input_address());
   }
   if (from.filter_address() != 0) {
-    set_filter_address(from.filter_address());
+    _internal_set_filter_address(from._internal_filter_address());
   }
   if (from.output_address() != 0) {
-    set_output_address(from.output_address());
+    _internal_set_output_address(from._internal_output_address());
   }
   if (from.bias_address() != 0) {
-    set_bias_address(from.bias_address());
+    _internal_set_bias_address(from._internal_bias_address());
   }
   if (from.side_input_address() != 0) {
-    set_side_input_address(from.side_input_address());
+    _internal_set_side_input_address(from._internal_side_input_address());
   }
 }
 
@@ -950,26 +676,15 @@ bool ConvolutionProto::IsInitialized() const {
   return true;
 }
 
-void ConvolutionProto::Swap(ConvolutionProto* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void ConvolutionProto::InternalSwap(ConvolutionProto* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(input_, other->input_);
-  swap(filter_, other->filter_);
-  swap(output_, other->output_);
-  swap(conv_desc_, other->conv_desc_);
-  swap(kind_, other->kind_);
-  swap(activation_, other->activation_);
-  swap(conv_scale_, other->conv_scale_);
-  swap(side_value_scale_, other->side_value_scale_);
-  swap(input_address_, other->input_address_);
-  swap(filter_address_, other->filter_address_);
-  swap(output_address_, other->output_address_);
-  swap(bias_address_, other->bias_address_);
-  swap(side_input_address_, other->side_input_address_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ConvolutionProto, side_input_address_)
+      + sizeof(ConvolutionProto::side_input_address_)
+      - PROTOBUF_FIELD_OFFSET(ConvolutionProto, input_)>(
+          reinterpret_cast<char*>(&input_),
+          reinterpret_cast<char*>(&other->input_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ConvolutionProto::GetMetadata() const {
@@ -981,7 +696,7 @@ void ConvolutionProto::InternalSwap(ConvolutionProto* other) {
 }  // namespace tensorflow
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::tensorflow::ConvolutionProto* Arena::CreateMaybeMessage< ::tensorflow::ConvolutionProto >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::ConvolutionProto >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::ConvolutionProto >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

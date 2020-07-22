@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -26,7 +25,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_tensorflow_5fserving_2fapis_2f
 static constexpr ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema* schemas = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::Message* const* file_default_instances = nullptr;
 
-const char descriptor_table_protodef_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto[] =
+const char descriptor_table_protodef_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n+tensorflow_serving/apis/model_service."
   "proto\022\022tensorflow.serving\032.tensorflow_se"
   "rving/apis/get_model_status.proto\032.tenso"
@@ -46,16 +45,15 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_sccs[1] = {
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_once;
-static bool descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto = {
-  &descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_initialized, descriptor_table_protodef_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto, "tensorflow_serving/apis/model_service.proto", 408,
+  false, false, descriptor_table_protodef_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto, "tensorflow_serving/apis/model_service.proto", 408,
   &descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_once, descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_sccs, descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto_deps, 0, 2,
   schemas, file_default_instances, TableStruct_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto::offsets,
   file_level_metadata_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto, 0, file_level_enum_descriptors_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto, file_level_service_descriptors_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fapis_2fmodel_5fservice_2eproto)), true);
 namespace tensorflow {
 namespace serving {
 

@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -36,7 +35,7 @@ static void InitDefaultsscc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_2eproto}, {
       &scc_info_NodeDef_tensorflow_2fcore_2fframework_2fnode_5fdef_2eproto.base,
       &scc_info_VersionDef_tensorflow_2fcore_2fframework_2fversions_2eproto.base,
       &scc_info_FunctionDefLibrary_tensorflow_2fcore_2fframework_2ffunction_2eproto.base,}};
@@ -64,7 +63,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_GraphDef_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fgraph_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2fgraph_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n%tensorflow/core/framework/graph.proto\022"
   "\ntensorflow\032(tensorflow/core/framework/f"
   "unction.proto\032(tensorflow/core/framework"
@@ -87,16 +86,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_GraphDef_tensorflow_2fcore_2fframework_2fgraph_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fgraph_2eproto, "tensorflow/core/framework/graph.proto", 469,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fframework_2fgraph_2eproto, "tensorflow/core/framework/graph.proto", 469,
   &descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_once, descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto_deps, 1, 3,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fframework_2fgraph_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fframework_2fgraph_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fframework_2fgraph_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fframework_2fgraph_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fgraph_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2fgraph_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2fgraph_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -107,76 +105,37 @@ void GraphDef::InitAsDefaultInstance() {
   ::tensorflow::_GraphDef_default_instance_._instance.get_mutable()->library_ = const_cast< ::tensorflow::FunctionDefLibrary*>(
       ::tensorflow::FunctionDefLibrary::internal_default_instance());
 }
-class GraphDef::HasBitSetters {
+class GraphDef::_Internal {
  public:
   static const ::tensorflow::VersionDef& versions(const GraphDef* msg);
   static const ::tensorflow::FunctionDefLibrary& library(const GraphDef* msg);
 };
 
 const ::tensorflow::VersionDef&
-GraphDef::HasBitSetters::versions(const GraphDef* msg) {
+GraphDef::_Internal::versions(const GraphDef* msg) {
   return *msg->versions_;
 }
 const ::tensorflow::FunctionDefLibrary&
-GraphDef::HasBitSetters::library(const GraphDef* msg) {
+GraphDef::_Internal::library(const GraphDef* msg) {
   return *msg->library_;
 }
 void GraphDef::clear_node() {
   node_.Clear();
 }
-void GraphDef::unsafe_arena_set_allocated_versions(
-    ::tensorflow::VersionDef* versions) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete versions_;
-  }
-  versions_ = versions;
-  if (versions) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.GraphDef.versions)
-}
 void GraphDef::clear_versions() {
-  if (GetArenaNoVirtual() == nullptr && versions_ != nullptr) {
+  if (GetArena() == nullptr && versions_ != nullptr) {
     delete versions_;
   }
   versions_ = nullptr;
 }
-void GraphDef::unsafe_arena_set_allocated_library(
-    ::tensorflow::FunctionDefLibrary* library) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete library_;
-  }
-  library_ = library;
-  if (library) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.GraphDef.library)
-}
 void GraphDef::clear_library() {
-  if (GetArenaNoVirtual() == nullptr && library_ != nullptr) {
+  if (GetArena() == nullptr && library_ != nullptr) {
     delete library_;
   }
   library_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int GraphDef::kNodeFieldNumber;
-const int GraphDef::kVersionsFieldNumber;
-const int GraphDef::kVersionFieldNumber;
-const int GraphDef::kLibraryFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-GraphDef::GraphDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.GraphDef)
-}
 GraphDef::GraphDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   node_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -184,15 +143,14 @@ GraphDef::GraphDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 GraphDef::GraphDef(const GraphDef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       node_(from.node_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_library()) {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_library()) {
     library_ = new ::tensorflow::FunctionDefLibrary(*from.library_);
   } else {
     library_ = nullptr;
   }
-  if (from.has_versions()) {
+  if (from._internal_has_versions()) {
     versions_ = new ::tensorflow::VersionDef(*from.versions_);
   } else {
     versions_ = nullptr;
@@ -211,10 +169,11 @@ void GraphDef::SharedCtor() {
 GraphDef::~GraphDef() {
   // @@protoc_insertion_point(destructor:tensorflow.GraphDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GraphDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete library_;
   if (this != internal_default_instance()) delete versions_;
 }
@@ -241,22 +200,21 @@ void GraphDef::Clear() {
   (void) cached_has_bits;
 
   node_.Clear();
-  if (GetArenaNoVirtual() == nullptr && library_ != nullptr) {
+  if (GetArena() == nullptr && library_ != nullptr) {
     delete library_;
   }
   library_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && versions_ != nullptr) {
+  if (GetArena() == nullptr && versions_ != nullptr) {
     delete versions_;
   }
   versions_ = nullptr;
   version_ = 0;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* GraphDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -268,30 +226,30 @@ const char* GraphDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_node(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_node(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       // .tensorflow.FunctionDefLibrary library = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_library(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_library(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 version = 3 [deprecated = true];
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          version_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.VersionDef versions = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_versions(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_versions(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -301,7 +259,9 @@ const char* GraphDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -314,159 +274,46 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool GraphDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.GraphDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .tensorflow.NodeDef node = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_node()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.FunctionDefLibrary library = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_library()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 version = 3 [deprecated = true];
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &version_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.VersionDef versions = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_versions()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.GraphDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.GraphDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void GraphDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.GraphDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated .tensorflow.NodeDef node = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->node_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1,
-      this->node(static_cast<int>(i)),
-      output);
-  }
-
-  // .tensorflow.FunctionDefLibrary library = 2;
-  if (this->has_library()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::library(this), output);
-  }
-
-  // int32 version = 3 [deprecated = true];
-  if (this->version() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(3, this->version(), output);
-  }
-
-  // .tensorflow.VersionDef versions = 4;
-  if (this->has_versions()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::versions(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.GraphDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* GraphDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* GraphDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.GraphDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .tensorflow.NodeDef node = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->node_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_node_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->node(static_cast<int>(i)), target);
+      InternalWriteMessage(1, this->_internal_node(i), target, stream);
   }
 
   // .tensorflow.FunctionDefLibrary library = 2;
   if (this->has_library()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::library(this), target);
+      InternalWriteMessage(
+        2, _Internal::library(this), target, stream);
   }
 
   // int32 version = 3 [deprecated = true];
   if (this->version() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->version(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_version(), target);
   }
 
   // .tensorflow.VersionDef versions = 4;
   if (this->has_versions()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::versions(this), target);
+      InternalWriteMessage(
+        4, _Internal::versions(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.GraphDef)
   return target;
@@ -476,24 +323,15 @@ size_t GraphDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.GraphDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .tensorflow.NodeDef node = 1;
-  {
-    unsigned int count = static_cast<unsigned int>(this->node_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->node(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_node_size();
+  for (const auto& msg : this->node_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   // .tensorflow.FunctionDefLibrary library = 2;
@@ -514,9 +352,13 @@ size_t GraphDef::ByteSizeLong() const {
   if (this->version() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->version());
+        this->_internal_version());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -540,19 +382,19 @@ void GraphDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void GraphDef::MergeFrom(const GraphDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.GraphDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   node_.MergeFrom(from.node_);
   if (from.has_library()) {
-    mutable_library()->::tensorflow::FunctionDefLibrary::MergeFrom(from.library());
+    _internal_mutable_library()->::tensorflow::FunctionDefLibrary::MergeFrom(from._internal_library());
   }
   if (from.has_versions()) {
-    mutable_versions()->::tensorflow::VersionDef::MergeFrom(from.versions());
+    _internal_mutable_versions()->::tensorflow::VersionDef::MergeFrom(from._internal_versions());
   }
   if (from.version() != 0) {
-    set_version(from.version());
+    _internal_set_version(from._internal_version());
   }
 }
 
@@ -574,32 +416,16 @@ bool GraphDef::IsInitialized() const {
   return true;
 }
 
-void GraphDef::Swap(GraphDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    GraphDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void GraphDef::UnsafeArenaSwap(GraphDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void GraphDef::InternalSwap(GraphDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&node_)->InternalSwap(CastToBase(&other->node_));
-  swap(library_, other->library_);
-  swap(versions_, other->versions_);
-  swap(version_, other->version_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  node_.InternalSwap(&other->node_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(GraphDef, version_)
+      + sizeof(GraphDef::version_)
+      - PROTOBUF_FIELD_OFFSET(GraphDef, library_)>(
+          reinterpret_cast<char*>(&library_),
+          reinterpret_cast<char*>(&other->library_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GraphDef::GetMetadata() const {

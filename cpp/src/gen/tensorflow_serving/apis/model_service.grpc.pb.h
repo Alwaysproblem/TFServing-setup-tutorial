@@ -7,12 +7,14 @@
 #include "tensorflow_serving/apis/model_service.pb.h"
 
 #include <functional>
+#include <grpc/impl/codegen/port_platform.h>
 #include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/client_context.h>
 #include <grpcpp/impl/codegen/completion_queue.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/proto_utils.h>
 #include <grpcpp/impl/codegen/rpc_method.h>
@@ -23,19 +25,6 @@
 #include <grpcpp/impl/codegen/status.h>
 #include <grpcpp/impl/codegen/stub_options.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
-
-namespace grpc_impl {
-class CompletionQueue;
-class ServerCompletionQueue;
-class ServerContext;
-}  // namespace grpc_impl
-
-namespace grpc {
-namespace experimental {
-template <typename RequestT, typename ResponseT>
-class MessageAllocator;
-}  // namespace experimental
-}  // namespace grpc
 
 namespace tensorflow {
 namespace serving {
@@ -80,16 +69,38 @@ class ModelService final {
       // that version will be returned.
       virtual void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // Reloads the set of served models. The new config supersedes the old one,
       // so if a model is omitted from the new config it will be unloaded and no
       // longer served.
       virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
     };
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    typedef class experimental_async_interface async_interface;
+    #endif
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    async_interface* async() { return experimental_async(); }
+    #endif
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::tensorflow::serving::GetModelStatusResponse>* AsyncGetModelStatusRaw(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -119,12 +130,28 @@ class ModelService final {
      public:
       void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, std::function<void(::grpc::Status)>) override;
       void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void GetModelStatus(::grpc::ClientContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void GetModelStatus(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::GetModelStatusResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, std::function<void(::grpc::Status)>) override;
       void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void HandleReloadConfigRequest(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::ReloadConfigResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
      private:
       friend class Stub;
       explicit experimental_async(Stub* stub): stub_(stub) { }
@@ -206,13 +233,28 @@ class ModelService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_GetModelStatus() {
-      ::grpc::Service::experimental().MarkMethodCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response) { return this->GetModelStatus(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::GetModelStatusRequest* request, ::tensorflow::serving::GetModelStatusResponse* response) { return this->GetModelStatus(context, request, response); }));}
     void SetMessageAllocatorFor_GetModelStatus(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>*>(
-          ::grpc::Service::experimental().GetHandler(0))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(0);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_GetModelStatus() override {
@@ -223,7 +265,14 @@ class ModelService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* GetModelStatus(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelStatusRequest* /*request*/, ::tensorflow::serving::GetModelStatusResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* GetModelStatus(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelStatusRequest* /*request*/, ::tensorflow::serving::GetModelStatusResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* GetModelStatus(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::GetModelStatusRequest* /*request*/, ::tensorflow::serving::GetModelStatusResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_HandleReloadConfigRequest : public BaseClass {
@@ -231,13 +280,28 @@ class ModelService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_HandleReloadConfigRequest() {
-      ::grpc::Service::experimental().MarkMethodCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response) { return this->HandleReloadConfigRequest(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::ReloadConfigRequest* request, ::tensorflow::serving::ReloadConfigResponse* response) { return this->HandleReloadConfigRequest(context, request, response); }));}
     void SetMessageAllocatorFor_HandleReloadConfigRequest(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>*>(
-          ::grpc::Service::experimental().GetHandler(1))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(1);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_HandleReloadConfigRequest() override {
@@ -248,8 +312,19 @@ class ModelService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* HandleReloadConfigRequest(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::ReloadConfigRequest* /*request*/, ::tensorflow::serving::ReloadConfigResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* HandleReloadConfigRequest(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::ReloadConfigRequest* /*request*/, ::tensorflow::serving::ReloadConfigResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* HandleReloadConfigRequest(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::ReloadConfigRequest* /*request*/, ::tensorflow::serving::ReloadConfigResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
+  #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+  typedef ExperimentalWithCallbackMethod_GetModelStatus<ExperimentalWithCallbackMethod_HandleReloadConfigRequest<Service > > CallbackService;
+  #endif
+
   typedef ExperimentalWithCallbackMethod_GetModelStatus<ExperimentalWithCallbackMethod_HandleReloadConfigRequest<Service > > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_GetModelStatus : public BaseClass {
@@ -331,9 +406,20 @@ class ModelService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_GetModelStatus() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetModelStatus(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->GetModelStatus(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_GetModelStatus() override {
       BaseClassMustBeDerivedFromService(this);
@@ -343,7 +429,14 @@ class ModelService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* GetModelStatus(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* GetModelStatus(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* GetModelStatus(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_HandleReloadConfigRequest : public BaseClass {
@@ -351,9 +444,20 @@ class ModelService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_HandleReloadConfigRequest() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->HandleReloadConfigRequest(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->HandleReloadConfigRequest(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_HandleReloadConfigRequest() override {
       BaseClassMustBeDerivedFromService(this);
@@ -363,7 +467,14 @@ class ModelService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* HandleReloadConfigRequest(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* HandleReloadConfigRequest(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* HandleReloadConfigRequest(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_GetModelStatus : public BaseClass {
@@ -372,7 +483,14 @@ class ModelService final {
    public:
     WithStreamedUnaryMethod_GetModelStatus() {
       ::grpc::Service::MarkMethodStreamed(0,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>(std::bind(&WithStreamedUnaryMethod_GetModelStatus<BaseClass>::StreamedGetModelStatus, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>* streamer) {
+                       return this->StreamedGetModelStatus(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_GetModelStatus() override {
       BaseClassMustBeDerivedFromService(this);
@@ -392,7 +510,14 @@ class ModelService final {
    public:
     WithStreamedUnaryMethod_HandleReloadConfigRequest() {
       ::grpc::Service::MarkMethodStreamed(1,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>(std::bind(&WithStreamedUnaryMethod_HandleReloadConfigRequest<BaseClass>::StreamedHandleReloadConfigRequest, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>* streamer) {
+                       return this->StreamedHandleReloadConfigRequest(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_HandleReloadConfigRequest() override {
       BaseClassMustBeDerivedFromService(this);

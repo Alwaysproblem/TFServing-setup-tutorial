@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -35,7 +34,7 @@ static void InitDefaultsscc_info_StaticStoragePathSourceConfig_tensorflow_5fserv
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_StaticStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_StaticStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_StaticStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto = nullptr;
@@ -59,7 +58,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::serving::_StaticStoragePathSourceConfig_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto[] =
+const char descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\nHtensorflow_serving/sources/storage_pat"
   "h/static_storage_path_source.proto\022\022tens"
   "orflow.serving\"a\n\035StaticStoragePathSourc"
@@ -73,16 +72,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_StaticStoragePathSourceConfig_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_once;
-static bool descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto = {
-  &descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_initialized, descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto, "tensorflow_serving/sources/storage_path/static_storage_path_source.proto", 201,
+  false, false, descriptor_table_protodef_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto, "tensorflow_serving/sources/storage_path/static_storage_path_source.proto", 201,
   &descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_once, descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_sccs, descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto_deps, 1, 0,
   schemas, file_default_instances, TableStruct_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto::offsets,
   file_level_metadata_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto, 1, file_level_enum_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto, file_level_service_descriptors_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fsources_2fstorage_5fpath_2fstatic_5fstorage_5fpath_5fsource_2eproto)), true);
 namespace tensorflow {
 namespace serving {
 
@@ -90,32 +88,28 @@ namespace serving {
 
 void StaticStoragePathSourceConfig::InitAsDefaultInstance() {
 }
-class StaticStoragePathSourceConfig::HasBitSetters {
+class StaticStoragePathSourceConfig::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int StaticStoragePathSourceConfig::kServableNameFieldNumber;
-const int StaticStoragePathSourceConfig::kVersionNumFieldNumber;
-const int StaticStoragePathSourceConfig::kVersionPathFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-StaticStoragePathSourceConfig::StaticStoragePathSourceConfig()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+StaticStoragePathSourceConfig::StaticStoragePathSourceConfig(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.StaticStoragePathSourceConfig)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.serving.StaticStoragePathSourceConfig)
 }
 StaticStoragePathSourceConfig::StaticStoragePathSourceConfig(const StaticStoragePathSourceConfig& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   servable_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.servable_name().size() > 0) {
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+  if (!from._internal_servable_name().empty()) {
+    servable_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_servable_name(),
+      GetArena());
   }
   version_path_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.version_path().size() > 0) {
-    version_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.version_path_);
+  if (!from._internal_version_path().empty()) {
+    version_path_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_version_path(),
+      GetArena());
   }
   version_num_ = from.version_num_;
   // @@protoc_insertion_point(copy_constructor:tensorflow.serving.StaticStoragePathSourceConfig)
@@ -131,13 +125,21 @@ void StaticStoragePathSourceConfig::SharedCtor() {
 StaticStoragePathSourceConfig::~StaticStoragePathSourceConfig() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.StaticStoragePathSourceConfig)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void StaticStoragePathSourceConfig::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
   servable_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   version_path_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
+void StaticStoragePathSourceConfig::ArenaDtor(void* object) {
+  StaticStoragePathSourceConfig* _this = reinterpret_cast< StaticStoragePathSourceConfig* >(object);
+  (void)_this;
+}
+void StaticStoragePathSourceConfig::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void StaticStoragePathSourceConfig::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -153,15 +155,15 @@ void StaticStoragePathSourceConfig::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  servable_name_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  version_path_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  servable_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  version_path_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   version_num_ = PROTOBUF_LONGLONG(0);
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* StaticStoragePathSourceConfig::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -170,21 +172,25 @@ const char* StaticStoragePathSourceConfig::_InternalParse(const char* ptr, ::PRO
       // string servable_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_servable_name(), ptr, ctx, "tensorflow.serving.StaticStoragePathSourceConfig.servable_name");
+          auto str = _internal_mutable_servable_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.StaticStoragePathSourceConfig.servable_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 version_num = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          version_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          version_num_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string version_path = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_version_path(), ptr, ctx, "tensorflow.serving.StaticStoragePathSourceConfig.version_path");
+          auto str = _internal_mutable_version_path();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.serving.StaticStoragePathSourceConfig.version_path"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -194,7 +200,9 @@ const char* StaticStoragePathSourceConfig::_InternalParse(const char* ptr, ::PRO
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -207,121 +215,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool StaticStoragePathSourceConfig::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.StaticStoragePathSourceConfig)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string servable_name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_servable_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.StaticStoragePathSourceConfig.servable_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // int64 version_num = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &version_num_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string version_path = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_version_path()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->version_path().data(), static_cast<int>(this->version_path().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.serving.StaticStoragePathSourceConfig.version_path"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.StaticStoragePathSourceConfig)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.StaticStoragePathSourceConfig)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void StaticStoragePathSourceConfig::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.StaticStoragePathSourceConfig)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string servable_name = 1;
-  if (this->servable_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.StaticStoragePathSourceConfig.servable_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->servable_name(), output);
-  }
-
-  // int64 version_num = 2;
-  if (this->version_num() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->version_num(), output);
-  }
-
-  // string version_path = 3;
-  if (this->version_path().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->version_path().data(), static_cast<int>(this->version_path().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.serving.StaticStoragePathSourceConfig.version_path");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->version_path(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.StaticStoragePathSourceConfig)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* StaticStoragePathSourceConfig::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* StaticStoragePathSourceConfig::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.StaticStoragePathSourceConfig)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -329,33 +225,32 @@ void StaticStoragePathSourceConfig::SerializeWithCachedSizes(
   // string servable_name = 1;
   if (this->servable_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->servable_name().data(), static_cast<int>(this->servable_name().length()),
+      this->_internal_servable_name().data(), static_cast<int>(this->_internal_servable_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.StaticStoragePathSourceConfig.servable_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->servable_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_servable_name(), target);
   }
 
   // int64 version_num = 2;
   if (this->version_num() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->version_num(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_version_num(), target);
   }
 
   // string version_path = 3;
   if (this->version_path().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->version_path().data(), static_cast<int>(this->version_path().length()),
+      this->_internal_version_path().data(), static_cast<int>(this->_internal_version_path().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.serving.StaticStoragePathSourceConfig.version_path");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->version_path(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_version_path(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.StaticStoragePathSourceConfig)
   return target;
@@ -365,11 +260,6 @@ size_t StaticStoragePathSourceConfig::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.StaticStoragePathSourceConfig)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -378,23 +268,27 @@ size_t StaticStoragePathSourceConfig::ByteSizeLong() const {
   if (this->servable_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->servable_name());
+        this->_internal_servable_name());
   }
 
   // string version_path = 3;
   if (this->version_path().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->version_path());
+        this->_internal_version_path());
   }
 
   // int64 version_num = 2;
   if (this->version_num() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->version_num());
+        this->_internal_version_num());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -418,20 +312,18 @@ void StaticStoragePathSourceConfig::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Mes
 void StaticStoragePathSourceConfig::MergeFrom(const StaticStoragePathSourceConfig& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.StaticStoragePathSourceConfig)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.servable_name().size() > 0) {
-
-    servable_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.servable_name_);
+    _internal_set_servable_name(from._internal_servable_name());
   }
   if (from.version_path().size() > 0) {
-
-    version_path_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.version_path_);
+    _internal_set_version_path(from._internal_version_path());
   }
   if (from.version_num() != 0) {
-    set_version_num(from.version_num());
+    _internal_set_version_num(from._internal_version_num());
   }
 }
 
@@ -453,17 +345,11 @@ bool StaticStoragePathSourceConfig::IsInitialized() const {
   return true;
 }
 
-void StaticStoragePathSourceConfig::Swap(StaticStoragePathSourceConfig* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void StaticStoragePathSourceConfig::InternalSwap(StaticStoragePathSourceConfig* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  version_path_.Swap(&other->version_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  servable_name_.Swap(&other->servable_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  version_path_.Swap(&other->version_path_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(version_num_, other->version_num_);
 }
 
@@ -477,7 +363,7 @@ void StaticStoragePathSourceConfig::InternalSwap(StaticStoragePathSourceConfig* 
 }  // namespace tensorflow
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::tensorflow::serving::StaticStoragePathSourceConfig* Arena::CreateMaybeMessage< ::tensorflow::serving::StaticStoragePathSourceConfig >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::serving::StaticStoragePathSourceConfig >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::serving::StaticStoragePathSourceConfig >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -33,7 +32,7 @@ static void InitDefaultsscc_info_RecvBufRespExtra_tensorflow_2fcore_2fprotobuf_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecvBufRespExtra_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_RecvBufRespExtra_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RecvBufRespExtra_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto = nullptr;
@@ -55,7 +54,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_RecvBufRespExtra_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n0tensorflow/core/protobuf/transport_opt"
   "ions.proto\022\ntensorflow\"*\n\020RecvBufRespExt"
   "ra\022\026\n\016tensor_content\030\001 \003(\014BJZHgithub.com"
@@ -68,40 +67,36 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_RecvBufRespExtra_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto, "tensorflow/core/protobuf/transport_options.proto", 190,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto, "tensorflow/core/protobuf/transport_options.proto", 190,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto_deps, 1, 0,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2ftransport_5foptions_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
 
 void RecvBufRespExtra::InitAsDefaultInstance() {
 }
-class RecvBufRespExtra::HasBitSetters {
+class RecvBufRespExtra::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RecvBufRespExtra::kTensorContentFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RecvBufRespExtra::RecvBufRespExtra()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
+RecvBufRespExtra::RecvBufRespExtra(::PROTOBUF_NAMESPACE_ID::Arena* arena)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
+  tensor_content_(arena) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.RecvBufRespExtra)
+  RegisterArenaDtor(arena);
+  // @@protoc_insertion_point(arena_constructor:tensorflow.RecvBufRespExtra)
 }
 RecvBufRespExtra::RecvBufRespExtra(const RecvBufRespExtra& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       tensor_content_(from.tensor_content_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.RecvBufRespExtra)
 }
 
@@ -112,11 +107,19 @@ void RecvBufRespExtra::SharedCtor() {
 RecvBufRespExtra::~RecvBufRespExtra() {
   // @@protoc_insertion_point(destructor:tensorflow.RecvBufRespExtra)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RecvBufRespExtra::SharedDtor() {
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
+void RecvBufRespExtra::ArenaDtor(void* object) {
+  RecvBufRespExtra* _this = reinterpret_cast< RecvBufRespExtra* >(object);
+  (void)_this;
+}
+void RecvBufRespExtra::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
+}
 void RecvBufRespExtra::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
@@ -133,12 +136,12 @@ void RecvBufRespExtra::Clear() {
   (void) cached_has_bits;
 
   tensor_content_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RecvBufRespExtra::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -150,10 +153,11 @@ const char* RecvBufRespExtra::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(add_tensor_content(), ptr, ctx);
+            auto str = _internal_add_tensor_content();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -162,7 +166,9 @@ const char* RecvBufRespExtra::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -175,83 +181,22 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RecvBufRespExtra::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.RecvBufRespExtra)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated bytes tensor_content = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadBytes(
-                input, this->add_tensor_content()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.RecvBufRespExtra)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.RecvBufRespExtra)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RecvBufRespExtra::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.RecvBufRespExtra)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated bytes tensor_content = 1;
-  for (int i = 0, n = this->tensor_content_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBytes(
-      1, this->tensor_content(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.RecvBufRespExtra)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RecvBufRespExtra::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RecvBufRespExtra::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.RecvBufRespExtra)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated bytes tensor_content = 1;
-  for (int i = 0, n = this->tensor_content_size(); i < n; i++) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteBytesToArray(1, this->tensor_content(i), target);
+  for (int i = 0, n = this->_internal_tensor_content_size(); i < n; i++) {
+    const auto& s = this->_internal_tensor_content(i);
+    target = stream->WriteBytes(1, s, target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.RecvBufRespExtra)
   return target;
@@ -261,23 +206,22 @@ size_t RecvBufRespExtra::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.RecvBufRespExtra)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated bytes tensor_content = 1;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->tensor_content_size());
-  for (int i = 0, n = this->tensor_content_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(tensor_content_.size());
+  for (int i = 0, n = tensor_content_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
-      this->tensor_content(i));
+      tensor_content_.Get(i));
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -301,7 +245,7 @@ void RecvBufRespExtra::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void RecvBufRespExtra::MergeFrom(const RecvBufRespExtra& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.RecvBufRespExtra)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -326,14 +270,10 @@ bool RecvBufRespExtra::IsInitialized() const {
   return true;
 }
 
-void RecvBufRespExtra::Swap(RecvBufRespExtra* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
 void RecvBufRespExtra::InternalSwap(RecvBufRespExtra* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  tensor_content_.InternalSwap(CastToBase(&other->tensor_content_));
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  tensor_content_.InternalSwap(&other->tensor_content_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RecvBufRespExtra::GetMetadata() const {
@@ -345,7 +285,7 @@ void RecvBufRespExtra::InternalSwap(RecvBufRespExtra* other) {
 }  // namespace tensorflow
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::tensorflow::RecvBufRespExtra* Arena::CreateMaybeMessage< ::tensorflow::RecvBufRespExtra >(Arena* arena) {
-  return Arena::CreateInternal< ::tensorflow::RecvBufRespExtra >(arena);
+  return Arena::CreateMessageInternal< ::tensorflow::RecvBufRespExtra >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

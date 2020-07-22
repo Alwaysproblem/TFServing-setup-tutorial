@@ -7,12 +7,14 @@
 #include "tensorflow_serving/apis/session_service.pb.h"
 
 #include <functional>
+#include <grpc/impl/codegen/port_platform.h>
 #include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/client_context.h>
 #include <grpcpp/impl/codegen/completion_queue.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/proto_utils.h>
 #include <grpcpp/impl/codegen/rpc_method.h>
@@ -23,19 +25,6 @@
 #include <grpcpp/impl/codegen/status.h>
 #include <grpcpp/impl/codegen/stub_options.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
-
-namespace grpc_impl {
-class CompletionQueue;
-class ServerCompletionQueue;
-class ServerContext;
-}  // namespace grpc_impl
-
-namespace grpc {
-namespace experimental {
-template <typename RequestT, typename ResponseT>
-class MessageAllocator;
-}  // namespace experimental
-}  // namespace grpc
 
 namespace tensorflow {
 namespace serving {
@@ -66,9 +55,23 @@ class SessionService final {
       // Runs inference of a given model.
       virtual void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
     };
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    typedef class experimental_async_interface async_interface;
+    #endif
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    async_interface* async() { return experimental_async(); }
+    #endif
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::tensorflow::serving::SessionRunResponse>* AsyncSessionRunRaw(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -89,8 +92,16 @@ class SessionService final {
      public:
       void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, std::function<void(::grpc::Status)>) override;
       void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void SessionRun(::grpc::ClientContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void SessionRun(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::serving::SessionRunResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
      private:
       friend class Stub;
       explicit experimental_async(Stub* stub): stub_(stub) { }
@@ -142,13 +153,28 @@ class SessionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_SessionRun() {
-      ::grpc::Service::experimental().MarkMethodCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response) { return this->SessionRun(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::serving::SessionRunRequest* request, ::tensorflow::serving::SessionRunResponse* response) { return this->SessionRun(context, request, response); }));}
     void SetMessageAllocatorFor_SessionRun(
         ::grpc::experimental::MessageAllocator< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>*>(
-          ::grpc::Service::experimental().GetHandler(0))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(0);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_SessionRun() override {
@@ -159,8 +185,19 @@ class SessionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* SessionRun(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::SessionRunRequest* /*request*/, ::tensorflow::serving::SessionRunResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* SessionRun(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::serving::SessionRunRequest* /*request*/, ::tensorflow::serving::SessionRunResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* SessionRun(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::serving::SessionRunRequest* /*request*/, ::tensorflow::serving::SessionRunResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
+  #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+  typedef ExperimentalWithCallbackMethod_SessionRun<Service > CallbackService;
+  #endif
+
   typedef ExperimentalWithCallbackMethod_SessionRun<Service > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_SessionRun : public BaseClass {
@@ -205,9 +242,20 @@ class SessionService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_SessionRun() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SessionRun(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->SessionRun(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_SessionRun() override {
       BaseClassMustBeDerivedFromService(this);
@@ -217,7 +265,14 @@ class SessionService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* SessionRun(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* SessionRun(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* SessionRun(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_SessionRun : public BaseClass {
@@ -226,7 +281,14 @@ class SessionService final {
    public:
     WithStreamedUnaryMethod_SessionRun() {
       ::grpc::Service::MarkMethodStreamed(0,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>(std::bind(&WithStreamedUnaryMethod_SessionRun<BaseClass>::StreamedSessionRun, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::serving::SessionRunRequest, ::tensorflow::serving::SessionRunResponse>* streamer) {
+                       return this->StreamedSessionRun(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_SessionRun() override {
       BaseClassMustBeDerivedFromService(this);

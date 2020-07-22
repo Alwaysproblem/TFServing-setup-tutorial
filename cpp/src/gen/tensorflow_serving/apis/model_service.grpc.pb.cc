@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -98,12 +99,22 @@ ModelService::Service::Service() {
       ModelService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< ModelService::Service, ::tensorflow::serving::GetModelStatusRequest, ::tensorflow::serving::GetModelStatusResponse>(
-          std::mem_fn(&ModelService::Service::GetModelStatus), this)));
+          [](ModelService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::GetModelStatusRequest* req,
+             ::tensorflow::serving::GetModelStatusResponse* resp) {
+               return service->GetModelStatus(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       ModelService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< ModelService::Service, ::tensorflow::serving::ReloadConfigRequest, ::tensorflow::serving::ReloadConfigResponse>(
-          std::mem_fn(&ModelService::Service::HandleReloadConfigRequest), this)));
+          [](ModelService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::serving::ReloadConfigRequest* req,
+             ::tensorflow::serving::ReloadConfigResponse* resp) {
+               return service->HandleReloadConfigRequest(ctx, req, resp);
+             }, this)));
 }
 
 ModelService::Service::~Service() {

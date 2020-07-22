@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -33,7 +32,7 @@ static void InitDefaultsscc_info_QueueRunnerDef_tensorflow_2fcore_2fprotobuf_2fq
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_QueueRunnerDef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_QueueRunnerDef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_QueueRunnerDef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto = nullptr;
@@ -59,7 +58,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_QueueRunnerDef_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n+tensorflow/core/protobuf/queue_runner."
   "proto\022\ntensorflow\032*tensorflow/core/proto"
   "buf/error_codes.proto\"\252\001\n\016QueueRunnerDef"
@@ -79,42 +78,27 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_QueueRunnerDef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto, "tensorflow/core/protobuf/queue_runner.proto", 408,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto, "tensorflow/core/protobuf/queue_runner.proto", 408,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto_deps, 1, 1,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2fqueue_5frunner_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
 
 void QueueRunnerDef::InitAsDefaultInstance() {
 }
-class QueueRunnerDef::HasBitSetters {
+class QueueRunnerDef::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int QueueRunnerDef::kQueueNameFieldNumber;
-const int QueueRunnerDef::kEnqueueOpNameFieldNumber;
-const int QueueRunnerDef::kCloseOpNameFieldNumber;
-const int QueueRunnerDef::kCancelOpNameFieldNumber;
-const int QueueRunnerDef::kQueueClosedExceptionTypesFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-QueueRunnerDef::QueueRunnerDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.QueueRunnerDef)
-}
 QueueRunnerDef::QueueRunnerDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   enqueue_op_name_(arena),
   queue_closed_exception_types_(arena) {
   SharedCtor();
@@ -123,24 +107,23 @@ QueueRunnerDef::QueueRunnerDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 QueueRunnerDef::QueueRunnerDef(const QueueRunnerDef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       enqueue_op_name_(from.enqueue_op_name_),
       queue_closed_exception_types_(from.queue_closed_exception_types_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   queue_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.queue_name().size() > 0) {
-    queue_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.queue_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_queue_name().empty()) {
+    queue_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_queue_name(),
+      GetArena());
   }
   close_op_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.close_op_name().size() > 0) {
-    close_op_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.close_op_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_close_op_name().empty()) {
+    close_op_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_close_op_name(),
+      GetArena());
   }
   cancel_op_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.cancel_op_name().size() > 0) {
-    cancel_op_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.cancel_op_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_cancel_op_name().empty()) {
+    cancel_op_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_cancel_op_name(),
+      GetArena());
   }
   // @@protoc_insertion_point(copy_constructor:tensorflow.QueueRunnerDef)
 }
@@ -155,10 +138,11 @@ void QueueRunnerDef::SharedCtor() {
 QueueRunnerDef::~QueueRunnerDef() {
   // @@protoc_insertion_point(destructor:tensorflow.QueueRunnerDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void QueueRunnerDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   queue_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   close_op_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   cancel_op_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -187,16 +171,15 @@ void QueueRunnerDef::Clear() {
 
   enqueue_op_name_.Clear();
   queue_closed_exception_types_.Clear();
-  queue_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  close_op_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  cancel_op_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  _internal_metadata_.Clear();
+  queue_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  close_op_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  cancel_op_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* QueueRunnerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -205,7 +188,9 @@ const char* QueueRunnerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // string queue_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_queue_name(), ptr, ctx, "tensorflow.QueueRunnerDef.queue_name");
+          auto str = _internal_mutable_queue_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.QueueRunnerDef.queue_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -215,35 +200,41 @@ const char* QueueRunnerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(add_enqueue_op_name(), ptr, ctx, "tensorflow.QueueRunnerDef.enqueue_op_name");
+            auto str = _internal_add_enqueue_op_name();
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+            CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.QueueRunnerDef.enqueue_op_name"));
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 18);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<18>(ptr));
         } else goto handle_unusual;
         continue;
       // string close_op_name = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_close_op_name(), ptr, ctx, "tensorflow.QueueRunnerDef.close_op_name");
+          auto str = _internal_mutable_close_op_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.QueueRunnerDef.close_op_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string cancel_op_name = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_cancel_op_name(), ptr, ctx, "tensorflow.QueueRunnerDef.cancel_op_name");
+          auto str = _internal_mutable_cancel_op_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.QueueRunnerDef.cancel_op_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // repeated .tensorflow.error.Code queue_closed_exception_types = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedEnumParser(mutable_queue_closed_exception_types(), ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedEnumParser(_internal_mutable_queue_closed_exception_types(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          add_queue_closed_exception_types(static_cast<::tensorflow::error::Code>(val));
+          _internal_add_queue_closed_exception_types(static_cast<::tensorflow::error::Code>(val));
         } else goto handle_unusual;
         continue;
       default: {
@@ -252,7 +243,9 @@ const char* QueueRunnerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -265,194 +258,9 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool QueueRunnerDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.QueueRunnerDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // string queue_name = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_queue_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->queue_name().data(), static_cast<int>(this->queue_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.QueueRunnerDef.queue_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // repeated string enqueue_op_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->add_enqueue_op_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->enqueue_op_name(this->enqueue_op_name_size() - 1).data(),
-            static_cast<int>(this->enqueue_op_name(this->enqueue_op_name_size() - 1).length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.QueueRunnerDef.enqueue_op_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string close_op_name = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_close_op_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->close_op_name().data(), static_cast<int>(this->close_op_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.QueueRunnerDef.close_op_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string cancel_op_name = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_cancel_op_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->cancel_op_name().data(), static_cast<int>(this->cancel_op_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.QueueRunnerDef.cancel_op_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // repeated .tensorflow.error.Code queue_closed_exception_types = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          ::PROTOBUF_NAMESPACE_ID::uint32 length;
-          DO_(input->ReadVarint32(&length));
-          ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream::Limit limit = input->PushLimit(static_cast<int>(length));
-          while (input->BytesUntilLimit() > 0) {
-            int value = 0;
-            DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-            add_queue_closed_exception_types(static_cast< ::tensorflow::error::Code >(value));
-          }
-          input->PopLimit(limit);
-        } else if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (40 & 0xFF)) {
-          int value = 0;
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   int, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_ENUM>(
-                 input, &value)));
-          add_queue_closed_exception_types(static_cast< ::tensorflow::error::Code >(value));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.QueueRunnerDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.QueueRunnerDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void QueueRunnerDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.QueueRunnerDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // string queue_name = 1;
-  if (this->queue_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->queue_name().data(), static_cast<int>(this->queue_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.QueueRunnerDef.queue_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      1, this->queue_name(), output);
-  }
-
-  // repeated string enqueue_op_name = 2;
-  for (int i = 0, n = this->enqueue_op_name_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->enqueue_op_name(i).data(), static_cast<int>(this->enqueue_op_name(i).length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.QueueRunnerDef.enqueue_op_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteString(
-      2, this->enqueue_op_name(i), output);
-  }
-
-  // string close_op_name = 3;
-  if (this->close_op_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->close_op_name().data(), static_cast<int>(this->close_op_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.QueueRunnerDef.close_op_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      3, this->close_op_name(), output);
-  }
-
-  // string cancel_op_name = 4;
-  if (this->cancel_op_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->cancel_op_name().data(), static_cast<int>(this->cancel_op_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.QueueRunnerDef.cancel_op_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      4, this->cancel_op_name(), output);
-  }
-
-  // repeated .tensorflow.error.Code queue_closed_exception_types = 5;
-  if (this->queue_closed_exception_types_size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTag(
-      5,
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      output);
-    output->WriteVarint32(_queue_closed_exception_types_cached_byte_size_.load(
-        std::memory_order_relaxed));
-  }
-  for (int i = 0, n = this->queue_closed_exception_types_size(); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumNoTag(
-      this->queue_closed_exception_types(i), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.QueueRunnerDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* QueueRunnerDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* QueueRunnerDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.QueueRunnerDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -460,61 +268,55 @@ void QueueRunnerDef::SerializeWithCachedSizes(
   // string queue_name = 1;
   if (this->queue_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->queue_name().data(), static_cast<int>(this->queue_name().length()),
+      this->_internal_queue_name().data(), static_cast<int>(this->_internal_queue_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.QueueRunnerDef.queue_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        1, this->queue_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_queue_name(), target);
   }
 
   // repeated string enqueue_op_name = 2;
-  for (int i = 0, n = this->enqueue_op_name_size(); i < n; i++) {
+  for (int i = 0, n = this->_internal_enqueue_op_name_size(); i < n; i++) {
+    const auto& s = this->_internal_enqueue_op_name(i);
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->enqueue_op_name(i).data(), static_cast<int>(this->enqueue_op_name(i).length()),
+      s.data(), static_cast<int>(s.length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.QueueRunnerDef.enqueue_op_name");
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      WriteStringToArray(2, this->enqueue_op_name(i), target);
+    target = stream->WriteString(2, s, target);
   }
 
   // string close_op_name = 3;
   if (this->close_op_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->close_op_name().data(), static_cast<int>(this->close_op_name().length()),
+      this->_internal_close_op_name().data(), static_cast<int>(this->_internal_close_op_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.QueueRunnerDef.close_op_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        3, this->close_op_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        3, this->_internal_close_op_name(), target);
   }
 
   // string cancel_op_name = 4;
   if (this->cancel_op_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->cancel_op_name().data(), static_cast<int>(this->cancel_op_name().length()),
+      this->_internal_cancel_op_name().data(), static_cast<int>(this->_internal_cancel_op_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.QueueRunnerDef.cancel_op_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        4, this->cancel_op_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        4, this->_internal_cancel_op_name(), target);
   }
 
   // repeated .tensorflow.error.Code queue_closed_exception_types = 5;
-  if (this->queue_closed_exception_types_size() > 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteTagToArray(
-      5,
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream::WriteVarint32ToArray(      _queue_closed_exception_types_cached_byte_size_.load(std::memory_order_relaxed),
-        target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumNoTagToArray(
-      this->queue_closed_exception_types_, target);
+  {
+    int byte_size = _queue_closed_exception_types_cached_byte_size_.load(std::memory_order_relaxed);
+    if (byte_size > 0) {
+      target = stream->WriteEnumPacked(
+          5, queue_closed_exception_types_, byte_size, target);
+    }
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.QueueRunnerDef)
   return target;
@@ -524,29 +326,24 @@ size_t QueueRunnerDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.QueueRunnerDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated string enqueue_op_name = 2;
   total_size += 1 *
-      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(this->enqueue_op_name_size());
-  for (int i = 0, n = this->enqueue_op_name_size(); i < n; i++) {
+      ::PROTOBUF_NAMESPACE_ID::internal::FromIntSize(enqueue_op_name_.size());
+  for (int i = 0, n = enqueue_op_name_.size(); i < n; i++) {
     total_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-      this->enqueue_op_name(i));
+      enqueue_op_name_.Get(i));
   }
 
   // repeated .tensorflow.error.Code queue_closed_exception_types = 5;
   {
     size_t data_size = 0;
-    unsigned int count = static_cast<unsigned int>(this->queue_closed_exception_types_size());for (unsigned int i = 0; i < count; i++) {
+    unsigned int count = static_cast<unsigned int>(this->_internal_queue_closed_exception_types_size());for (unsigned int i = 0; i < count; i++) {
       data_size += ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(
-        this->queue_closed_exception_types(static_cast<int>(i)));
+        this->_internal_queue_closed_exception_types(static_cast<int>(i)));
     }
     if (data_size > 0) {
       total_size += 1 +
@@ -563,23 +360,27 @@ size_t QueueRunnerDef::ByteSizeLong() const {
   if (this->queue_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->queue_name());
+        this->_internal_queue_name());
   }
 
   // string close_op_name = 3;
   if (this->close_op_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->close_op_name());
+        this->_internal_close_op_name());
   }
 
   // string cancel_op_name = 4;
   if (this->cancel_op_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->cancel_op_name());
+        this->_internal_cancel_op_name());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -603,20 +404,20 @@ void QueueRunnerDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void QueueRunnerDef::MergeFrom(const QueueRunnerDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.QueueRunnerDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   enqueue_op_name_.MergeFrom(from.enqueue_op_name_);
   queue_closed_exception_types_.MergeFrom(from.queue_closed_exception_types_);
   if (from.queue_name().size() > 0) {
-    set_queue_name(from.queue_name());
+    _internal_set_queue_name(from._internal_queue_name());
   }
   if (from.close_op_name().size() > 0) {
-    set_close_op_name(from.close_op_name());
+    _internal_set_close_op_name(from._internal_close_op_name());
   }
   if (from.cancel_op_name().size() > 0) {
-    set_cancel_op_name(from.cancel_op_name());
+    _internal_set_cancel_op_name(from._internal_cancel_op_name());
   }
 }
 
@@ -638,36 +439,14 @@ bool QueueRunnerDef::IsInitialized() const {
   return true;
 }
 
-void QueueRunnerDef::Swap(QueueRunnerDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    QueueRunnerDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void QueueRunnerDef::UnsafeArenaSwap(QueueRunnerDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void QueueRunnerDef::InternalSwap(QueueRunnerDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  enqueue_op_name_.InternalSwap(CastToBase(&other->enqueue_op_name_));
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  enqueue_op_name_.InternalSwap(&other->enqueue_op_name_);
   queue_closed_exception_types_.InternalSwap(&other->queue_closed_exception_types_);
-  queue_name_.Swap(&other->queue_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  close_op_name_.Swap(&other->close_op_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  cancel_op_name_.Swap(&other->cancel_op_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  queue_name_.Swap(&other->queue_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  close_op_name_.Swap(&other->close_op_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  cancel_op_name_.Swap(&other->cancel_op_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata QueueRunnerDef::GetMetadata() const {

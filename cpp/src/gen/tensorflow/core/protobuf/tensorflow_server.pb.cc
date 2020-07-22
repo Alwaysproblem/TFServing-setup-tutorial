@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -36,7 +35,7 @@ static void InitDefaultsscc_info_ServerDef_tensorflow_2fcore_2fprotobuf_2ftensor
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_ServerDef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, InitDefaultsscc_info_ServerDef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_ServerDef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto}, {
       &scc_info_ClusterDef_tensorflow_2fcore_2fprotobuf_2fcluster_2eproto.base,
       &scc_info_ConfigProto_tensorflow_2fcore_2fprotobuf_2fconfig_2eproto.base,
       &scc_info_ClusterDeviceFilters_tensorflow_2fcore_2fprotobuf_2fdevice_5ffilters_2eproto.base,}};
@@ -67,7 +66,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_ServerDef_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n0tensorflow/core/protobuf/tensorflow_se"
   "rver.proto\022\ntensorflow\032&tensorflow/core/"
   "protobuf/cluster.proto\032%tensorflow/core/"
@@ -93,16 +92,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_ServerDef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto, "tensorflow/core/protobuf/tensorflow_server.proto", 567,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto, "tensorflow/core/protobuf/tensorflow_server.proto", 567,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto_deps, 1, 3,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto, 1, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2ftensorflow_5fserver_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -115,7 +113,7 @@ void ServerDef::InitAsDefaultInstance() {
   ::tensorflow::_ServerDef_default_instance_._instance.get_mutable()->cluster_device_filters_ = const_cast< ::tensorflow::ClusterDeviceFilters*>(
       ::tensorflow::ClusterDeviceFilters::internal_default_instance());
 }
-class ServerDef::HasBitSetters {
+class ServerDef::_Internal {
  public:
   static const ::tensorflow::ClusterDef& cluster(const ServerDef* msg);
   static const ::tensorflow::ConfigProto& default_session_config(const ServerDef* msg);
@@ -123,121 +121,65 @@ class ServerDef::HasBitSetters {
 };
 
 const ::tensorflow::ClusterDef&
-ServerDef::HasBitSetters::cluster(const ServerDef* msg) {
+ServerDef::_Internal::cluster(const ServerDef* msg) {
   return *msg->cluster_;
 }
 const ::tensorflow::ConfigProto&
-ServerDef::HasBitSetters::default_session_config(const ServerDef* msg) {
+ServerDef::_Internal::default_session_config(const ServerDef* msg) {
   return *msg->default_session_config_;
 }
 const ::tensorflow::ClusterDeviceFilters&
-ServerDef::HasBitSetters::cluster_device_filters(const ServerDef* msg) {
+ServerDef::_Internal::cluster_device_filters(const ServerDef* msg) {
   return *msg->cluster_device_filters_;
 }
-void ServerDef::unsafe_arena_set_allocated_cluster(
-    ::tensorflow::ClusterDef* cluster) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete cluster_;
-  }
-  cluster_ = cluster;
-  if (cluster) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.ServerDef.cluster)
-}
 void ServerDef::clear_cluster() {
-  if (GetArenaNoVirtual() == nullptr && cluster_ != nullptr) {
+  if (GetArena() == nullptr && cluster_ != nullptr) {
     delete cluster_;
   }
   cluster_ = nullptr;
 }
-void ServerDef::unsafe_arena_set_allocated_default_session_config(
-    ::tensorflow::ConfigProto* default_session_config) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete default_session_config_;
-  }
-  default_session_config_ = default_session_config;
-  if (default_session_config) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.ServerDef.default_session_config)
-}
 void ServerDef::clear_default_session_config() {
-  if (GetArenaNoVirtual() == nullptr && default_session_config_ != nullptr) {
+  if (GetArena() == nullptr && default_session_config_ != nullptr) {
     delete default_session_config_;
   }
   default_session_config_ = nullptr;
 }
-void ServerDef::unsafe_arena_set_allocated_cluster_device_filters(
-    ::tensorflow::ClusterDeviceFilters* cluster_device_filters) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete cluster_device_filters_;
-  }
-  cluster_device_filters_ = cluster_device_filters;
-  if (cluster_device_filters) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.ServerDef.cluster_device_filters)
-}
 void ServerDef::clear_cluster_device_filters() {
-  if (GetArenaNoVirtual() == nullptr && cluster_device_filters_ != nullptr) {
+  if (GetArena() == nullptr && cluster_device_filters_ != nullptr) {
     delete cluster_device_filters_;
   }
   cluster_device_filters_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ServerDef::kClusterFieldNumber;
-const int ServerDef::kJobNameFieldNumber;
-const int ServerDef::kTaskIndexFieldNumber;
-const int ServerDef::kDefaultSessionConfigFieldNumber;
-const int ServerDef::kProtocolFieldNumber;
-const int ServerDef::kPortFieldNumber;
-const int ServerDef::kClusterDeviceFiltersFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ServerDef::ServerDef()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ServerDef)
-}
 ServerDef::ServerDef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.ServerDef)
 }
 ServerDef::ServerDef(const ServerDef& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   job_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.job_name().size() > 0) {
-    job_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.job_name(),
-      GetArenaNoVirtual());
+  if (!from._internal_job_name().empty()) {
+    job_name_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_job_name(),
+      GetArena());
   }
   protocol_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.protocol().size() > 0) {
-    protocol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.protocol(),
-      GetArenaNoVirtual());
+  if (!from._internal_protocol().empty()) {
+    protocol_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_protocol(),
+      GetArena());
   }
-  if (from.has_cluster()) {
+  if (from._internal_has_cluster()) {
     cluster_ = new ::tensorflow::ClusterDef(*from.cluster_);
   } else {
     cluster_ = nullptr;
   }
-  if (from.has_default_session_config()) {
+  if (from._internal_has_default_session_config()) {
     default_session_config_ = new ::tensorflow::ConfigProto(*from.default_session_config_);
   } else {
     default_session_config_ = nullptr;
   }
-  if (from.has_cluster_device_filters()) {
+  if (from._internal_has_cluster_device_filters()) {
     cluster_device_filters_ = new ::tensorflow::ClusterDeviceFilters(*from.cluster_device_filters_);
   } else {
     cluster_device_filters_ = nullptr;
@@ -260,10 +202,11 @@ void ServerDef::SharedCtor() {
 ServerDef::~ServerDef() {
   // @@protoc_insertion_point(destructor:tensorflow.ServerDef)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ServerDef::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   job_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   protocol_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete cluster_;
@@ -292,30 +235,29 @@ void ServerDef::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  job_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  protocol_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && cluster_ != nullptr) {
+  job_name_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  protocol_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && cluster_ != nullptr) {
     delete cluster_;
   }
   cluster_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && default_session_config_ != nullptr) {
+  if (GetArena() == nullptr && default_session_config_ != nullptr) {
     delete default_session_config_;
   }
   default_session_config_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && cluster_device_filters_ != nullptr) {
+  if (GetArena() == nullptr && cluster_device_filters_ != nullptr) {
     delete cluster_device_filters_;
   }
   cluster_device_filters_ = nullptr;
   ::memset(&task_index_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&port_) -
       reinterpret_cast<char*>(&task_index_)) + sizeof(port_));
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ServerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -324,49 +266,53 @@ const char* ServerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // .tensorflow.ClusterDef cluster = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_cluster(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_cluster(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string job_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_job_name(), ptr, ctx, "tensorflow.ServerDef.job_name");
+          auto str = _internal_mutable_job_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.ServerDef.job_name"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 task_index = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          task_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          task_index_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ConfigProto default_session_config = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_default_session_config(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_default_session_config(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string protocol = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_protocol(), ptr, ctx, "tensorflow.ServerDef.protocol");
+          auto str = _internal_mutable_protocol();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.ServerDef.protocol"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int32 port = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          port_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          port_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ctx->ParseMessage(mutable_cluster_device_filters(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_cluster_device_filters(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -376,7 +322,9 @@ const char* ServerDef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -389,250 +337,72 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ServerDef::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ServerDef)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.ClusterDef cluster = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_cluster()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // string job_name = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_job_name()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->job_name().data(), static_cast<int>(this->job_name().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ServerDef.job_name"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 task_index = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (24 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &task_index_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ConfigProto default_session_config = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_default_session_config()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // string protocol = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_protocol()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->protocol().data(), static_cast<int>(this->protocol().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.ServerDef.protocol"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int32 port = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (48 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int32, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT32>(
-                 input, &port_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_cluster_device_filters()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ServerDef)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ServerDef)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ServerDef::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ServerDef)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.ClusterDef cluster = 1;
-  if (this->has_cluster()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::cluster(this), output);
-  }
-
-  // string job_name = 2;
-  if (this->job_name().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->job_name().data(), static_cast<int>(this->job_name().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.ServerDef.job_name");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->job_name(), output);
-  }
-
-  // int32 task_index = 3;
-  if (this->task_index() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(3, this->task_index(), output);
-  }
-
-  // .tensorflow.ConfigProto default_session_config = 4;
-  if (this->has_default_session_config()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::default_session_config(this), output);
-  }
-
-  // string protocol = 5;
-  if (this->protocol().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->protocol().data(), static_cast<int>(this->protocol().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.ServerDef.protocol");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      5, this->protocol(), output);
-  }
-
-  // int32 port = 6;
-  if (this->port() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32(6, this->port(), output);
-  }
-
-  // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
-  if (this->has_cluster_device_filters()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, HasBitSetters::cluster_device_filters(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ServerDef)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ServerDef::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ServerDef::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ServerDef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.ClusterDef cluster = 1;
   if (this->has_cluster()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::cluster(this), target);
+      InternalWriteMessage(
+        1, _Internal::cluster(this), target, stream);
   }
 
   // string job_name = 2;
   if (this->job_name().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->job_name().data(), static_cast<int>(this->job_name().length()),
+      this->_internal_job_name().data(), static_cast<int>(this->_internal_job_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.ServerDef.job_name");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->job_name(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_job_name(), target);
   }
 
   // int32 task_index = 3;
   if (this->task_index() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->task_index(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_task_index(), target);
   }
 
   // .tensorflow.ConfigProto default_session_config = 4;
   if (this->has_default_session_config()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::default_session_config(this), target);
+      InternalWriteMessage(
+        4, _Internal::default_session_config(this), target, stream);
   }
 
   // string protocol = 5;
   if (this->protocol().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->protocol().data(), static_cast<int>(this->protocol().length()),
+      this->_internal_protocol().data(), static_cast<int>(this->_internal_protocol().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.ServerDef.protocol");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        5, this->protocol(), target);
+    target = stream->WriteStringMaybeAliased(
+        5, this->_internal_protocol(), target);
   }
 
   // int32 port = 6;
   if (this->port() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->port(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_port(), target);
   }
 
   // .tensorflow.ClusterDeviceFilters cluster_device_filters = 7;
   if (this->has_cluster_device_filters()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        7, HasBitSetters::cluster_device_filters(this), target);
+      InternalWriteMessage(
+        7, _Internal::cluster_device_filters(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ServerDef)
   return target;
@@ -642,11 +412,6 @@ size_t ServerDef::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ServerDef)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -655,14 +420,14 @@ size_t ServerDef::ByteSizeLong() const {
   if (this->job_name().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->job_name());
+        this->_internal_job_name());
   }
 
   // string protocol = 5;
   if (this->protocol().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->protocol());
+        this->_internal_protocol());
   }
 
   // .tensorflow.ClusterDef cluster = 1;
@@ -690,16 +455,20 @@ size_t ServerDef::ByteSizeLong() const {
   if (this->task_index() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->task_index());
+        this->_internal_task_index());
   }
 
   // int32 port = 6;
   if (this->port() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
-        this->port());
+        this->_internal_port());
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -723,30 +492,30 @@ void ServerDef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ServerDef::MergeFrom(const ServerDef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ServerDef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.job_name().size() > 0) {
-    set_job_name(from.job_name());
+    _internal_set_job_name(from._internal_job_name());
   }
   if (from.protocol().size() > 0) {
-    set_protocol(from.protocol());
+    _internal_set_protocol(from._internal_protocol());
   }
   if (from.has_cluster()) {
-    mutable_cluster()->::tensorflow::ClusterDef::MergeFrom(from.cluster());
+    _internal_mutable_cluster()->::tensorflow::ClusterDef::MergeFrom(from._internal_cluster());
   }
   if (from.has_default_session_config()) {
-    mutable_default_session_config()->::tensorflow::ConfigProto::MergeFrom(from.default_session_config());
+    _internal_mutable_default_session_config()->::tensorflow::ConfigProto::MergeFrom(from._internal_default_session_config());
   }
   if (from.has_cluster_device_filters()) {
-    mutable_cluster_device_filters()->::tensorflow::ClusterDeviceFilters::MergeFrom(from.cluster_device_filters());
+    _internal_mutable_cluster_device_filters()->::tensorflow::ClusterDeviceFilters::MergeFrom(from._internal_cluster_device_filters());
   }
   if (from.task_index() != 0) {
-    set_task_index(from.task_index());
+    _internal_set_task_index(from._internal_task_index());
   }
   if (from.port() != 0) {
-    set_port(from.port());
+    _internal_set_port(from._internal_port());
   }
 }
 
@@ -768,37 +537,17 @@ bool ServerDef::IsInitialized() const {
   return true;
 }
 
-void ServerDef::Swap(ServerDef* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ServerDef* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ServerDef::UnsafeArenaSwap(ServerDef* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ServerDef::InternalSwap(ServerDef* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  job_name_.Swap(&other->job_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  protocol_.Swap(&other->protocol_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
-  swap(cluster_, other->cluster_);
-  swap(default_session_config_, other->default_session_config_);
-  swap(cluster_device_filters_, other->cluster_device_filters_);
-  swap(task_index_, other->task_index_);
-  swap(port_, other->port_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  job_name_.Swap(&other->job_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  protocol_.Swap(&other->protocol_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ServerDef, port_)
+      + sizeof(ServerDef::port_)
+      - PROTOBUF_FIELD_OFFSET(ServerDef, cluster_)>(
+          reinterpret_cast<char*>(&cluster_),
+          reinterpret_cast<char*>(&other->cluster_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ServerDef::GetMetadata() const {

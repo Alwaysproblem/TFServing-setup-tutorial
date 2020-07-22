@@ -7,12 +7,14 @@
 #include "tensorflow/core/protobuf/eager_service.pb.h"
 
 #include <functional>
+#include <grpc/impl/codegen/port_platform.h>
 #include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/client_context.h>
 #include <grpcpp/impl/codegen/completion_queue.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/proto_utils.h>
 #include <grpcpp/impl/codegen/rpc_method.h>
@@ -23,19 +25,6 @@
 #include <grpcpp/impl/codegen/status.h>
 #include <grpcpp/impl/codegen/stub_options.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
-
-namespace grpc_impl {
-class CompletionQueue;
-class ServerCompletionQueue;
-class ServerContext;
-}  // namespace grpc_impl
-
-namespace grpc {
-namespace experimental {
-template <typename RequestT, typename ResponseT>
-class MessageAllocator;
-}  // namespace experimental
-}  // namespace grpc
 
 namespace tensorflow {
 namespace eager {
@@ -171,14 +160,30 @@ class EagerService final {
       // other RPCs to detect whether the worker has restarted.
       virtual void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // This updates the eager context on an existing worker when updating the set
       // of servers in a distributed eager cluster.
       virtual void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // This takes a list of Execute and DeleteTensorHandle operations and enqueues
       // (in async mode) or executes (in sync mode) them on the remote server.
       // All outputs of ops which were not explicitly deleted with
@@ -186,21 +191,41 @@ class EagerService final {
       // future calls to Enqueue.
       virtual void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // A streaming version of Enqueue.
       // Current server implementation sends one response per received request.
       // The benefit for using a streaming version is that subsequent requests
       // can be sent without waiting for a response to the previous request. This
       // synchronization is required in the regular Enqueue call because gRPC does
       // not guarantee to preserve request order.
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void StreamingEnqueue(::grpc::ClientContext* context, ::grpc::ClientBidiReactor< ::tensorflow::eager::EnqueueRequest,::tensorflow::eager::EnqueueResponse>* reactor) = 0;
+      #else
       virtual void StreamingEnqueue(::grpc::ClientContext* context, ::grpc::experimental::ClientBidiReactor< ::tensorflow::eager::EnqueueRequest,::tensorflow::eager::EnqueueResponse>* reactor) = 0;
+      #endif
       // Takes a set of op IDs and waits until those ops are done. Returns any error
       // in the stream so far.
       virtual void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // This takes an Eager operation and executes it in async mode on the remote
       // server. Different from EnqueueRequest, ops/functions sent through this
       // type of requests are allowed to execute in parallel and no ordering is
@@ -216,8 +241,16 @@ class EagerService final {
       // for correct ordering.
       virtual void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // Contexts are always created with a deadline and no RPCs within a deadline
       // will trigger a context garbage collection. KeepAlive calls can be used to
       // delay this. It can also be used to validate the existence of a context ID
@@ -227,15 +260,37 @@ class EagerService final {
       // replaced with a new process.
       virtual void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
       // Closes the context. No calls to other methods using the existing context ID
       // are valid after this.
       virtual void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, std::function<void(::grpc::Status)>) = 0;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      virtual void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      #else
       virtual void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) = 0;
+      #endif
     };
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    typedef class experimental_async_interface async_interface;
+    #endif
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    async_interface* async() { return experimental_async(); }
+    #endif
     virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::tensorflow::eager::CreateContextResponse>* AsyncCreateContextRaw(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -322,33 +377,93 @@ class EagerService final {
      public:
       void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, std::function<void(::grpc::Status)>) override;
       void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void CreateContext(::grpc::ClientContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void CreateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CreateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, std::function<void(::grpc::Status)>) override;
       void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void UpdateContext(::grpc::ClientContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void UpdateContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::UpdateContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, std::function<void(::grpc::Status)>) override;
       void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Enqueue(::grpc::ClientContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void Enqueue(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::EnqueueResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void StreamingEnqueue(::grpc::ClientContext* context, ::grpc::ClientBidiReactor< ::tensorflow::eager::EnqueueRequest,::tensorflow::eager::EnqueueResponse>* reactor) override;
+      #else
       void StreamingEnqueue(::grpc::ClientContext* context, ::grpc::experimental::ClientBidiReactor< ::tensorflow::eager::EnqueueRequest,::tensorflow::eager::EnqueueResponse>* reactor) override;
+      #endif
       void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, std::function<void(::grpc::Status)>) override;
       void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void WaitQueueDone(::grpc::ClientContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void WaitQueueDone(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::WaitQueueDoneResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, std::function<void(::grpc::Status)>) override;
       void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void RunComponentFunction(::grpc::ClientContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void RunComponentFunction(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::RunComponentFunctionResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, std::function<void(::grpc::Status)>) override;
       void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void KeepAlive(::grpc::ClientContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void KeepAlive(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::KeepAliveResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
       void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, std::function<void(::grpc::Status)>) override;
       void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, std::function<void(::grpc::Status)>) override;
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void CloseContext(::grpc::ClientContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
+      #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      #else
       void CloseContext(::grpc::ClientContext* context, const ::grpc::ByteBuffer* request, ::tensorflow::eager::CloseContextResponse* response, ::grpc::experimental::ClientUnaryReactor* reactor) override;
+      #endif
      private:
       friend class Stub;
       explicit experimental_async(Stub* stub): stub_(stub) { }
@@ -608,13 +723,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_CreateContext() {
-      ::grpc::Service::experimental().MarkMethodCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response) { return this->CreateContext(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::CreateContextRequest* request, ::tensorflow::eager::CreateContextResponse* response) { return this->CreateContext(context, request, response); }));}
     void SetMessageAllocatorFor_CreateContext(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>*>(
-          ::grpc::Service::experimental().GetHandler(0))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(0);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_CreateContext() override {
@@ -625,7 +755,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* CreateContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::CreateContextRequest* /*request*/, ::tensorflow::eager::CreateContextResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* CreateContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::CreateContextRequest* /*request*/, ::tensorflow::eager::CreateContextResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* CreateContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::CreateContextRequest* /*request*/, ::tensorflow::eager::CreateContextResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_UpdateContext : public BaseClass {
@@ -633,13 +770,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_UpdateContext() {
-      ::grpc::Service::experimental().MarkMethodCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response) { return this->UpdateContext(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::UpdateContextRequest* request, ::tensorflow::eager::UpdateContextResponse* response) { return this->UpdateContext(context, request, response); }));}
     void SetMessageAllocatorFor_UpdateContext(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>*>(
-          ::grpc::Service::experimental().GetHandler(1))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(1);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(1);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_UpdateContext() override {
@@ -650,7 +802,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* UpdateContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::UpdateContextRequest* /*request*/, ::tensorflow::eager::UpdateContextResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* UpdateContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::UpdateContextRequest* /*request*/, ::tensorflow::eager::UpdateContextResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* UpdateContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::UpdateContextRequest* /*request*/, ::tensorflow::eager::UpdateContextResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_Enqueue : public BaseClass {
@@ -658,13 +817,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_Enqueue() {
-      ::grpc::Service::experimental().MarkMethodCallback(2,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response) { return this->Enqueue(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(2,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::EnqueueRequest* request, ::tensorflow::eager::EnqueueResponse* response) { return this->Enqueue(context, request, response); }));}
     void SetMessageAllocatorFor_Enqueue(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>*>(
-          ::grpc::Service::experimental().GetHandler(2))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(2);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(2);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_Enqueue() override {
@@ -675,7 +849,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Enqueue(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::EnqueueRequest* /*request*/, ::tensorflow::eager::EnqueueResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Enqueue(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::EnqueueRequest* /*request*/, ::tensorflow::eager::EnqueueResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Enqueue(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::EnqueueRequest* /*request*/, ::tensorflow::eager::EnqueueResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_StreamingEnqueue : public BaseClass {
@@ -683,9 +864,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_StreamingEnqueue() {
-      ::grpc::Service::experimental().MarkMethodCallback(3,
-        new ::grpc_impl::internal::CallbackBidiHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context) { return this->StreamingEnqueue(context); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(3,
+          new ::grpc_impl::internal::CallbackBidiHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context) { return this->StreamingEnqueue(context); }));
     }
     ~ExperimentalWithCallbackMethod_StreamingEnqueue() override {
       BaseClassMustBeDerivedFromService(this);
@@ -695,7 +887,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerBidiReactor< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>* StreamingEnqueue(::grpc::experimental::CallbackServerContext* /*context*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerBidiReactor< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>* StreamingEnqueue(
+      ::grpc::CallbackServerContext* /*context*/)
+    #else
+    virtual ::grpc::experimental::ServerBidiReactor< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>* StreamingEnqueue(
+      ::grpc::experimental::CallbackServerContext* /*context*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_WaitQueueDone : public BaseClass {
@@ -703,13 +902,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_WaitQueueDone() {
-      ::grpc::Service::experimental().MarkMethodCallback(4,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response) { return this->WaitQueueDone(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(4,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::WaitQueueDoneRequest* request, ::tensorflow::eager::WaitQueueDoneResponse* response) { return this->WaitQueueDone(context, request, response); }));}
     void SetMessageAllocatorFor_WaitQueueDone(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>*>(
-          ::grpc::Service::experimental().GetHandler(4))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(4);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(4);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_WaitQueueDone() override {
@@ -720,7 +934,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* WaitQueueDone(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::WaitQueueDoneRequest* /*request*/, ::tensorflow::eager::WaitQueueDoneResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* WaitQueueDone(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::WaitQueueDoneRequest* /*request*/, ::tensorflow::eager::WaitQueueDoneResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* WaitQueueDone(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::WaitQueueDoneRequest* /*request*/, ::tensorflow::eager::WaitQueueDoneResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_RunComponentFunction : public BaseClass {
@@ -728,13 +949,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_RunComponentFunction() {
-      ::grpc::Service::experimental().MarkMethodCallback(5,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response) { return this->RunComponentFunction(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(5,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::RunComponentFunctionRequest* request, ::tensorflow::eager::RunComponentFunctionResponse* response) { return this->RunComponentFunction(context, request, response); }));}
     void SetMessageAllocatorFor_RunComponentFunction(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>*>(
-          ::grpc::Service::experimental().GetHandler(5))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(5);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(5);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_RunComponentFunction() override {
@@ -745,7 +981,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* RunComponentFunction(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::RunComponentFunctionRequest* /*request*/, ::tensorflow::eager::RunComponentFunctionResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* RunComponentFunction(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::RunComponentFunctionRequest* /*request*/, ::tensorflow::eager::RunComponentFunctionResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* RunComponentFunction(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::RunComponentFunctionRequest* /*request*/, ::tensorflow::eager::RunComponentFunctionResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_KeepAlive : public BaseClass {
@@ -753,13 +996,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_KeepAlive() {
-      ::grpc::Service::experimental().MarkMethodCallback(6,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response) { return this->KeepAlive(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(6,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::KeepAliveRequest* request, ::tensorflow::eager::KeepAliveResponse* response) { return this->KeepAlive(context, request, response); }));}
     void SetMessageAllocatorFor_KeepAlive(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>*>(
-          ::grpc::Service::experimental().GetHandler(6))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(6);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(6);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_KeepAlive() override {
@@ -770,7 +1028,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* KeepAlive(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::KeepAliveRequest* /*request*/, ::tensorflow::eager::KeepAliveResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* KeepAlive(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::KeepAliveRequest* /*request*/, ::tensorflow::eager::KeepAliveResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* KeepAlive(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::KeepAliveRequest* /*request*/, ::tensorflow::eager::KeepAliveResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithCallbackMethod_CloseContext : public BaseClass {
@@ -778,13 +1043,28 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithCallbackMethod_CloseContext() {
-      ::grpc::Service::experimental().MarkMethodCallback(7,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response) { return this->CloseContext(context, request, response); }));}
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodCallback(7,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::tensorflow::eager::CloseContextRequest* request, ::tensorflow::eager::CloseContextResponse* response) { return this->CloseContext(context, request, response); }));}
     void SetMessageAllocatorFor_CloseContext(
         ::grpc::experimental::MessageAllocator< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>* allocator) {
-      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>*>(
-          ::grpc::Service::experimental().GetHandler(7))
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(7);
+    #else
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::experimental().GetHandler(7);
+    #endif
+      static_cast<::grpc_impl::internal::CallbackUnaryHandler< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~ExperimentalWithCallbackMethod_CloseContext() override {
@@ -795,8 +1075,19 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* CloseContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::CloseContextRequest* /*request*/, ::tensorflow::eager::CloseContextResponse* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* CloseContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::tensorflow::eager::CloseContextRequest* /*request*/, ::tensorflow::eager::CloseContextResponse* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* CloseContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::tensorflow::eager::CloseContextRequest* /*request*/, ::tensorflow::eager::CloseContextResponse* /*response*/)
+    #endif
+      { return nullptr; }
   };
+  #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+  typedef ExperimentalWithCallbackMethod_CreateContext<ExperimentalWithCallbackMethod_UpdateContext<ExperimentalWithCallbackMethod_Enqueue<ExperimentalWithCallbackMethod_StreamingEnqueue<ExperimentalWithCallbackMethod_WaitQueueDone<ExperimentalWithCallbackMethod_RunComponentFunction<ExperimentalWithCallbackMethod_KeepAlive<ExperimentalWithCallbackMethod_CloseContext<Service > > > > > > > > CallbackService;
+  #endif
+
   typedef ExperimentalWithCallbackMethod_CreateContext<ExperimentalWithCallbackMethod_UpdateContext<ExperimentalWithCallbackMethod_Enqueue<ExperimentalWithCallbackMethod_StreamingEnqueue<ExperimentalWithCallbackMethod_WaitQueueDone<ExperimentalWithCallbackMethod_RunComponentFunction<ExperimentalWithCallbackMethod_KeepAlive<ExperimentalWithCallbackMethod_CloseContext<Service > > > > > > > > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_CreateContext : public BaseClass {
@@ -1100,9 +1391,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_CreateContext() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(0,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->CreateContext(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(0,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->CreateContext(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_CreateContext() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1112,7 +1414,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* CreateContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* CreateContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* CreateContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_UpdateContext : public BaseClass {
@@ -1120,9 +1429,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_UpdateContext() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(1,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->UpdateContext(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(1,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->UpdateContext(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_UpdateContext() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1132,7 +1452,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* UpdateContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* UpdateContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* UpdateContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_Enqueue : public BaseClass {
@@ -1140,9 +1467,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_Enqueue() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(2,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Enqueue(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(2,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->Enqueue(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_Enqueue() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1152,7 +1490,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* Enqueue(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* Enqueue(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* Enqueue(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_StreamingEnqueue : public BaseClass {
@@ -1160,9 +1505,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_StreamingEnqueue() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(3,
-        new ::grpc_impl::internal::CallbackBidiHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context) { return this->StreamingEnqueue(context); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(3,
+          new ::grpc_impl::internal::CallbackBidiHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context) { return this->StreamingEnqueue(context); }));
     }
     ~ExperimentalWithRawCallbackMethod_StreamingEnqueue() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1172,7 +1528,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerBidiReactor< ::grpc::ByteBuffer, ::grpc::ByteBuffer>* StreamingEnqueue(::grpc::experimental::CallbackServerContext* /*context*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerBidiReactor< ::grpc::ByteBuffer, ::grpc::ByteBuffer>* StreamingEnqueue(
+      ::grpc::CallbackServerContext* /*context*/)
+    #else
+    virtual ::grpc::experimental::ServerBidiReactor< ::grpc::ByteBuffer, ::grpc::ByteBuffer>* StreamingEnqueue(
+      ::grpc::experimental::CallbackServerContext* /*context*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_WaitQueueDone : public BaseClass {
@@ -1180,9 +1543,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_WaitQueueDone() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(4,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->WaitQueueDone(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(4,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->WaitQueueDone(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_WaitQueueDone() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1192,7 +1566,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* WaitQueueDone(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* WaitQueueDone(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* WaitQueueDone(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_RunComponentFunction : public BaseClass {
@@ -1200,9 +1581,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_RunComponentFunction() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(5,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->RunComponentFunction(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(5,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->RunComponentFunction(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_RunComponentFunction() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1212,7 +1604,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* RunComponentFunction(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* RunComponentFunction(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* RunComponentFunction(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_KeepAlive : public BaseClass {
@@ -1220,9 +1619,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_KeepAlive() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(6,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->KeepAlive(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(6,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->KeepAlive(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_KeepAlive() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1232,7 +1642,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* KeepAlive(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* KeepAlive(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* KeepAlive(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class ExperimentalWithRawCallbackMethod_CloseContext : public BaseClass {
@@ -1240,9 +1657,20 @@ class EagerService final {
     void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
    public:
     ExperimentalWithRawCallbackMethod_CloseContext() {
-      ::grpc::Service::experimental().MarkMethodRawCallback(7,
-        new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
-          [this](::grpc::experimental::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->CloseContext(context, request, response); }));
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+      ::grpc::Service::
+    #else
+      ::grpc::Service::experimental().
+    #endif
+        MarkMethodRawCallback(7,
+          new ::grpc_impl::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+                   ::grpc::CallbackServerContext*
+    #else
+                   ::grpc::experimental::CallbackServerContext*
+    #endif
+                     context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->CloseContext(context, request, response); }));
     }
     ~ExperimentalWithRawCallbackMethod_CloseContext() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1252,7 +1680,14 @@ class EagerService final {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    virtual ::grpc::experimental::ServerUnaryReactor* CloseContext(::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/) { return nullptr; }
+    #ifdef GRPC_CALLBACK_API_NONEXPERIMENTAL
+    virtual ::grpc::ServerUnaryReactor* CloseContext(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #else
+    virtual ::grpc::experimental::ServerUnaryReactor* CloseContext(
+      ::grpc::experimental::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)
+    #endif
+      { return nullptr; }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_CreateContext : public BaseClass {
@@ -1261,7 +1696,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_CreateContext() {
       ::grpc::Service::MarkMethodStreamed(0,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>(std::bind(&WithStreamedUnaryMethod_CreateContext<BaseClass>::StreamedCreateContext, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>* streamer) {
+                       return this->StreamedCreateContext(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_CreateContext() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1281,7 +1723,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_UpdateContext() {
       ::grpc::Service::MarkMethodStreamed(1,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>(std::bind(&WithStreamedUnaryMethod_UpdateContext<BaseClass>::StreamedUpdateContext, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>* streamer) {
+                       return this->StreamedUpdateContext(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_UpdateContext() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1301,7 +1750,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_Enqueue() {
       ::grpc::Service::MarkMethodStreamed(2,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(std::bind(&WithStreamedUnaryMethod_Enqueue<BaseClass>::StreamedEnqueue, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>* streamer) {
+                       return this->StreamedEnqueue(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_Enqueue() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1321,7 +1777,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_WaitQueueDone() {
       ::grpc::Service::MarkMethodStreamed(4,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>(std::bind(&WithStreamedUnaryMethod_WaitQueueDone<BaseClass>::StreamedWaitQueueDone, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>* streamer) {
+                       return this->StreamedWaitQueueDone(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_WaitQueueDone() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1341,7 +1804,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_RunComponentFunction() {
       ::grpc::Service::MarkMethodStreamed(5,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>(std::bind(&WithStreamedUnaryMethod_RunComponentFunction<BaseClass>::StreamedRunComponentFunction, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>* streamer) {
+                       return this->StreamedRunComponentFunction(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_RunComponentFunction() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1361,7 +1831,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_KeepAlive() {
       ::grpc::Service::MarkMethodStreamed(6,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>(std::bind(&WithStreamedUnaryMethod_KeepAlive<BaseClass>::StreamedKeepAlive, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>* streamer) {
+                       return this->StreamedKeepAlive(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_KeepAlive() override {
       BaseClassMustBeDerivedFromService(this);
@@ -1381,7 +1858,14 @@ class EagerService final {
    public:
     WithStreamedUnaryMethod_CloseContext() {
       ::grpc::Service::MarkMethodStreamed(7,
-        new ::grpc::internal::StreamedUnaryHandler< ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>(std::bind(&WithStreamedUnaryMethod_CloseContext<BaseClass>::StreamedCloseContext, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>(
+            [this](::grpc_impl::ServerContext* context,
+                   ::grpc_impl::ServerUnaryStreamer<
+                     ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>* streamer) {
+                       return this->StreamedCloseContext(context,
+                         streamer);
+                  }));
     }
     ~WithStreamedUnaryMethod_CloseContext() override {
       BaseClassMustBeDerivedFromService(this);

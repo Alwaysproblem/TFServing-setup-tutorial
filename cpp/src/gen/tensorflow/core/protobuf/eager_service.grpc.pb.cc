@@ -11,6 +11,7 @@
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
 #include <grpcpp/impl/codegen/client_callback.h>
+#include <grpcpp/impl/codegen/message_allocator.h>
 #include <grpcpp/impl/codegen/method_handler.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
 #include <grpcpp/impl/codegen/server_callback.h>
@@ -266,42 +267,82 @@ EagerService::Service::Service() {
       EagerService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::CreateContextRequest, ::tensorflow::eager::CreateContextResponse>(
-          std::mem_fn(&EagerService::Service::CreateContext), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::CreateContextRequest* req,
+             ::tensorflow::eager::CreateContextResponse* resp) {
+               return service->CreateContext(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::UpdateContextRequest, ::tensorflow::eager::UpdateContextResponse>(
-          std::mem_fn(&EagerService::Service::UpdateContext), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::UpdateContextRequest* req,
+             ::tensorflow::eager::UpdateContextResponse* resp) {
+               return service->UpdateContext(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[2],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
-          std::mem_fn(&EagerService::Service::Enqueue), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::EnqueueRequest* req,
+             ::tensorflow::eager::EnqueueResponse* resp) {
+               return service->Enqueue(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[3],
       ::grpc::internal::RpcMethod::BIDI_STREAMING,
       new ::grpc::internal::BidiStreamingHandler< EagerService::Service, ::tensorflow::eager::EnqueueRequest, ::tensorflow::eager::EnqueueResponse>(
-          std::mem_fn(&EagerService::Service::StreamingEnqueue), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             ::grpc_impl::ServerReaderWriter<::tensorflow::eager::EnqueueResponse,
+             ::tensorflow::eager::EnqueueRequest>* stream) {
+               return service->StreamingEnqueue(ctx, stream);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[4],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::WaitQueueDoneRequest, ::tensorflow::eager::WaitQueueDoneResponse>(
-          std::mem_fn(&EagerService::Service::WaitQueueDone), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::WaitQueueDoneRequest* req,
+             ::tensorflow::eager::WaitQueueDoneResponse* resp) {
+               return service->WaitQueueDone(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[5],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::RunComponentFunctionRequest, ::tensorflow::eager::RunComponentFunctionResponse>(
-          std::mem_fn(&EagerService::Service::RunComponentFunction), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::RunComponentFunctionRequest* req,
+             ::tensorflow::eager::RunComponentFunctionResponse* resp) {
+               return service->RunComponentFunction(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[6],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::KeepAliveRequest, ::tensorflow::eager::KeepAliveResponse>(
-          std::mem_fn(&EagerService::Service::KeepAlive), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::KeepAliveRequest* req,
+             ::tensorflow::eager::KeepAliveResponse* resp) {
+               return service->KeepAlive(ctx, req, resp);
+             }, this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       EagerService_method_names[7],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
       new ::grpc::internal::RpcMethodHandler< EagerService::Service, ::tensorflow::eager::CloseContextRequest, ::tensorflow::eager::CloseContextResponse>(
-          std::mem_fn(&EagerService::Service::CloseContext), this)));
+          [](EagerService::Service* service,
+             ::grpc_impl::ServerContext* ctx,
+             const ::tensorflow::eager::CloseContextRequest* req,
+             ::tensorflow::eager::CloseContextResponse* resp) {
+               return service->CloseContext(ctx, req, resp);
+             }, this)));
 }
 
 EagerService::Service::~Service() {

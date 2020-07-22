@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -39,7 +38,7 @@ static void InitDefaultsscc_info_TensorSliceProto_tensorflow_2fcore_2fframework_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TensorSliceProto_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_TensorSliceProto_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_TensorSliceProto_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto}, {
       &scc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto.base,}};
 
 static void InitDefaultsscc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto() {
@@ -54,7 +53,7 @@ static void InitDefaultsscc_info_TensorSliceProto_Extent_tensorflow_2fcore_2ffra
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsscc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto}, {}};
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto = nullptr;
@@ -86,7 +85,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_TensorSliceProto_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n,tensorflow/core/framework/tensor_slice"
   ".proto\022\ntensorflow\"\200\001\n\020TensorSliceProto\022"
   "3\n\006extent\030\001 \003(\0132#.tensorflow.TensorSlice"
@@ -104,16 +103,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_TensorSliceProto_Extent_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto, "tensorflow/core/framework/tensor_slice.proto", 335,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto, "tensorflow/core/framework/tensor_slice.proto", 335,
   &descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_once, descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto_deps, 2, 0,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto, 2, file_level_enum_descriptors_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fframework_2ftensor_5fslice_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -121,36 +119,24 @@ namespace tensorflow {
 void TensorSliceProto_Extent::InitAsDefaultInstance() {
   ::tensorflow::_TensorSliceProto_Extent_default_instance_.length_ = PROTOBUF_LONGLONG(0);
 }
-class TensorSliceProto_Extent::HasBitSetters {
+class TensorSliceProto_Extent::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int TensorSliceProto_Extent::kStartFieldNumber;
-const int TensorSliceProto_Extent::kLengthFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-TensorSliceProto_Extent::TensorSliceProto_Extent()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.TensorSliceProto.Extent)
-}
 TensorSliceProto_Extent::TensorSliceProto_Extent(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.TensorSliceProto.Extent)
 }
 TensorSliceProto_Extent::TensorSliceProto_Extent(const TensorSliceProto_Extent& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   start_ = from.start_;
   clear_has_has_length();
   switch (from.has_length_case()) {
     case kLength: {
-      set_length(from.length());
+      _internal_set_length(from._internal_length());
       break;
     }
     case HAS_LENGTH_NOT_SET: {
@@ -168,10 +154,11 @@ void TensorSliceProto_Extent::SharedCtor() {
 TensorSliceProto_Extent::~TensorSliceProto_Extent() {
   // @@protoc_insertion_point(destructor:tensorflow.TensorSliceProto.Extent)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void TensorSliceProto_Extent::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_has_length()) {
     clear_has_length();
   }
@@ -215,13 +202,12 @@ void TensorSliceProto_Extent::Clear() {
 
   start_ = PROTOBUF_LONGLONG(0);
   clear_has_length();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* TensorSliceProto_Extent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -230,14 +216,14 @@ const char* TensorSliceProto_Extent::_InternalParse(const char* ptr, ::PROTOBUF_
       // int64 start = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          start_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
+          start_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // int64 length = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          set_length(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
+          _internal_set_length(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -247,7 +233,9 @@ const char* TensorSliceProto_Extent::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -260,107 +248,28 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool TensorSliceProto_Extent::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.TensorSliceProto.Extent)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // int64 start = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (8 & 0xFF)) {
 
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &start_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // int64 length = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (16 & 0xFF)) {
-          clear_has_length();
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   ::PROTOBUF_NAMESPACE_ID::int64, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_INT64>(
-                 input, &has_length_.length_)));
-          set_has_length();
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.TensorSliceProto.Extent)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.TensorSliceProto.Extent)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void TensorSliceProto_Extent::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.TensorSliceProto.Extent)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // int64 start = 1;
-  if (this->start() != 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(1, this->start(), output);
-  }
-
-  // int64 length = 2;
-  if (has_length()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64(2, this->length(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.TensorSliceProto.Extent)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* TensorSliceProto_Extent::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TensorSliceProto_Extent::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.TensorSliceProto.Extent)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // int64 start = 1;
   if (this->start() != 0) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->start(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(1, this->_internal_start(), target);
   }
 
   // int64 length = 2;
-  if (has_length()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->length(), target);
+  if (_internal_has_length()) {
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt64ToArray(2, this->_internal_length(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.TensorSliceProto.Extent)
   return target;
@@ -370,11 +279,6 @@ size_t TensorSliceProto_Extent::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.TensorSliceProto.Extent)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -383,7 +287,7 @@ size_t TensorSliceProto_Extent::ByteSizeLong() const {
   if (this->start() != 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-        this->start());
+        this->_internal_start());
   }
 
   switch (has_length_case()) {
@@ -391,12 +295,16 @@ size_t TensorSliceProto_Extent::ByteSizeLong() const {
     case kLength: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int64Size(
-          this->length());
+          this->_internal_length());
       break;
     }
     case HAS_LENGTH_NOT_SET: {
       break;
     }
+  }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
   }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
@@ -421,16 +329,16 @@ void TensorSliceProto_Extent::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void TensorSliceProto_Extent::MergeFrom(const TensorSliceProto_Extent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.TensorSliceProto.Extent)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.start() != 0) {
-    set_start(from.start());
+    _internal_set_start(from._internal_start());
   }
   switch (from.has_length_case()) {
     case kLength: {
-      set_length(from.length());
+      _internal_set_length(from._internal_length());
       break;
     }
     case HAS_LENGTH_NOT_SET: {
@@ -457,28 +365,9 @@ bool TensorSliceProto_Extent::IsInitialized() const {
   return true;
 }
 
-void TensorSliceProto_Extent::Swap(TensorSliceProto_Extent* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    TensorSliceProto_Extent* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void TensorSliceProto_Extent::UnsafeArenaSwap(TensorSliceProto_Extent* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void TensorSliceProto_Extent::InternalSwap(TensorSliceProto_Extent* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(start_, other->start_);
   swap(has_length_, other->has_length_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
@@ -493,22 +382,12 @@ void TensorSliceProto_Extent::InternalSwap(TensorSliceProto_Extent* other) {
 
 void TensorSliceProto::InitAsDefaultInstance() {
 }
-class TensorSliceProto::HasBitSetters {
+class TensorSliceProto::_Internal {
  public:
 };
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int TensorSliceProto::kExtentFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-TensorSliceProto::TensorSliceProto()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.TensorSliceProto)
-}
 TensorSliceProto::TensorSliceProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena),
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
   extent_(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
@@ -516,9 +395,8 @@ TensorSliceProto::TensorSliceProto(::PROTOBUF_NAMESPACE_ID::Arena* arena)
 }
 TensorSliceProto::TensorSliceProto(const TensorSliceProto& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr),
       extent_(from.extent_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:tensorflow.TensorSliceProto)
 }
 
@@ -529,10 +407,11 @@ void TensorSliceProto::SharedCtor() {
 TensorSliceProto::~TensorSliceProto() {
   // @@protoc_insertion_point(destructor:tensorflow.TensorSliceProto)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void TensorSliceProto::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
 void TensorSliceProto::ArenaDtor(void* object) {
@@ -557,13 +436,12 @@ void TensorSliceProto::Clear() {
   (void) cached_has_bits;
 
   extent_.Clear();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* TensorSliceProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -575,10 +453,10 @@ const char* TensorSliceProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(add_extent(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_extent(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
-          } while (::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<::PROTOBUF_NAMESPACE_ID::uint8>(ptr) == 10);
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else goto handle_unusual;
         continue;
       default: {
@@ -587,7 +465,9 @@ const char* TensorSliceProto::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -600,88 +480,24 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool TensorSliceProto::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.TensorSliceProto)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // repeated .tensorflow.TensorSliceProto.Extent extent = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-                input, add_extent()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.TensorSliceProto)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.TensorSliceProto)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void TensorSliceProto::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.TensorSliceProto)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // repeated .tensorflow.TensorSliceProto.Extent extent = 1;
-  for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->extent_size()); i < n; i++) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1,
-      this->extent(static_cast<int>(i)),
-      output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.TensorSliceProto)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* TensorSliceProto::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* TensorSliceProto::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.TensorSliceProto)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // repeated .tensorflow.TensorSliceProto.Extent extent = 1;
   for (unsigned int i = 0,
-      n = static_cast<unsigned int>(this->extent_size()); i < n; i++) {
+      n = static_cast<unsigned int>(this->_internal_extent_size()); i < n; i++) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, this->extent(static_cast<int>(i)), target);
+      InternalWriteMessage(1, this->_internal_extent(i), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.TensorSliceProto)
   return target;
@@ -691,26 +507,21 @@ size_t TensorSliceProto::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.TensorSliceProto)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   // repeated .tensorflow.TensorSliceProto.Extent extent = 1;
-  {
-    unsigned int count = static_cast<unsigned int>(this->extent_size());
-    total_size += 1UL * count;
-    for (unsigned int i = 0; i < count; i++) {
-      total_size +=
-        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          this->extent(static_cast<int>(i)));
-    }
+  total_size += 1UL * this->_internal_extent_size();
+  for (const auto& msg : this->extent_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -734,7 +545,7 @@ void TensorSliceProto::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void TensorSliceProto::MergeFrom(const TensorSliceProto& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.TensorSliceProto)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -759,29 +570,10 @@ bool TensorSliceProto::IsInitialized() const {
   return true;
 }
 
-void TensorSliceProto::Swap(TensorSliceProto* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    TensorSliceProto* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void TensorSliceProto::UnsafeArenaSwap(TensorSliceProto* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void TensorSliceProto::InternalSwap(TensorSliceProto* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  CastToBase(&extent_)->InternalSwap(CastToBase(&other->extent_));
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  extent_.InternalSwap(&other->extent_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata TensorSliceProto::GetMetadata() const {

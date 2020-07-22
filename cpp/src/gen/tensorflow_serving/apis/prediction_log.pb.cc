@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -76,7 +75,7 @@ static void InitDefaultsscc_info_ClassifyLog_tensorflow_5fserving_2fapis_2fpredi
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ClassifyLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_ClassifyLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ClassifyLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_ClassificationRequest_tensorflow_5fserving_2fapis_2fclassification_2eproto.base,
       &scc_info_ClassificationResponse_tensorflow_5fserving_2fapis_2fclassification_2eproto.base,}};
 
@@ -92,7 +91,7 @@ static void InitDefaultsscc_info_MultiInferenceLog_tensorflow_5fserving_2fapis_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_MultiInferenceLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_MultiInferenceLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_MultiInferenceLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_MultiInferenceRequest_tensorflow_5fserving_2fapis_2finference_2eproto.base,
       &scc_info_MultiInferenceResponse_tensorflow_5fserving_2fapis_2finference_2eproto.base,}};
 
@@ -108,7 +107,7 @@ static void InitDefaultsscc_info_PredictLog_tensorflow_5fserving_2fapis_2fpredic
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_PredictLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_PredictLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_PredictLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_PredictRequest_tensorflow_5fserving_2fapis_2fpredict_2eproto.base,
       &scc_info_PredictResponse_tensorflow_5fserving_2fapis_2fpredict_2eproto.base,}};
 
@@ -124,7 +123,7 @@ static void InitDefaultsscc_info_PredictionLog_tensorflow_5fserving_2fapis_2fpre
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_PredictionLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 6, InitDefaultsscc_info_PredictionLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 6, 0, InitDefaultsscc_info_PredictionLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_LogMetadata_tensorflow_5fserving_2fcore_2flogging_2eproto.base,
       &scc_info_ClassifyLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto.base,
       &scc_info_RegressLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto.base,
@@ -144,7 +143,7 @@ static void InitDefaultsscc_info_RegressLog_tensorflow_5fserving_2fapis_2fpredic
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_RegressLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_RegressLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_RegressLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_RegressionRequest_tensorflow_5fserving_2fapis_2fregression_2eproto.base,
       &scc_info_RegressionResponse_tensorflow_5fserving_2fapis_2fregression_2eproto.base,}};
 
@@ -160,7 +159,7 @@ static void InitDefaultsscc_info_SessionRunLog_tensorflow_5fserving_2fapis_2fpre
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SessionRunLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, InitDefaultsscc_info_SessionRunLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SessionRunLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto}, {
       &scc_info_SessionRunRequest_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto.base,
       &scc_info_SessionRunResponse_tensorflow_5fserving_2fapis_2fsession_5fservice_2eproto.base,}};
 
@@ -235,7 +234,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::serving::_PredictionLog_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto[] =
+const char descriptor_table_protodef_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n,tensorflow_serving/apis/prediction_log"
   ".proto\022\022tensorflow.serving\032,tensorflow_s"
   "erving/apis/classification.proto\032\'tensor"
@@ -289,16 +288,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_SessionRunLog_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_once;
-static bool descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto = {
-  &descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_initialized, descriptor_table_protodef_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto, "tensorflow_serving/apis/prediction_log.proto", 1381,
+  false, false, descriptor_table_protodef_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto, "tensorflow_serving/apis/prediction_log.proto", 1381,
   &descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_once, descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_sccs, descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto_deps, 6, 6,
   schemas, file_default_instances, TableStruct_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto::offsets,
   file_level_metadata_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto, 6, file_level_enum_descriptors_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto, file_level_service_descriptors_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_5fserving_2fapis_2fprediction_5flog_2eproto)), true);
 namespace tensorflow {
 namespace serving {
 
@@ -310,85 +308,47 @@ void ClassifyLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_ClassifyLog_default_instance_._instance.get_mutable()->response_ = const_cast< ::tensorflow::serving::ClassificationResponse*>(
       ::tensorflow::serving::ClassificationResponse::internal_default_instance());
 }
-class ClassifyLog::HasBitSetters {
+class ClassifyLog::_Internal {
  public:
   static const ::tensorflow::serving::ClassificationRequest& request(const ClassifyLog* msg);
   static const ::tensorflow::serving::ClassificationResponse& response(const ClassifyLog* msg);
 };
 
 const ::tensorflow::serving::ClassificationRequest&
-ClassifyLog::HasBitSetters::request(const ClassifyLog* msg) {
+ClassifyLog::_Internal::request(const ClassifyLog* msg) {
   return *msg->request_;
 }
 const ::tensorflow::serving::ClassificationResponse&
-ClassifyLog::HasBitSetters::response(const ClassifyLog* msg) {
+ClassifyLog::_Internal::response(const ClassifyLog* msg) {
   return *msg->response_;
 }
-void ClassifyLog::unsafe_arena_set_allocated_request(
-    ::tensorflow::serving::ClassificationRequest* request) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete request_;
-  }
-  request_ = request;
-  if (request) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.ClassifyLog.request)
-}
 void ClassifyLog::clear_request() {
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
 }
-void ClassifyLog::unsafe_arena_set_allocated_response(
-    ::tensorflow::serving::ClassificationResponse* response) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete response_;
-  }
-  response_ = response;
-  if (response) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.ClassifyLog.response)
-}
 void ClassifyLog::clear_response() {
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ClassifyLog::kRequestFieldNumber;
-const int ClassifyLog::kResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ClassifyLog::ClassifyLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.ClassifyLog)
-}
 ClassifyLog::ClassifyLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.ClassifyLog)
 }
 ClassifyLog::ClassifyLog(const ClassifyLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_request()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_request()) {
     request_ = new ::tensorflow::serving::ClassificationRequest(*from.request_);
   } else {
     request_ = nullptr;
   }
-  if (from.has_response()) {
+  if (from._internal_has_response()) {
     response_ = new ::tensorflow::serving::ClassificationResponse(*from.response_);
   } else {
     response_ = nullptr;
@@ -406,10 +366,11 @@ void ClassifyLog::SharedCtor() {
 ClassifyLog::~ClassifyLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.ClassifyLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ClassifyLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
 }
@@ -435,21 +396,20 @@ void ClassifyLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ClassifyLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -458,14 +418,14 @@ const char* ClassifyLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // .tensorflow.serving.ClassificationRequest request = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.ClassificationResponse response = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -475,7 +435,9 @@ const char* ClassifyLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -488,108 +450,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ClassifyLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.ClassifyLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.ClassificationRequest request = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.ClassificationResponse response = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.ClassifyLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.ClassifyLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ClassifyLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.ClassifyLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.ClassificationRequest request = 1;
-  if (this->has_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::request(this), output);
-  }
-
-  // .tensorflow.serving.ClassificationResponse response = 2;
-  if (this->has_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::response(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.ClassifyLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ClassifyLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ClassifyLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.ClassifyLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.ClassificationRequest request = 1;
   if (this->has_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::request(this), target);
+      InternalWriteMessage(
+        1, _Internal::request(this), target, stream);
   }
 
   // .tensorflow.serving.ClassificationResponse response = 2;
   if (this->has_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::response(this), target);
+      InternalWriteMessage(
+        2, _Internal::response(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.ClassifyLog)
   return target;
@@ -599,11 +485,6 @@ size_t ClassifyLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.ClassifyLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -622,6 +503,10 @@ size_t ClassifyLog::ByteSizeLong() const {
         *response_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -645,15 +530,15 @@ void ClassifyLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ClassifyLog::MergeFrom(const ClassifyLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.ClassifyLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_request()) {
-    mutable_request()->::tensorflow::serving::ClassificationRequest::MergeFrom(from.request());
+    _internal_mutable_request()->::tensorflow::serving::ClassificationRequest::MergeFrom(from._internal_request());
   }
   if (from.has_response()) {
-    mutable_response()->::tensorflow::serving::ClassificationResponse::MergeFrom(from.response());
+    _internal_mutable_response()->::tensorflow::serving::ClassificationResponse::MergeFrom(from._internal_response());
   }
 }
 
@@ -675,30 +560,15 @@ bool ClassifyLog::IsInitialized() const {
   return true;
 }
 
-void ClassifyLog::Swap(ClassifyLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ClassifyLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ClassifyLog::UnsafeArenaSwap(ClassifyLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ClassifyLog::InternalSwap(ClassifyLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(request_, other->request_);
-  swap(response_, other->response_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ClassifyLog, response_)
+      + sizeof(ClassifyLog::response_)
+      - PROTOBUF_FIELD_OFFSET(ClassifyLog, request_)>(
+          reinterpret_cast<char*>(&request_),
+          reinterpret_cast<char*>(&other->request_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ClassifyLog::GetMetadata() const {
@@ -714,85 +584,47 @@ void RegressLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_RegressLog_default_instance_._instance.get_mutable()->response_ = const_cast< ::tensorflow::serving::RegressionResponse*>(
       ::tensorflow::serving::RegressionResponse::internal_default_instance());
 }
-class RegressLog::HasBitSetters {
+class RegressLog::_Internal {
  public:
   static const ::tensorflow::serving::RegressionRequest& request(const RegressLog* msg);
   static const ::tensorflow::serving::RegressionResponse& response(const RegressLog* msg);
 };
 
 const ::tensorflow::serving::RegressionRequest&
-RegressLog::HasBitSetters::request(const RegressLog* msg) {
+RegressLog::_Internal::request(const RegressLog* msg) {
   return *msg->request_;
 }
 const ::tensorflow::serving::RegressionResponse&
-RegressLog::HasBitSetters::response(const RegressLog* msg) {
+RegressLog::_Internal::response(const RegressLog* msg) {
   return *msg->response_;
 }
-void RegressLog::unsafe_arena_set_allocated_request(
-    ::tensorflow::serving::RegressionRequest* request) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete request_;
-  }
-  request_ = request;
-  if (request) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.RegressLog.request)
-}
 void RegressLog::clear_request() {
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
 }
-void RegressLog::unsafe_arena_set_allocated_response(
-    ::tensorflow::serving::RegressionResponse* response) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete response_;
-  }
-  response_ = response;
-  if (response) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.RegressLog.response)
-}
 void RegressLog::clear_response() {
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int RegressLog::kRequestFieldNumber;
-const int RegressLog::kResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-RegressLog::RegressLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.RegressLog)
-}
 RegressLog::RegressLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.RegressLog)
 }
 RegressLog::RegressLog(const RegressLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_request()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_request()) {
     request_ = new ::tensorflow::serving::RegressionRequest(*from.request_);
   } else {
     request_ = nullptr;
   }
-  if (from.has_response()) {
+  if (from._internal_has_response()) {
     response_ = new ::tensorflow::serving::RegressionResponse(*from.response_);
   } else {
     response_ = nullptr;
@@ -810,10 +642,11 @@ void RegressLog::SharedCtor() {
 RegressLog::~RegressLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.RegressLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void RegressLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
 }
@@ -839,21 +672,20 @@ void RegressLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* RegressLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -862,14 +694,14 @@ const char* RegressLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // .tensorflow.serving.RegressionRequest request = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.RegressionResponse response = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -879,7 +711,9 @@ const char* RegressLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -892,108 +726,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool RegressLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.RegressLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.RegressionRequest request = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.RegressionResponse response = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.RegressLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.RegressLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void RegressLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.RegressLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.RegressionRequest request = 1;
-  if (this->has_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::request(this), output);
-  }
-
-  // .tensorflow.serving.RegressionResponse response = 2;
-  if (this->has_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::response(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.RegressLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* RegressLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* RegressLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.RegressLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.RegressionRequest request = 1;
   if (this->has_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::request(this), target);
+      InternalWriteMessage(
+        1, _Internal::request(this), target, stream);
   }
 
   // .tensorflow.serving.RegressionResponse response = 2;
   if (this->has_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::response(this), target);
+      InternalWriteMessage(
+        2, _Internal::response(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.RegressLog)
   return target;
@@ -1003,11 +761,6 @@ size_t RegressLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.RegressLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1026,6 +779,10 @@ size_t RegressLog::ByteSizeLong() const {
         *response_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1049,15 +806,15 @@ void RegressLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void RegressLog::MergeFrom(const RegressLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.RegressLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_request()) {
-    mutable_request()->::tensorflow::serving::RegressionRequest::MergeFrom(from.request());
+    _internal_mutable_request()->::tensorflow::serving::RegressionRequest::MergeFrom(from._internal_request());
   }
   if (from.has_response()) {
-    mutable_response()->::tensorflow::serving::RegressionResponse::MergeFrom(from.response());
+    _internal_mutable_response()->::tensorflow::serving::RegressionResponse::MergeFrom(from._internal_response());
   }
 }
 
@@ -1079,30 +836,15 @@ bool RegressLog::IsInitialized() const {
   return true;
 }
 
-void RegressLog::Swap(RegressLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    RegressLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void RegressLog::UnsafeArenaSwap(RegressLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void RegressLog::InternalSwap(RegressLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(request_, other->request_);
-  swap(response_, other->response_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(RegressLog, response_)
+      + sizeof(RegressLog::response_)
+      - PROTOBUF_FIELD_OFFSET(RegressLog, request_)>(
+          reinterpret_cast<char*>(&request_),
+          reinterpret_cast<char*>(&other->request_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RegressLog::GetMetadata() const {
@@ -1118,85 +860,47 @@ void PredictLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_PredictLog_default_instance_._instance.get_mutable()->response_ = const_cast< ::tensorflow::serving::PredictResponse*>(
       ::tensorflow::serving::PredictResponse::internal_default_instance());
 }
-class PredictLog::HasBitSetters {
+class PredictLog::_Internal {
  public:
   static const ::tensorflow::serving::PredictRequest& request(const PredictLog* msg);
   static const ::tensorflow::serving::PredictResponse& response(const PredictLog* msg);
 };
 
 const ::tensorflow::serving::PredictRequest&
-PredictLog::HasBitSetters::request(const PredictLog* msg) {
+PredictLog::_Internal::request(const PredictLog* msg) {
   return *msg->request_;
 }
 const ::tensorflow::serving::PredictResponse&
-PredictLog::HasBitSetters::response(const PredictLog* msg) {
+PredictLog::_Internal::response(const PredictLog* msg) {
   return *msg->response_;
 }
-void PredictLog::unsafe_arena_set_allocated_request(
-    ::tensorflow::serving::PredictRequest* request) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete request_;
-  }
-  request_ = request;
-  if (request) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.PredictLog.request)
-}
 void PredictLog::clear_request() {
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
 }
-void PredictLog::unsafe_arena_set_allocated_response(
-    ::tensorflow::serving::PredictResponse* response) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete response_;
-  }
-  response_ = response;
-  if (response) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.PredictLog.response)
-}
 void PredictLog::clear_response() {
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int PredictLog::kRequestFieldNumber;
-const int PredictLog::kResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-PredictLog::PredictLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.PredictLog)
-}
 PredictLog::PredictLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.PredictLog)
 }
 PredictLog::PredictLog(const PredictLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_request()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_request()) {
     request_ = new ::tensorflow::serving::PredictRequest(*from.request_);
   } else {
     request_ = nullptr;
   }
-  if (from.has_response()) {
+  if (from._internal_has_response()) {
     response_ = new ::tensorflow::serving::PredictResponse(*from.response_);
   } else {
     response_ = nullptr;
@@ -1214,10 +918,11 @@ void PredictLog::SharedCtor() {
 PredictLog::~PredictLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.PredictLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void PredictLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
 }
@@ -1243,21 +948,20 @@ void PredictLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* PredictLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1266,14 +970,14 @@ const char* PredictLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // .tensorflow.serving.PredictRequest request = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.PredictResponse response = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1283,7 +987,9 @@ const char* PredictLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1296,108 +1002,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool PredictLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.PredictLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.PredictRequest request = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.PredictResponse response = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.PredictLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.PredictLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void PredictLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.PredictLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.PredictRequest request = 1;
-  if (this->has_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::request(this), output);
-  }
-
-  // .tensorflow.serving.PredictResponse response = 2;
-  if (this->has_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::response(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.PredictLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* PredictLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PredictLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.PredictLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.PredictRequest request = 1;
   if (this->has_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::request(this), target);
+      InternalWriteMessage(
+        1, _Internal::request(this), target, stream);
   }
 
   // .tensorflow.serving.PredictResponse response = 2;
   if (this->has_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::response(this), target);
+      InternalWriteMessage(
+        2, _Internal::response(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.PredictLog)
   return target;
@@ -1407,11 +1037,6 @@ size_t PredictLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.PredictLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1430,6 +1055,10 @@ size_t PredictLog::ByteSizeLong() const {
         *response_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1453,15 +1082,15 @@ void PredictLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void PredictLog::MergeFrom(const PredictLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.PredictLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_request()) {
-    mutable_request()->::tensorflow::serving::PredictRequest::MergeFrom(from.request());
+    _internal_mutable_request()->::tensorflow::serving::PredictRequest::MergeFrom(from._internal_request());
   }
   if (from.has_response()) {
-    mutable_response()->::tensorflow::serving::PredictResponse::MergeFrom(from.response());
+    _internal_mutable_response()->::tensorflow::serving::PredictResponse::MergeFrom(from._internal_response());
   }
 }
 
@@ -1483,30 +1112,15 @@ bool PredictLog::IsInitialized() const {
   return true;
 }
 
-void PredictLog::Swap(PredictLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    PredictLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void PredictLog::UnsafeArenaSwap(PredictLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void PredictLog::InternalSwap(PredictLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(request_, other->request_);
-  swap(response_, other->response_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(PredictLog, response_)
+      + sizeof(PredictLog::response_)
+      - PROTOBUF_FIELD_OFFSET(PredictLog, request_)>(
+          reinterpret_cast<char*>(&request_),
+          reinterpret_cast<char*>(&other->request_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PredictLog::GetMetadata() const {
@@ -1522,85 +1136,47 @@ void MultiInferenceLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_MultiInferenceLog_default_instance_._instance.get_mutable()->response_ = const_cast< ::tensorflow::serving::MultiInferenceResponse*>(
       ::tensorflow::serving::MultiInferenceResponse::internal_default_instance());
 }
-class MultiInferenceLog::HasBitSetters {
+class MultiInferenceLog::_Internal {
  public:
   static const ::tensorflow::serving::MultiInferenceRequest& request(const MultiInferenceLog* msg);
   static const ::tensorflow::serving::MultiInferenceResponse& response(const MultiInferenceLog* msg);
 };
 
 const ::tensorflow::serving::MultiInferenceRequest&
-MultiInferenceLog::HasBitSetters::request(const MultiInferenceLog* msg) {
+MultiInferenceLog::_Internal::request(const MultiInferenceLog* msg) {
   return *msg->request_;
 }
 const ::tensorflow::serving::MultiInferenceResponse&
-MultiInferenceLog::HasBitSetters::response(const MultiInferenceLog* msg) {
+MultiInferenceLog::_Internal::response(const MultiInferenceLog* msg) {
   return *msg->response_;
 }
-void MultiInferenceLog::unsafe_arena_set_allocated_request(
-    ::tensorflow::serving::MultiInferenceRequest* request) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete request_;
-  }
-  request_ = request;
-  if (request) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.MultiInferenceLog.request)
-}
 void MultiInferenceLog::clear_request() {
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
 }
-void MultiInferenceLog::unsafe_arena_set_allocated_response(
-    ::tensorflow::serving::MultiInferenceResponse* response) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete response_;
-  }
-  response_ = response;
-  if (response) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.MultiInferenceLog.response)
-}
 void MultiInferenceLog::clear_response() {
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int MultiInferenceLog::kRequestFieldNumber;
-const int MultiInferenceLog::kResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-MultiInferenceLog::MultiInferenceLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.MultiInferenceLog)
-}
 MultiInferenceLog::MultiInferenceLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.MultiInferenceLog)
 }
 MultiInferenceLog::MultiInferenceLog(const MultiInferenceLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_request()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_request()) {
     request_ = new ::tensorflow::serving::MultiInferenceRequest(*from.request_);
   } else {
     request_ = nullptr;
   }
-  if (from.has_response()) {
+  if (from._internal_has_response()) {
     response_ = new ::tensorflow::serving::MultiInferenceResponse(*from.response_);
   } else {
     response_ = nullptr;
@@ -1618,10 +1194,11 @@ void MultiInferenceLog::SharedCtor() {
 MultiInferenceLog::~MultiInferenceLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.MultiInferenceLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void MultiInferenceLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
 }
@@ -1647,21 +1224,20 @@ void MultiInferenceLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* MultiInferenceLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1670,14 +1246,14 @@ const char* MultiInferenceLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       // .tensorflow.serving.MultiInferenceRequest request = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.MultiInferenceResponse response = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1687,7 +1263,9 @@ const char* MultiInferenceLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1700,108 +1278,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool MultiInferenceLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.MultiInferenceLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.MultiInferenceRequest request = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.MultiInferenceResponse response = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.MultiInferenceLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.MultiInferenceLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void MultiInferenceLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.MultiInferenceLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.MultiInferenceRequest request = 1;
-  if (this->has_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::request(this), output);
-  }
-
-  // .tensorflow.serving.MultiInferenceResponse response = 2;
-  if (this->has_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::response(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.MultiInferenceLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* MultiInferenceLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* MultiInferenceLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.MultiInferenceLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.MultiInferenceRequest request = 1;
   if (this->has_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::request(this), target);
+      InternalWriteMessage(
+        1, _Internal::request(this), target, stream);
   }
 
   // .tensorflow.serving.MultiInferenceResponse response = 2;
   if (this->has_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::response(this), target);
+      InternalWriteMessage(
+        2, _Internal::response(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.MultiInferenceLog)
   return target;
@@ -1811,11 +1313,6 @@ size_t MultiInferenceLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.MultiInferenceLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1834,6 +1331,10 @@ size_t MultiInferenceLog::ByteSizeLong() const {
         *response_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -1857,15 +1358,15 @@ void MultiInferenceLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void MultiInferenceLog::MergeFrom(const MultiInferenceLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.MultiInferenceLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_request()) {
-    mutable_request()->::tensorflow::serving::MultiInferenceRequest::MergeFrom(from.request());
+    _internal_mutable_request()->::tensorflow::serving::MultiInferenceRequest::MergeFrom(from._internal_request());
   }
   if (from.has_response()) {
-    mutable_response()->::tensorflow::serving::MultiInferenceResponse::MergeFrom(from.response());
+    _internal_mutable_response()->::tensorflow::serving::MultiInferenceResponse::MergeFrom(from._internal_response());
   }
 }
 
@@ -1887,30 +1388,15 @@ bool MultiInferenceLog::IsInitialized() const {
   return true;
 }
 
-void MultiInferenceLog::Swap(MultiInferenceLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    MultiInferenceLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void MultiInferenceLog::UnsafeArenaSwap(MultiInferenceLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void MultiInferenceLog::InternalSwap(MultiInferenceLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(request_, other->request_);
-  swap(response_, other->response_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(MultiInferenceLog, response_)
+      + sizeof(MultiInferenceLog::response_)
+      - PROTOBUF_FIELD_OFFSET(MultiInferenceLog, request_)>(
+          reinterpret_cast<char*>(&request_),
+          reinterpret_cast<char*>(&other->request_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata MultiInferenceLog::GetMetadata() const {
@@ -1926,85 +1412,47 @@ void SessionRunLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_SessionRunLog_default_instance_._instance.get_mutable()->response_ = const_cast< ::tensorflow::serving::SessionRunResponse*>(
       ::tensorflow::serving::SessionRunResponse::internal_default_instance());
 }
-class SessionRunLog::HasBitSetters {
+class SessionRunLog::_Internal {
  public:
   static const ::tensorflow::serving::SessionRunRequest& request(const SessionRunLog* msg);
   static const ::tensorflow::serving::SessionRunResponse& response(const SessionRunLog* msg);
 };
 
 const ::tensorflow::serving::SessionRunRequest&
-SessionRunLog::HasBitSetters::request(const SessionRunLog* msg) {
+SessionRunLog::_Internal::request(const SessionRunLog* msg) {
   return *msg->request_;
 }
 const ::tensorflow::serving::SessionRunResponse&
-SessionRunLog::HasBitSetters::response(const SessionRunLog* msg) {
+SessionRunLog::_Internal::response(const SessionRunLog* msg) {
   return *msg->response_;
 }
-void SessionRunLog::unsafe_arena_set_allocated_request(
-    ::tensorflow::serving::SessionRunRequest* request) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete request_;
-  }
-  request_ = request;
-  if (request) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.SessionRunLog.request)
-}
 void SessionRunLog::clear_request() {
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
 }
-void SessionRunLog::unsafe_arena_set_allocated_response(
-    ::tensorflow::serving::SessionRunResponse* response) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete response_;
-  }
-  response_ = response;
-  if (response) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.SessionRunLog.response)
-}
 void SessionRunLog::clear_response() {
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int SessionRunLog::kRequestFieldNumber;
-const int SessionRunLog::kResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-SessionRunLog::SessionRunLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.SessionRunLog)
-}
 SessionRunLog::SessionRunLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.SessionRunLog)
 }
 SessionRunLog::SessionRunLog(const SessionRunLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_request()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_request()) {
     request_ = new ::tensorflow::serving::SessionRunRequest(*from.request_);
   } else {
     request_ = nullptr;
   }
-  if (from.has_response()) {
+  if (from._internal_has_response()) {
     response_ = new ::tensorflow::serving::SessionRunResponse(*from.response_);
   } else {
     response_ = nullptr;
@@ -2022,10 +1470,11 @@ void SessionRunLog::SharedCtor() {
 SessionRunLog::~SessionRunLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.SessionRunLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SessionRunLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete request_;
   if (this != internal_default_instance()) delete response_;
 }
@@ -2051,21 +1500,20 @@ void SessionRunLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && request_ != nullptr) {
+  if (GetArena() == nullptr && request_ != nullptr) {
     delete request_;
   }
   request_ = nullptr;
-  if (GetArenaNoVirtual() == nullptr && response_ != nullptr) {
+  if (GetArena() == nullptr && response_ != nullptr) {
     delete response_;
   }
   response_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* SessionRunLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -2074,14 +1522,14 @@ const char* SessionRunLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // .tensorflow.serving.SessionRunRequest request = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.SessionRunResponse response = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2091,7 +1539,9 @@ const char* SessionRunLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2104,108 +1554,32 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool SessionRunLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.SessionRunLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.SessionRunRequest request = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.SessionRunResponse response = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.SessionRunLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.SessionRunLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void SessionRunLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.SessionRunLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.SessionRunRequest request = 1;
-  if (this->has_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::request(this), output);
-  }
-
-  // .tensorflow.serving.SessionRunResponse response = 2;
-  if (this->has_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::response(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.SessionRunLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* SessionRunLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* SessionRunLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.SessionRunLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.SessionRunRequest request = 1;
   if (this->has_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::request(this), target);
+      InternalWriteMessage(
+        1, _Internal::request(this), target, stream);
   }
 
   // .tensorflow.serving.SessionRunResponse response = 2;
   if (this->has_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::response(this), target);
+      InternalWriteMessage(
+        2, _Internal::response(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.SessionRunLog)
   return target;
@@ -2215,11 +1589,6 @@ size_t SessionRunLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.SessionRunLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2238,6 +1607,10 @@ size_t SessionRunLog::ByteSizeLong() const {
         *response_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2261,15 +1634,15 @@ void SessionRunLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void SessionRunLog::MergeFrom(const SessionRunLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.SessionRunLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_request()) {
-    mutable_request()->::tensorflow::serving::SessionRunRequest::MergeFrom(from.request());
+    _internal_mutable_request()->::tensorflow::serving::SessionRunRequest::MergeFrom(from._internal_request());
   }
   if (from.has_response()) {
-    mutable_response()->::tensorflow::serving::SessionRunResponse::MergeFrom(from.response());
+    _internal_mutable_response()->::tensorflow::serving::SessionRunResponse::MergeFrom(from._internal_response());
   }
 }
 
@@ -2291,30 +1664,15 @@ bool SessionRunLog::IsInitialized() const {
   return true;
 }
 
-void SessionRunLog::Swap(SessionRunLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    SessionRunLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void SessionRunLog::UnsafeArenaSwap(SessionRunLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void SessionRunLog::InternalSwap(SessionRunLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(request_, other->request_);
-  swap(response_, other->response_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(SessionRunLog, response_)
+      + sizeof(SessionRunLog::response_)
+      - PROTOBUF_FIELD_OFFSET(SessionRunLog, request_)>(
+          reinterpret_cast<char*>(&request_),
+          reinterpret_cast<char*>(&other->request_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SessionRunLog::GetMetadata() const {
@@ -2338,7 +1696,7 @@ void PredictionLog::InitAsDefaultInstance() {
   ::tensorflow::serving::_PredictionLog_default_instance_.session_run_log_ = const_cast< ::tensorflow::serving::SessionRunLog*>(
       ::tensorflow::serving::SessionRunLog::internal_default_instance());
 }
-class PredictionLog::HasBitSetters {
+class PredictionLog::_Internal {
  public:
   static const ::tensorflow::serving::LogMetadata& log_metadata(const PredictionLog* msg);
   static const ::tensorflow::serving::ClassifyLog& classify_log(const PredictionLog* msg);
@@ -2349,50 +1707,37 @@ class PredictionLog::HasBitSetters {
 };
 
 const ::tensorflow::serving::LogMetadata&
-PredictionLog::HasBitSetters::log_metadata(const PredictionLog* msg) {
+PredictionLog::_Internal::log_metadata(const PredictionLog* msg) {
   return *msg->log_metadata_;
 }
 const ::tensorflow::serving::ClassifyLog&
-PredictionLog::HasBitSetters::classify_log(const PredictionLog* msg) {
+PredictionLog::_Internal::classify_log(const PredictionLog* msg) {
   return *msg->log_type_.classify_log_;
 }
 const ::tensorflow::serving::RegressLog&
-PredictionLog::HasBitSetters::regress_log(const PredictionLog* msg) {
+PredictionLog::_Internal::regress_log(const PredictionLog* msg) {
   return *msg->log_type_.regress_log_;
 }
 const ::tensorflow::serving::PredictLog&
-PredictionLog::HasBitSetters::predict_log(const PredictionLog* msg) {
+PredictionLog::_Internal::predict_log(const PredictionLog* msg) {
   return *msg->log_type_.predict_log_;
 }
 const ::tensorflow::serving::MultiInferenceLog&
-PredictionLog::HasBitSetters::multi_inference_log(const PredictionLog* msg) {
+PredictionLog::_Internal::multi_inference_log(const PredictionLog* msg) {
   return *msg->log_type_.multi_inference_log_;
 }
 const ::tensorflow::serving::SessionRunLog&
-PredictionLog::HasBitSetters::session_run_log(const PredictionLog* msg) {
+PredictionLog::_Internal::session_run_log(const PredictionLog* msg) {
   return *msg->log_type_.session_run_log_;
 }
-void PredictionLog::unsafe_arena_set_allocated_log_metadata(
-    ::tensorflow::serving::LogMetadata* log_metadata) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete log_metadata_;
-  }
-  log_metadata_ = log_metadata;
-  if (log_metadata) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.serving.PredictionLog.log_metadata)
-}
 void PredictionLog::clear_log_metadata() {
-  if (GetArenaNoVirtual() == nullptr && log_metadata_ != nullptr) {
+  if (GetArena() == nullptr && log_metadata_ != nullptr) {
     delete log_metadata_;
   }
   log_metadata_ = nullptr;
 }
 void PredictionLog::set_allocated_classify_log(::tensorflow::serving::ClassifyLog* classify_log) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_log_type();
   if (classify_log) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -2407,7 +1752,7 @@ void PredictionLog::set_allocated_classify_log(::tensorflow::serving::ClassifyLo
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.PredictionLog.classify_log)
 }
 void PredictionLog::set_allocated_regress_log(::tensorflow::serving::RegressLog* regress_log) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_log_type();
   if (regress_log) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -2422,7 +1767,7 @@ void PredictionLog::set_allocated_regress_log(::tensorflow::serving::RegressLog*
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.PredictionLog.regress_log)
 }
 void PredictionLog::set_allocated_predict_log(::tensorflow::serving::PredictLog* predict_log) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_log_type();
   if (predict_log) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -2437,7 +1782,7 @@ void PredictionLog::set_allocated_predict_log(::tensorflow::serving::PredictLog*
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.PredictionLog.predict_log)
 }
 void PredictionLog::set_allocated_multi_inference_log(::tensorflow::serving::MultiInferenceLog* multi_inference_log) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_log_type();
   if (multi_inference_log) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -2452,7 +1797,7 @@ void PredictionLog::set_allocated_multi_inference_log(::tensorflow::serving::Mul
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.PredictionLog.multi_inference_log)
 }
 void PredictionLog::set_allocated_session_run_log(::tensorflow::serving::SessionRunLog* session_run_log) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_log_type();
   if (session_run_log) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -2466,32 +1811,16 @@ void PredictionLog::set_allocated_session_run_log(::tensorflow::serving::Session
   }
   // @@protoc_insertion_point(field_set_allocated:tensorflow.serving.PredictionLog.session_run_log)
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int PredictionLog::kLogMetadataFieldNumber;
-const int PredictionLog::kClassifyLogFieldNumber;
-const int PredictionLog::kRegressLogFieldNumber;
-const int PredictionLog::kPredictLogFieldNumber;
-const int PredictionLog::kMultiInferenceLogFieldNumber;
-const int PredictionLog::kSessionRunLogFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-PredictionLog::PredictionLog()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.serving.PredictionLog)
-}
 PredictionLog::PredictionLog(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.serving.PredictionLog)
 }
 PredictionLog::PredictionLog(const PredictionLog& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  if (from.has_log_metadata()) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  if (from._internal_has_log_metadata()) {
     log_metadata_ = new ::tensorflow::serving::LogMetadata(*from.log_metadata_);
   } else {
     log_metadata_ = nullptr;
@@ -2499,23 +1828,23 @@ PredictionLog::PredictionLog(const PredictionLog& from)
   clear_has_log_type();
   switch (from.log_type_case()) {
     case kClassifyLog: {
-      mutable_classify_log()->::tensorflow::serving::ClassifyLog::MergeFrom(from.classify_log());
+      _internal_mutable_classify_log()->::tensorflow::serving::ClassifyLog::MergeFrom(from._internal_classify_log());
       break;
     }
     case kRegressLog: {
-      mutable_regress_log()->::tensorflow::serving::RegressLog::MergeFrom(from.regress_log());
+      _internal_mutable_regress_log()->::tensorflow::serving::RegressLog::MergeFrom(from._internal_regress_log());
       break;
     }
     case kPredictLog: {
-      mutable_predict_log()->::tensorflow::serving::PredictLog::MergeFrom(from.predict_log());
+      _internal_mutable_predict_log()->::tensorflow::serving::PredictLog::MergeFrom(from._internal_predict_log());
       break;
     }
     case kMultiInferenceLog: {
-      mutable_multi_inference_log()->::tensorflow::serving::MultiInferenceLog::MergeFrom(from.multi_inference_log());
+      _internal_mutable_multi_inference_log()->::tensorflow::serving::MultiInferenceLog::MergeFrom(from._internal_multi_inference_log());
       break;
     }
     case kSessionRunLog: {
-      mutable_session_run_log()->::tensorflow::serving::SessionRunLog::MergeFrom(from.session_run_log());
+      _internal_mutable_session_run_log()->::tensorflow::serving::SessionRunLog::MergeFrom(from._internal_session_run_log());
       break;
     }
     case LOG_TYPE_NOT_SET: {
@@ -2534,10 +1863,11 @@ void PredictionLog::SharedCtor() {
 PredictionLog::~PredictionLog() {
   // @@protoc_insertion_point(destructor:tensorflow.serving.PredictionLog)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void PredictionLog::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete log_metadata_;
   if (has_log_type()) {
     clear_log_type();
@@ -2563,31 +1893,31 @@ void PredictionLog::clear_log_type() {
 // @@protoc_insertion_point(one_of_clear_start:tensorflow.serving.PredictionLog)
   switch (log_type_case()) {
     case kClassifyLog: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete log_type_.classify_log_;
       }
       break;
     }
     case kRegressLog: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete log_type_.regress_log_;
       }
       break;
     }
     case kPredictLog: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete log_type_.predict_log_;
       }
       break;
     }
     case kMultiInferenceLog: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete log_type_.multi_inference_log_;
       }
       break;
     }
     case kSessionRunLog: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete log_type_.session_run_log_;
       }
       break;
@@ -2606,18 +1936,17 @@ void PredictionLog::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == nullptr && log_metadata_ != nullptr) {
+  if (GetArena() == nullptr && log_metadata_ != nullptr) {
     delete log_metadata_;
   }
   log_metadata_ = nullptr;
   clear_log_type();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* PredictionLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -2626,42 +1955,42 @@ const char* PredictionLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // .tensorflow.serving.LogMetadata log_metadata = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_log_metadata(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_log_metadata(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.ClassifyLog classify_log = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_classify_log(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_classify_log(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.RegressLog regress_log = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(mutable_regress_log(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_regress_log(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.MultiInferenceLog multi_inference_log = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_multi_inference_log(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_multi_inference_log(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.SessionRunLog session_run_log = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_session_run_log(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_session_run_log(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.serving.PredictLog predict_log = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(mutable_predict_log(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_predict_log(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2671,7 +2000,9 @@ const char* PredictionLog::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2684,204 +2015,64 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool PredictionLog::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.serving.PredictionLog)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.serving.LogMetadata log_metadata = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_log_metadata()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.serving.ClassifyLog classify_log = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_classify_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.RegressLog regress_log = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_regress_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.MultiInferenceLog multi_inference_log = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_multi_inference_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.SessionRunLog session_run_log = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_session_run_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.serving.PredictLog predict_log = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_predict_log()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.serving.PredictionLog)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.serving.PredictionLog)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void PredictionLog::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.serving.PredictionLog)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.serving.LogMetadata log_metadata = 1;
-  if (this->has_log_metadata()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::log_metadata(this), output);
-  }
-
-  // .tensorflow.serving.ClassifyLog classify_log = 2;
-  if (has_classify_log()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::classify_log(this), output);
-  }
-
-  // .tensorflow.serving.RegressLog regress_log = 3;
-  if (has_regress_log()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, HasBitSetters::regress_log(this), output);
-  }
-
-  // .tensorflow.serving.MultiInferenceLog multi_inference_log = 4;
-  if (has_multi_inference_log()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::multi_inference_log(this), output);
-  }
-
-  // .tensorflow.serving.SessionRunLog session_run_log = 5;
-  if (has_session_run_log()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, HasBitSetters::session_run_log(this), output);
-  }
-
-  // .tensorflow.serving.PredictLog predict_log = 6;
-  if (has_predict_log()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, HasBitSetters::predict_log(this), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.serving.PredictionLog)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* PredictionLog::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* PredictionLog::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.serving.PredictionLog)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.serving.LogMetadata log_metadata = 1;
   if (this->has_log_metadata()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::log_metadata(this), target);
+      InternalWriteMessage(
+        1, _Internal::log_metadata(this), target, stream);
   }
 
   // .tensorflow.serving.ClassifyLog classify_log = 2;
-  if (has_classify_log()) {
+  if (_internal_has_classify_log()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::classify_log(this), target);
+      InternalWriteMessage(
+        2, _Internal::classify_log(this), target, stream);
   }
 
   // .tensorflow.serving.RegressLog regress_log = 3;
-  if (has_regress_log()) {
+  if (_internal_has_regress_log()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, HasBitSetters::regress_log(this), target);
+      InternalWriteMessage(
+        3, _Internal::regress_log(this), target, stream);
   }
 
   // .tensorflow.serving.MultiInferenceLog multi_inference_log = 4;
-  if (has_multi_inference_log()) {
+  if (_internal_has_multi_inference_log()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::multi_inference_log(this), target);
+      InternalWriteMessage(
+        4, _Internal::multi_inference_log(this), target, stream);
   }
 
   // .tensorflow.serving.SessionRunLog session_run_log = 5;
-  if (has_session_run_log()) {
+  if (_internal_has_session_run_log()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, HasBitSetters::session_run_log(this), target);
+      InternalWriteMessage(
+        5, _Internal::session_run_log(this), target, stream);
   }
 
   // .tensorflow.serving.PredictLog predict_log = 6;
-  if (has_predict_log()) {
+  if (_internal_has_predict_log()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, HasBitSetters::predict_log(this), target);
+      InternalWriteMessage(
+        6, _Internal::predict_log(this), target, stream);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.serving.PredictionLog)
   return target;
@@ -2891,11 +2082,6 @@ size_t PredictionLog::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.serving.PredictionLog)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2947,6 +2133,10 @@ size_t PredictionLog::ByteSizeLong() const {
       break;
     }
   }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2970,32 +2160,32 @@ void PredictionLog::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void PredictionLog::MergeFrom(const PredictionLog& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.serving.PredictionLog)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.has_log_metadata()) {
-    mutable_log_metadata()->::tensorflow::serving::LogMetadata::MergeFrom(from.log_metadata());
+    _internal_mutable_log_metadata()->::tensorflow::serving::LogMetadata::MergeFrom(from._internal_log_metadata());
   }
   switch (from.log_type_case()) {
     case kClassifyLog: {
-      mutable_classify_log()->::tensorflow::serving::ClassifyLog::MergeFrom(from.classify_log());
+      _internal_mutable_classify_log()->::tensorflow::serving::ClassifyLog::MergeFrom(from._internal_classify_log());
       break;
     }
     case kRegressLog: {
-      mutable_regress_log()->::tensorflow::serving::RegressLog::MergeFrom(from.regress_log());
+      _internal_mutable_regress_log()->::tensorflow::serving::RegressLog::MergeFrom(from._internal_regress_log());
       break;
     }
     case kPredictLog: {
-      mutable_predict_log()->::tensorflow::serving::PredictLog::MergeFrom(from.predict_log());
+      _internal_mutable_predict_log()->::tensorflow::serving::PredictLog::MergeFrom(from._internal_predict_log());
       break;
     }
     case kMultiInferenceLog: {
-      mutable_multi_inference_log()->::tensorflow::serving::MultiInferenceLog::MergeFrom(from.multi_inference_log());
+      _internal_mutable_multi_inference_log()->::tensorflow::serving::MultiInferenceLog::MergeFrom(from._internal_multi_inference_log());
       break;
     }
     case kSessionRunLog: {
-      mutable_session_run_log()->::tensorflow::serving::SessionRunLog::MergeFrom(from.session_run_log());
+      _internal_mutable_session_run_log()->::tensorflow::serving::SessionRunLog::MergeFrom(from._internal_session_run_log());
       break;
     }
     case LOG_TYPE_NOT_SET: {
@@ -3022,28 +2212,9 @@ bool PredictionLog::IsInitialized() const {
   return true;
 }
 
-void PredictionLog::Swap(PredictionLog* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    PredictionLog* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void PredictionLog::UnsafeArenaSwap(PredictionLog* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void PredictionLog::InternalSwap(PredictionLog* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
   swap(log_metadata_, other->log_metadata_);
   swap(log_type_, other->log_type_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);

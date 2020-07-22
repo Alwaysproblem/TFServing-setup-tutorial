@@ -5,7 +5,6 @@
 
 #include <algorithm>
 
-#include <google/protobuf/stubs/common.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite.h>
@@ -79,7 +78,7 @@ static void InitDefaultsscc_info_NewReplaySession_tensorflow_2fcore_2fprotobuf_2
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_NewReplaySession_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, InitDefaultsscc_info_NewReplaySession_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_NewReplaySession_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto}, {
       &scc_info_ListDevicesResponse_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto.base,}};
 
 static void InitDefaultsscc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto() {
@@ -94,7 +93,7 @@ static void InitDefaultsscc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_
 }
 
 ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<21> scc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 21, InitDefaultsscc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto}, {
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 21, 0, InitDefaultsscc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto}, {
       &scc_info_CreateSessionRequest_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto.base,
       &scc_info_ExtendSessionRequest_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto.base,
       &scc_info_PartialRunSetupRequest_tensorflow_2fcore_2fprotobuf_2fmaster_2eproto.base,
@@ -170,7 +169,7 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
   reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::tensorflow::_ReplayOp_default_instance_),
 };
 
-const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto[] =
+const char descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n)tensorflow/core/protobuf/replay_log.pr"
   "oto\022\ntensorflow\032%tensorflow/core/protobu"
   "f/master.proto\"\\\n\020NewReplaySession\0220\n\007de"
@@ -222,16 +221,15 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ten
   &scc_info_ReplayOp_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_once;
-static bool descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto = {
-  &descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_initialized, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto, "tensorflow/core/protobuf/replay_log.proto", 1662,
+  false, false, descriptor_table_protodef_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto, "tensorflow/core/protobuf/replay_log.proto", 1662,
   &descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_once, descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_sccs, descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto_deps, 2, 1,
   schemas, file_default_instances, TableStruct_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto::offsets,
   file_level_metadata_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto, 2, file_level_enum_descriptors_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto, file_level_service_descriptors_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto,
 };
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto), true);
+static bool dynamic_init_dummy_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_tensorflow_2fcore_2fprotobuf_2freplay_5flog_2eproto)), true);
 namespace tensorflow {
 
 // ===================================================================
@@ -240,61 +238,36 @@ void NewReplaySession::InitAsDefaultInstance() {
   ::tensorflow::_NewReplaySession_default_instance_._instance.get_mutable()->devices_ = const_cast< ::tensorflow::ListDevicesResponse*>(
       ::tensorflow::ListDevicesResponse::internal_default_instance());
 }
-class NewReplaySession::HasBitSetters {
+class NewReplaySession::_Internal {
  public:
   static const ::tensorflow::ListDevicesResponse& devices(const NewReplaySession* msg);
 };
 
 const ::tensorflow::ListDevicesResponse&
-NewReplaySession::HasBitSetters::devices(const NewReplaySession* msg) {
+NewReplaySession::_Internal::devices(const NewReplaySession* msg) {
   return *msg->devices_;
 }
-void NewReplaySession::unsafe_arena_set_allocated_devices(
-    ::tensorflow::ListDevicesResponse* devices) {
-  if (GetArenaNoVirtual() == nullptr) {
-    delete devices_;
-  }
-  devices_ = devices;
-  if (devices) {
-    
-  } else {
-    
-  }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:tensorflow.NewReplaySession.devices)
-}
 void NewReplaySession::clear_devices() {
-  if (GetArenaNoVirtual() == nullptr && devices_ != nullptr) {
+  if (GetArena() == nullptr && devices_ != nullptr) {
     delete devices_;
   }
   devices_ = nullptr;
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int NewReplaySession::kDevicesFieldNumber;
-const int NewReplaySession::kSessionHandleFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-NewReplaySession::NewReplaySession()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.NewReplaySession)
-}
 NewReplaySession::NewReplaySession(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.NewReplaySession)
 }
 NewReplaySession::NewReplaySession(const NewReplaySession& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   session_handle_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-  if (from.session_handle().size() > 0) {
-    session_handle_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.session_handle(),
-      GetArenaNoVirtual());
+  if (!from._internal_session_handle().empty()) {
+    session_handle_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_session_handle(),
+      GetArena());
   }
-  if (from.has_devices()) {
+  if (from._internal_has_devices()) {
     devices_ = new ::tensorflow::ListDevicesResponse(*from.devices_);
   } else {
     devices_ = nullptr;
@@ -311,10 +284,11 @@ void NewReplaySession::SharedCtor() {
 NewReplaySession::~NewReplaySession() {
   // @@protoc_insertion_point(destructor:tensorflow.NewReplaySession)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void NewReplaySession::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   session_handle_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete devices_;
 }
@@ -340,18 +314,17 @@ void NewReplaySession::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  session_handle_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
-  if (GetArenaNoVirtual() == nullptr && devices_ != nullptr) {
+  session_handle_.ClearToEmpty(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  if (GetArena() == nullptr && devices_ != nullptr) {
     delete devices_;
   }
   devices_ = nullptr;
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* NewReplaySession::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -360,14 +333,16 @@ const char* NewReplaySession::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // .tensorflow.ListDevicesResponse devices = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_devices(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_devices(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // string session_handle = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8(mutable_session_handle(), ptr, ctx, "tensorflow.NewReplaySession.session_handle");
+          auto str = _internal_mutable_session_handle();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "tensorflow.NewReplaySession.session_handle"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -377,7 +352,9 @@ const char* NewReplaySession::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -390,120 +367,34 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool NewReplaySession::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.NewReplaySession)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.ListDevicesResponse devices = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_devices()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // string session_handle = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadString(
-                input, this->mutable_session_handle()));
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-            this->session_handle().data(), static_cast<int>(this->session_handle().length()),
-            ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::PARSE,
-            "tensorflow.NewReplaySession.session_handle"));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.NewReplaySession)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.NewReplaySession)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void NewReplaySession::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.NewReplaySession)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.ListDevicesResponse devices = 1;
-  if (this->has_devices()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::devices(this), output);
-  }
-
-  // string session_handle = 2;
-  if (this->session_handle().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->session_handle().data(), static_cast<int>(this->session_handle().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "tensorflow.NewReplaySession.session_handle");
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringMaybeAliased(
-      2, this->session_handle(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.NewReplaySession)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* NewReplaySession::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* NewReplaySession::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.NewReplaySession)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.ListDevicesResponse devices = 1;
   if (this->has_devices()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::devices(this), target);
+      InternalWriteMessage(
+        1, _Internal::devices(this), target, stream);
   }
 
   // string session_handle = 2;
   if (this->session_handle().size() > 0) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->session_handle().data(), static_cast<int>(this->session_handle().length()),
+      this->_internal_session_handle().data(), static_cast<int>(this->_internal_session_handle().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
       "tensorflow.NewReplaySession.session_handle");
-    target =
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteStringToArray(
-        2, this->session_handle(), target);
+    target = stream->WriteStringMaybeAliased(
+        2, this->_internal_session_handle(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.NewReplaySession)
   return target;
@@ -513,11 +404,6 @@ size_t NewReplaySession::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.NewReplaySession)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -526,7 +412,7 @@ size_t NewReplaySession::ByteSizeLong() const {
   if (this->session_handle().size() > 0) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->session_handle());
+        this->_internal_session_handle());
   }
 
   // .tensorflow.ListDevicesResponse devices = 1;
@@ -536,6 +422,10 @@ size_t NewReplaySession::ByteSizeLong() const {
         *devices_);
   }
 
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -559,15 +449,15 @@ void NewReplaySession::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void NewReplaySession::MergeFrom(const NewReplaySession& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.NewReplaySession)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from.session_handle().size() > 0) {
-    set_session_handle(from.session_handle());
+    _internal_set_session_handle(from._internal_session_handle());
   }
   if (from.has_devices()) {
-    mutable_devices()->::tensorflow::ListDevicesResponse::MergeFrom(from.devices());
+    _internal_mutable_devices()->::tensorflow::ListDevicesResponse::MergeFrom(from._internal_devices());
   }
 }
 
@@ -589,30 +479,10 @@ bool NewReplaySession::IsInitialized() const {
   return true;
 }
 
-void NewReplaySession::Swap(NewReplaySession* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    NewReplaySession* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void NewReplaySession::UnsafeArenaSwap(NewReplaySession* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void NewReplaySession::InternalSwap(NewReplaySession* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  session_handle_.Swap(&other->session_handle_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-    GetArenaNoVirtual());
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  session_handle_.Swap(&other->session_handle_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   swap(devices_, other->devices_);
 }
 
@@ -667,7 +537,7 @@ void ReplayOp::InitAsDefaultInstance() {
   ::tensorflow::_ReplayOp_default_instance_.release_callable_response_ = const_cast< ::tensorflow::ReleaseCallableResponse*>(
       ::tensorflow::ReleaseCallableResponse::internal_default_instance());
 }
-class ReplayOp::HasBitSetters {
+class ReplayOp::_Internal {
  public:
   static const ::tensorflow::CreateSessionRequest& create_session(const ReplayOp* msg);
   static const ::tensorflow::ExtendSessionRequest& extend_session(const ReplayOp* msg);
@@ -693,91 +563,91 @@ class ReplayOp::HasBitSetters {
 };
 
 const ::tensorflow::CreateSessionRequest&
-ReplayOp::HasBitSetters::create_session(const ReplayOp* msg) {
+ReplayOp::_Internal::create_session(const ReplayOp* msg) {
   return *msg->op_.create_session_;
 }
 const ::tensorflow::ExtendSessionRequest&
-ReplayOp::HasBitSetters::extend_session(const ReplayOp* msg) {
+ReplayOp::_Internal::extend_session(const ReplayOp* msg) {
   return *msg->op_.extend_session_;
 }
 const ::tensorflow::PartialRunSetupRequest&
-ReplayOp::HasBitSetters::partial_run_setup(const ReplayOp* msg) {
+ReplayOp::_Internal::partial_run_setup(const ReplayOp* msg) {
   return *msg->op_.partial_run_setup_;
 }
 const ::tensorflow::RunStepRequest&
-ReplayOp::HasBitSetters::run_step(const ReplayOp* msg) {
+ReplayOp::_Internal::run_step(const ReplayOp* msg) {
   return *msg->op_.run_step_;
 }
 const ::tensorflow::CloseSessionRequest&
-ReplayOp::HasBitSetters::close_session(const ReplayOp* msg) {
+ReplayOp::_Internal::close_session(const ReplayOp* msg) {
   return *msg->op_.close_session_;
 }
 const ::tensorflow::ListDevicesRequest&
-ReplayOp::HasBitSetters::list_devices(const ReplayOp* msg) {
+ReplayOp::_Internal::list_devices(const ReplayOp* msg) {
   return *msg->op_.list_devices_;
 }
 const ::tensorflow::ResetRequest&
-ReplayOp::HasBitSetters::reset_request(const ReplayOp* msg) {
+ReplayOp::_Internal::reset_request(const ReplayOp* msg) {
   return *msg->op_.reset_request_;
 }
 const ::tensorflow::MakeCallableRequest&
-ReplayOp::HasBitSetters::make_callable(const ReplayOp* msg) {
+ReplayOp::_Internal::make_callable(const ReplayOp* msg) {
   return *msg->op_.make_callable_;
 }
 const ::tensorflow::RunCallableRequest&
-ReplayOp::HasBitSetters::run_callable(const ReplayOp* msg) {
+ReplayOp::_Internal::run_callable(const ReplayOp* msg) {
   return *msg->op_.run_callable_;
 }
 const ::tensorflow::ReleaseCallableRequest&
-ReplayOp::HasBitSetters::release_callable(const ReplayOp* msg) {
+ReplayOp::_Internal::release_callable(const ReplayOp* msg) {
   return *msg->op_.release_callable_;
 }
 const ::tensorflow::NewReplaySession&
-ReplayOp::HasBitSetters::new_replay_session(const ReplayOp* msg) {
+ReplayOp::_Internal::new_replay_session(const ReplayOp* msg) {
   return *msg->op_.new_replay_session_;
 }
 const ::tensorflow::CreateSessionResponse&
-ReplayOp::HasBitSetters::create_session_response(const ReplayOp* msg) {
+ReplayOp::_Internal::create_session_response(const ReplayOp* msg) {
   return *msg->response_.create_session_response_;
 }
 const ::tensorflow::ExtendSessionResponse&
-ReplayOp::HasBitSetters::extend_session_response(const ReplayOp* msg) {
+ReplayOp::_Internal::extend_session_response(const ReplayOp* msg) {
   return *msg->response_.extend_session_response_;
 }
 const ::tensorflow::PartialRunSetupResponse&
-ReplayOp::HasBitSetters::partial_run_setup_response(const ReplayOp* msg) {
+ReplayOp::_Internal::partial_run_setup_response(const ReplayOp* msg) {
   return *msg->response_.partial_run_setup_response_;
 }
 const ::tensorflow::RunStepResponse&
-ReplayOp::HasBitSetters::run_step_response(const ReplayOp* msg) {
+ReplayOp::_Internal::run_step_response(const ReplayOp* msg) {
   return *msg->response_.run_step_response_;
 }
 const ::tensorflow::CloseSessionResponse&
-ReplayOp::HasBitSetters::close_session_response(const ReplayOp* msg) {
+ReplayOp::_Internal::close_session_response(const ReplayOp* msg) {
   return *msg->response_.close_session_response_;
 }
 const ::tensorflow::ListDevicesResponse&
-ReplayOp::HasBitSetters::list_devices_response(const ReplayOp* msg) {
+ReplayOp::_Internal::list_devices_response(const ReplayOp* msg) {
   return *msg->response_.list_devices_response_;
 }
 const ::tensorflow::ResetResponse&
-ReplayOp::HasBitSetters::reset_request_response(const ReplayOp* msg) {
+ReplayOp::_Internal::reset_request_response(const ReplayOp* msg) {
   return *msg->response_.reset_request_response_;
 }
 const ::tensorflow::MakeCallableResponse&
-ReplayOp::HasBitSetters::make_callable_response(const ReplayOp* msg) {
+ReplayOp::_Internal::make_callable_response(const ReplayOp* msg) {
   return *msg->response_.make_callable_response_;
 }
 const ::tensorflow::RunCallableResponse&
-ReplayOp::HasBitSetters::run_callable_response(const ReplayOp* msg) {
+ReplayOp::_Internal::run_callable_response(const ReplayOp* msg) {
   return *msg->response_.run_callable_response_;
 }
 const ::tensorflow::ReleaseCallableResponse&
-ReplayOp::HasBitSetters::release_callable_response(const ReplayOp* msg) {
+ReplayOp::_Internal::release_callable_response(const ReplayOp* msg) {
   return *msg->response_.release_callable_response_;
 }
 void ReplayOp::set_allocated_create_session(::tensorflow::CreateSessionRequest* create_session) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (create_session) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -792,15 +662,15 @@ void ReplayOp::set_allocated_create_session(::tensorflow::CreateSessionRequest* 
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.create_session)
 }
 void ReplayOp::clear_create_session() {
-  if (has_create_session()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_create_session()) {
+    if (GetArena() == nullptr) {
       delete op_.create_session_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_extend_session(::tensorflow::ExtendSessionRequest* extend_session) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (extend_session) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -815,15 +685,15 @@ void ReplayOp::set_allocated_extend_session(::tensorflow::ExtendSessionRequest* 
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.extend_session)
 }
 void ReplayOp::clear_extend_session() {
-  if (has_extend_session()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_extend_session()) {
+    if (GetArena() == nullptr) {
       delete op_.extend_session_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_partial_run_setup(::tensorflow::PartialRunSetupRequest* partial_run_setup) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (partial_run_setup) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -838,15 +708,15 @@ void ReplayOp::set_allocated_partial_run_setup(::tensorflow::PartialRunSetupRequ
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.partial_run_setup)
 }
 void ReplayOp::clear_partial_run_setup() {
-  if (has_partial_run_setup()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_partial_run_setup()) {
+    if (GetArena() == nullptr) {
       delete op_.partial_run_setup_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_run_step(::tensorflow::RunStepRequest* run_step) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (run_step) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -861,15 +731,15 @@ void ReplayOp::set_allocated_run_step(::tensorflow::RunStepRequest* run_step) {
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.run_step)
 }
 void ReplayOp::clear_run_step() {
-  if (has_run_step()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_run_step()) {
+    if (GetArena() == nullptr) {
       delete op_.run_step_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_close_session(::tensorflow::CloseSessionRequest* close_session) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (close_session) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -884,15 +754,15 @@ void ReplayOp::set_allocated_close_session(::tensorflow::CloseSessionRequest* cl
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.close_session)
 }
 void ReplayOp::clear_close_session() {
-  if (has_close_session()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_close_session()) {
+    if (GetArena() == nullptr) {
       delete op_.close_session_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_list_devices(::tensorflow::ListDevicesRequest* list_devices) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (list_devices) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -907,15 +777,15 @@ void ReplayOp::set_allocated_list_devices(::tensorflow::ListDevicesRequest* list
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.list_devices)
 }
 void ReplayOp::clear_list_devices() {
-  if (has_list_devices()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_list_devices()) {
+    if (GetArena() == nullptr) {
       delete op_.list_devices_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_reset_request(::tensorflow::ResetRequest* reset_request) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (reset_request) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -930,15 +800,15 @@ void ReplayOp::set_allocated_reset_request(::tensorflow::ResetRequest* reset_req
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.reset_request)
 }
 void ReplayOp::clear_reset_request() {
-  if (has_reset_request()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_reset_request()) {
+    if (GetArena() == nullptr) {
       delete op_.reset_request_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_make_callable(::tensorflow::MakeCallableRequest* make_callable) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (make_callable) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -953,15 +823,15 @@ void ReplayOp::set_allocated_make_callable(::tensorflow::MakeCallableRequest* ma
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.make_callable)
 }
 void ReplayOp::clear_make_callable() {
-  if (has_make_callable()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_make_callable()) {
+    if (GetArena() == nullptr) {
       delete op_.make_callable_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_run_callable(::tensorflow::RunCallableRequest* run_callable) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (run_callable) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -976,15 +846,15 @@ void ReplayOp::set_allocated_run_callable(::tensorflow::RunCallableRequest* run_
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.run_callable)
 }
 void ReplayOp::clear_run_callable() {
-  if (has_run_callable()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_run_callable()) {
+    if (GetArena() == nullptr) {
       delete op_.run_callable_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_release_callable(::tensorflow::ReleaseCallableRequest* release_callable) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (release_callable) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -999,15 +869,15 @@ void ReplayOp::set_allocated_release_callable(::tensorflow::ReleaseCallableReque
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.release_callable)
 }
 void ReplayOp::clear_release_callable() {
-  if (has_release_callable()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_release_callable()) {
+    if (GetArena() == nullptr) {
       delete op_.release_callable_;
     }
     clear_has_op();
   }
 }
 void ReplayOp::set_allocated_new_replay_session(::tensorflow::NewReplaySession* new_replay_session) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_op();
   if (new_replay_session) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1022,7 +892,7 @@ void ReplayOp::set_allocated_new_replay_session(::tensorflow::NewReplaySession* 
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.new_replay_session)
 }
 void ReplayOp::set_allocated_create_session_response(::tensorflow::CreateSessionResponse* create_session_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (create_session_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1037,15 +907,15 @@ void ReplayOp::set_allocated_create_session_response(::tensorflow::CreateSession
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.create_session_response)
 }
 void ReplayOp::clear_create_session_response() {
-  if (has_create_session_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_create_session_response()) {
+    if (GetArena() == nullptr) {
       delete response_.create_session_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_extend_session_response(::tensorflow::ExtendSessionResponse* extend_session_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (extend_session_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1060,15 +930,15 @@ void ReplayOp::set_allocated_extend_session_response(::tensorflow::ExtendSession
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.extend_session_response)
 }
 void ReplayOp::clear_extend_session_response() {
-  if (has_extend_session_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_extend_session_response()) {
+    if (GetArena() == nullptr) {
       delete response_.extend_session_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_partial_run_setup_response(::tensorflow::PartialRunSetupResponse* partial_run_setup_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (partial_run_setup_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1083,15 +953,15 @@ void ReplayOp::set_allocated_partial_run_setup_response(::tensorflow::PartialRun
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.partial_run_setup_response)
 }
 void ReplayOp::clear_partial_run_setup_response() {
-  if (has_partial_run_setup_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_partial_run_setup_response()) {
+    if (GetArena() == nullptr) {
       delete response_.partial_run_setup_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_run_step_response(::tensorflow::RunStepResponse* run_step_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (run_step_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1106,15 +976,15 @@ void ReplayOp::set_allocated_run_step_response(::tensorflow::RunStepResponse* ru
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.run_step_response)
 }
 void ReplayOp::clear_run_step_response() {
-  if (has_run_step_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_run_step_response()) {
+    if (GetArena() == nullptr) {
       delete response_.run_step_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_close_session_response(::tensorflow::CloseSessionResponse* close_session_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (close_session_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1129,15 +999,15 @@ void ReplayOp::set_allocated_close_session_response(::tensorflow::CloseSessionRe
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.close_session_response)
 }
 void ReplayOp::clear_close_session_response() {
-  if (has_close_session_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_close_session_response()) {
+    if (GetArena() == nullptr) {
       delete response_.close_session_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_list_devices_response(::tensorflow::ListDevicesResponse* list_devices_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (list_devices_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1152,15 +1022,15 @@ void ReplayOp::set_allocated_list_devices_response(::tensorflow::ListDevicesResp
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.list_devices_response)
 }
 void ReplayOp::clear_list_devices_response() {
-  if (has_list_devices_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_list_devices_response()) {
+    if (GetArena() == nullptr) {
       delete response_.list_devices_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_reset_request_response(::tensorflow::ResetResponse* reset_request_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (reset_request_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1175,15 +1045,15 @@ void ReplayOp::set_allocated_reset_request_response(::tensorflow::ResetResponse*
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.reset_request_response)
 }
 void ReplayOp::clear_reset_request_response() {
-  if (has_reset_request_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_reset_request_response()) {
+    if (GetArena() == nullptr) {
       delete response_.reset_request_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_make_callable_response(::tensorflow::MakeCallableResponse* make_callable_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (make_callable_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1198,15 +1068,15 @@ void ReplayOp::set_allocated_make_callable_response(::tensorflow::MakeCallableRe
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.make_callable_response)
 }
 void ReplayOp::clear_make_callable_response() {
-  if (has_make_callable_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_make_callable_response()) {
+    if (GetArena() == nullptr) {
       delete response_.make_callable_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_run_callable_response(::tensorflow::RunCallableResponse* run_callable_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (run_callable_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1221,15 +1091,15 @@ void ReplayOp::set_allocated_run_callable_response(::tensorflow::RunCallableResp
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.run_callable_response)
 }
 void ReplayOp::clear_run_callable_response() {
-  if (has_run_callable_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_run_callable_response()) {
+    if (GetArena() == nullptr) {
       delete response_.run_callable_response_;
     }
     clear_has_response();
   }
 }
 void ReplayOp::set_allocated_release_callable_response(::tensorflow::ReleaseCallableResponse* release_callable_response) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
   clear_response();
   if (release_callable_response) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
@@ -1244,102 +1114,69 @@ void ReplayOp::set_allocated_release_callable_response(::tensorflow::ReleaseCall
   // @@protoc_insertion_point(field_set_allocated:tensorflow.ReplayOp.release_callable_response)
 }
 void ReplayOp::clear_release_callable_response() {
-  if (has_release_callable_response()) {
-    if (GetArenaNoVirtual() == nullptr) {
+  if (_internal_has_release_callable_response()) {
+    if (GetArena() == nullptr) {
       delete response_.release_callable_response_;
     }
     clear_has_response();
   }
 }
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int ReplayOp::kStartTimeUsFieldNumber;
-const int ReplayOp::kEndTimeUsFieldNumber;
-const int ReplayOp::kCreateSessionFieldNumber;
-const int ReplayOp::kExtendSessionFieldNumber;
-const int ReplayOp::kPartialRunSetupFieldNumber;
-const int ReplayOp::kRunStepFieldNumber;
-const int ReplayOp::kCloseSessionFieldNumber;
-const int ReplayOp::kListDevicesFieldNumber;
-const int ReplayOp::kResetRequestFieldNumber;
-const int ReplayOp::kMakeCallableFieldNumber;
-const int ReplayOp::kRunCallableFieldNumber;
-const int ReplayOp::kReleaseCallableFieldNumber;
-const int ReplayOp::kNewReplaySessionFieldNumber;
-const int ReplayOp::kCreateSessionResponseFieldNumber;
-const int ReplayOp::kExtendSessionResponseFieldNumber;
-const int ReplayOp::kPartialRunSetupResponseFieldNumber;
-const int ReplayOp::kRunStepResponseFieldNumber;
-const int ReplayOp::kCloseSessionResponseFieldNumber;
-const int ReplayOp::kListDevicesResponseFieldNumber;
-const int ReplayOp::kResetRequestResponseFieldNumber;
-const int ReplayOp::kMakeCallableResponseFieldNumber;
-const int ReplayOp::kRunCallableResponseFieldNumber;
-const int ReplayOp::kReleaseCallableResponseFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
-
-ReplayOp::ReplayOp()
-  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
-  SharedCtor();
-  // @@protoc_insertion_point(constructor:tensorflow.ReplayOp)
-}
 ReplayOp::ReplayOp(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-  _internal_metadata_(arena) {
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:tensorflow.ReplayOp)
 }
 ReplayOp::ReplayOp(const ReplayOp& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _internal_metadata_(nullptr) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::memcpy(&start_time_us_, &from.start_time_us_,
     static_cast<size_t>(reinterpret_cast<char*>(&end_time_us_) -
     reinterpret_cast<char*>(&start_time_us_)) + sizeof(end_time_us_));
   clear_has_op();
   switch (from.op_case()) {
     case kCreateSession: {
-      mutable_create_session()->::tensorflow::CreateSessionRequest::MergeFrom(from.create_session());
+      _internal_mutable_create_session()->::tensorflow::CreateSessionRequest::MergeFrom(from._internal_create_session());
       break;
     }
     case kExtendSession: {
-      mutable_extend_session()->::tensorflow::ExtendSessionRequest::MergeFrom(from.extend_session());
+      _internal_mutable_extend_session()->::tensorflow::ExtendSessionRequest::MergeFrom(from._internal_extend_session());
       break;
     }
     case kPartialRunSetup: {
-      mutable_partial_run_setup()->::tensorflow::PartialRunSetupRequest::MergeFrom(from.partial_run_setup());
+      _internal_mutable_partial_run_setup()->::tensorflow::PartialRunSetupRequest::MergeFrom(from._internal_partial_run_setup());
       break;
     }
     case kRunStep: {
-      mutable_run_step()->::tensorflow::RunStepRequest::MergeFrom(from.run_step());
+      _internal_mutable_run_step()->::tensorflow::RunStepRequest::MergeFrom(from._internal_run_step());
       break;
     }
     case kCloseSession: {
-      mutable_close_session()->::tensorflow::CloseSessionRequest::MergeFrom(from.close_session());
+      _internal_mutable_close_session()->::tensorflow::CloseSessionRequest::MergeFrom(from._internal_close_session());
       break;
     }
     case kListDevices: {
-      mutable_list_devices()->::tensorflow::ListDevicesRequest::MergeFrom(from.list_devices());
+      _internal_mutable_list_devices()->::tensorflow::ListDevicesRequest::MergeFrom(from._internal_list_devices());
       break;
     }
     case kResetRequest: {
-      mutable_reset_request()->::tensorflow::ResetRequest::MergeFrom(from.reset_request());
+      _internal_mutable_reset_request()->::tensorflow::ResetRequest::MergeFrom(from._internal_reset_request());
       break;
     }
     case kMakeCallable: {
-      mutable_make_callable()->::tensorflow::MakeCallableRequest::MergeFrom(from.make_callable());
+      _internal_mutable_make_callable()->::tensorflow::MakeCallableRequest::MergeFrom(from._internal_make_callable());
       break;
     }
     case kRunCallable: {
-      mutable_run_callable()->::tensorflow::RunCallableRequest::MergeFrom(from.run_callable());
+      _internal_mutable_run_callable()->::tensorflow::RunCallableRequest::MergeFrom(from._internal_run_callable());
       break;
     }
     case kReleaseCallable: {
-      mutable_release_callable()->::tensorflow::ReleaseCallableRequest::MergeFrom(from.release_callable());
+      _internal_mutable_release_callable()->::tensorflow::ReleaseCallableRequest::MergeFrom(from._internal_release_callable());
       break;
     }
     case kNewReplaySession: {
-      mutable_new_replay_session()->::tensorflow::NewReplaySession::MergeFrom(from.new_replay_session());
+      _internal_mutable_new_replay_session()->::tensorflow::NewReplaySession::MergeFrom(from._internal_new_replay_session());
       break;
     }
     case OP_NOT_SET: {
@@ -1349,43 +1186,43 @@ ReplayOp::ReplayOp(const ReplayOp& from)
   clear_has_response();
   switch (from.response_case()) {
     case kCreateSessionResponse: {
-      mutable_create_session_response()->::tensorflow::CreateSessionResponse::MergeFrom(from.create_session_response());
+      _internal_mutable_create_session_response()->::tensorflow::CreateSessionResponse::MergeFrom(from._internal_create_session_response());
       break;
     }
     case kExtendSessionResponse: {
-      mutable_extend_session_response()->::tensorflow::ExtendSessionResponse::MergeFrom(from.extend_session_response());
+      _internal_mutable_extend_session_response()->::tensorflow::ExtendSessionResponse::MergeFrom(from._internal_extend_session_response());
       break;
     }
     case kPartialRunSetupResponse: {
-      mutable_partial_run_setup_response()->::tensorflow::PartialRunSetupResponse::MergeFrom(from.partial_run_setup_response());
+      _internal_mutable_partial_run_setup_response()->::tensorflow::PartialRunSetupResponse::MergeFrom(from._internal_partial_run_setup_response());
       break;
     }
     case kRunStepResponse: {
-      mutable_run_step_response()->::tensorflow::RunStepResponse::MergeFrom(from.run_step_response());
+      _internal_mutable_run_step_response()->::tensorflow::RunStepResponse::MergeFrom(from._internal_run_step_response());
       break;
     }
     case kCloseSessionResponse: {
-      mutable_close_session_response()->::tensorflow::CloseSessionResponse::MergeFrom(from.close_session_response());
+      _internal_mutable_close_session_response()->::tensorflow::CloseSessionResponse::MergeFrom(from._internal_close_session_response());
       break;
     }
     case kListDevicesResponse: {
-      mutable_list_devices_response()->::tensorflow::ListDevicesResponse::MergeFrom(from.list_devices_response());
+      _internal_mutable_list_devices_response()->::tensorflow::ListDevicesResponse::MergeFrom(from._internal_list_devices_response());
       break;
     }
     case kResetRequestResponse: {
-      mutable_reset_request_response()->::tensorflow::ResetResponse::MergeFrom(from.reset_request_response());
+      _internal_mutable_reset_request_response()->::tensorflow::ResetResponse::MergeFrom(from._internal_reset_request_response());
       break;
     }
     case kMakeCallableResponse: {
-      mutable_make_callable_response()->::tensorflow::MakeCallableResponse::MergeFrom(from.make_callable_response());
+      _internal_mutable_make_callable_response()->::tensorflow::MakeCallableResponse::MergeFrom(from._internal_make_callable_response());
       break;
     }
     case kRunCallableResponse: {
-      mutable_run_callable_response()->::tensorflow::RunCallableResponse::MergeFrom(from.run_callable_response());
+      _internal_mutable_run_callable_response()->::tensorflow::RunCallableResponse::MergeFrom(from._internal_run_callable_response());
       break;
     }
     case kReleaseCallableResponse: {
-      mutable_release_callable_response()->::tensorflow::ReleaseCallableResponse::MergeFrom(from.release_callable_response());
+      _internal_mutable_release_callable_response()->::tensorflow::ReleaseCallableResponse::MergeFrom(from._internal_release_callable_response());
       break;
     }
     case RESPONSE_NOT_SET: {
@@ -1407,10 +1244,11 @@ void ReplayOp::SharedCtor() {
 ReplayOp::~ReplayOp() {
   // @@protoc_insertion_point(destructor:tensorflow.ReplayOp)
   SharedDtor();
+  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ReplayOp::SharedDtor() {
-  GOOGLE_DCHECK(GetArenaNoVirtual() == nullptr);
+  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_op()) {
     clear_op();
   }
@@ -1438,67 +1276,67 @@ void ReplayOp::clear_op() {
 // @@protoc_insertion_point(one_of_clear_start:tensorflow.ReplayOp)
   switch (op_case()) {
     case kCreateSession: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.create_session_;
       }
       break;
     }
     case kExtendSession: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.extend_session_;
       }
       break;
     }
     case kPartialRunSetup: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.partial_run_setup_;
       }
       break;
     }
     case kRunStep: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.run_step_;
       }
       break;
     }
     case kCloseSession: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.close_session_;
       }
       break;
     }
     case kListDevices: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.list_devices_;
       }
       break;
     }
     case kResetRequest: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.reset_request_;
       }
       break;
     }
     case kMakeCallable: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.make_callable_;
       }
       break;
     }
     case kRunCallable: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.run_callable_;
       }
       break;
     }
     case kReleaseCallable: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.release_callable_;
       }
       break;
     }
     case kNewReplaySession: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete op_.new_replay_session_;
       }
       break;
@@ -1514,61 +1352,61 @@ void ReplayOp::clear_response() {
 // @@protoc_insertion_point(one_of_clear_start:tensorflow.ReplayOp)
   switch (response_case()) {
     case kCreateSessionResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.create_session_response_;
       }
       break;
     }
     case kExtendSessionResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.extend_session_response_;
       }
       break;
     }
     case kPartialRunSetupResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.partial_run_setup_response_;
       }
       break;
     }
     case kRunStepResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.run_step_response_;
       }
       break;
     }
     case kCloseSessionResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.close_session_response_;
       }
       break;
     }
     case kListDevicesResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.list_devices_response_;
       }
       break;
     }
     case kResetRequestResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.reset_request_response_;
       }
       break;
     }
     case kMakeCallableResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.make_callable_response_;
       }
       break;
     }
     case kRunCallableResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.run_callable_response_;
       }
       break;
     }
     case kReleaseCallableResponse: {
-      if (GetArenaNoVirtual() == nullptr) {
+      if (GetArena() == nullptr) {
         delete response_.release_callable_response_;
       }
       break;
@@ -1592,13 +1430,12 @@ void ReplayOp::Clear() {
       reinterpret_cast<char*>(&start_time_us_)) + sizeof(end_time_us_));
   clear_op();
   clear_response();
-  _internal_metadata_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 const char* ReplayOp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArenaNoVirtual(); (void)arena;
+  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
@@ -1607,147 +1444,147 @@ const char* ReplayOp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
       // .tensorflow.CreateSessionRequest create_session = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ctx->ParseMessage(mutable_create_session(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_create_session(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ExtendSessionRequest extend_session = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ctx->ParseMessage(mutable_extend_session(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_extend_session(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.PartialRunSetupRequest partial_run_setup = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ctx->ParseMessage(mutable_partial_run_setup(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_partial_run_setup(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RunStepRequest run_step = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
-          ptr = ctx->ParseMessage(mutable_run_step(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_run_step(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.CloseSessionRequest close_session = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
-          ptr = ctx->ParseMessage(mutable_close_session(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_close_session(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ListDevicesRequest list_devices = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ctx->ParseMessage(mutable_list_devices(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_list_devices(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ResetRequest reset_request = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
-          ptr = ctx->ParseMessage(mutable_reset_request(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_reset_request(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.MakeCallableRequest make_callable = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
-          ptr = ctx->ParseMessage(mutable_make_callable(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_make_callable(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RunCallableRequest run_callable = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
-          ptr = ctx->ParseMessage(mutable_run_callable(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_run_callable(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ReleaseCallableRequest release_callable = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
-          ptr = ctx->ParseMessage(mutable_release_callable(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_release_callable(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.NewReplaySession new_replay_session = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
-          ptr = ctx->ParseMessage(mutable_new_replay_session(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_new_replay_session(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.CreateSessionResponse create_session_response = 21;
       case 21:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
-          ptr = ctx->ParseMessage(mutable_create_session_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_create_session_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ExtendSessionResponse extend_session_response = 22;
       case 22:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 178)) {
-          ptr = ctx->ParseMessage(mutable_extend_session_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_extend_session_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.PartialRunSetupResponse partial_run_setup_response = 23;
       case 23:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
-          ptr = ctx->ParseMessage(mutable_partial_run_setup_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_partial_run_setup_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RunStepResponse run_step_response = 24;
       case 24:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 194)) {
-          ptr = ctx->ParseMessage(mutable_run_step_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_run_step_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.CloseSessionResponse close_session_response = 25;
       case 25:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
-          ptr = ctx->ParseMessage(mutable_close_session_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_close_session_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ListDevicesResponse list_devices_response = 26;
       case 26:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
-          ptr = ctx->ParseMessage(mutable_list_devices_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_list_devices_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ResetResponse reset_request_response = 27;
       case 27:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
-          ptr = ctx->ParseMessage(mutable_reset_request_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_reset_request_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.MakeCallableResponse make_callable_response = 28;
       case 28:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 226)) {
-          ptr = ctx->ParseMessage(mutable_make_callable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_make_callable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.RunCallableResponse run_callable_response = 29;
       case 29:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
-          ptr = ctx->ParseMessage(mutable_run_callable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_run_callable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .tensorflow.ReleaseCallableResponse release_callable_response = 30;
       case 30:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 242)) {
-          ptr = ctx->ParseMessage(mutable_release_callable_response(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_release_callable_response(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1771,7 +1608,9 @@ const char* ReplayOp::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
+        ptr = UnknownFieldParse(tag,
+            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+            ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1784,610 +1623,196 @@ failure:
   goto success;
 #undef CHK_
 }
-#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-bool ReplayOp::MergePartialFromCodedStream(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
-  ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-  // @@protoc_insertion_point(parse_start:tensorflow.ReplayOp)
-  for (;;) {
-    ::std::pair<::PROTOBUF_NAMESPACE_ID::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(16383u);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-    switch (::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::GetTagFieldNumber(tag)) {
-      // .tensorflow.CreateSessionRequest create_session = 1;
-      case 1: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (10 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_create_session()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
 
-      // .tensorflow.ExtendSessionRequest extend_session = 2;
-      case 2: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (18 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_extend_session()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.PartialRunSetupRequest partial_run_setup = 3;
-      case 3: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (26 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_partial_run_setup()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RunStepRequest run_step = 4;
-      case 4: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (34 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_run_step()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.CloseSessionRequest close_session = 5;
-      case 5: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (42 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_close_session()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ListDevicesRequest list_devices = 6;
-      case 6: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (50 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_list_devices()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ResetRequest reset_request = 7;
-      case 7: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (58 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_reset_request()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.MakeCallableRequest make_callable = 8;
-      case 8: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (66 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_make_callable()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RunCallableRequest run_callable = 9;
-      case 9: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (74 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_run_callable()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ReleaseCallableRequest release_callable = 10;
-      case 10: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (82 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_release_callable()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.NewReplaySession new_replay_session = 11;
-      case 11: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (90 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_new_replay_session()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.CreateSessionResponse create_session_response = 21;
-      case 21: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (170 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_create_session_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ExtendSessionResponse extend_session_response = 22;
-      case 22: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (178 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_extend_session_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.PartialRunSetupResponse partial_run_setup_response = 23;
-      case 23: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (186 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_partial_run_setup_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RunStepResponse run_step_response = 24;
-      case 24: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (194 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_run_step_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.CloseSessionResponse close_session_response = 25;
-      case 25: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (202 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_close_session_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ListDevicesResponse list_devices_response = 26;
-      case 26: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (210 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_list_devices_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ResetResponse reset_request_response = 27;
-      case 27: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (218 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_reset_request_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.MakeCallableResponse make_callable_response = 28;
-      case 28: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (226 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_make_callable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.RunCallableResponse run_callable_response = 29;
-      case 29: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (234 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_run_callable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // .tensorflow.ReleaseCallableResponse release_callable_response = 30;
-      case 30: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (242 & 0xFF)) {
-          DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadMessage(
-               input, mutable_release_callable_response()));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double start_time_us = 31;
-      case 31: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (249 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &start_time_us_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      // double end_time_us = 32;
-      case 32: {
-        if (static_cast< ::PROTOBUF_NAMESPACE_ID::uint8>(tag) == (257 & 0xFF)) {
-
-          DO_((::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::ReadPrimitive<
-                   double, ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::TYPE_DOUBLE>(
-                 input, &end_time_us_)));
-        } else {
-          goto handle_unusual;
-        }
-        break;
-      }
-
-      default: {
-      handle_unusual:
-        if (tag == 0) {
-          goto success;
-        }
-        DO_(::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
-        break;
-      }
-    }
-  }
-success:
-  // @@protoc_insertion_point(parse_success:tensorflow.ReplayOp)
-  return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:tensorflow.ReplayOp)
-  return false;
-#undef DO_
-}
-#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
-
-void ReplayOp::SerializeWithCachedSizes(
-    ::PROTOBUF_NAMESPACE_ID::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:tensorflow.ReplayOp)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  // .tensorflow.CreateSessionRequest create_session = 1;
-  if (has_create_session()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, HasBitSetters::create_session(this), output);
-  }
-
-  // .tensorflow.ExtendSessionRequest extend_session = 2;
-  if (has_extend_session()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, HasBitSetters::extend_session(this), output);
-  }
-
-  // .tensorflow.PartialRunSetupRequest partial_run_setup = 3;
-  if (has_partial_run_setup()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, HasBitSetters::partial_run_setup(this), output);
-  }
-
-  // .tensorflow.RunStepRequest run_step = 4;
-  if (has_run_step()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, HasBitSetters::run_step(this), output);
-  }
-
-  // .tensorflow.CloseSessionRequest close_session = 5;
-  if (has_close_session()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, HasBitSetters::close_session(this), output);
-  }
-
-  // .tensorflow.ListDevicesRequest list_devices = 6;
-  if (has_list_devices()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      6, HasBitSetters::list_devices(this), output);
-  }
-
-  // .tensorflow.ResetRequest reset_request = 7;
-  if (has_reset_request()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      7, HasBitSetters::reset_request(this), output);
-  }
-
-  // .tensorflow.MakeCallableRequest make_callable = 8;
-  if (has_make_callable()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      8, HasBitSetters::make_callable(this), output);
-  }
-
-  // .tensorflow.RunCallableRequest run_callable = 9;
-  if (has_run_callable()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      9, HasBitSetters::run_callable(this), output);
-  }
-
-  // .tensorflow.ReleaseCallableRequest release_callable = 10;
-  if (has_release_callable()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      10, HasBitSetters::release_callable(this), output);
-  }
-
-  // .tensorflow.NewReplaySession new_replay_session = 11;
-  if (has_new_replay_session()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      11, HasBitSetters::new_replay_session(this), output);
-  }
-
-  // .tensorflow.CreateSessionResponse create_session_response = 21;
-  if (has_create_session_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      21, HasBitSetters::create_session_response(this), output);
-  }
-
-  // .tensorflow.ExtendSessionResponse extend_session_response = 22;
-  if (has_extend_session_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      22, HasBitSetters::extend_session_response(this), output);
-  }
-
-  // .tensorflow.PartialRunSetupResponse partial_run_setup_response = 23;
-  if (has_partial_run_setup_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      23, HasBitSetters::partial_run_setup_response(this), output);
-  }
-
-  // .tensorflow.RunStepResponse run_step_response = 24;
-  if (has_run_step_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      24, HasBitSetters::run_step_response(this), output);
-  }
-
-  // .tensorflow.CloseSessionResponse close_session_response = 25;
-  if (has_close_session_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      25, HasBitSetters::close_session_response(this), output);
-  }
-
-  // .tensorflow.ListDevicesResponse list_devices_response = 26;
-  if (has_list_devices_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      26, HasBitSetters::list_devices_response(this), output);
-  }
-
-  // .tensorflow.ResetResponse reset_request_response = 27;
-  if (has_reset_request_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      27, HasBitSetters::reset_request_response(this), output);
-  }
-
-  // .tensorflow.MakeCallableResponse make_callable_response = 28;
-  if (has_make_callable_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      28, HasBitSetters::make_callable_response(this), output);
-  }
-
-  // .tensorflow.RunCallableResponse run_callable_response = 29;
-  if (has_run_callable_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      29, HasBitSetters::run_callable_response(this), output);
-  }
-
-  // .tensorflow.ReleaseCallableResponse release_callable_response = 30;
-  if (has_release_callable_response()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteMessageMaybeToArray(
-      30, HasBitSetters::release_callable_response(this), output);
-  }
-
-  // double start_time_us = 31;
-  if (!(this->start_time_us() <= 0 && this->start_time_us() >= 0)) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(31, this->start_time_us(), output);
-  }
-
-  // double end_time_us = 32;
-  if (!(this->end_time_us() <= 0 && this->end_time_us() >= 0)) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDouble(32, this->end_time_us(), output);
-  }
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
-  }
-  // @@protoc_insertion_point(serialize_end:tensorflow.ReplayOp)
-}
-
-::PROTOBUF_NAMESPACE_ID::uint8* ReplayOp::InternalSerializeWithCachedSizesToArray(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target) const {
+::PROTOBUF_NAMESPACE_ID::uint8* ReplayOp::_InternalSerialize(
+    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:tensorflow.ReplayOp)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .tensorflow.CreateSessionRequest create_session = 1;
-  if (has_create_session()) {
+  if (_internal_has_create_session()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        1, HasBitSetters::create_session(this), target);
+      InternalWriteMessage(
+        1, _Internal::create_session(this), target, stream);
   }
 
   // .tensorflow.ExtendSessionRequest extend_session = 2;
-  if (has_extend_session()) {
+  if (_internal_has_extend_session()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        2, HasBitSetters::extend_session(this), target);
+      InternalWriteMessage(
+        2, _Internal::extend_session(this), target, stream);
   }
 
   // .tensorflow.PartialRunSetupRequest partial_run_setup = 3;
-  if (has_partial_run_setup()) {
+  if (_internal_has_partial_run_setup()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        3, HasBitSetters::partial_run_setup(this), target);
+      InternalWriteMessage(
+        3, _Internal::partial_run_setup(this), target, stream);
   }
 
   // .tensorflow.RunStepRequest run_step = 4;
-  if (has_run_step()) {
+  if (_internal_has_run_step()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        4, HasBitSetters::run_step(this), target);
+      InternalWriteMessage(
+        4, _Internal::run_step(this), target, stream);
   }
 
   // .tensorflow.CloseSessionRequest close_session = 5;
-  if (has_close_session()) {
+  if (_internal_has_close_session()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        5, HasBitSetters::close_session(this), target);
+      InternalWriteMessage(
+        5, _Internal::close_session(this), target, stream);
   }
 
   // .tensorflow.ListDevicesRequest list_devices = 6;
-  if (has_list_devices()) {
+  if (_internal_has_list_devices()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        6, HasBitSetters::list_devices(this), target);
+      InternalWriteMessage(
+        6, _Internal::list_devices(this), target, stream);
   }
 
   // .tensorflow.ResetRequest reset_request = 7;
-  if (has_reset_request()) {
+  if (_internal_has_reset_request()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        7, HasBitSetters::reset_request(this), target);
+      InternalWriteMessage(
+        7, _Internal::reset_request(this), target, stream);
   }
 
   // .tensorflow.MakeCallableRequest make_callable = 8;
-  if (has_make_callable()) {
+  if (_internal_has_make_callable()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        8, HasBitSetters::make_callable(this), target);
+      InternalWriteMessage(
+        8, _Internal::make_callable(this), target, stream);
   }
 
   // .tensorflow.RunCallableRequest run_callable = 9;
-  if (has_run_callable()) {
+  if (_internal_has_run_callable()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        9, HasBitSetters::run_callable(this), target);
+      InternalWriteMessage(
+        9, _Internal::run_callable(this), target, stream);
   }
 
   // .tensorflow.ReleaseCallableRequest release_callable = 10;
-  if (has_release_callable()) {
+  if (_internal_has_release_callable()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        10, HasBitSetters::release_callable(this), target);
+      InternalWriteMessage(
+        10, _Internal::release_callable(this), target, stream);
   }
 
   // .tensorflow.NewReplaySession new_replay_session = 11;
-  if (has_new_replay_session()) {
+  if (_internal_has_new_replay_session()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        11, HasBitSetters::new_replay_session(this), target);
+      InternalWriteMessage(
+        11, _Internal::new_replay_session(this), target, stream);
   }
 
   // .tensorflow.CreateSessionResponse create_session_response = 21;
-  if (has_create_session_response()) {
+  if (_internal_has_create_session_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        21, HasBitSetters::create_session_response(this), target);
+      InternalWriteMessage(
+        21, _Internal::create_session_response(this), target, stream);
   }
 
   // .tensorflow.ExtendSessionResponse extend_session_response = 22;
-  if (has_extend_session_response()) {
+  if (_internal_has_extend_session_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        22, HasBitSetters::extend_session_response(this), target);
+      InternalWriteMessage(
+        22, _Internal::extend_session_response(this), target, stream);
   }
 
   // .tensorflow.PartialRunSetupResponse partial_run_setup_response = 23;
-  if (has_partial_run_setup_response()) {
+  if (_internal_has_partial_run_setup_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        23, HasBitSetters::partial_run_setup_response(this), target);
+      InternalWriteMessage(
+        23, _Internal::partial_run_setup_response(this), target, stream);
   }
 
   // .tensorflow.RunStepResponse run_step_response = 24;
-  if (has_run_step_response()) {
+  if (_internal_has_run_step_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        24, HasBitSetters::run_step_response(this), target);
+      InternalWriteMessage(
+        24, _Internal::run_step_response(this), target, stream);
   }
 
   // .tensorflow.CloseSessionResponse close_session_response = 25;
-  if (has_close_session_response()) {
+  if (_internal_has_close_session_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        25, HasBitSetters::close_session_response(this), target);
+      InternalWriteMessage(
+        25, _Internal::close_session_response(this), target, stream);
   }
 
   // .tensorflow.ListDevicesResponse list_devices_response = 26;
-  if (has_list_devices_response()) {
+  if (_internal_has_list_devices_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        26, HasBitSetters::list_devices_response(this), target);
+      InternalWriteMessage(
+        26, _Internal::list_devices_response(this), target, stream);
   }
 
   // .tensorflow.ResetResponse reset_request_response = 27;
-  if (has_reset_request_response()) {
+  if (_internal_has_reset_request_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        27, HasBitSetters::reset_request_response(this), target);
+      InternalWriteMessage(
+        27, _Internal::reset_request_response(this), target, stream);
   }
 
   // .tensorflow.MakeCallableResponse make_callable_response = 28;
-  if (has_make_callable_response()) {
+  if (_internal_has_make_callable_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        28, HasBitSetters::make_callable_response(this), target);
+      InternalWriteMessage(
+        28, _Internal::make_callable_response(this), target, stream);
   }
 
   // .tensorflow.RunCallableResponse run_callable_response = 29;
-  if (has_run_callable_response()) {
+  if (_internal_has_run_callable_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        29, HasBitSetters::run_callable_response(this), target);
+      InternalWriteMessage(
+        29, _Internal::run_callable_response(this), target, stream);
   }
 
   // .tensorflow.ReleaseCallableResponse release_callable_response = 30;
-  if (has_release_callable_response()) {
+  if (_internal_has_release_callable_response()) {
+    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
-        30, HasBitSetters::release_callable_response(this), target);
+      InternalWriteMessage(
+        30, _Internal::release_callable_response(this), target, stream);
   }
 
   // double start_time_us = 31;
   if (!(this->start_time_us() <= 0 && this->start_time_us() >= 0)) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(31, this->start_time_us(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(31, this->_internal_start_time_us(), target);
   }
 
   // double end_time_us = 32;
   if (!(this->end_time_us() <= 0 && this->end_time_us() >= 0)) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(32, this->end_time_us(), target);
+    target = stream->EnsureSpace(target);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(32, this->_internal_end_time_us(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:tensorflow.ReplayOp)
   return target;
@@ -2397,11 +1822,6 @@ size_t ReplayOp::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:tensorflow.ReplayOp)
   size_t total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2573,6 +1993,10 @@ size_t ReplayOp::ByteSizeLong() const {
       break;
     }
   }
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
+        _internal_metadata_, total_size, &_cached_size_);
+  }
   int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
   SetCachedSize(cached_size);
   return total_size;
@@ -2596,59 +2020,59 @@ void ReplayOp::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ReplayOp::MergeFrom(const ReplayOp& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:tensorflow.ReplayOp)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (!(from.start_time_us() <= 0 && from.start_time_us() >= 0)) {
-    set_start_time_us(from.start_time_us());
+    _internal_set_start_time_us(from._internal_start_time_us());
   }
   if (!(from.end_time_us() <= 0 && from.end_time_us() >= 0)) {
-    set_end_time_us(from.end_time_us());
+    _internal_set_end_time_us(from._internal_end_time_us());
   }
   switch (from.op_case()) {
     case kCreateSession: {
-      mutable_create_session()->::tensorflow::CreateSessionRequest::MergeFrom(from.create_session());
+      _internal_mutable_create_session()->::tensorflow::CreateSessionRequest::MergeFrom(from._internal_create_session());
       break;
     }
     case kExtendSession: {
-      mutable_extend_session()->::tensorflow::ExtendSessionRequest::MergeFrom(from.extend_session());
+      _internal_mutable_extend_session()->::tensorflow::ExtendSessionRequest::MergeFrom(from._internal_extend_session());
       break;
     }
     case kPartialRunSetup: {
-      mutable_partial_run_setup()->::tensorflow::PartialRunSetupRequest::MergeFrom(from.partial_run_setup());
+      _internal_mutable_partial_run_setup()->::tensorflow::PartialRunSetupRequest::MergeFrom(from._internal_partial_run_setup());
       break;
     }
     case kRunStep: {
-      mutable_run_step()->::tensorflow::RunStepRequest::MergeFrom(from.run_step());
+      _internal_mutable_run_step()->::tensorflow::RunStepRequest::MergeFrom(from._internal_run_step());
       break;
     }
     case kCloseSession: {
-      mutable_close_session()->::tensorflow::CloseSessionRequest::MergeFrom(from.close_session());
+      _internal_mutable_close_session()->::tensorflow::CloseSessionRequest::MergeFrom(from._internal_close_session());
       break;
     }
     case kListDevices: {
-      mutable_list_devices()->::tensorflow::ListDevicesRequest::MergeFrom(from.list_devices());
+      _internal_mutable_list_devices()->::tensorflow::ListDevicesRequest::MergeFrom(from._internal_list_devices());
       break;
     }
     case kResetRequest: {
-      mutable_reset_request()->::tensorflow::ResetRequest::MergeFrom(from.reset_request());
+      _internal_mutable_reset_request()->::tensorflow::ResetRequest::MergeFrom(from._internal_reset_request());
       break;
     }
     case kMakeCallable: {
-      mutable_make_callable()->::tensorflow::MakeCallableRequest::MergeFrom(from.make_callable());
+      _internal_mutable_make_callable()->::tensorflow::MakeCallableRequest::MergeFrom(from._internal_make_callable());
       break;
     }
     case kRunCallable: {
-      mutable_run_callable()->::tensorflow::RunCallableRequest::MergeFrom(from.run_callable());
+      _internal_mutable_run_callable()->::tensorflow::RunCallableRequest::MergeFrom(from._internal_run_callable());
       break;
     }
     case kReleaseCallable: {
-      mutable_release_callable()->::tensorflow::ReleaseCallableRequest::MergeFrom(from.release_callable());
+      _internal_mutable_release_callable()->::tensorflow::ReleaseCallableRequest::MergeFrom(from._internal_release_callable());
       break;
     }
     case kNewReplaySession: {
-      mutable_new_replay_session()->::tensorflow::NewReplaySession::MergeFrom(from.new_replay_session());
+      _internal_mutable_new_replay_session()->::tensorflow::NewReplaySession::MergeFrom(from._internal_new_replay_session());
       break;
     }
     case OP_NOT_SET: {
@@ -2657,43 +2081,43 @@ void ReplayOp::MergeFrom(const ReplayOp& from) {
   }
   switch (from.response_case()) {
     case kCreateSessionResponse: {
-      mutable_create_session_response()->::tensorflow::CreateSessionResponse::MergeFrom(from.create_session_response());
+      _internal_mutable_create_session_response()->::tensorflow::CreateSessionResponse::MergeFrom(from._internal_create_session_response());
       break;
     }
     case kExtendSessionResponse: {
-      mutable_extend_session_response()->::tensorflow::ExtendSessionResponse::MergeFrom(from.extend_session_response());
+      _internal_mutable_extend_session_response()->::tensorflow::ExtendSessionResponse::MergeFrom(from._internal_extend_session_response());
       break;
     }
     case kPartialRunSetupResponse: {
-      mutable_partial_run_setup_response()->::tensorflow::PartialRunSetupResponse::MergeFrom(from.partial_run_setup_response());
+      _internal_mutable_partial_run_setup_response()->::tensorflow::PartialRunSetupResponse::MergeFrom(from._internal_partial_run_setup_response());
       break;
     }
     case kRunStepResponse: {
-      mutable_run_step_response()->::tensorflow::RunStepResponse::MergeFrom(from.run_step_response());
+      _internal_mutable_run_step_response()->::tensorflow::RunStepResponse::MergeFrom(from._internal_run_step_response());
       break;
     }
     case kCloseSessionResponse: {
-      mutable_close_session_response()->::tensorflow::CloseSessionResponse::MergeFrom(from.close_session_response());
+      _internal_mutable_close_session_response()->::tensorflow::CloseSessionResponse::MergeFrom(from._internal_close_session_response());
       break;
     }
     case kListDevicesResponse: {
-      mutable_list_devices_response()->::tensorflow::ListDevicesResponse::MergeFrom(from.list_devices_response());
+      _internal_mutable_list_devices_response()->::tensorflow::ListDevicesResponse::MergeFrom(from._internal_list_devices_response());
       break;
     }
     case kResetRequestResponse: {
-      mutable_reset_request_response()->::tensorflow::ResetResponse::MergeFrom(from.reset_request_response());
+      _internal_mutable_reset_request_response()->::tensorflow::ResetResponse::MergeFrom(from._internal_reset_request_response());
       break;
     }
     case kMakeCallableResponse: {
-      mutable_make_callable_response()->::tensorflow::MakeCallableResponse::MergeFrom(from.make_callable_response());
+      _internal_mutable_make_callable_response()->::tensorflow::MakeCallableResponse::MergeFrom(from._internal_make_callable_response());
       break;
     }
     case kRunCallableResponse: {
-      mutable_run_callable_response()->::tensorflow::RunCallableResponse::MergeFrom(from.run_callable_response());
+      _internal_mutable_run_callable_response()->::tensorflow::RunCallableResponse::MergeFrom(from._internal_run_callable_response());
       break;
     }
     case kReleaseCallableResponse: {
-      mutable_release_callable_response()->::tensorflow::ReleaseCallableResponse::MergeFrom(from.release_callable_response());
+      _internal_mutable_release_callable_response()->::tensorflow::ReleaseCallableResponse::MergeFrom(from._internal_release_callable_response());
       break;
     }
     case RESPONSE_NOT_SET: {
@@ -2720,30 +2144,15 @@ bool ReplayOp::IsInitialized() const {
   return true;
 }
 
-void ReplayOp::Swap(ReplayOp* other) {
-  if (other == this) return;
-  if (GetArenaNoVirtual() == other->GetArenaNoVirtual()) {
-    InternalSwap(other);
-  } else {
-    ReplayOp* temp = New(GetArenaNoVirtual());
-    temp->MergeFrom(*other);
-    other->CopyFrom(*this);
-    InternalSwap(temp);
-    if (GetArenaNoVirtual() == nullptr) {
-      delete temp;
-    }
-  }
-}
-void ReplayOp::UnsafeArenaSwap(ReplayOp* other) {
-  if (other == this) return;
-  GOOGLE_DCHECK(GetArenaNoVirtual() == other->GetArenaNoVirtual());
-  InternalSwap(other);
-}
 void ReplayOp::InternalSwap(ReplayOp* other) {
   using std::swap;
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(start_time_us_, other->start_time_us_);
-  swap(end_time_us_, other->end_time_us_);
+  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
+      PROTOBUF_FIELD_OFFSET(ReplayOp, end_time_us_)
+      + sizeof(ReplayOp::end_time_us_)
+      - PROTOBUF_FIELD_OFFSET(ReplayOp, start_time_us_)>(
+          reinterpret_cast<char*>(&start_time_us_),
+          reinterpret_cast<char*>(&other->start_time_us_));
   swap(op_, other->op_);
   swap(response_, other->response_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
