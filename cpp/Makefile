@@ -1,17 +1,17 @@
 HOST_SYSTEM = $(shell uname | cut -f 1 -d_)
 SYSTEM ?= $(HOST_SYSTEM)
 CC      = g++
-CFLAGS  = -c -Wall -std=c++11 -pthread -I/usr/local/include
+CFLAGS  = -c -Wall -std=c++17 -pthread -I/usr/local/include -Isrc/gen
 ifeq ($(SYSTEM),Darwin)
-LDFLAGS = -L/usr/local/lib -lpthread -lprotobuf -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/build-grpc/grpc/cmake/build -L/build-grpc/grpc/cmake/build/libs/opt/pkgconfig/ -lpthread -lprotobuf -lgrpc++ -lgrpc\
           -lgrpc++_reflection\
           -ldl
 else
-LDFLAGS = -L/usr/local/lib -lprotobuf -pthread -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/build-grpc/grpc/cmake/build -L/build-grpc/grpc/cmake/build/libs/opt/pkgconfig/ -lprotobuf -pthread -lgrpc++ -lgrpc\
 		  -Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed\
 		  -ldl
 endif
-EXECUTABLE_NAME=serving_client
+EXECUTABLE_NAME=main
 
 BIN         =./bin
 SOURCE_DIR  =./src
