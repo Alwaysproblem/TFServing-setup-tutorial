@@ -41,3 +41,18 @@
   ```bash
   $ docker build -t grpc-cpp -f grpc-cpp.dockerfile .
   ```
+
+- start and enter `grpc-cpp` shell
+
+  ```bash
+  $ docker run --rm -ti -v `pwd`:/cpp  grpc-cpp
+  root@5b9f27acaefe:/# git clone https://github.com/tensorflow/tensorflow
+  root@5b9f27acaefe:/# git clone https://github.com/tensorflow/serving
+  root@5b9f27acaefe:/# cd /cpp
+  root@5b9f27acaefe:/cpp# mkdir gen
+  root@5b9f27acaefe:/cpp# bash build-cpp-api.sh
+  root@5b9f27acaefe:/cpp# mv gen ./src
+  root@5b9f27acaefe:/cpp# make
+  ```
+
+## API
