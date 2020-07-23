@@ -5,8 +5,8 @@ RUN apt-get update \
     && apt-get install autoconf automake libtool curl make g++ unzip -y \
     && apt-get install pkg-config libgflags-dev build-essential cmake clang-5.0 libc++-dev -y \
     && apt-get install doxygen git -y \
-    && apt-get install protobuf-compiler-grpc libprotobuf-dev  -y \
     && apt-get clean
+    # && apt-get install protobuf-compiler-grpc libprotobuf-dev  -y \
 
 # sudo apt install curl gnupg
 # curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
@@ -31,9 +31,10 @@ RUN cd / \
     && git submodule update --init \
     && mkdir -p cmake/build \
     && cd cmake/build \
-    && cmake ../.. \
+    && cmake ../.. -DBUILD_SHARED_LIBS=ON \
     && make \
     && make install \
     && cd /
 
 ENV PATH=$PATH:/grpc/cmake/build/
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/:/grpc/cmake/build/

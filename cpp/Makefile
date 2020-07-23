@@ -3,11 +3,11 @@ SYSTEM ?= $(HOST_SYSTEM)
 CC      = g++
 CFLAGS  = -c -Wall -std=c++17 -pthread -I/usr/local/include -Isrc/gen
 ifeq ($(SYSTEM),Darwin)
-LDFLAGS = -L/usr/local/lib -L/build-grpc/grpc/cmake/build -L/build-grpc/grpc/cmake/build/libs/opt/pkgconfig/ -lpthread -lprotobuf -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -L/grpc/cmake/build/libs/opt/pkgconfig/ -lpthread -lprotobuf -lgrpc++ -lgrpc\
           -lgrpc++_reflection\
           -ldl
 else
-LDFLAGS = -L/usr/local/lib -L/build-grpc/grpc/cmake/build -L/build-grpc/grpc/cmake/build/libs/opt/pkgconfig/ -lprotobuf -pthread -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -lprotobuf -pthread -lgrpc++ -lgrpc\
 		  -Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed\
 		  -ldl
 endif
@@ -17,7 +17,10 @@ BIN         =./bin
 SOURCE_DIR  =./src
 OBJ         =./obj
 
-SOURCE_FILES   =$(wildcard src/*.cc) $(wildcard src/**/*.cc)
+DIRS = $(shell find ./src -type d)
+
+# SOURCE_FILES   =$(wildcard src/*.cc) $(wildcard src/**/*/*/*.cc)
+SOURCE_FILES   =$(foreach dir,$(DIRS),$(wildcard $(dir)/**.cc))
 
 EXECUTABLE_FILES = $(EXECUTABLE_NAME:%=$(BIN)/%)
 OBJECT_FILES     = $(SOURCE_FILES:%.cc=$(OBJ)/%.o)
