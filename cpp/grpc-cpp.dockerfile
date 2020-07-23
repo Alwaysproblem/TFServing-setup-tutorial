@@ -13,6 +13,7 @@ RUN apt-get update \
 # echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
 # sudo apt update && sudo apt install bazel
 
+# install protobuf C++
 RUN cd / \
     && git clone https://github.com/google/protobuf \
     && cd protobuf \
@@ -25,6 +26,7 @@ RUN cd / \
     && ldconfig \
     && cd ..
 
+# install grpc
 RUN cd / \
     && git clone -b $(curl -L https://grpc.io/release) https://github.com/grpc/grpc \
     && cd grpc \
@@ -36,5 +38,6 @@ RUN cd / \
     && make install \
     && cd /
 
+# add env
 ENV PATH=$PATH:/grpc/cmake/build/
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/:/grpc/cmake/build/

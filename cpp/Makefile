@@ -1,9 +1,9 @@
 HOST_SYSTEM = $(shell uname | cut -f 1 -d_)
 SYSTEM ?= $(HOST_SYSTEM)
 CC      = g++
-CFLAGS  = -c -Wall -std=c++17 -pthread -I/usr/local/include -Isrc/gen
+CFLAGS  = -c -Wall -std=c++11 -pthread -I/usr/local/include -Isrc/gen
 ifeq ($(SYSTEM),Darwin)
-LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -L/grpc/cmake/build/libs/opt/pkgconfig/ -lpthread -lprotobuf -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -lpthread -lprotobuf -lgrpc++ -lgrpc\
           -lgrpc++_reflection\
           -ldl
 else
