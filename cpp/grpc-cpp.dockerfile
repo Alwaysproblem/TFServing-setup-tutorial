@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get install software-properties-common -y \
     && apt-get install autoconf automake libtool curl make g++ unzip -y \
     && apt-get install pkg-config libgflags-dev build-essential cmake clang-5.0 libc++-dev -y \
-    && apt-get install doxygen git -y \
+    && apt-get install doxygen git libboost-all-dev -y \
     && apt-get clean
     # && apt-get install protobuf-compiler-grpc libprotobuf-dev  -y \
 
