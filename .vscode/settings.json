@@ -1,5 +1,9 @@
 {
     "python.pythonPath": "/Users/yongxiyang/opt/anaconda3/envs/tf2cpu/bin/python",
     "git.ignoreLimitWarning": true,
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "*.py": "python",
+        "*.inc": "cpp"
+    }
 }
