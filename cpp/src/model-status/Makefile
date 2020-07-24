@@ -7,7 +7,8 @@ LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -lpthread -lprotobuf -lgrpc++ -lg
           -lgrpc++_reflection\
           -ldl
 else
-LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -lprotobuf -pthread -lgrpc++ -lgrpc\
+LDFLAGS = -L/usr/local/lib -L/grpc/cmake/build -L/usr/lib/x86_64-linux-gnu\
+		  -lboost_program_options -lprotobuf -pthread -lgrpc++ -lgrpc\
 		  -Wl,--no-as-needed -lgrpc++_reflection -Wl,--as-needed\
 		  -ldl
 endif

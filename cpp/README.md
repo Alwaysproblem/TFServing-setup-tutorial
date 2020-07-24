@@ -52,7 +52,18 @@
   root@5b9f27acaefe:/cpp# mkdir gen
   root@5b9f27acaefe:/cpp# bash build-cpp-api.sh
   root@5b9f27acaefe:/cpp# mv gen ./src
-  root@5b9f27acaefe:/cpp# make
+  root@5b9f27acaefe:/cpp# cd /cpp/src/predict-service
+  root@5b9f27acaefe:/cpp# cd /cpp/src/predict-service
+  root@5b9f27acaefe:/cpp/src/predict-service# make
+  root@5b9f27acaefe:/cpp/src/predict-service# ./bin/main
+  # calling prediction service on 172.17.0.3:8500
+  # call predict ok
+  # outputs size is 1
+  #
+  # output_1:
+  # 0.999035
+  # 0.999735
+  # 0.999927
   ```
 
-## API
+## 
