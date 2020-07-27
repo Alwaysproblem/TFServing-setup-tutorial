@@ -11,9 +11,10 @@
 #include "tensorflow/core/framework/types.grpc.pb.h"
 #include "tensorflow/core/framework/tensor.grpc.pb.h"
 #include "tensorflow/core/framework/tensor_shape.grpc.pb.h"
-#include "tensorflow_serving/apis/predict.grpc.pb.h"
-#include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
-#include "tensorflow/core/example/example.pb.h"
+#include "tensorflow_serving/apis/model_service.grpc.pb.h"
+// #include "tensorflow_serving/apis/predict.grpc.pb.h"
+// #include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
+// #include "tensorflow/core/example/example.pb.h"
 
 using grpc::Channel;
 using grpc::ClientContext;
@@ -21,13 +22,17 @@ using grpc::Status;
 
 using tensorflow::TensorProto;
 using tensorflow::TensorShapeProto;
-using tensorflow::serving::PredictRequest;
-using tensorflow::serving::PredictResponse;
-using tensorflow::serving::PredictionService;
+using tensorflow::serving::ModelService;
+using tensorflow::serving::ReloadConfigRequest;
+using tensorflow::serving::ReloadConfigResponse;
+using tensorflow::serving::ModelServerConfig;
+using tensorflow::serving::ModelConfigList;
+using tensorflow::serving::ModelConfig;
 
 using namespace boost::program_options;
 
 typedef google::protobuf::Map<std::string, tensorflow::TensorProto> OutMap;
+typedef google::protobuf::RepeatedPtrField<tensorflow::serving::ModelConfig> RepeatModelConfig;
 /*
 Application entry point
 */
@@ -46,12 +51,16 @@ int main(int argc, char** argv) {
   ClientContext context;
   unsigned int timout_in_sec = 5;
 
-  // predict request
-  PredictRequest request;
-  PredictResponse response;
+  // ReloadConfig request & response
+  ReloadConfigRequest request;
+  ReloadConfigResponse response;
+  ModelServerConfig model_server_config;
 
   // input tensor
-  tensorflow::TensorProto proto;
+  TensorProto proto;
+
+  // string stream for formatting
+  std::ostringstream formatter;
 
   // parse arguments
   options_description desc("Allowed options");
@@ -87,63 +96,40 @@ int main(int argc, char** argv) {
   model_version = vm["model_version"].as<int>();
   model_version_label = vm["model_version_label"].as<std::string>();
 
-  // start a
+  // create a new channel and stub
   std::shared_ptr<Channel> channel = grpc::CreateChannel(server_addr, grpc::InsecureChannelCredentials());
-  std::unique_ptr<PredictionService::Stub> stub =PredictionService::NewStub(channel);
+  std::unique_ptr< ModelService::Stub> stub = ModelService::NewStub(channel);
 
-  request.mutable_model_spec()->set_name(model_name);
-  request.mutable_model_spec()->set_signature_name(model_signature_name);
+  ModelConfigList& config_list = *model_server_config.mutable_model_config_list();
+  ModelConfig& one_config = *config_list.add_config();
+  
+  formatter << "/models/save/" << model_name << "/";
 
-  if (model_version > -1){
-    request.mutable_model_spec()->mutable_version()->set_value(model_version);
-  }
+  one_config.set_name(model_name);
+  one_config.set_base_path(formatter.str());
+  one_config.set_model_platform("tensorflow");
+  // one_config.set_model_type();
 
-  if (model_version_label != ""){
-    request.mutable_model_spec()->set_version_label(model_version_label);
-  }
+  model_server_config.mutable_model_config_list()->CopyFrom(config_list);
+  request.mutable_config()->CopyFrom(model_server_config);
 
-
-  OutMap& inputs = *request.mutable_inputs();
-
-  std::vector<float> data {
-    1., 2.,
-    1., 3.,
-    1., 4.,
-  };
-
-  proto.set_dtype(tensorflow::DataType::DT_FLOAT);
-
-  for (const float& e : data){
-    proto.add_float_val(e);
-  }
-
-  proto.mutable_tensor_shape()->add_dim()->set_size(3);
-  proto.mutable_tensor_shape()->add_dim()->set_size(2);
-
-  inputs["input_1"].CopyFrom(proto);
-  // inputs["input_1"] = proto;
-
-  std::cout << "calling prediction service on " << server_addr << std::endl;
-  Status status = stub->Predict(&context, request, &response);
+  std::cout << "calling model service on " << server_addr << std::endl;
+  Status status = stub->HandleReloadConfigRequest(&context, request, &response);
 
   // Act upon its status.
   if (status.ok()) {
 
-    const std::string output_label = "output_1";
-
-    std::cout << "call predict ok" << std::endl;
-    std::cout << "outputs size is " << response.outputs_size() << std::endl;
-
-    OutMap& map_outputs = *response.mutable_outputs();
-
-    tensorflow::TensorProto& result_tensor_proto = map_outputs[output_label];
-
-    std::cout << std::endl << output_label << ":" << std::endl;
-
-    for (int titer = 0; titer != result_tensor_proto.float_val_size(); ++titer) {
-      std::cout << result_tensor_proto.float_val(titer) << "\n";
+    std::cout << "call model service ok" << std::endl;
+    if (0 == response.status().error_code())
+    {
+      std::cout << "model " << model_name << " reloaded successfully." << std::endl;
+    }else{
+      std::cout << "model " << model_name << " reloaded failed!\n"
+                << "error code is " << response.status().error_code() << "\n"
+                << response.status().error_message()
+                << std::endl ;
     }
-    std::cout << "Done." << std::endl;
+
   } else {
     std::cout << "gRPC call return code: " << status.error_code() << ": "
               << status.error_message() << std::endl;

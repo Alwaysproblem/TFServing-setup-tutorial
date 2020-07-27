@@ -11,6 +11,8 @@ int main(int argc, char* argv[])
     int model_version = -1;
     std::string model_version_label = "";
 
+    std::ostringstream aa;
+
     options_description desc("Allowed options");
     desc.add_options()
         // First parameter describes option name/short name
@@ -39,8 +41,12 @@ int main(int argc, char* argv[])
     model_version = vm["model_version"].as<int>();
     model_version_label = vm["model_version_label"].as<std::string>();
 
+    aa << "fuck you";
+
     std::cout << server_addr << '\n';
     std::cout << model_name << '\n';
     std::cout << model_version << '\n';
     std::cout << model_version_label << '\n';
+
+    std::cout << aa.str() << std::endl;
 }
