@@ -14,9 +14,6 @@
 #include "tensorflow_serving/apis/predict.grpc.pb.h"
 #include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
 #include "tensorflow_serving/apis/get_model_metadata.grpc.pb.h"
-#include "tensorflow/core/example/example.pb.h"
-
-#include <google/protobuf/io/printer.h>
 
 using grpc::Channel;
 using grpc::ClientContext;
@@ -24,17 +21,11 @@ using grpc::Status;
 
 using tensorflow::TensorProto;
 using tensorflow::TensorShapeProto;
-using tensorflow::serving::PredictRequest;
-using tensorflow::serving::PredictResponse;
 using tensorflow::serving::PredictionService;
 using tensorflow::serving::GetModelMetadataRequest;
 using tensorflow::serving::GetModelMetadataResponse;
 
 using namespace boost::program_options;
-
-// using namespace google::protobuf::io;
-
-typedef google::protobuf::Map<std::string, tensorflow::TensorProto> OutMap;
 typedef google::protobuf::Map<std::string, google::protobuf::Any> MetadataMap;
 
 
@@ -59,9 +50,6 @@ int main(int argc, char** argv) {
   // get model metadata request & response
   GetModelMetadataRequest request;
   GetModelMetadataResponse response;
-
-  // input tensor
-  tensorflow::TensorProto proto;
 
   // parse arguments
   options_description desc("Allowed options");

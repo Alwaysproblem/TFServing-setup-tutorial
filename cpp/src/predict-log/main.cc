@@ -13,7 +13,7 @@
 #include "tensorflow/core/framework/tensor_shape.grpc.pb.h"
 #include "tensorflow_serving/apis/predict.grpc.pb.h"
 #include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
-#include "tensorflow/core/example/example.pb.h"
+#include "tensorflow_serving/apis/prediction_log.grpc.pb.h"
 
 using grpc::Channel;
 using grpc::ClientContext;
@@ -24,6 +24,7 @@ using tensorflow::TensorShapeProto;
 using tensorflow::serving::PredictRequest;
 using tensorflow::serving::PredictResponse;
 using tensorflow::serving::PredictionService;
+using tensorflow::serving::PredictLog;
 
 using namespace boost::program_options;
 
@@ -49,6 +50,9 @@ int main(int argc, char** argv) {
   // predict request
   PredictRequest request;
   PredictResponse response;
+
+  // predict log
+  PredictLog logs;
 
   // input tensor
   tensorflow::TensorProto proto;
@@ -143,7 +147,17 @@ int main(int argc, char** argv) {
     for (int titer = 0; titer != result_tensor_proto.float_val_size(); ++titer) {
       std::cout << result_tensor_proto.float_val(titer) << "\n";
     }
+
+    logs.mutable_request()->CopyFrom(request);
+    logs.mutable_response()->CopyFrom(response);
+
+    std::cout << "********************Predict Log*********************\n" 
+              << logs.DebugString()
+              << "****************************************************"
+              << std::endl;
+
     std::cout << "Done." << std::endl;
+
   } else {
     std::cout << "gRPC call return code: " << status.error_code() << ": "
               << status.error_message() << std::endl;

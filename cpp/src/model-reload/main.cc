@@ -12,16 +12,12 @@
 #include "tensorflow/core/framework/tensor.grpc.pb.h"
 #include "tensorflow/core/framework/tensor_shape.grpc.pb.h"
 #include "tensorflow_serving/apis/model_service.grpc.pb.h"
-// #include "tensorflow_serving/apis/predict.grpc.pb.h"
-// #include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
-// #include "tensorflow/core/example/example.pb.h"
+
 
 using grpc::Channel;
 using grpc::ClientContext;
 using grpc::Status;
 
-using tensorflow::TensorProto;
-using tensorflow::TensorShapeProto;
 using tensorflow::serving::ModelService;
 using tensorflow::serving::ReloadConfigRequest;
 using tensorflow::serving::ReloadConfigResponse;
@@ -31,7 +27,6 @@ using tensorflow::serving::ModelConfig;
 
 using namespace boost::program_options;
 
-typedef google::protobuf::Map<std::string, tensorflow::TensorProto> OutMap;
 typedef google::protobuf::RepeatedPtrField<tensorflow::serving::ModelConfig> RepeatModelConfig;
 /*
 Application entry point
@@ -55,9 +50,6 @@ int main(int argc, char** argv) {
   ReloadConfigRequest request;
   ReloadConfigResponse response;
   ModelServerConfig model_server_config;
-
-  // input tensor
-  TensorProto proto;
 
   // string stream for formatting
   std::ostringstream formatter;
