@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
   model_version = vm["model_version"].as<int>();
   model_version_label = vm["model_version_label"].as<std::string>();
 
-  // start a
+  // crate a channel
   std::shared_ptr<Channel> channel = grpc::CreateChannel(server_addr, grpc::InsecureChannelCredentials());
   std::unique_ptr<PredictionService::Stub> stub =PredictionService::NewStub(channel);
 
@@ -126,19 +126,8 @@ int main(int argc, char** argv) {
 
     std::cout << "call predict ok" << std::endl;
     std::cout << "metadata size is " << response.metadata_size() << std::endl;
+    std::cout << "metadata DebugString is \n" << response.DebugString() << std::endl;
 
-    MetadataMap& map_outputs = *response.mutable_metadata();
-    map_outputs. ;
-    // OutMap& map_outputs = *response.mutable_metadata();
-
-    // tensorflow::TensorProto& result_tensor_proto = map_outputs[output_label];
-
-    std::cout << std::endl << output_label << ":" << std::endl;
-
-    // for (int titer = 0; titer != result_tensor_proto.float_val_size(); ++titer) {
-    //   std::cout << result_tensor_proto.float_val(titer) << "\n";
-    // }
-    // std::cout << "Done." << std::endl;
   } else {
     std::cout << "gRPC call return code: " << status.error_code() << ": "
               << status.error_message() << std::endl;
