@@ -123,6 +123,9 @@ int main(int argc, char** argv) {
   inputs["input_1"].CopyFrom(proto);
   // inputs["input_1"] = proto;
 
+  request.mutable_output_filter()->Add("output_2");
+  // request.mutable_output_filter()->Add("output_2");
+
   std::cout << "calling prediction service on " << server_addr << std::endl;
   Status status = stub->Predict(&context, request, &response);
 
