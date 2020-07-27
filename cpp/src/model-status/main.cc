@@ -12,9 +12,6 @@
 #include "tensorflow/core/framework/tensor.grpc.pb.h"
 #include "tensorflow/core/framework/tensor_shape.grpc.pb.h"
 #include "tensorflow_serving/apis/model_service.grpc.pb.h"
-// #include "tensorflow_serving/apis/predict.grpc.pb.h"
-// #include "tensorflow_serving/apis/prediction_service.grpc.pb.h"
-// #include "tensorflow/core/example/example.pb.h"
 
 using grpc::Channel;
 using grpc::ClientContext;
@@ -23,16 +20,12 @@ using grpc::Status;
 using tensorflow::TensorProto;
 using tensorflow::TensorShapeProto;
 using tensorflow::serving::ModelService;
-using tensorflow::serving::ReloadConfigRequest;
-using tensorflow::serving::ReloadConfigResponse;
-using tensorflow::serving::ModelServerConfig;
-using tensorflow::serving::ModelConfigList;
-using tensorflow::serving::ModelConfig;
+using tensorflow::serving::GetModelStatusRequest;
+using tensorflow::serving::GetModelStatusResponse;
+
 
 using namespace boost::program_options;
 
-typedef google::protobuf::Map<std::string, tensorflow::TensorProto> OutMap;
-typedef google::protobuf::RepeatedPtrField<tensorflow::serving::ModelConfig> RepeatModelConfig;
 /*
 Application entry point
 */
@@ -51,16 +44,9 @@ int main(int argc, char** argv) {
   ClientContext context;
   unsigned int timout_in_sec = 5;
 
-  // ReloadConfig request & response
-  ReloadConfigRequest request;
-  ReloadConfigResponse response;
-  ModelServerConfig model_server_config;
-
-  // input tensor
-  TensorProto proto;
-
-  // string stream for formatting
-  std::ostringstream formatter;
+  // GetModelStatus request & response
+  GetModelStatusRequest request;
+  GetModelStatusResponse response;
 
   // parse arguments
   options_description desc("Allowed options");
@@ -100,35 +86,30 @@ int main(int argc, char** argv) {
   std::shared_ptr<Channel> channel = grpc::CreateChannel(server_addr, grpc::InsecureChannelCredentials());
   std::unique_ptr< ModelService::Stub> stub = ModelService::NewStub(channel);
 
-  ModelConfigList& config_list = *model_server_config.mutable_model_config_list();
-  ModelConfig& one_config = *config_list.add_config();
-  
-  formatter << "/models/save/" << model_name << "/";
+  request.mutable_model_spec()->set_name(model_name);
+  request.mutable_model_spec()->set_signature_name(model_signature_name);
 
-  one_config.set_name(model_name);
-  one_config.set_base_path(formatter.str());
-  one_config.set_model_platform("tensorflow");
-  // one_config.set_model_type();
+  if (model_version > -1){
+    request.mutable_model_spec()->mutable_version()->set_value(model_version);
+  }
 
-  model_server_config.mutable_model_config_list()->CopyFrom(config_list);
-  request.mutable_config()->CopyFrom(model_server_config);
+  if (model_version_label != ""){
+    request.mutable_model_spec()->set_version_label(model_version_label);
+  }
 
   std::cout << "calling model service on " << server_addr << std::endl;
-  Status status = stub->HandleReloadConfigRequest(&context, request, &response);
+  Status status = stub->GetModelStatus(&context, request, &response);
+
+  // std::cout << request.DebugString() << std::endl;
 
   // Act upon its status.
   if (status.ok()) {
 
-    std::cout << "call model service ok" << std::endl;
-    if (0 == response.status().error_code())
-    {
-      std::cout << "model " << model_name << " reloaded successfully." << std::endl;
-    }else{
-      std::cout << "model " << model_name << " reloaded failed!\n"
-                << "error code is " << response.status().error_code() << "\n"
-                << response.status().error_message()
-                << std::endl ;
-    }
+    const std::string output_label = "signature_def";
+
+    std::cout << "call predict ok" << std::endl;
+    std::cout << "metadata size is " << response.GetCachedSize() << std::endl;
+    std::cout << "metadata DebugString is \n" << response.DebugString() << std::endl;
 
   } else {
     std::cout << "gRPC call return code: " << status.error_code() << ": "
