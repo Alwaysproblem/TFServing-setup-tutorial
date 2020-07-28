@@ -1,6 +1,6 @@
 # GO API
 
-## Build your own go TFclient (optional)
+## Build your own go TFclient (optional) (old version)
 
 - Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
 
@@ -53,6 +53,20 @@
   root@8c768509e690:/work/src# rm -rf tensorflow/ serving/
   root@8c768509e690:/work/src# exit
   ```
+
+## Build your own go TFclient (optional) (new version) (Need to be test)
+
+- Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
+
+- requirement
+  - [go installation](https://golang.org/doc/install)
+  ```text
+  go >= 1.11
+  protoc >= 3.12.4
+  ```
+
+
+## Run
 
 - copy test file to your own directory
 
