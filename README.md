@@ -1,6 +1,12 @@
-# TFServing-setup-review
+# Tensorflow Serving Client API
 
-## Basic tutorial for Tensorflow Serving.
+## Basic tutorial for Tensorflow Serving Client API
+
+## **Requiement**
+
+- Docker
+- GO (>= 1.11) for go API
+- Python for python API
 
 ## **Install Docker**
 
@@ -14,32 +20,15 @@
 $ git clone https://github.com/Alwaysproblem/TFServing-setup-review.git
 
 $ cd TFServing-setup-review
+$ git checkout tfclient
 ```
 
 ## **Easy TFServer**
 
-- try simple example from tensorflow document.
+- here is no batch configuration only for demonstration
 
 ```bash
-# Download the TensorFlow Serving Docker image and repo
-$ docker pull tensorflow/serving
-
-$ git clone https://github.com/tensorflow/serving
-# Location of demo models
-TESTDATA="$(pwd)/serving/tensorflow_serving/servables/tensorflow/testdata"
-
-# Start TensorFlow Serving container and open the REST API port
-$ docker run -t --rm -p 8501:8501 \
-    -v "$TESTDATA/saved_model_half_plus_two_cpu:/models/half_plus_two" \
-    -e MODEL_NAME=half_plus_two \
-    tensorflow/serving &
-
-# Query the model using the predict API
-# need to create a new terminal.
-$ curl -d '{"instances": [1.0, 2.0, 5.0]}' \
-    -X POST http://localhost:8501/v1/models/half_plus_two:predict
-
-# Returns => { "predictions": [2.5, 3.0, 4.5] }
+$ docker run --rm -p 8500:8500 -p 8501:8501 -v `pwd`:/models -it tensorflow/serving --model_config_file=/models/config/versionlabels.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
 ```
 
 - Docker common command.
@@ -467,7 +456,7 @@ $ python3 POSTreq.py
 - substitute ${name} for your own alias for docker image.
 
 ```bash
-$ docker run -it -d --name ${name} -p 8501:8501 -p 8500:8500 --mount type=bind,source=$(pwd),target=/models tensorflow/serving
+$ docker run --rm -it --name holy-shit -p 8501:8501 -p 8500:8500 -v $(pwd):/models tensorflow/serving --model_config_file=/models/config/Toy.config
 ```
 
 - enter the internal bash under docker.

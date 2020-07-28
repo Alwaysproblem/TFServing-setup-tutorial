@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/*
+*.iml
+.idea/
+bin/
+pkg/
+.DS_Store
+Would skip repository src/github.com/beego/bee
+Would skip repository src/github.com/bigchange/go-pro
+Would skip repository src/github.com/go-gorp/gorp
+Would skip repository src/github.com/go-sql-driver/mysql
+src/github.com/golang
+
