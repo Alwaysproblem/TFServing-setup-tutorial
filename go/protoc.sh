@@ -29,4 +29,6 @@ protoc -I=$INS -I=$INT --go_out=plugins=grpc:$OUT --go_opt=paths=source_relative
     $INS/tensorflow_serving/config/*.proto \
     $INS/tensorflow_serving/core/*.proto \
     $INS/tensorflow_serving/sources/storage_path/*.proto \
-    $INS/tensorflow_serving/util/*.proto 
+    $INS/tensorflow_serving/util/*.proto
+
+# try  # --go_opt=module=github.com/foo/bar \
