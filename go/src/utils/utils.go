@@ -10,7 +10,21 @@ import (
 	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
 )
 
+func str2bytes(tensor interface{}) ([][]byte, bool) {
+	str, ok := tensor.([]string)
+	bytes := make([][]byte, len(str))
+	
+	if !ok {
+		fmt.Println("error: string to byte failed.")
+		return nil, ok
+	}
+	
+	for i, s := range str {
+		bytes[i] = []byte(s)
+	}
 
+	return bytes, ok
+}
 
 // MakeTensorProto only for list and map 
 func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp *framework.TensorProto, err error){
@@ -50,7 +64,8 @@ func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp 
 		case "DT_INT16", "DT_INT32", "DT_INT8", "DT_UINT8":
 			tp.IntVal, ok = tensor.([]int32)
 		case "DT_STRING":
-			tp.StringVal, ok = tensor.([][]byte)
+			// tp.StringVal, ok = tensor.([][]byte)
+			tp.StringVal, ok = str2bytes(tensor)
 		case "DT_COMPLEX64":
 			tp.ScomplexVal, ok = tensor.([]float32)
 		case "DT_INT64":

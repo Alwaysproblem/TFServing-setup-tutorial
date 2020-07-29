@@ -17,7 +17,7 @@ import (
 
 var (
 	serverAddr         = flag.String("server_addr", "127.0.0.1:8500", "The server address in the format of host:port")
-	modelName          = flag.String("model_name", "Toy", "TensorFlow model name")
+	modelName          = flag.String("model_name", "FC", "TensorFlow model name")
 	modelVersion       = flag.Int64("model_version", -1, "TensorFlow model version")
 	modelVersionLabel  = flag.String("model_version_label", "", "TensorFlow model version label")
 )
@@ -51,22 +51,60 @@ func main() {
 	}
 	request.ModelSpec.SignatureName = "serving_default"
 	// data should be the flatten values of tensor (1D Array)
-	data := []float32{ 
-		1., 2.,
-		1., 3.,
-		1., 4.,
+
+	inputs := map[string](interface{}){
+		"aid": []string{"dgadfadsfag", "sdfgad"},
+		"click_adid": []string{
+			"sdfgad", "adgas", "adgasdfd", "asdgadsg",
+				"asdgadsfa", "Asdgasd", "Asdga", "",
+			"sdfgad", "adgas", "adgasdfd", "", "", "", "", "",
+		},
+		"age": []int64{63, 67},
+		"cp": []int64{1, 4},
+		"chol": []int64{233, 286},
+		"oldpeak": []float32{2.3, 1.5},
 	}
-	dataShape := []int64{
-		3, 2,
+	
+
+	inputShape := map[string]([]int64){
+		"aid": []int64{2, 1},
+		"click_adid": []int64{2, 8},
+		"age": []int64{2, 1},
+		"cp": []int64{2, 1},
+		"chol": []int64{2, 1},
+		"oldpeak": []int64{2, 1},
 	}
+	
+	inputsType := map[string]string{
+			"aid": "DT_STRING",
+			"click_adid": "DT_STRING",
+			"age":"DT_INT64",
+			"cp":"DT_INT64",
+			"chol":"DT_INT64",
+			"oldpeak": "DT_FLOAT",
+		}
+
+
 	// convert data to tensorProto
-	dataProto, _ := utils.MakeTensorProto(data, "DT_FLOAT", dataShape)
-	request.Inputs["input_1"] = dataProto
-	request.OutputFilter = []string{"output_1"} 
+	for k, v := range inputs {
+		// fmt.Println(v)
+		dataProto, errs := utils.MakeTensorProto(v, inputsType[k], inputShape[k])
+		if errs != nil{
+			panic(errs)
+		}else{
+			// fmt.Println(dataProto.TensorShape)
+			request.Inputs[k] = dataProto
+		}
+	}
+	// request.OutputFilter = []string{"output_1"} 
 	// request.OutputFilter = []string{"output_2"}  // nothing will come out.
 
 	// get prediction
 	resp, _ := client.Predict(ctx, request)
 
+	// _ = client
+	// _ = ctx
+
 	fmt.Println(resp)
+	// fmt.Println(request)
 }
