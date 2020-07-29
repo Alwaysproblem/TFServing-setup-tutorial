@@ -33,6 +33,89 @@ using tensorflow::serving::PredictionService;
 using namespace boost::program_options;
 
 typedef google::protobuf::Map<std::string, tensorflow::TensorProto> OutMap;
+
+
+// std::unique_ptr<TensorProto> can be used without memory release.
+std::unique_ptr<TensorProto> make_tensor_proto(std::vector<boost::any> inputs, 
+                        tensorflow::DataType dtype, std::vector<int> input_shape){
+    TensorProto* proto = new tensorflow::TensorProto() ;
+
+    switch (dtype){
+
+      case tensorflow::DataType::DT_STRING:
+        proto->set_dtype(tensorflow::DataType::DT_STRING);
+        for (auto e : inputs){
+          const char* tp_data = boost::any_cast<const char*>(e);
+          proto->add_string_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT64:
+        proto->set_dtype(tensorflow::DataType::DT_INT64);
+        for (auto e : inputs){
+          long tp_data = boost::any_cast<long>(e);
+          proto->add_int64_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_FLOAT:
+        proto->set_dtype(tensorflow::DataType::DT_FLOAT);
+        for (auto e : inputs){
+          float tp_data = float(boost::any_cast<double>(e));
+          proto->add_float_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_DOUBLE:
+        proto->set_dtype(tensorflow::DataType::DT_DOUBLE);
+        for (auto e : inputs){
+          double tp_data = boost::any_cast<double>(e);
+          proto->add_double_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_COMPLEX64:
+        proto->set_dtype(tensorflow::DataType::DT_COMPLEX64);
+        for (auto e : inputs){
+          float tp_data = float(boost::any_cast<double>(e));
+          proto->add_float_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_HALF:
+        proto->set_dtype(tensorflow::DataType::DT_HALF);
+        for (auto e : inputs){
+          int tp_data = boost::any_cast<int>(e);
+          proto->add_int_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT8:
+        proto->set_dtype(tensorflow::DataType::DT_INT8);
+        for (auto e : inputs){
+          int tp_data = boost::any_cast<int>(e);
+          proto->add_int_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT32:
+        proto->set_dtype(tensorflow::DataType::DT_INT32);
+        for (auto e : inputs){
+          int tp_data = boost::any_cast<int>(e);
+          proto->add_int_val(tp_data);
+        }
+        break;
+      // case tensorflow::DataType::DT_VARIANT:
+      //   proto.set_dtype(tensorflow::DataType::DT_VARIANT);
+      //   tp_data = boost::any_cast<>;
+        // for (const float& e : tp_data){
+        //   proto.add_float_val(e);
+        // }
+      //   break;
+      default:
+        throw "Unkown dataType";
+    };
+
+    for (int& s : input_shape){
+      proto->mutable_tensor_shape()->add_dim()->set_size(s);
+    }
+
+    return std::unique_ptr<TensorProto>(proto);
+}
+
 /*
 Application entry point
 */
@@ -143,7 +226,7 @@ int main(int argc, char** argv) {
   	{"oldpeak", {2, 1}},
   };
   
-  std::map<std::string, tensorflow::DataType> inputsType {
+  std::map<std::string, tensorflow::DataType> DataType {
     {"aid", tensorflow::DataType::DT_STRING},
     {"click_adid", tensorflow::DataType::DT_STRING},
     {"age", tensorflow::DataType::DT_INT64},
@@ -155,85 +238,10 @@ int main(int argc, char** argv) {
   OutMap& minputs = *request.mutable_inputs();
 
   for (auto x : inputs){
-    tensorflow::TensorProto proto;
-
     std::string key = x.first;
     std::vector<boost::any> data = x.second;
-
-    switch (inputsType[key]){
-
-      case tensorflow::DataType::DT_STRING:
-        proto.set_dtype(tensorflow::DataType::DT_STRING);
-        for (auto e : data){
-          const char* tp_data = boost::any_cast<const char*>(e);
-          proto.add_string_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_INT64:
-        proto.set_dtype(tensorflow::DataType::DT_INT64);
-        for (auto e : data){
-          long tp_data = boost::any_cast<long>(e);
-          proto.add_int64_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_FLOAT:
-        proto.set_dtype(tensorflow::DataType::DT_FLOAT);
-        for (auto e : data){
-          float tp_data = float(boost::any_cast<double>(e));
-          proto.add_float_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_DOUBLE:
-        proto.set_dtype(tensorflow::DataType::DT_DOUBLE);
-        for (auto e : data){
-          double tp_data = boost::any_cast<double>(e);
-          proto.add_double_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_COMPLEX64:
-        proto.set_dtype(tensorflow::DataType::DT_COMPLEX64);
-        for (auto e : data){
-          float tp_data = float(boost::any_cast<double>(e));
-          proto.add_float_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_HALF:
-        proto.set_dtype(tensorflow::DataType::DT_HALF);
-        for (auto e : data){
-          int tp_data = boost::any_cast<int>(e);
-          proto.add_int_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_INT8:
-        proto.set_dtype(tensorflow::DataType::DT_INT8);
-        for (auto e : data){
-          int tp_data = boost::any_cast<int>(e);
-          proto.add_int_val(tp_data);
-        }
-        break;
-      case tensorflow::DataType::DT_INT32:
-        proto.set_dtype(tensorflow::DataType::DT_INT32);
-        for (auto e : data){
-          int tp_data = boost::any_cast<int>(e);
-          proto.add_int_val(tp_data);
-        }
-        break;
-      // case tensorflow::DataType::DT_VARIANT:
-      //   proto.set_dtype(tensorflow::DataType::DT_VARIANT);
-      //   tp_data = boost::any_cast<>;
-        // for (const float& e : tp_data){
-        //   proto.add_float_val(e);
-        // }
-      //   break;
-      default:
-        throw "Unkown dataType";
-    };
-
-    for (int& s : inputShape[key]){
-      proto.mutable_tensor_shape()->add_dim()->set_size(s);
-    }
-
-    minputs[key].CopyFrom(proto);
+    std::unique_ptr<TensorProto> proto = make_tensor_proto(data, DataType[key], inputShape[key]);
+    minputs[key].CopyFrom(*proto);
   }
 
   // std::cout << request.DebugString() << std::endl;
