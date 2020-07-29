@@ -1,9 +1,14 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <vector>
+#include <map>
+// #include <cstdint>
 
 #include <grpcpp/grpcpp.h>
 #include <boost/program_options.hpp>
+#include <boost/any.hpp>
+#include <boost/numeric/conversion/cast.hpp>
 #include "grpcpp/create_channel.h"
 #include "grpcpp/security/credentials.h"
 #include "google/protobuf/map.h"
@@ -34,7 +39,7 @@ Application entry point
 int main(int argc, char** argv) {
 
   std::string server_addr = "172.17.0.3:8500";
-  std::string model_name = "Toy";
+  std::string model_name = "FC";
   int model_version = -1;
   std::string model_version_label = "";
   const std::string model_signature_name = "serving_default";
@@ -49,9 +54,6 @@ int main(int argc, char** argv) {
   // predict request
   PredictRequest request;
   PredictResponse response;
-
-  // input tensor
-  tensorflow::TensorProto proto;
 
   // parse arguments
   options_description desc("Allowed options");
@@ -102,28 +104,141 @@ int main(int argc, char** argv) {
     request.mutable_model_spec()->set_version_label(model_version_label);
   }
 
+  std::map<std::string, std::vector<boost::any>> inputs;
 
-  OutMap& inputs = *request.mutable_inputs();
+  inputs["aid"] = std::vector<boost::any> {static_cast<const char *>("dgadfadsfag"), 
+                                                static_cast<const char *>("sdfgad")};
 
-  std::vector<float> data {
-    1., 2.,
-    1., 3.,
-    1., 4.,
+  inputs["click_adid"] = std::vector<boost::any> {
+      static_cast<const char *>("sdfgad"), 
+      static_cast<const char *>("adgas"), 
+      static_cast<const char *>("adgasdfd"), 
+      static_cast<const char *>("asdgadsg"),
+      static_cast<const char *>("asdgadsfa"), 
+      static_cast<const char *>("Asdgasd"), 
+      static_cast<const char *>("Asdga"), 
+      static_cast<const char *>(""),
+
+      static_cast<const char *>("sdfgad"), 
+      static_cast<const char *>("adgas"), 
+      static_cast<const char *>("adgasdfd"), 
+      static_cast<const char *>(""), 
+      static_cast<const char *>(""), 
+      static_cast<const char *>(""), 
+      static_cast<const char *>(""), 
+      static_cast<const char *>(""),
+    };
+
+  inputs["age"] = std::vector<boost::any> {63L, 67L};
+  inputs["cp"] = std::vector<boost::any> {1L, 4L};
+  inputs["chol"] = std::vector<boost::any> {233L, 286L};
+  inputs["oldpeak"] = std::vector<boost::any> {2.3, 1.5};
+  
+  std::map<std::string, std::vector<int>>inputShape {
+  	{"aid", {2, 1}},
+  	{"click_adid", {2, 8}},
+  	{"age", {2, 1}},
+  	{"cp", {2, 1}},
+  	{"chol", {2, 1}},
+  	{"oldpeak", {2, 1}},
+  };
+  
+  std::map<std::string, tensorflow::DataType> inputsType {
+    {"aid", tensorflow::DataType::DT_STRING},
+    {"click_adid", tensorflow::DataType::DT_STRING},
+    {"age", tensorflow::DataType::DT_INT64},
+    {"cp", tensorflow::DataType::DT_INT64},
+    {"chol", tensorflow::DataType::DT_INT64},
+    {"oldpeak", tensorflow::DataType::DT_FLOAT},
   };
 
-  proto.set_dtype(tensorflow::DataType::DT_FLOAT);
+  OutMap& minputs = *request.mutable_inputs();
 
-  for (const float& e : data){
-    proto.add_float_val(e);
+  for (auto x : inputs){
+    tensorflow::TensorProto proto;
+
+    std::string key = x.first;
+    std::vector<boost::any> data = x.second;
+
+    switch (inputsType[key]){
+
+      case tensorflow::DataType::DT_STRING:
+        proto.set_dtype(tensorflow::DataType::DT_STRING);
+        for (auto e : data){
+          const char* tp_data = boost::any_cast<const char*>(e);
+          proto.add_string_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT64:
+        proto.set_dtype(tensorflow::DataType::DT_INT64);
+        for (auto e : data){
+          long tp_data = boost::any_cast<long>(e);
+          proto.add_int64_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_FLOAT:
+        proto.set_dtype(tensorflow::DataType::DT_FLOAT);
+        for (auto e : data){
+          float tp_data = float(boost::any_cast<double>(e));
+          proto.add_float_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_DOUBLE:
+        proto.set_dtype(tensorflow::DataType::DT_DOUBLE);
+        for (auto e : data){
+          double tp_data = boost::any_cast<double>(e);
+          proto.add_double_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_COMPLEX64:
+        proto.set_dtype(tensorflow::DataType::DT_COMPLEX64);
+        for (auto e : data){
+          float tp_data = float(boost::any_cast<double>(e));
+          proto.add_float_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_HALF:
+        proto.set_dtype(tensorflow::DataType::DT_HALF);
+        for (auto e : data){
+          int tp_data = boost::any_cast<int>(e);
+          proto.add_int_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT8:
+        proto.set_dtype(tensorflow::DataType::DT_INT8);
+        for (auto e : data){
+          int tp_data = boost::any_cast<int>(e);
+          proto.add_int_val(tp_data);
+        }
+        break;
+      case tensorflow::DataType::DT_INT32:
+        proto.set_dtype(tensorflow::DataType::DT_INT32);
+        for (auto e : data){
+          int tp_data = boost::any_cast<int>(e);
+          proto.add_int_val(tp_data);
+        }
+        break;
+      // case tensorflow::DataType::DT_VARIANT:
+      //   proto.set_dtype(tensorflow::DataType::DT_VARIANT);
+      //   tp_data = boost::any_cast<>;
+        // for (const float& e : tp_data){
+        //   proto.add_float_val(e);
+        // }
+      //   break;
+      default:
+        throw "Unkown dataType";
+    };
+
+    for (int& s : inputShape[key]){
+      proto.mutable_tensor_shape()->add_dim()->set_size(s);
+    }
+
+    minputs[key].CopyFrom(proto);
   }
 
-  proto.mutable_tensor_shape()->add_dim()->set_size(3);
-  proto.mutable_tensor_shape()->add_dim()->set_size(2);
+  // std::cout << request.DebugString() << std::endl;
 
-  inputs["input_1"].CopyFrom(proto);
-  // inputs["input_1"] = proto;
-
-  request.mutable_output_filter()->Add("output_2");
+  // request.mutable_output_filter()->Add("output_2");
   // request.mutable_output_filter()->Add("output_2");
 
   std::cout << "calling prediction service on " << server_addr << std::endl;
@@ -137,15 +252,17 @@ int main(int argc, char** argv) {
     std::cout << "call predict ok" << std::endl;
     std::cout << "outputs size is " << response.outputs_size() << std::endl;
 
-    OutMap& map_outputs = *response.mutable_outputs();
+    std::cout << response.DebugString() << std::endl;
 
-    tensorflow::TensorProto& result_tensor_proto = map_outputs[output_label];
+    // OutMap& map_outputs = *response.mutable_outputs();
 
-    std::cout << std::endl << output_label << ":" << std::endl;
+    // tensorflow::TensorProto& result_tensor_proto = map_outputs[output_label];
 
-    for (int titer = 0; titer != result_tensor_proto.float_val_size(); ++titer) {
-      std::cout << result_tensor_proto.float_val(titer) << "\n";
-    }
+    // std::cout << std::endl << output_label << ":" << std::endl;
+
+    // for (int titer = 0; titer != result_tensor_proto.float_val_size(); ++titer) {
+    //   std::cout << result_tensor_proto.float_val(titer) << "\n";
+    // }
     std::cout << "Done." << std::endl;
   } else {
     std::cout << "gRPC call return code: " << status.error_code() << ": "
