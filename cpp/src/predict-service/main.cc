@@ -33,7 +33,7 @@ Application entry point
 */
 int main(int argc, char** argv) {
 
-  std::string server_addr = "172.17.0.3:8500";
+  std::string server_addr = "172.17.0.2:8500";
   std::string model_name = "Toy";
   int model_version = -1;
   std::string model_version_label = "";
