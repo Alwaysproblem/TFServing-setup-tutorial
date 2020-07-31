@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get install autoconf automake libtool curl make unzip -y \
     && apt-get install pkg-config libgflags-dev build-essential libc++-dev -y \
     && apt-get install doxygen git libboost-all-dev wget -y \
-    && apt-get install gcc-6 g++-6 \
+    && apt-get install gcc-6 g++-6 -y \
     && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 80 --slave /usr/bin/g++ g++ /usr/bin/g++-6 \
     && apt-get clean
 
