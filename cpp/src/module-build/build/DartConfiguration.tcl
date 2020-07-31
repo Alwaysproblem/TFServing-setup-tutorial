@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /cpp/src/tmp
-BuildDirectory: /cpp/src/tmp/build
+SourceDirectory: /cpp/src/module-build
+BuildDirectory: /cpp/src/module-build/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: b1db3cb7e606
+Site: bc7d1607dff0
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-x86_64-linux-gnu-g++-7
@@ -36,7 +36,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/cpp/src/tmp"
+ConfigureCommand: "/usr/bin/cmake" "/cpp/src/module-build"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

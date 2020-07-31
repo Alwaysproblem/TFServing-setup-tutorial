@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cpp/src/tmp
+CMAKE_SOURCE_DIR = /cpp/src/module-build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cpp/src/tmp/build
+CMAKE_BINARY_DIR = /cpp/src/module-build/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tfclient.dir/depend.make
@@ -59,7 +59,7 @@ include CMakeFiles/tfclient.dir/flags.make
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.i: cmake_force
@@ -83,7 +83,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o: /cpp/src/gen/tensorflow/core/example/example.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.i: cmake_force
@@ -107,7 +107,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.i: cmake_force
@@ -131,7 +131,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_confi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o: /cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.i: cmake_force
@@ -155,7 +155,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_confi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.i: cmake_force
@@ -179,7 +179,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o: /cpp/src/gen/tensorflow/core/example/feature.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/feature.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.i: cmake_force
@@ -203,7 +203,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.i: cmake_force
@@ -227,7 +227,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_descrip
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.i: cmake_force
@@ -251,7 +251,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_descrip
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.i: cmake_force
@@ -275,7 +275,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/api_def.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/api_def.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.i: cmake_force
@@ -299,7 +299,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o.pr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.i: cmake_force
@@ -323,7 +323,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.i: cmake_force
@@ -347,7 +347,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.i: cmake_force
@@ -371,7 +371,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.i: cmake_force
@@ -395,7 +395,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.i: cmake_force
@@ -419,7 +419,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.i: cmake_force
@@ -443,7 +443,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.i: cmake_force
@@ -467,7 +467,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/function.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/function.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.i: cmake_force
@@ -491,7 +491,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.i: cmake_force
@@ -515,7 +515,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/graph.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.i: cmake_force
@@ -539,7 +539,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.i: cmake_force
@@ -563,7 +563,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_inf
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.i: cmake_force
@@ -587,7 +587,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_inf
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.i: cmake_force
@@ -611,7 +611,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.i: cmake_force
@@ -635,7 +635,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.i: cmake_force
@@ -659,7 +659,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.i: cmake_force
@@ -683,7 +683,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.i: cmake_force
@@ -707,7 +707,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/node_def.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/node_def.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.i: cmake_force
@@ -731,7 +731,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.i: cmake_force
@@ -755,7 +755,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/op_def.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/op_def.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.i: cmake_force
@@ -779,7 +779,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o.pro
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.i: cmake_force
@@ -803,7 +803,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.i: cmake_force
@@ -827,7 +827,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.i: cmake_force
@@ -851,7 +851,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.i: cmake_force
@@ -875,7 +875,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.i: cmake_force
@@ -899,7 +899,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.i: cmake_force
@@ -923,7 +923,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.i: cmake_force
@@ -947,7 +947,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.i: cmake_force
@@ -971,7 +971,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.i: cmake_force
@@ -995,7 +995,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/summary.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/summary.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.i: cmake_force
@@ -1019,7 +1019,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o.pr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.i: cmake_force
@@ -1043,7 +1043,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.i: cmake_force
@@ -1067,7 +1067,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o.pro
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.i: cmake_force
@@ -1091,7 +1091,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.i: cmake_force
@@ -1115,7 +1115,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.i: cmake_force
@@ -1139,7 +1139,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.i: cmake_force
@@ -1163,7 +1163,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.i: cmake_force
@@ -1187,7 +1187,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.i: cmake_force
@@ -1211,7 +1211,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.i: cmake_force
@@ -1235,7 +1235,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/types.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/types.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.i: cmake_force
@@ -1259,7 +1259,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.i: cmake_force
@@ -1283,7 +1283,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/variable.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/variable.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.i: cmake_force
@@ -1307,7 +1307,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.i: cmake_force
@@ -1331,7 +1331,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o: /cpp/src/gen/tensorflow/core/framework/versions.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/versions.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.i: cmake_force
@@ -1355,7 +1355,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.i: cmake_force
@@ -1379,7 +1379,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o: /cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o -c /cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.i: cmake_force
@@ -1403,7 +1403,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.i: cmake_force
@@ -1427,7 +1427,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.i: cmake_force
@@ -1451,7 +1451,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.i: cmake_force
@@ -1475,7 +1475,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.i: cmake_force
@@ -1499,7 +1499,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.i: cmake_force
@@ -1523,7 +1523,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.i: cmake_force
@@ -1547,7 +1547,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o.pro
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.i: cmake_force
@@ -1571,7 +1571,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.i: cmake_force
@@ -1595,7 +1595,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.i: cmake_force
@@ -1619,7 +1619,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.i: cmake_force
@@ -1643,7 +1643,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.i: cmake_force
@@ -1667,7 +1667,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.i: cmake_force
@@ -1691,7 +1691,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.i: cmake_force
@@ -1715,7 +1715,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.i: cmake_force
@@ -1739,7 +1739,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.i: cmake_force
@@ -1763,7 +1763,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.i: cmake_force
@@ -1787,7 +1787,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o.provi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.i: cmake_force
@@ -1811,7 +1811,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.i: cmake_force
@@ -1835,7 +1835,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.i: cmake_force
@@ -1859,7 +1859,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.i: cmake_force
@@ -1883,7 +1883,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.i: cmake_force
@@ -1907,7 +1907,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.g
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.i: cmake_force
@@ -1931,7 +1931,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.i: cmake_force
@@ -1955,7 +1955,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.i: cmake_force
@@ -1979,7 +1979,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.i: cmake_force
@@ -2003,7 +2003,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.i: cmake_force
@@ -2027,7 +2027,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.i: cmake_force
@@ -2051,7 +2051,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.i: cmake_force
@@ -2075,7 +2075,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.i: cmake_force
@@ -2099,7 +2099,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/master.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.i: cmake_force
@@ -2123,7 +2123,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.i: cmake_force
@@ -2147,7 +2147,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.i: cmake_force
@@ -2171,7 +2171,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.i: cmake_force
@@ -2195,7 +2195,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.i: cmake_force
@@ -2219,7 +2219,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.i: cmake_force
@@ -2243,7 +2243,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.i: cmake_force
@@ -2267,7 +2267,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.i: cmake_force
@@ -2291,7 +2291,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.i: cmake_force
@@ -2315,7 +2315,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.i: cmake_force
@@ -2339,7 +2339,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handl
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.i: cmake_force
@@ -2363,7 +2363,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handl
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.i: cmake_force
@@ -2387,7 +2387,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.i: cmake_force
@@ -2411,7 +2411,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.i: cmake_force
@@ -2435,7 +2435,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.i: cmake_force
@@ -2459,7 +2459,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.i: cmake_force
@@ -2483,7 +2483,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.i: cmake_force
@@ -2507,7 +2507,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.i: cmake_force
@@ -2531,7 +2531,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.i: cmake_force
@@ -2555,7 +2555,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.i: cmake_force
@@ -2579,7 +2579,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.i: cmake_force
@@ -2603,7 +2603,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o.provi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.i: cmake_force
@@ -2627,7 +2627,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.i: cmake_force
@@ -2651,7 +2651,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.i: cmake_force
@@ -2675,7 +2675,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.i: cmake_force
@@ -2699,7 +2699,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.i: cmake_force
@@ -2723,7 +2723,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.g
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.i: cmake_force
@@ -2747,7 +2747,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.i: cmake_force
@@ -2771,7 +2771,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.i: cmake_force
@@ -2795,7 +2795,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.i: cmake_force
@@ -2819,7 +2819,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.g
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.i: cmake_force
@@ -2843,7 +2843,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.i: cmake_force
@@ -2867,7 +2867,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.i: cmake_force
@@ -2891,7 +2891,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.i: cmake_force
@@ -2915,7 +2915,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.i: cmake_force
@@ -2939,7 +2939,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.i: cmake_force
@@ -2963,7 +2963,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o: /cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.i: cmake_force
@@ -2987,7 +2987,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o: /cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.i: cmake_force
@@ -3011,7 +3011,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o: /cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o -c /cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.i: cmake_force
@@ -3035,7 +3035,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o.provi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.i: cmake_force
@@ -3059,7 +3059,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/classification.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/classification.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.i: cmake_force
@@ -3083,7 +3083,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.i: cmake_force
@@ -3107,7 +3107,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.g
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.i: cmake_force
@@ -3131,7 +3131,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.i: cmake_force
@@ -3155,7 +3155,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.i: cmake_force
@@ -3179,7 +3179,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.i: cmake_force
@@ -3203,7 +3203,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/inference.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/inference.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.i: cmake_force
@@ -3227,7 +3227,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o.pr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.i: cmake_force
@@ -3251,7 +3251,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/input.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/input.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.i: cmake_force
@@ -3275,7 +3275,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o.provid
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.i: cmake_force
@@ -3299,7 +3299,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.i: cmake_force
@@ -3323,7 +3323,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o.provid
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.i: cmake_force
@@ -3347,7 +3347,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.i: cmake_force
@@ -3371,7 +3371,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.i: cmake_force
@@ -3395,7 +3395,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.i: cmake_force
@@ -3419,7 +3419,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.i: cmake_force
@@ -3443,7 +3443,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/predict.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/predict.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.i: cmake_force
@@ -3467,7 +3467,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.i: cmake_force
@@ -3491,7 +3491,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.i: cmake_force
@@ -3515,7 +3515,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.i: cmake_force
@@ -3539,7 +3539,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.g
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.i: cmake_force
@@ -3563,7 +3563,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.i: cmake_force
@@ -3587,7 +3587,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/regression.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/regression.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.i: cmake_force
@@ -3611,7 +3611,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o.p
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.i: cmake_force
@@ -3635,7 +3635,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o: /cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.i: cmake_force
@@ -3659,7 +3659,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.c
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.i: cmake_force
@@ -3683,7 +3683,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_conf
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.i: cmake_force
@@ -3707,7 +3707,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_conf
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.i: cmake_force
@@ -3731,7 +3731,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grp
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.i: cmake_force
@@ -3755,7 +3755,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.i: cmake_force
@@ -3779,7 +3779,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_confi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.i: cmake_force
@@ -3803,7 +3803,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_confi
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.i: cmake_force
@@ -3827,7 +3827,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.i: cmake_force
@@ -3851,7 +3851,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.i: cmake_force
@@ -3875,7 +3875,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.gr
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.i: cmake_force
@@ -3899,7 +3899,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.i: cmake_force
@@ -3923,7 +3923,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o: /cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.i: cmake_force
@@ -3947,7 +3947,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.i: cmake_force
@@ -3971,7 +3971,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o: /cpp/src/gen/tensorflow_serving/core/logging.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o -c /cpp/src/gen/tensorflow_serving/core/logging.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.i: cmake_force
@@ -3995,7 +3995,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o.prov
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.i: cmake_force
@@ -4019,7 +4019,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o: /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.i: cmake_force
@@ -4043,7 +4043,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.i: cmake_force
@@ -4067,7 +4067,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/stat
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o: /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.i: cmake_force
@@ -4091,7 +4091,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/stat
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.i: cmake_force
@@ -4115,7 +4115,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_t
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o: /cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.i: cmake_force
@@ -4139,7 +4139,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_t
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o: /cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.i: cmake_force
@@ -4163,7 +4163,7 @@ CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o.
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o: CMakeFiles/tfclient.dir/flags.make
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o: /cpp/src/gen/tensorflow_serving/util/status.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o"
 	/usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/status.pb.cc
 
 CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.i: cmake_force
@@ -4537,7 +4537,7 @@ libtfclient.a: CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/statu
 libtfclient.a: CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o
 libtfclient.a: CMakeFiles/tfclient.dir/build.make
 libtfclient.a: CMakeFiles/tfclient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cpp/src/tmp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Linking CXX static library libtfclient.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cpp/src/module-build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Linking CXX static library libtfclient.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/tfclient.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tfclient.dir/link.txt --verbose=$(VERBOSE)
 
@@ -4726,6 +4726,6 @@ CMakeFiles/tfclient.dir/clean:
 .PHONY : CMakeFiles/tfclient.dir/clean
 
 CMakeFiles/tfclient.dir/depend:
-	cd /cpp/src/tmp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cpp/src/tmp /cpp/src/tmp /cpp/src/tmp/build /cpp/src/tmp/build /cpp/src/tmp/build/CMakeFiles/tfclient.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cpp/src/module-build/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cpp/src/module-build /cpp/src/module-build /cpp/src/module-build/build /cpp/src/module-build/build /cpp/src/module-build/build/CMakeFiles/tfclient.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tfclient.dir/depend
 

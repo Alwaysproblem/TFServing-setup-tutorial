@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cpp/src/tmp
+CMAKE_SOURCE_DIR = /cpp/src/module-build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cpp/src/tmp/build
+CMAKE_BINARY_DIR = /cpp/src/module-build/build
 
 # Utility rule file for ExperimentalBuild.
 
@@ -71,6 +71,6 @@ CMakeFiles/ExperimentalBuild.dir/clean:
 .PHONY : CMakeFiles/ExperimentalBuild.dir/clean
 
 CMakeFiles/ExperimentalBuild.dir/depend:
-	cd /cpp/src/tmp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cpp/src/tmp /cpp/src/tmp /cpp/src/tmp/build /cpp/src/tmp/build /cpp/src/tmp/build/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cpp/src/module-build/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cpp/src/module-build /cpp/src/module-build /cpp/src/module-build/build /cpp/src/module-build/build /cpp/src/module-build/build/CMakeFiles/ExperimentalBuild.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalBuild.dir/depend
 
