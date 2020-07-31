@@ -24,6 +24,15 @@ INSTALL(TARGETS tfclient
     LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib
     ARCHIVE DESTINATION ${PROJECT_SOURCE_DIR}/lib)
 
+# # set(BASE /cpp/src/gen/)
+# foreach ( file ${HEADERS} )
+#     get_filename_component( dir ${file} ABSOLUTE)
+#     file(RELATIVE_PATH ITEM "/cpp/src/gen" dir)
+#     # string(REPLACE "" "/cpp/src/gen/" ITEM_PATH ${dir})
+#     # message(${ITEM_PATH})
+#     install( FILES ${file} DESTINATION ${PROJECT_SOURCE_DIR}/include/${ITEM} )
+# endforeach()
+
 INSTALL(FILES ${HEADERS}  DESTINATION ${PROJECT_SOURCE_DIR}/include)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
