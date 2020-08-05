@@ -24,7 +24,7 @@ RUN cd / \
 
 # install protobuf C++
 RUN cd / \
-    && git clone -b 3.11.4 https://github.com/google/protobuf \
+    && git clone -b 3.11.x https://github.com/google/protobuf \
     && cd protobuf \
     && git submodule update --init --recursive \
     && ./autogen.sh \
@@ -37,7 +37,7 @@ RUN cd / \
 
 # install grpc
 RUN cd / \
-    && git clone -b 1.29.1 https://github.com/grpc/grpc \
+    && git clone -b 1.29.x https://github.com/grpc/grpc \
     && cd grpc \
     && git submodule update --init \
     && mkdir -p cmake/build \
