@@ -37,7 +37,7 @@ RUN cd / \
 
 # install grpc
 RUN cd / \
-    && git clone -b 1.29.x https://github.com/grpc/grpc \
+    && git clone -b v1.29.x https://github.com/grpc/grpc \
     && cd grpc \
     && git submodule update --init \
     && mkdir -p cmake/build \
