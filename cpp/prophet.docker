@@ -1,5 +1,0 @@
-
-
-./configure --enable-sse4.2
-make all check CXXFLAGS="-g -O3 -msse4.2"
-sudo make install
