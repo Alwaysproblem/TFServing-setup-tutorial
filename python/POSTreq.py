@@ -13,23 +13,24 @@ def requset_with_rows():
     req_data = {}
     instances = []
     instances.append({
-      "aid": [["dgadfadsfag"]],
-      "click_adid": [["sdfgad", "adgas", "adgasdfd", "asdgadsg", "asdgadsfa", "Asdgasd", "Asdga", ""]],
-      "age": [[63]],
-      "cp": [[1]],
-      "chol": [[233]],
-      "oldpeak": [[2.3]],
+      "aid": ["dgadfadsfag"],
+      "click_adid": ["sdfgad", "adgas", "adgasdfd", "asdgadsg", "asdgadsfa", "Asdgasd", "Asdga", ""],
+      "age": [63],
+      "cp": [1],
+      "chol": [233],
+      "oldpeak": [2.3],
     })
     instances.append({
-      "aid": [["sdfgad"]],
-      "click_adid": [["sdfgad", "adgas", "adgasdfd", "", "", "", "", ""]],
-      "age": [[67]],
-      "cp": [[4]],
-      "chol": [[286]],
-      "oldpeak": [[1.5]],
+      "aid": ["sdfgad"],
+      "click_adid": ["sdfgad", "adgas", "adgasdfd", "", "", "", "", ""],
+      "age": [67],
+      "cp": [4],
+      "chol": [286],
+      "oldpeak": [1.5],
     })
     req_data["instances"] = instances
     req_data = json.dumps(req_data)
+    print(req_data)
     return req_data
 
 def requset_with_columns():
