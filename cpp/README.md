@@ -1,4 +1,9 @@
-# GO API
+# CPP API
+
+# Requirement
+
+- protobuf == 3.12.4
+- grpc == 1.29.1
 
 ## Start Server docker
 
@@ -39,7 +44,7 @@
 - build docker
 
   ```bash
-  $ docker build -t grpc-cpp -f grpc-cpp.dockerfile .
+  $ docker build -t grpc-cpp -f grpc-cpp-static.dockerfile .
   ```
 
 - start and enter `grpc-cpp` shell
@@ -376,3 +381,8 @@
     # ****************************************************
     # Done.
     ```
+
+## Static Lib
+
+- [abseil-cpp#250 Wrong order](https://github.com/abseil/abseil-cpp/issues/250#issuecomment-455831883)
+*Note that: the `absl_int128` need `absl_string` so the `-labsl_string` need to be infront of `-labsl_int128` in the `Makefile`*
