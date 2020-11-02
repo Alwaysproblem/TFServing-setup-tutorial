@@ -1,16 +1,35 @@
-FROM ubuntu:20.04
+FROM ubuntu:18.04
+
+RUN apt-get install -y  curl git
+
 
 RUN apt-get update \
     && apt-get install software-properties-common -y \
-    && apt-get install git golang-go protobuf-compiler-grpc libprotobuf-dev -y \
-    && mkdir -p /go \
+    && apt-get install autoconf automake libtool curl make g++ unzip -y wget \
+    && apt-get install pkg-config libgflags-dev build-essential cmake clang-5.0 libc++-dev -y \
+    && apt-get install doxygen git libboost-all-dev -y \
     && apt-get clean
 
-ENV GOPATH=/go
-ENV PATH=$PATH:/usr/lib/go-1.14/bin:$GOPATH/bin
+RUN wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz \
+    && tar -xvf go1.12.7.linux-amd64.tar.gz \
+    && mv go /usr/local
 
-RUN go get -u -v google.golang.org/grpc \
-    && go get -u -v github.com/golang/protobuf/proto \
-    && go get -u -v github.com/golang/protobuf/protoc-gen-go
+# install protobuf C++
+RUN cd / \
+    && git clone -b v3.12.4 https://github.com/google/protobuf \
+    && cd protobuf \
+    && git submodule update --init --recursive \
+    && ./autogen.sh \
+    && ./configure \
+    && make \
+    && make check \
+    && make install \
+    && ldconfig \
+    && cd ..
 
-WORKDIR /work
+ENV PATH=$PATH:/protobuf/src/protoc:/usr/local/go/bin
+
+
+WORKDIR /root/tfclient
+
+COPY src /root/tfclient

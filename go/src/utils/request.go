@@ -1,7 +1,7 @@
 package utils
 
 import (
-	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
+	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework/tensor_go_proto"
 	pb "github.com/alwaysproblem/tensorflow_serving"
 )
 

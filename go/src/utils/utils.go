@@ -7,7 +7,10 @@ import (
 	"reflect"
 	
 	pb "github.com/alwaysproblem/tensorflow_serving"
-	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
+	framework "github.com/tensorflow/tensorflow/tensorflow/go/core/framework/tensor_go_proto"
+	types_go_proto "github.com/tensorflow/tensorflow/tensorflow/go/core/framework/types_go_proto"
+	resource_handle_go_proto "github.com/tensorflow/tensorflow/tensorflow/go/core/framework/resource_handle_go_proto"
+	tensor_shape_go_proto "github.com/tensorflow/tensorflow/tensorflow/go/core/framework/tensor_shape_go_proto"
 )
 
 func str2bytes(tensor interface{}) ([][]byte, bool) {
@@ -34,20 +37,20 @@ func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp 
 	}
 	size := v.Len()
 
-	frameworkprotoMap := map[string]framework.DataType{
-		"DT_HALF": framework.DataType_DT_HALF, 
-		"DT_FLOAT": framework.DataType_DT_FLOAT, 
-		"DT_DOUBLE": framework.DataType_DT_DOUBLE, 
-		"DT_INT16": framework.DataType_DT_INT16, 
-		"DT_INT32": framework.DataType_DT_INT32, 
-		"DT_INT8": framework.DataType_DT_INT8, 
-		"DT_UINT8": framework.DataType_DT_UINT8, 
-		"DT_STRING": framework.DataType_DT_STRING, 
-		"DT_COMPLEX64": framework.DataType_DT_COMPLEX64, 
-		"DT_INT64": framework.DataType_DT_INT64, 
-		"DT_BOOL": framework.DataType_DT_BOOL, 
-		"DT_COMPLEX128": framework.DataType_DT_COMPLEX128, 
-		"DT_RESOURCE": framework.DataType_DT_RESOURCE,
+	frameworkprotoMap := map[string]types_go_proto.DataType{
+		"DT_HALF": types_go_proto.DataType_DT_HALF, 
+		"DT_FLOAT": types_go_proto.DataType_DT_FLOAT, 
+		"DT_DOUBLE": types_go_proto.DataType_DT_DOUBLE, 
+		"DT_INT16": types_go_proto.DataType_DT_INT16, 
+		"DT_INT32": types_go_proto.DataType_DT_INT32, 
+		"DT_INT8": types_go_proto.DataType_DT_INT8, 
+		"DT_UINT8": types_go_proto.DataType_DT_UINT8, 
+		"DT_STRING": types_go_proto.DataType_DT_STRING, 
+		"DT_COMPLEX64": types_go_proto.DataType_DT_COMPLEX64, 
+		"DT_INT64": types_go_proto.DataType_DT_INT64, 
+		"DT_BOOL": types_go_proto.DataType_DT_BOOL, 
+		"DT_COMPLEX128": types_go_proto.DataType_DT_COMPLEX128, 
+		"DT_RESOURCE": types_go_proto.DataType_DT_RESOURCE,
 	}
 	tp = &framework.TensorProto{
 		Dtype: frameworkprotoMap[dataType],
@@ -75,7 +78,7 @@ func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp 
 		case "DT_COMPLEX128":
 			tp.DcomplexVal, ok = tensor.([]float64)
 		case "DT_RESOURCE":
-			tp.ResourceHandleVal, ok = tensor.([]*framework.ResourceHandleProto)
+			tp.ResourceHandleVal, ok = tensor.([]*resource_handle_go_proto.ResourceHandleProto)
 		default:
 			err = errors.New("Unknown data type")
 	}
@@ -88,19 +91,19 @@ func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp 
 	}
 
 	if shapeSize == nil {
-		tp.TensorShape = &framework.TensorShapeProto{
-			Dim: []*framework.TensorShapeProto_Dim{
-				&framework.TensorShapeProto_Dim{
+		tp.TensorShape = &tensor_shape_go_proto.TensorShapeProto{
+			Dim: []*tensor_shape_go_proto.TensorShapeProto_Dim{
+				&tensor_shape_go_proto.TensorShapeProto_Dim{
 					Size: int64(size),
 				},
 			},
 		}
 	} else {
-		tp.TensorShape = &framework.TensorShapeProto{
-			Dim: []*framework.TensorShapeProto_Dim{},
+		tp.TensorShape = &tensor_shape_go_proto.TensorShapeProto{
+			Dim: []*tensor_shape_go_proto.TensorShapeProto_Dim{},
 		}
 		for _, size := range shapeSize {
-			tp.TensorShape.Dim = append(tp.TensorShape.Dim, &framework.TensorShapeProto_Dim{
+			tp.TensorShape.Dim = append(tp.TensorShape.Dim, &tensor_shape_go_proto.TensorShapeProto_Dim{
 				Size: size,
 			})
 		}
@@ -110,7 +113,7 @@ func MakeTensorProto(tensor interface{}, dataType string, shapeSize []int64)(tp 
 
 
 // if tensor is one dim, shapeSize is nil
-func AddInput(pr *pb.PredictRequest, tensorName string, dataType framework.DataType, tensor interface{},
+func AddInput(pr *pb.PredictRequest, tensorName string, dataType types_go_proto.DataType, tensor interface{},
 	shapeSize []int64, shapeName []string) (err error) {
 	v := reflect.ValueOf(tensor)
 	if v.Kind() != reflect.Slice {
@@ -123,27 +126,27 @@ func AddInput(pr *pb.PredictRequest, tensorName string, dataType framework.DataT
 
 	var ok bool
 	switch dataType {
-	case framework.DataType_DT_HALF:
+	case types_go_proto.DataType_DT_HALF:
 		tp.HalfVal, ok = tensor.([]int32)
-	case framework.DataType_DT_FLOAT:
+	case types_go_proto.DataType_DT_FLOAT:
 		tp.FloatVal, ok = tensor.([]float32)
-	case framework.DataType_DT_DOUBLE:
+	case types_go_proto.DataType_DT_DOUBLE:
 		tp.DoubleVal, ok = tensor.([]float64)
-	case framework.DataType_DT_INT16, framework.DataType_DT_INT32,
-		framework.DataType_DT_INT8, framework.DataType_DT_UINT8:
+	case types_go_proto.DataType_DT_INT16, types_go_proto.DataType_DT_INT32,
+		types_go_proto.DataType_DT_INT8, types_go_proto.DataType_DT_UINT8:
 		tp.IntVal, ok = tensor.([]int32)
-	case framework.DataType_DT_STRING:
+	case types_go_proto.DataType_DT_STRING:
 		tp.StringVal, ok = tensor.([][]byte)
-	case framework.DataType_DT_COMPLEX64:
+	case types_go_proto.DataType_DT_COMPLEX64:
 		tp.ScomplexVal, ok = tensor.([]float32)
-	case framework.DataType_DT_INT64:
+	case types_go_proto.DataType_DT_INT64:
 		tp.Int64Val, ok = tensor.([]int64)
-	case framework.DataType_DT_BOOL:
+	case types_go_proto.DataType_DT_BOOL:
 		tp.BoolVal, ok = tensor.([]bool)
-	case framework.DataType_DT_COMPLEX128:
+	case types_go_proto.DataType_DT_COMPLEX128:
 		tp.DcomplexVal, ok = tensor.([]float64)
-	case framework.DataType_DT_RESOURCE:
-		tp.ResourceHandleVal, ok = tensor.([]*framework.ResourceHandleProto)
+	case types_go_proto.DataType_DT_RESOURCE:
+		tp.ResourceHandleVal, ok = tensor.([]*resource_handle_go_proto.ResourceHandleProto)
 	default:
 		err = errors.New("Unknown data type")
 	}
@@ -160,9 +163,9 @@ func AddInput(pr *pb.PredictRequest, tensorName string, dataType framework.DataT
 		if len(shapeName) != 0 {
 			name = shapeName[0]
 		}
-		tp.TensorShape = &framework.TensorShapeProto{
-			Dim: []*framework.TensorShapeProto_Dim{
-				&framework.TensorShapeProto_Dim{
+		tp.TensorShape = &tensor_shape_go_proto.TensorShapeProto{
+			Dim: []*tensor_shape_go_proto.TensorShapeProto_Dim{
+				&tensor_shape_go_proto.TensorShapeProto_Dim{
 					Size: int64(size),
 					Name: name,
 				},
@@ -172,15 +175,15 @@ func AddInput(pr *pb.PredictRequest, tensorName string, dataType framework.DataT
 		if shapeName != nil && len(shapeName) != len(shapeSize) {
 			return errors.New("shapeName and shapeSize have different size")
 		}
-		tp.TensorShape = &framework.TensorShapeProto{
-			Dim: []*framework.TensorShapeProto_Dim{},
+		tp.TensorShape = &tensor_shape_go_proto.TensorShapeProto{
+			Dim: []*tensor_shape_go_proto.TensorShapeProto_Dim{},
 		}
 		for i, size := range shapeSize {
 			name := ""
 			if shapeName != nil {
 				name = shapeName[i]
 			}
-			tp.TensorShape.Dim = append(tp.TensorShape.Dim, &framework.TensorShapeProto_Dim{
+			tp.TensorShape.Dim = append(tp.TensorShape.Dim, &tensor_shape_go_proto.TensorShapeProto_Dim{
 				Size: size,
 				Name: name,
 			})

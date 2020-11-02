@@ -12,11 +12,11 @@ import (
 	"google.golang.org/grpc"
 	// "google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/grpclog"
-	utils "client/utils"
+	utils "utils"
 )
 
 var (
-	serverAddr         = flag.String("server_addr", "127.0.0.1:8500", "The server address in the format of host:port")
+	serverAddr         = flag.String("server_addr", "172.17.0.3:8500", "The server address in the format of host:port")
 	modelName          = flag.String("model_name", "Toy", "TensorFlow model name")
 )
 

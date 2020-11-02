@@ -15,7 +15,7 @@ RUN apt-get update \
 
 # install protobuf C++
 RUN cd / \
-    && git clone https://github.com/google/protobuf \
+    && git clone -b v3.12.4 https://github.com/google/protobuf \
     && cd protobuf \
     && git submodule update --init --recursive \
     && ./autogen.sh \
