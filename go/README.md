@@ -54,29 +54,9 @@
   root@8c768509e690:/work/src# exit
   ```
 
-## Build your own go TFclient (optional) (new version) (Need to be test)
+## Build your own go TFclient (optional) (new version)
 
-- Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
-
-- requirement
-  - [go installation](https://golang.org/doc/install)
-  ```text
-  go >= 1.11
-  protoc >= 3.12.4
-  ```
-
-
-## Run
-
-- copy test file to your own directory
-
-  ```bash
-  $ cp env.sh <to your src>
-  $ cp basic-run-env.sh <to your src>
-  $ cp -R main <to your src>
-  $ cp -R utils <to your src>
-  $ cp run.sh <to your src>
-  ```
+- [TFServing 2.3](https://github.com/Alwaysproblem/TFServing-setup-tutorial/tree/tfclient-golang-r2.3/go)
 
 - run server
   *if you forget to run in the first place.*
