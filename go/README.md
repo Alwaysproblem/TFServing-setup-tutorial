@@ -33,7 +33,7 @@ root@2fd0578f8c39:~/tfclient/src$  go version
 # go version go1.12.7 linux/amd64
 root@2fd0578f8c39:~/tfclient/src$ protoc --version
 # libprotoc 3.12.4
-root@2fd0578f8c39:~/tfclient/src$ rm go.mod go.sum # clear go env
+# root@2fd0578f8c39:~/tfclient/src$ rm go.mod go.sum # clear go env
 ```
 
 - clone  `tensorflow` and `serving`
@@ -48,8 +48,8 @@ root@2fd0578f8c39:/$ cd -
 - download dependency
 
 ```bash
-root@2fd0578f8c39:~/tfclient/src$ bash basic-run-env.sh
 root@2fd0578f8c39:~/tfclient/src$ . env.sh
+root@2fd0578f8c39:~/tfclient/src$ bash basic-run-env.sh
 ```
 
 - build protobuf
