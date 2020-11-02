@@ -1,13 +1,10 @@
 FROM ubuntu:18.04
 
-RUN apt-get install -y  curl git
-
-
 RUN apt-get update \
     && apt-get install software-properties-common -y \
     && apt-get install autoconf automake libtool curl make g++ unzip -y wget \
     && apt-get install pkg-config libgflags-dev build-essential cmake clang-5.0 libc++-dev -y \
-    && apt-get install doxygen git libboost-all-dev -y \
+    && apt-get install doxygen git libboost-all-dev vim -y \
     && apt-get clean
 
 RUN wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz \
@@ -29,7 +26,6 @@ RUN cd / \
 
 ENV PATH=$PATH:/protobuf/src/protoc:/usr/local/go/bin
 
+WORKDIR /root/tfclient/src
 
-WORKDIR /root/tfclient
-
-COPY src /root/tfclient
+COPY src /root/tfclient/src
