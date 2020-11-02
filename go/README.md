@@ -1,60 +1,6 @@
 # GO API
 
-## Build your own go TFclient (optional) (old version)
-
-- Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
-
-- requirement
-  - [go installation](https://golang.org/doc/install)
-  ```text
-  go >= 1.11
-  protoc == 3.6.1
-  ```
-
-- setup a new directory and the structure is like this:
-
-  ```text
-  ---client (your new directory name)
-      |
-      ---pkg (for go modules)
-      |
-      ---src (for customed modules and source files)
-      |
-      ---bin (fo go binary files)
-  ```
-
-- copy `dockerfile` to your own directory and build docker image through dockerfile
-
-  ```bash
-  # assume that you are under go directory.
-  cp dockerfile <your>
-  # docker build -t <tag>:<label> path -f <dockerfile>
-  docker build -t alwaysproblem/tfclient-go:build path -f dockerfile
-  ```
-
-- build inside docker
-
-  ```bash
-  $ docker run --rm -ti --name goenv -v `pwd`:/work alwaysproblem/tfclient-go:build /bin/bash
-  ```
-
-  <!-- TODO: simplify these with bash run in docker -->
-
-  ```bash
-  root@8c768509e690:/work# cd src
-  root@8c768509e690:/work/src# git clone -b r1.15 https://github.com/tensorflow/tensorflow.git
-  root@8c768509e690:/work/src# git clone -b r1.14 https://github.com/tensorflow/serving.git
-  root@8c768509e690:/work/src# go run protoc.go # ignore the warning but this procedure only works under specific protoc version
-  root@8c768509e690:/work/src# go mod init client
-  root@8c768509e690:/work/src# go mod edit -replace=github.com/tensorflow/tensorflow/tensorflow/go/core=./proto/tensorflow/core
-  root@8c768509e690:/work/src# go mod edit -replace=github.com/alwaysproblem/tensorflow_serving=./proto/tensorflow/serving
-  root@8c768509e690:/work/src# cd proto/tensorflow/core && go mod init github.com/tensorflow/tensorflow/tensorflow/go/core && cd -
-  root@8c768509e690:/work/src# cd proto/tensorflow/serving && go mod init github.com/alwaysproblem/tensorflow_serving && cd -
-  root@8c768509e690:/work/src# rm -rf tensorflow/ serving/
-  root@8c768509e690:/work/src# exit
-  ```
-
-## Build your own go TFclient (optional) (new version) (Need to be test)
+## Build your own go TFclient (optional) (new version)
 
 - Thanks to [Maxim Khitrov](https://gist.github.com/mxk) and [datainq](https://github.com/datainq/go-mnist-client). Here is [reference](https://gist.github.com/mxk/b86769306037c9dc49b44d52764cbbdc)
 
@@ -62,22 +8,72 @@
   - [go installation](https://golang.org/doc/install)
 
   ```text
-  go >= 1.12
+  go >= 1.12.7
   protoc >= 3.12.4
+  tensorflow == 2.3
+  tensorflow_serving == 2.3
   ```
 
+  - note that we run this under `GO111MODULE=off`
 
 ## Run
 
-- copy test file to your own directory
+- build your tfclient docker
 
-  ```bash
-  $ cp env.sh <to your src>
-  $ cp basic-run-env.sh <to your src>
-  $ cp -R main <to your src>
-  $ cp -R utils <to your src>
-  $ cp run.sh <to your src>
-  ```
+```bash
+# under go directory
+$ docker build -t golang/tfclient -f grpcgo.dockerfile .
+```
+
+- enter `golang/tfclient` and check `protobuf` and `go` version
+
+```bash
+$ docker run --rm -ti golang/tfclient /bin/bash
+root@2fd0578f8c39:~/tfclient/src$  go version
+# go version go1.12.7 linux/amd64
+root@2fd0578f8c39:~/tfclient/src$ protoc --version
+# libprotoc 3.12.4
+root@2fd0578f8c39:~/tfclient/src$ rm go.mod go.sum # clear go env
+```
+
+- clone  `tensorflow` and `serving`
+
+```bash
+root@2fd0578f8c39:~/tfclient/src$ cd /
+root@2fd0578f8c39:/$ git clone -b r2.3 https://github.com/tensorflow/tensorflow.git
+root@2fd0578f8c39:/$ git clone -b r2.3 https://github.com/tensorflow/serving.git
+root@2fd0578f8c39:/$ cd -
+```
+
+- download dependency
+
+```bash
+root@2fd0578f8c39:~/tfclient/src$ bash basic-run-env.sh
+root@2fd0578f8c39:~/tfclient/src$ . env.sh
+```
+
+- build protobuf
+
+```bash
+root@2fd0578f8c39:~/tfclient/src$ bash protoc.sh
+root@2fd0578f8c39:~/tfclient/src$ ll
+# total 20
+# drwxr-xr-x 3 root root 4096 Nov  2 05:08 tensorflow/
+# drwxr-xr-x 3 root root 4096 Nov  2 05:08 github.com/
+# drwxr-xr-x 3 root root 4096 Nov  2 05:08 alwaysproblem/
+# drwxr-xr-x 9 root root 4096 Nov  2 05:08 ../
+# drwxrwxrwx 5 root root 4096 Nov  2 05:08 ./
+
+```
+
+- add to go module
+
+```bash
+root@2fd0578f8c39:~/tfclient/src$ go mod init client
+root@2fd0578f8c39:~/tfclient/src$ mv proto/github.com/tensorflow $GOPATH/src/github.com/
+root@2fd0578f8c39:~/tfclient/src$ mv proto/alwaysproblem $GOPATH/src/github.com/
+```
+
 
 - run server
   *if you forget to run in the first place.*
@@ -86,7 +82,7 @@
   $ docker run --rm -p 8500:8500 -p 8501:8501 --mount type=bind,source=$ROOT,target=/models --mount type=bind,source=$ROOT/config/versionlabels.config,target=/models/versionctrl.config -it tensorflow/serving --model_config_file=/models/versionctrl.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
   ```
 
-- run the test on the client
+- run the test on the client (please find the right server address)
   - install dependency
 
     ```bash
