@@ -69,7 +69,7 @@ root@2fd0578f8c39:~/tfclient/src$ ll
 - add to go module
 
 ```bash
-root@2fd0578f8c39:~/tfclient/src$ go mod init client
+# root@2fd0578f8c39:~/tfclient/src$ go mod init client
 root@2fd0578f8c39:~/tfclient/src$ mv proto/github.com/tensorflow $GOPATH/src/github.com/
 root@2fd0578f8c39:~/tfclient/src$ mv proto/alwaysproblem $GOPATH/src/github.com/
 ```
