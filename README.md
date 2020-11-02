@@ -32,6 +32,14 @@ $ git checkout tfclient
 $ docker run --rm -p 8500:8500 -p 8501:8501 -v `pwd`:/models -it tensorflow/serving --model_config_file=/models/config/versionlabels.config --model_config_file_poll_wait_seconds=60 --allow_version_labels_for_unavailable_models
 ```
 
+## Test Server
+
+- test for network
+
+```bash
+$ curl -d '{"instances": [[1.0, 2.0]]}' -X POST http://localhost:8501/v1/models/Toy_double:predict
+```
+
 ## Tutorial for gRPC API
 
 - [GO](./go/README.md)
