@@ -386,3 +386,29 @@
 
 - [abseil-cpp#250 Wrong order](https://github.com/abseil/abseil-cpp/issues/250#issuecomment-455831883)
 *Note that: the `absl_int128` need `absl_string` so the `-labsl_string` need to be infront of `-labsl_int128` in the `Makefile`*
+
+- generate the static lib
+
+  ```bash
+  # run under static-lib directory
+  $ make
+  $ ls
+  # libtfserving.a Makefile
+  ```
+
+- test with generated static library
+
+  ```bash
+  # enter build-with-a-file directory
+  $ make
+  $ ./bin/main -s 172.17.0.3:8500
+  # calling prediction service on 172.17.0.3:8500
+  # call predict ok
+  # outputs size is 1
+  # 
+  # output_1:
+  # 0.999035
+  # 0.999735
+  # 0.999927
+  # Done.
+  ```
