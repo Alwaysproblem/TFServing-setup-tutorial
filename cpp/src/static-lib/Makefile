@@ -82,7 +82,7 @@ LDFLAGS := -L/usr/local/lib -L/grpc/cmake/build -L/usr/lib -L/grpc/cmake/build/t
 		  -L/grpc/cmake/build/third_party/abseil-cpp/absl/debugging -L/grpc/cmake/build/third_party/abseil-cpp/absl/numeric \
 		  -L/grpc/cmake/build/third_party/cares/cares/lib
 DEFINES := -c
-INCLUDE := -I/includeh -I/cpp/src/gen
+INCLUDE := -I/usr/local/include -I/cpp/src/gen
 CFLAGS  := -Wall -O3 -std=c++11 $(DEFINES) $(INCLUDE)
 
 SOURCE  := $(foreach dir,$(TFDIRS),$(wildcard $(dir)/**.cc)) $(wildcard *.cc)
