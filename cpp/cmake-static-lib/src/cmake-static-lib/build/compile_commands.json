@@ -1,0 +1,862 @@
+[
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/example.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/example.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/example_parser_configuration.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/example_parser_configuration.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/feature.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/example/feature.pb.cc.o -c /cpp/src/gen/tensorflow/core/example/feature.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/example/feature.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/allocation_description.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/allocation_description.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/api_def.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/api_def.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/api_def.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/attr_value.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/attr_value.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/cost_graph.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/cost_graph.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/device_attributes.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/device_attributes.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/function.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/function.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/function.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/function.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/graph.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/graph.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/graph_transfer_info.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/kernel_def.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/kernel_def.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/log_memory.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/log_memory.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/node_def.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/node_def.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/node_def.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/op_def.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/op_def.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/op_def.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/reader_base.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/reader_base.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/remote_fused_graph_execute_info.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/resource_handle.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/resource_handle.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/step_stats.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/step_stats.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/summary.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/summary.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/summary.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/summary.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_description.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_description.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_shape.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_shape.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_slice.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/tensor_slice.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/types.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/types.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/types.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/types.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/variable.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/variable.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/variable.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/variable.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/versions.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/framework/versions.pb.cc.o -c /cpp/src/gen/tensorflow/core/framework/versions.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/framework/versions.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/lib/core/error_codes.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc.o -c /cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/lib/core/error_codes.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/autotuning.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/autotuning.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/bfc_memory_map.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/cluster.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/cluster.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/control_flow.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/control_flow.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/conv_autotuning.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/critical_section.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/critical_section.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/debug.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/debug.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/debug_event.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/debug_event.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/device_filters.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/device_filters.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/device_properties.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/device_properties.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/eager_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/eager_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/error_codes.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/error_codes.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/graph_debug_info.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/master.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/master.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/master_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/master_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/meta_graph.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/meta_graph.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/named_tensor.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/named_tensor.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/queue_runner.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/queue_runner.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/remote_tensor_handle.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/replay_log.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/replay_log.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/rewriter_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saved_model.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saved_model.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saved_object_graph.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saver.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/saver.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/struct.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/struct.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/tensor_bundle.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/tensorflow_server.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/trackable_object_graph.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/transport_options.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/transport_options.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/verifier_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/verifier_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/worker.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/worker.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/worker_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc.o -c /cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/core/protobuf/worker_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc.o -c /cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/stream_executor/dnn.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc.o -c /cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc",
+  "file": "/cpp/src/gen/tensorflow/stream_executor/dnn.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/classification.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/classification.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/classification.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/get_model_metadata.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/get_model_status.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/get_model_status.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/inference.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/inference.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/inference.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/input.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/input.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/input.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/input.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model_management.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model_management.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/model_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/predict.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/predict.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/predict.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/prediction_log.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/prediction_log.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/prediction_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/prediction_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/regression.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/regression.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/regression.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/session_service.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc.o -c /cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/apis/session_service.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/log_collector_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/log_collector_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/logging_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/logging_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/model_server_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/model_server_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/monitoring_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/monitoring_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/platform_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/platform_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/ssl_config.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc.o -c /cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/config/ssl_config.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/core/logging.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/core/logging.pb.cc.o -c /cpp/src/gen/tensorflow_serving/core/logging.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/core/logging.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/sources/storage_path/file_system_storage_path_source.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc.o -c /cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/sources/storage_path/static_storage_path_source.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/util/class_registration_test.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/util/class_registration_test.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/util/status.grpc.pb.cc"
+},
+{
+  "directory": "/cpp/src/predict-service/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-6   -I/cpp/src/gen -I/usr/local/include  -g   -o CMakeFiles/tfclient.dir/cpp/src/gen/tensorflow_serving/util/status.pb.cc.o -c /cpp/src/gen/tensorflow_serving/util/status.pb.cc",
+  "file": "/cpp/src/gen/tensorflow_serving/util/status.pb.cc"
+}
+]
