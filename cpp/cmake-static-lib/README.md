@@ -73,7 +73,7 @@
   
   ```bash
   $ docker run --rm -ti -v `pwd`:/cpp  grpc-cpp # or you can docker exec -ti <docker name> /bin/bash
-  root@5b9f27acaefe:/# cd cpp/src/
+  root@5b9f27acaefe:/# cp -R /cpps/cmake-static-lib /cpp && cd /cpp/src
   root@5b9f27acaefe:/cpp/src#
   ```
 
