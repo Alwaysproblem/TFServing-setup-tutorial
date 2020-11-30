@@ -30,9 +30,9 @@ link_directories(/grpc/cmake/build/third_party/abseil-cpp/absl/hash)
 link_directories(/grpc/cmake/build/third_party/abseil-cpp/absl/debugging)
 link_directories(/grpc/cmake/build/third_party/abseil-cpp/absl/numeric)
 link_directories(/grpc/cmake/build/third_party/cares/cares/lib)
-link_directories(/cpp/src/cmake-static-lib)
+link_directories(/cpp/src/cmake-static-lib/build)
 
-file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "./*.cc" "/cpp/src/gen/*.cc")
+file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "./*.cc")
 
 add_executable(model-reload ${SOURCES})
 target_link_libraries(${PROJECT_NAME} -ltfclient)
