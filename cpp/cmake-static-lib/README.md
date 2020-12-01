@@ -39,7 +39,7 @@
 - build docker
 
   ```bash
-  $ docker build -t grpc-cpp -f grpc-cpp.dockerfile .
+  $ docker build -t grpc-cpp -f grpc-cpp-static.dockerfile .
   ```
 
 - start and enter `grpc-cpp` shell

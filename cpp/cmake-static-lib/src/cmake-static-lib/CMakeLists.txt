@@ -99,6 +99,13 @@ target_link_libraries(${PROJECT_NAME} -lssl)
 target_link_libraries(${PROJECT_NAME} -lcrypto )
 target_link_libraries(${PROJECT_NAME} -ldl)
 
+# set_target_properties(tfclient PROPERTIES PUBLIC_HEADER "${HEADERS}")
+INSTALL(TARGETS tfclient
+    LIBRARY DESTINATION ${PROJECT_SOURCE_DIR}/lib
+    ARCHIVE DESTINATION ${PROJECT_SOURCE_DIR}/lib)
+
+INSTALL(DIRECTORY /cpp/src/gen  DESTINATION ${PROJECT_SOURCE_DIR}/include FILES_MATCHING PATTERN "*.h")
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
