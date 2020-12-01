@@ -83,6 +83,22 @@
   ```
 
   **assume you are in the src directory**
+  - build static library
+  
+    ```bash
+    # run under static-lib directory
+    $ make
+    ```
+
+  - build with static library
+  
+    ```bash
+    # run under build-with-a-file directory
+    # copy main.cc to `build-with-a-file`
+    $ make
+    $ ./bin/main
+    ```
+
   - request data from server
 
     ```bash
