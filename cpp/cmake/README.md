@@ -82,6 +82,8 @@
 
     ```bash
     # run under predict-service directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main
     # calling prediction service on 172.17.0.3:8500
@@ -99,6 +101,8 @@
 
     ```bash
     # run under predict-service directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy
     # calling prediction service on 172.17.0.3:8500
@@ -126,6 +130,8 @@
 
     ```bash
     # run under predict-service directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy --model_version 1
     # calling prediction service on 172.17.0.3:8500
@@ -153,6 +159,8 @@
 
     ```bash
     # run under predict-service directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy --model_version_label stable
     # calling prediction service on 172.17.0.3:8500
@@ -188,6 +196,8 @@
 
     ```bash
     # run under model-status directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy
     # calling model service on 172.17.0.3:8500
@@ -223,6 +233,8 @@
 
     ```bash
     # run under model-metadata directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy
     # calling prediction service on 172.17.0.3:8500
@@ -299,6 +311,8 @@
 
     ```bash
     # run under model-reload directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy
     # calling model service on 172.17.0.3:8500
@@ -310,6 +324,8 @@
 
     ```bash
     # run under predict-log directory
+    $ mkdir build
+    $ cd build && cmake ..
     $ make
     $ ./bin/main --model_name Toy # --model_version 1 --model_version_label stable
     # calling prediction service on 172.17.0.3:8500
